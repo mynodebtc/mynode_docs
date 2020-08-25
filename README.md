@@ -20,6 +20,10 @@ yarn docs:dev
 ```
 ## How to contribute?
 
+For the first version of documentation (due on September 30th), read the [plan](https://github.com/mynodebtc/mynode_docs/issues?q=is%3Aissue+is%3Aopen+label%3APlan) and comment on a suitable section-related issue from this list: [Milestone 1](https://github.com/mynodebtc/mynode_docs/milestone/1). Follow the file structure (mentioned below) and follow the usual protocol to submit pull requests (also mentioned below under "Major Changes"). You should create draft PRs as soon as possible to show your progress and avoid any overlaps with others.
+
+If you have never used Github, don't worry. Read this [awesome article](https://guides.github.com/activities/forking/) to get started and comment on a suitable issue to seek guidance.
+
 ### File structure
 
 - All the pages are written in markdown and located in [docs](https://github.com/mynodebtc/mynode_docs/tree/master/docs)
