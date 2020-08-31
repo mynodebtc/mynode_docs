@@ -38,10 +38,12 @@ module.exports = {
       {
         title: "Bitcoin",
         children: [
-          ["/bitcoin/bitcoin-status", 'Check Bitcoin Status'],
-          ["/bitcoin/independent-sync", 'Independently Sync Blockchain'],
+          "/bitcoin/overview",
+          "/bitcoin/manage",
+          "/bitcoin/quicksync",
           "/bitcoin/explorer",
-          "/bitcoin/mempool"
+          "/bitcoin/mempool",
+          "/bitcoin/troubleshoot"
         ]
       },
       {
