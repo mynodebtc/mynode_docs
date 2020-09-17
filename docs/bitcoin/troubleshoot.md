@@ -31,7 +31,7 @@ This option is available on the settings page under Bitcoin (as shown below). It
 
 This option is available on the settings page under Bitcoin (as shown above). It facilitates running `bitcoind` with the `-reindex-chainstate` option. To use the full `reindex` option, one has to use the command-line.
 
-Reindexing the blockchain becomes necessary when the blockchain data on HDD/SSD is corrupted, either due to disk failure or power cutoff. This is a time-consuming process and can take up to a day.
+Reindexing the blockchain becomes necessary when the blockchain data on HDD/SSD is corrupted, either due to disk failure or power cutoff. This is a time-consuming process and can take several hours.
 
 ## Reset blockchain
 
