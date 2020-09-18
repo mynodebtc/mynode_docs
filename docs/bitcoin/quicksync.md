@@ -1,26 +1,27 @@
 # QuickSync
 
-<!-- - What is it? -->
-<!-- - How is it useful? -->
-<!-- - What are the tradeoffs? -->
+## Overview
 QuickSync downloads a torrent for a major chunk of the blockchain from MyNode peers without verifying every block.
-It saves time by avoiding the initial blockchain download and this time benefit is significant when using HDD but marginal with SSD.
-QuickSync is turned on by default and must be disabled from the settings page while setting up to trigger fully-verified blockchain download.
-Once the blockchain is synced with the network, enabling QuickSync will download the torrent and start seeding it.
-This helps MyNode peers in downloading the blockchain faster during setup. The upload and download speed can be adjusted to optimize bandwidth usage, as shown in the screenshot below.
+It saves time by avoiding the initial blockchain download and this time benefit is significant when using an HDD but marginal with a SSD. QuickSync is turned on by default and must be disabled from the settings page while setting up to trigger fully-verified blockchain download.
 
-**Note:** Toggling QuickSync triggers a reboot and the torrent occupies additional 236 GB besides the Bitcoin blockchain.
+## Tradeoffs
+
+- **Trust vs Time**: QuickSync downloads a torrent of the Bitcoin blockchain synced by the MyNode creator. This chunk of the blockchain saves the time in downloading verifying the blockchain from scratch. This convenience has a cost. The user is trusting that MyNode is propagating a legitimate copy of the Bitcoin blockchain. To minimize trust, one should disable QuickSync and download the blockchain from scratch. In case you have already synced the blockchain using QuickSync, you can [reset the blockchain](/bitcoin/troubleshoot.html#reset-blockchain).
+
+- **Memory vs Community support**: QuickSync downloads a compressed form of the blockchain. This compressed file is not deleted after its expanded form is used for boosting the Bitcoin sync process. Instead, this file is seeds torrent for the other MyNode users to improve their download speed. The compressed file uses around 236 GB. To save this space, one should disable QuickSync.
+
 <!-- attach a table of expected times -->
-<!-- - What are the effects of enabling it before IBD and after IBD? -->
-<!-- - talk about download/upload speed -->
-<!-- - enable/disable triggers a reboot -->
-<!-- - memory required? -->
-<!-- - Control the upload/download speed -->
 
-## Enable QuickSync
+## Enable/Disable
+
+Once the blockchain is synced with the network, enabling QuickSync won't affect the Bitcoin blockchain. Instead, it will just download the torrent and start seeding it. This helps MyNode peers in downloading the blockchain faster during setup. The upload and download speed can be adjusted to optimize bandwidth usage, as shown in the screenshot below.
+
+**Note:** Toggling QuickSync triggers a reboot.
+
+### Enable QuickSync
 
 ![Enable QuickSync](/images/bitcoin/quicksync-enable.png)
 
-## Disable QuickSync
+### Disable QuickSync
 
 ![Disable QuickSync](/images/bitcoin/quicksync-disable.png)
