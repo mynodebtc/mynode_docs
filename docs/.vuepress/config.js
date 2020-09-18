@@ -47,9 +47,10 @@ module.exports = {
       {
         title: "Lightning",
         children: [
-          ["/lightning/creating-lightning-wallet", 'Create a Lightning Wallet'],
-          ["/lightning/setting-lnd-alias", 'Setting your LND Alias'],
-          ["/lightning/lnd-connect", 'LND Connect'],
+          "/lightning/create",
+          "/lightning/restore",
+          "/lightning/lnd-alias",
+          "/lightning/lnd-connect",
           '/lightning/lnd-hub',
           '/lightning/rtl',
           '/lightning/lnbits',
