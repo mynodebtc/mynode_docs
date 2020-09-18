@@ -1,6 +1,6 @@
 # Setting your LND Alias
 
-Every Lightning node has a name that can be configured. By default, each myNode device uses the name "mynodebtc.com [myNode]". TO change this name first go to the LND page in teh GUI and click the gear icon in the Alias box.
+Every Lightning node has a name that can be configured. By default, each myNode device uses the name "mynodebtc.com [myNode]". To change this name first go to the LND page in the GUI and click the gear icon in the Alias box.
 
 ![](/images/lightning/alias-1.png)
 
