@@ -1,6 +1,6 @@
 # Managing Bitcoin
 
-Bitcoin runs automatically when MyNode starts. By clicking on the "Manage" button under Bitcoin on the home page, you can view the current state of Bitcoin daemon and interact with it. You can also reach the page by pointing to **\<MYNODE-IP\>/bitcoind**
+Bitcoin runs automatically when MyNode starts. By clicking on the "Manage" button under Bitcoin on the home page, you can view the current state of the Bitcoin blockchain and your node, and interact with your node. You can also reach the page by pointing to **\<MYNODE-IP\>/bitcoind**
 
 <center>
   <img src="/images/bitcoin/bitcoin-status-1.png" alt="Bitcoin tile">
@@ -8,9 +8,6 @@ Bitcoin runs automatically when MyNode starts. By clicking on the "Manage" butto
 
 On the Bitcoin page, you can see the current state of Bitcoin. There are several information tiles on this page which are explained below.
 
-<!-- <center> -->
-  <!-- <img src="/images/bitcoin/bitcoin-status-2.png" alt="Bitcoin status"> -->
-<!-- </center> -->
 ![](/images/bitcoin/bitcoin-status-2.png)
 
 | Tile | Description |
@@ -29,5 +26,9 @@ On the Bitcoin page, you can see the current state of Bitcoin. There are several
 | Local Bitcoin address/port | the address and port number to access Bitcoin daemon from inside or outside the network. By default, Bitcoin daemon interacts with other bitcoin nodes through Tor network and thus have long cryptic onion address. The user doesn't have to open or forward the port in their network router to make it visible to other Bitcoin nodes. |
 | List of recent blocks | A list of 5 recent blocks added to the local copy of the blockchain. The age of the blocks may not be separated by intervals of 10 minutes since it fluctuates around 1-30 minutes. Number of transactions and size of the block indicate the supply/demand for block-space. |
 | List of peers | The onion/IP address of connected bitcoin nodes and few details about the connection. It might include few local peers (starting with 127.0.0.1) from other apps on MyNode. |
+
+## Managing blockchain data
+
+To make more advanced changes, like resetting the blockchain, there are few more options available on the settings page. Since these options are generally required after encountering an issue, they are explained in the [troubleshooting](/bitcoin/troubleshoot) page.
 
 ![Bitcoin settings](/images/bitcoin/bitcoin-settings.png)
