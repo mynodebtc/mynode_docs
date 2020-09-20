@@ -49,7 +49,10 @@ To use ThunderHub on myNode, open the main myNode page on a browser and find the
 
 ![ThunderHub Emblem](/images/lightning/ThunderHub/ThunderHub_emblem_comp.png "ThunderHub Emblem")
 
-Click on the "Enable" button, and wait for the page to refresh. You should now see a "ThunderHub" button where the "Enable" button was. Click this button and a new tab should open on your browser, containing ThunderHub.
+Click on the "Enable" button, and wait for the page to refresh. You should now see a "ThunderHub" button where the "Enable" button was.
+
+Click this button and a new tab should open on your browser, containing ThunderHub.
+
 Go to that tab, click the "Connect" button and enter your myNode password where requested, and then click on "Connect" again.
 
 ![ThunderHub Connect Interface](/images/lightning/ThunderHub/ThunderHub_connect_comp.png)
