@@ -3,26 +3,19 @@
 
 A GUI to manage lightning channels
 
-### Introduction
+## Introduction
 
-ThunderHub is an open-source LND node manager where you can manage and monitor your node on any device or browser. It allows you to take control of the lightning network with a simple and intuitive UX.
+Created by Anthony Potdevin, ThunderHub is an open-source LND node manager to monitor your node and manage channels via a web-interface. It allows you to take control of the lightning network with a simple and intuitive UX.
 
-ThunderHub is a creation of Anthony Potdevin, and complete information can be found at either [Github](https://github.com/apotdevin/thunderhub) or the [ThunderHub
-website](https://thunderhub.io).
-
-You can use ThunderHub from any browser that is able to access your myNode installation.
-
-If you are accessing Thunderhub from inside the network on which your myNode installation resides, you can open a browser window and enter <your.mynode.network.IP:3030> into the address bar.
-
- If you are accessing ThunderHub remotely using the premium features: VPN or Tor, you can open a browser window and enter either <your.home.IP.address:3030> or <your.Tor.hidden.service.address:3030>, depending on which premium feature you are using at the time.
-
-Premium users can get all of their Tor Hidden Service addresses by going to the myNode home page and clicking on the "Tor Services" button in the "Services" area of the page.
+ThunderHub is part of the *Beta Apps* on myNode available only for *premium* users.
 
 ![ThunderHub GUI](/images/lightning/ThunderHub/ThunderHub_GUI_comp.png "ThunderHub GUI")
 
-### Features
+## Features
 
-- Monitoring
+Find the full list of features on [GitHub](https://github.com/apotdevin/thunderhub) or [website](https://thunderhub.io). Key features are listed below.
+
+### Monitoring
 - Overview of current and pending balance for the Lightning and Bitcoin wallets.
 - Liquidity report with total remote and local lightning balance.
 - Complete network info.
@@ -43,23 +36,26 @@ Premium users can get all of their Tor Hidden Service addresses by going to the 
 
 ## ThunderHub on myNode
 
-To use ThunderHub on myNode, open the main myNode page on a browser and find the ThunderHub emblem.
+ThunderHub is already configured with default environment variables and connected to the lightning wallet, but it is disabled by default. To enable it, open the myNode homepage and find the tile with the ThunderHub logo under Beta Apps (like the left image below).
 <center>
   <figure>
-    <img src="/images/lightning/ThunderHub/ThunderHub_emblem_comp.png" alt="" style="width: 125px">
+    <img src="/images/lightning/ThunderHub/disabled.png" alt="" style="width: 125px">
+    <img src="/images/lightning/ThunderHub/enabled.png" alt="" style="width: 125px">
   </figure>
 </center>
-Click on the "Enable" button, and wait for the page to refresh. You should now see a "ThunderHub" button where the "Enable" button was.
+Click on the **Enable** button, and wait for the page to refresh.
 
-Click this button and a new tab should open on your browser, containing ThunderHub.
+You should now see a **ThunderHub** button (like shown on the right image above) and a green dot. On clicking this button, a new tab should open on your browser, containing ThunderHub.
 
-Go to that tab, click the "Connect" button and enter your myNode password where requested, and then click on "Connect" again.
+On the ThunderHub tab, click the **Login** button, enter your myNode password and then click on **Connect**.
 
-![ThunderHub Connect Interface](/images/lightning/ThunderHub/ThunderHub_connect_comp.png)
+![ThunderHub Connect Interface](/images/lightning/ThunderHub/login.png)
+
+You should end up at the ThunderHub dashboard (as shown in the first image at the top).
 
 ## Specs
 
-- Website: https://thunderhub.io
-- Github: https://github.com/apotdevin/thunderhub
-- Installed location: As a Docker container with configuration files located at: /opt/mynode/thunderhub
-- How to access: http://mynode.local:3030/ or http://mynode.local:3031
+- Website: [thunderhub.io](https://thunderhub.io)
+- Github: [apotdevin/thunderhub](https://github.com/apotdevin/thunderhub)
+- Installed location: `/opt/mynode/thunderhub` (NodeJS package)
+- Ports: [http://mynode.local:3030/](http://mynode.local:3030/) or [https://mynode.local:3031](https://mynode.local:3031/)
