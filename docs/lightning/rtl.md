@@ -12,12 +12,6 @@ The developer can be contacted via Twitter at: @suhub__ or @RTL_App.
 
 You can use RTL from any browser that is able to access your myNode installation.
 
-If you are accessing RTL from inside the network on which your myNode installation resides, you can open a browser window and enter <your.mynode.network.IP:3010> into the address bar.
-
-If you are accessing RTL remotely using the premium features: VPN or Tor, you can open a browser window and enter either <your.home.IP.address:3010> or <your.Tor.hidden.service.address:3010>, depending on which premium feature you are using at the time.
-
-Premium users can get all of their Tor Hidden Service addresses by going to the myNode home page and clicking on the "Tor Services" button in the "Services" area of the page.
-
 Once a Lightning wallet [has been created](https://mynodebtc.com/guide/create_lightning_wallet) on your device, the RTL app will be available via a button on the home page.
 
 <center>
@@ -26,7 +20,7 @@ Once a Lightning wallet [has been created](https://mynodebtc.com/guide/create_li
   </figure>
 </center>
 
-After clicking the button, you will be presented with a login page. Use your myNode password to login. If you have not set your own password, the default is "bolt" and should be changed. After Logging in, the main RTL page will be displayed.
+After clicking the button, you will be presented with a login page. Use your myNode password to login. If you have not set your own password, the default is "bolt" and should be changed. After logging in, the main RTL page will be displayed.
 
 ![RTL Main Page](/images/lightning/RTL/RTL_main_page_comp.png "RTL Main Page")
 
@@ -38,9 +32,7 @@ This will generate a new address and corresponding QR code for you to use to fun
 
 ### Opening a Channel
 
-Before you can spend Bitcoin via the Lighting network, you first have to open a Lightning channel to another node.
-And, you must first connect to a chosen lightning node as a "peer" before you can open a channel to it.
-A good place to find potential peers/channels is [here](https://1ml.com/node?order=channelcount&active=true).
+To spend bitcoins on the Lightning network, one must first find peers on the network and open a channel with them. Peers can be trusted friends or complete strangers. [1ML.com](https://1ml.com/node?order=channelcount&active=true) or the myNode Telegram channel are good places to find peers.
 
 When you have selected another lightning node to connect to, click on "Lightning" in the RTL navigation panel, then click on "Peers/Channels". Under the "Connections" heading, find and click on "Peers" as shown:
 
@@ -73,11 +65,14 @@ Now, just click the "Send Payment" button and the payment should be completed wi
 ### Receiving Bitcoin using RTL and Lightning
 
 To receive Bitcoin in any lightning wallet, you must first establish what is called "inbound capacity".
-There are some simple and some more complex ways to do this, but they are beyond the scope of this guide.
+
+TIP: When creating Lightning channels with peers, it is generally a good practice for each party to open a separate channel from two ends to have some inbound and outbound capacity for each of them.
+
+There are many other ways to establish inbound capacity, but they are beyond the scope of this guide.
 A good overview of how to establish inbound capacity can be found [here](https://gist.github.com/bretton/53bc511b6fdafef31951199dd25bbf88).
 
 ## Specs
 
 - Github: https://github.com/ride-the-lighting/RTL
 - Installed location: As a Docker container with configuration files located at: /opt/mynode/RTL
-- How to access: http://mynode.local:3010/ or http://mynode.local:3011
+- How to access: http://mynode.local:3010/ or https://mynode.local:3011
