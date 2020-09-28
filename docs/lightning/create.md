@@ -8,7 +8,7 @@ On the next page, re-enter your seed phrase to verify your backup has been creat
 
 If your phrase was correct, you will be sent back to the main Lightning page and your lightning wallet will begin syncing and setting itself up. After a few minutes, the lightning wallet should be ready and you should see a page like this.
 
-![](/images/lightning/create-1.png)
+![](/images/lightning/create-2.png)
 
 Your lightning wallet is now setup and ready to use!
 

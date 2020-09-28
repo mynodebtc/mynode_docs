@@ -2,17 +2,17 @@
 
 A GUI to manage lightning channels
 
-## Using Ride the Lightning (RTL) Wallet
+## Usage
 
 ### Logging into RTL
 
 Ride the Lightning is a Lightning wallet and node management tool accessible via a web interface, and is built into myNode.
 RTL is a creation of Suheb/saubyk, and complete information can be found at [Github](https://github.com/ride-the-lightning/RTL).
-The developer can be contacted via Twitter at: @suhub__ or @RTL_App.
+The developer can be contacted via Twitter at: [@Suheb__](https://twitter.com/Suheb__) [@RTL_App](https://twitter.com/RTL_app).
 
 You can use RTL from any browser that is able to access your myNode installation.
 
-Once a Lightning wallet [has been created](https://mynodebtc.com/guide/create_lightning_wallet) on your device, the RTL app will be available via a button on the home page.
+Once a Lightning wallet [has been created](/lightning/create) on your device, the RTL app will be available via a button on the home page.
 
 <center>
   <figure>
@@ -59,20 +59,20 @@ Go to the RTL navigation pane and click on "Lightning" and then "Transactions".
 ![RTL Send Payment](/images/lightning/RTL/RTL_payments_comp.png "RTL Send Payment")
 
 Click on "Send Payment" and paste your copy of the invoice in the window that opens.
-All of the details of the payment should automatically be filled in. 
+All of the details of the payment should automatically be filled in.
 Now, just click the "Send Payment" button and the payment should be completed within seconds!
 
 ### Receiving Bitcoin using RTL and Lightning
 
 To receive Bitcoin in any lightning wallet, you must first establish what is called "inbound capacity".
 
-TIP: When creating Lightning channels with peers, it is generally a good practice for each party to open a separate channel from two ends to have some inbound and outbound capacity for each of them.
+**Tip**: When creating Lightning channels with peers, it is generally a good practice for each party to open a separate channel from two ends to have some inbound and outbound capacity for each of them.
 
 There are many other ways to establish inbound capacity, but they are beyond the scope of this guide.
 A good overview of how to establish inbound capacity can be found [here](https://gist.github.com/bretton/53bc511b6fdafef31951199dd25bbf88).
 
 ## Specs
 
-- Github: https://github.com/ride-the-lighting/RTL
-- Installed location: As a Docker container with configuration files located at: /opt/mynode/RTL
-- How to access: http://mynode.local:3010/ or https://mynode.local:3011
+- Github: [github.com/ride-the-lighting/RTL](https://github.com/ride-the-lighting/RTL)
+- Installed location: As a Docker container with configuration files located at: `/opt/mynode/RTL`
+- How to access: [http://mynode.local:3010/](http://mynode.local:3010/) or [https://mynode.local:3011](http://mynode.local:3010/)
