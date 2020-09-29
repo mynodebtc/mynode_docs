@@ -46,5 +46,5 @@ If you face any issue, read their [FAQ](https://github.com/cryptoadvance/specter
 
 - Github: [cryptoadvance/specter-desktop](https://github.com/cryptoadvance/specter-desktop)
 - Community: [Specter Telegram](https://t.me/spectersupport)
-- Installed location: As Python3 module with environment settings at `/opt/mynode/specter`
+- Installed location: A Python3 module with environment settings at `/opt/mynode/specter`
 - Ports: [https://mynode.local:3031](https://mynode.local:25441/)
