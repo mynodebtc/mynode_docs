@@ -15,6 +15,7 @@ Find the full list of features on [GitHub](https://github.com/cryptoadvance/spec
 - hardware wallets
 - multisig
 - PSBT
+- Check total bitcoin supply (Run the numbers!)
 
 ## Using Specter
 
