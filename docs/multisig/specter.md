@@ -36,7 +36,7 @@ Adding `blockfilterindex=1` to the bitcoin configuration will occupy few more GB
 
 [HWIBridge](https://github.com/cryptoadvance/specter-desktop/blob/master/docs/hwibridge.md)
 
-### Remotely
+### Remote Use
 
 Using Specter remotely
 
