@@ -2,7 +2,7 @@
 
 ## Overview
 
-Your myNode includes Netdata, a comprehensive tool to check most of the operating parameters of the running device.
+Netdata is a comprehensive tool to check most of the operating parameters of your device that is running myNode.
 To view your Netdata information, scroll to the bottom of your myNode homepage, and click on the `Settings' button.
 
 Next click on the `Open Netdata` button, as shown here:
