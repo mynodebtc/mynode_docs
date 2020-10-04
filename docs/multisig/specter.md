@@ -6,7 +6,7 @@ Along with supporting single signature wallets, Specter also supports multi-sign
 
 Specter is part of the *Beta Apps* on myNode available only for *premium* users.
 
-![](/images/multisig/specter/wallets.png)
+![Specter](/images/multisig/specter/wallets.png)
 
 ## Features
 
