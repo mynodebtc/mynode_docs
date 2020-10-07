@@ -65,9 +65,9 @@ module.exports = {
         ]
       },
       {
-        title: "Samourai",
+        title: "Dojo",
         children: [
-          ["samourai", 'Using Dojo'],
+          "/dojo/dojo",
         ]
       },
       {
