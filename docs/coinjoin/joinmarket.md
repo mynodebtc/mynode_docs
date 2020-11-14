@@ -9,7 +9,7 @@ The most important differences are:
 1) Users can choose to act as a market "taker" and initiate a CoinJoin transaction on demand, or they can act as a market "maker" (and potentially earn fees) by leaving a JoinMarket wallet connected to the network for others to CoinJoin with.
 2) JoinMarket has no central coordinator.
 
-JoinMarket was created by Chris Belcher in 2015, and is currently maintained by Adam Gibson [here](https://github.com/joinmarket-clientserver/joinmarket).
+JoinMarket was created by Chris Belcher in 2015, and is currently maintained by Adam Gibson [here](https://github.com/Joinmarket-Org/joinmarket-clientserver).
 
 For a quick introduction to Joinmarket you can watch [this demonstration](https://youtu.be/hwmvZVQ4C4M) of installation and usage given by Adam Gibson during the [Understanding Bitcoin conference](https://understandingbtc.com/) on April 6 2019.
 
