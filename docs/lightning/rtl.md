@@ -1,6 +1,6 @@
-# Ride the lightning (RTL)
+# Ride the Lightning (RTL)
 
-A GUI to manage lightning channels
+A GUI to manage Lightning channels
 
 ## Usage
 
@@ -34,7 +34,7 @@ This will generate a new address and corresponding QR code for you to use to fun
 
 To spend bitcoins on the Lightning network, one must first find peers on the network and open a channel with them. Peers can be trusted friends or complete strangers. [1ML.com](https://1ml.com/node?order=channelcount&active=true) or the myNode Telegram channel are good places to find peers.
 
-When you have selected another lightning node to connect to, click on "Lightning" in the RTL navigation panel, then click on "Peers/Channels". Under the "Connections" heading, find and click on "Peers" as shown:
+When you have selected another Lightning node to connect to, click on "Lightning" in the RTL navigation panel, then click on "Peers/Channels". Under the "Connections" heading, find and click on "Peers" as shown:
 
 ![RTL Create Peer](/images/lightning/RTL/RTL_create_peer_comp.png "RTL Create Peer")
 
@@ -51,7 +51,7 @@ You can verify the status of the channel via the Channels page. The channel will
 
 ### Sending Bitcoin using RTL & Lightning
 
-When your funding transaction is confirmed on the blockchain you are now ready to send Bitcoin using lightning.
+When your funding transaction is confirmed on the blockchain you are now ready to send Bitcoin using Lightning.
 You will need a payment invoice from the person you want to pay. Typically, either the payee will send you an invoice or you will copy it from a webpage.
 
 Go to the RTL navigation pane and click on "Lightning" and then "Transactions".
@@ -64,7 +64,7 @@ Now, just click the "Send Payment" button and the payment should be completed wi
 
 ### Receiving Bitcoin using RTL and Lightning
 
-To receive Bitcoin in any lightning wallet, you must first establish what is called "inbound capacity".
+To receive Bitcoin in any Lightning wallet, you must first establish what is called "inbound capacity".
 
 **Tip**: When creating Lightning channels with peers, it is generally a good practice for each party to open a separate channel from two ends to have some inbound and outbound capacity for each of them.
 
