@@ -7,6 +7,6 @@
 
 The easiest way to run Bitcoin and Lightning!
 
-myNode aims to be the easiest way to run a dedicated, easy to use, bitcoin node and lightning wallet! By combining the best open source software with our UI, management, and monitoring software, you can easily, safely, and securely use Bitcoin and Lightning.
+myNode aims to simplify running a dedicated Bitcoin node and Lightning wallet. The system combines the best open source software with our browser-based management and monitoring interfaces, so you can safely and securely use Bitcoin and Lightning.
 
 Website: [mynodebtc.com](https://mynodebtc.com)
