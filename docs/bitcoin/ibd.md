@@ -1,4 +1,12 @@
-# Independently Sync Bitcoin Blockchain
+# Initial blockchain download (IBD)
+
+ideas:
+- what is it?
+- what is QuickSync
+- How to disable it and perform IBD from scratch
+- expected waiting time with different drive and network configuration and how to boost it?
+- link to dedicated QuickSync page
+- explain the purpose, effects and waiting time of reset / rescan / reindex blockchain (need help from experienced users)
 
 ## Overview
 
