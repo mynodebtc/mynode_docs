@@ -39,10 +39,12 @@ module.exports = {
       {
         title: "Bitcoin",
         children: [
-          ["/bitcoin/bitcoin-status", 'Check Bitcoin Status'],
-          ["/bitcoin/independent-sync", 'Independently Sync Blockchain'],
+          "/bitcoin/overview",
+          "/bitcoin/manage",
+          "/bitcoin/quicksync",
           "/bitcoin/explorer",
-          "/bitcoin/mempool"
+          "/bitcoin/mempool",
+          "/bitcoin/troubleshoot"
         ]
       },
       {
@@ -109,10 +111,11 @@ module.exports = {
       {
         title: "Advanced",
         children: [
-          ["/advanced/customize-config", 'Customize your Configurations'],
-          ["/advanced/ssh", 'SSH Key Authentication'],
-          "/advanced/netdata",
+          "/advanced/customize-config",
           "/advanced/glances",
+          "/advanced/memory-usage-cap",
+          "/advanced/netdata",
+          "/advanced/ssh",
           "/advanced/webssh",
           {
             title: "Setup Base Images",
