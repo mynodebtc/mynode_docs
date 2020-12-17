@@ -66,6 +66,12 @@ module.exports = {
         ]
       },
       {
+        title: "Dojo",
+        children: [
+          "/dojo/dojo",
+        ]
+      },
+      {
         title: "Tor",
         children: [
           ["/tor/setup-tor-access", 'Setup Your Device for Tor'],
@@ -94,10 +100,10 @@ module.exports = {
         ]
       },
       {
-        title: "Samourai",
+        title: "CoinJoin",
         children: [
-          "/samourai/dojo",
-          "/samourai/whirlpool",
+          "/coinjoin/joinmarket",
+          "/coinjoin/whirlpool",
         ]
       },
       {
