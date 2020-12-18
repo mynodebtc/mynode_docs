@@ -18,7 +18,7 @@ Next, power on the device and attach an external HDD or SSD.
 
 ## Connecting to myNode
 
-Your myNode device runs its own local web server that you can access with any browser on the same network. Visit [’http://mynode.local/’](http://mynode.local/) or [’http://(mynode.IP.address)/’](http://mynode_ip_address/) in a web browser on a network-connected device. Here replace ’(mynode.IP.address)’ with the IP address of the myNode device.
+Your myNode device runs its own local web server that you can access with any browser on the same network. Visit [http://mynode.local/](http://mynode.local/) or [http://(mynode.IP.address)/](http://mynode_ip_address/) in a web browser on a network-connected device. Here replace ’(mynode.IP.address)’ with the IP address of the myNode device.
 
 You will be prompted to enter your product key. If you are using the Community Edition, you can choose that option. Otherwise, enter the product key that has either been emailed to you, or is found on the bottom of your device.
 
