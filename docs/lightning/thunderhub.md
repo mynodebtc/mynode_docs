@@ -1,11 +1,11 @@
 
 # Thunderhub
 
-A GUI to manage lightning channels
+A GUI to manage Lightning channels
 
 ## Introduction
 
-Created by Anthony Potdevin, ThunderHub is an open-source LND node manager to monitor your node and manage channels via a web-interface. It allows you to take control of the lightning network with a simple and intuitive UX.
+Created by Anthony Potdevin, ThunderHub is an open-source LND node manager to monitor your node and manage channels via a web-interface. It allows you to take control of the Lightning network with a simple and intuitive UX.
 
 ThunderHub is part of the *Beta Apps* on myNode available only for *premium* users.
 
@@ -17,7 +17,7 @@ Find the full list of features on [GitHub](https://github.com/apotdevin/thunderh
 
 ### Monitoring
 - Overview of current and pending balance for the Lightning and Bitcoin wallets.
-- Liquidity report with total remote and local lightning balance.
+- Liquidity report with total remote and local Lightning balance.
 - Complete network info.
 - View open/pending/closed channels and how balanced they are.
 - View all transactions.
@@ -36,7 +36,7 @@ Find the full list of features on [GitHub](https://github.com/apotdevin/thunderh
 
 ## ThunderHub on myNode
 
-ThunderHub is already configured with default environment variables and connected to the lightning wallet, but it is disabled by default. To enable it, open the myNode homepage and find the tile with the ThunderHub logo under Beta Apps (like the left image below).
+ThunderHub is already configured with default environment variables and connected to the Lightning wallet, but it is disabled by default. To enable it, open the myNode homepage and find the tile with the ThunderHub logo under Beta Apps (like the left image below).
 <center>
   <figure>
     <img src="/images/lightning/ThunderHub/disabled.png" alt="" style="width: 125px">
