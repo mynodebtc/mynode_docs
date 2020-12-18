@@ -16,6 +16,6 @@ On the next page, enter your seed phrase and upload your Static Channel Backup (
 
 This will restore you on-chain balance, close all channels that had been opened, and restore those funds in you on chain wallet.
 
-Your lightning wallet is now setup and ready to use!
+Your Lightning wallet is now setup and ready to use!
 
 ![](/images/lightning/restore-3.png)
