@@ -1,5 +1,7 @@
 # MyNode documentation
 
+View live docs at https://mynodebtc.github.io/
+
 Community-built documentation for [MyNode](https://mynodebtc.com/) - a neat way to run a Bitcoin and Lightning node, and many more related applications.
 
 This repo uses [VuePress](https://vuepress.vuejs.org/) to compile markdown files into a full documentation website.
