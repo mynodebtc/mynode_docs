@@ -59,3 +59,13 @@ Follow the usual route of forking and submitting PRs to suggest changes. This is
 4. Build the documentation locally by following the steps mentioned above to verify the changes
 3. Commit and push changes
 4. Create PR
+
+
+## Deploy
+
+Once changes are merged into master, either directly or through a pull request, they will kick off a GitHub Action. This action will automatically build and deploy the latest changes to https://mynodebtc.github.io/
+
+The changes are automatically deployed by pushing a copy of the built files to the following repo:
+https://github.com/mynodebtc/mynodebtc.github.io
+
+Changes may take a minute or two before they are live.
