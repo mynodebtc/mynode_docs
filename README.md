@@ -69,3 +69,5 @@ The changes are automatically deployed by pushing a copy of the built files to t
 https://github.com/mynodebtc/mynodebtc.github.io
 
 Changes may take a minute or two before they are live.
+
+Keep an eye on https://github.com/mynodebtc/mynode_docs/actions since some changes may cause the VuePress build process to fail. In that case, they will not be automatically published and future updates will fail as well until the error is resolved.
