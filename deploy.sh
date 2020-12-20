@@ -3,6 +3,9 @@
 # abort on errors
 set -e
 
+# Make sure deps are installed
+yarn install
+
 # build
 rm -rf docs/.vuepress/dist
 npm run docs:build
@@ -17,6 +20,5 @@ git init
 git add -A
 git commit -m 'deploy'
 
-#git push -f git@github.com:mynodebtc/mynode_docs.git master:gh-pages
 git push -f git@github.com:mynodebtc/mynodebtc.github.io.git master
 cd -
