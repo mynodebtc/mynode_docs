@@ -23,7 +23,7 @@ A full node verifies every block mined by miners and relayed by its peers before
 
 ## Limitations
 - Mempool size is capped at 50MB to limit RAM usage
-- The number of cores is fixed at 0 to limit CPU usage
+- The number of cores is fixed at 3 to limit CPU usage
 
 ## Specs
 - **Version:** 0.20.1
