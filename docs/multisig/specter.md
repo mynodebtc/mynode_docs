@@ -1,6 +1,6 @@
 # Specter
 
-Developed by CryptoAdvance team, Specter is a desktop GUI for Bitcoin Core optimized to work with hardware wallets. Keeping funds in hardware wallets is far more secure than using a hot wallet like Bitcoin Core or Electrum. Specter is directly built on top of Bitcoin Core as opposed to the conventional layer of an Electrum server between a wallet and Bitcoin Core. This removes a dependency and frees memory that would be used for storing the indexed database created by Electrum server.
+Developed by [Crypto Advance GmbH](https://specter.solutions/about/), Specter is a desktop GUI for Bitcoin Core optimized to work with hardware wallets. Funds in hardware wallets are far more secure than using a hot wallet like Bitcoin Core or Electrum. Specter is built on top of Bitcoin Core as opposed to the conventional layer of an Electrum server between a wallet and Bitcoin Core. This removes a dependency and frees memory that would be used for storing the indexed database created by Electrum server.
 
 Along with supporting single signature wallets, Specter also supports multi-signature wallets.
 
@@ -10,11 +10,11 @@ Specter is part of the *Beta Apps* on myNode available only for *premium* users.
 
 ## Features
 
-Find the full list of features on [GitHub](https://github.com/cryptoadvance/specter-desktop). Key features are listed below.
+Find the full list of features on [GitHub](https://github.com/cryptoadvance/specter-desktop). Key features are:
 
-- hardware wallets
-- multisig
-- PSBT
+- hardware wallet support
+- [multisig](https://en.bitcoin.it/wiki/Multisignature)
+- [Partially Signed Bitcoin Transactions](https://bitcoinops.org/en/topics/psbt/)
 - Check total bitcoin supply (Run the numbers!)
 
 ## Using Specter
