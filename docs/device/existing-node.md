@@ -11,7 +11,10 @@ Next, you need to log into your device via SSH and copy files from your existing
 On the node with the source data, ensure the bitcoin block data is readable by the "admin" user or the user you are logging in with. Also, make sure that Bitcoin is not running.
 
 ```sh
+# Stop Bitcoin and other services
 sudo /usr/bin/mynode_stop_critical_services.sh
+
+# Make sure block data is readable by the admin user
 sudo chmod -R 644 /mnt/hdd/mynode/bitcoin/blocks
 sudo chmod -R 644 /mnt/hdd/mynode/bitcoin/chainstate
 sudo chmod -R 644 /mnt/hdd/mynode/bitcoin/indexes
