@@ -15,9 +15,9 @@ On the node with the source data, ensure the bitcoin block data is readable by t
 sudo /usr/bin/mynode_stop_critical_services.sh
 
 # Make sure block data is readable by the admin user
-sudo chmod -R 744 /mnt/hdd/mynode/bitcoin/blocks
-sudo chmod -R 744 /mnt/hdd/mynode/bitcoin/chainstate
-sudo chmod -R 744 /mnt/hdd/mynode/bitcoin/indexes
+sudo chmod -R 755 /mnt/hdd/mynode/bitcoin/blocks
+sudo chmod -R 755 /mnt/hdd/mynode/bitcoin/chainstate
+sudo chmod -R 755 /mnt/hdd/mynode/bitcoin/indexes
 ```
 
 Enter the following commands:
