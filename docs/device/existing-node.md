@@ -23,8 +23,10 @@ sudo chmod -R 755 /mnt/hdd/mynode/bitcoin/indexes
 Enter the following commands:
 
 ```sh
-sudo systemctl stop bitcoind
-sudo systemctl stop lnd
+# Stop Bitcoin and other services
+sudo /usr/bin/mynode_stop_critical_services.sh
+
+# Make sure old data is removed
 sudo rm -rf /mnt/hdd/mynode/bitcoin/blocks
 sudo rm -rf /mnt/hdd/mynode/bitcoin/chainstate
 sudo rm -rf /mnt/hdd/mynode/bitcoin/indexes
