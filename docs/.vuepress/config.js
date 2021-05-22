@@ -29,6 +29,12 @@ module.exports = {
         ]
       },
       {
+        title: "Video Guides",
+        children: [
+          ["/videos/guides", 'Video Guides'],
+        ]
+      },
+      {
         title: "Device",
         children: [
           ["/device/changing-password", 'Change Your Password'],
@@ -68,13 +74,7 @@ module.exports = {
         ]
       },
       {
-        title: "Dojo",
-        children: [
-          "/dojo/dojo",
-        ]
-      },
-      {
-        title: "Tor",
+        title: "Remote Access (Tor)",
         children: [
           ["/tor/setup-tor-access", 'Setup Your Device for Tor'],
           ["/tor/web-gui", 'Web GUI Via Tor'],
@@ -83,15 +83,9 @@ module.exports = {
         ]
       },
       {
-        title: "VPN",
+        title: "Remote Access (VPN)",
         children: [
           ["/vpn/remote-vpn", 'Remote Access Via VPN'],
-        ]
-      },
-      {
-        title: "BTCPay Server",
-        children: [
-          "/btcpay-server/setup"
         ]
       },
       {
