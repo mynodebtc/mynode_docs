@@ -9,15 +9,14 @@ module.exports = {
     ['link', { rel : 'icon', href: '/favicon.ico' }]
   ],
   themeConfig: {
-    repo: 'mynodebtc/mynode_docs',
-    repoLabel: 'Contribute!',
+    //repo: 'mynodebtc/mynode_docs',
+    //repoLabel: 'Contribute!',
     editLinks: true,
     docsDir: 'docs',
     lastUpdated: false,
-    // nav: [
-    //   { text: "GitHub", link: "https://github.com/mynodebtc/mynode"},
-    //   { text: "Website", link: "https://www.mynodebtc.com/"}
-    // ],
+    nav: [
+      { text: "Back to myNode", link: "https://www.mynodebtc.com/"}
+    ],
     logo: "/images/logo.png",
     sidebar: [
       {
@@ -37,8 +36,8 @@ module.exports = {
       {
         title: "Device",
         children: [
-          ["/device/changing-password", 'Change Your Password'],
-          ["/device/existing-node", 'Using Data from Existing Node'],
+          ["/device/changing-password", 'Changing your Password'],
+          ["/device/forgot-password", 'Forgot your Password'],
           ["/device/upgrading-device", 'Upgrading your Device'],
         ]
       },
@@ -50,6 +49,7 @@ module.exports = {
           "/bitcoin/quicksync",
           "/bitcoin/explorer",
           "/bitcoin/mempool",
+          "/bitcoin/data-from-other-node",
           "/bitcoin/troubleshoot"
         ]
       },

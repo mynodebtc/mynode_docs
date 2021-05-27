@@ -22,7 +22,7 @@ Your myNode device runs its own local web server that you can access with any br
 
 You will be prompted to enter your product key. If you are using the Community Edition, you can choose that option. Otherwise, enter the product key that has either been emailed to you, or is found on the bottom of your device.
 
-Next the device runs *QuickSync* which downloads a pre-validated truncated copy of the blockchain so you can get started quickly. This process could take one or two days depending on your device and your network bandwidth. The myNode device’s web home page will tell you the current status of synchronization. Once *QuickSync* is completed, the device will automatically stay synchronized with the Bitcoin network.
+Next the device may run *QuickSync*. If you are using a hard drive, QuickSync will run which downloads a pre-validated truncated copy of the blockchain so you can get started more quickly. If you have a solid state drive (SSD) QuickSync should not run. This process could take one or two days depending on your device and your network bandwidth. The myNode device’s web interface will show you the current status of synchronization. Once *QuickSync* is completed, the device will automatically stay synchronized with the Bitcoin network.
 
 ![main page](/images/getting-started/gs1.png)
 
