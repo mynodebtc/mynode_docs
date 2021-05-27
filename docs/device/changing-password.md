@@ -1,4 +1,4 @@
-# Changing your Password via the Web GUI
+# Changing your Password
 
 After setting up your myNode, it is important to change the password. When performing various actions on your device, you will be prompted to enter you password before accessing sensitive data. Setting your own password will secure your device.
 
