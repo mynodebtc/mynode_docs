@@ -45,6 +45,7 @@ module.exports = {
         title: "Bitcoin",
         children: [
           "/bitcoin/overview",
+          "/bitcoin/bitcoin-status",
           "/bitcoin/manage",
           "/bitcoin/quicksync",
           "/bitcoin/explorer",
@@ -70,7 +71,6 @@ module.exports = {
         title: "Electrum",
         children: [
           ["/electrum/electrum", 'Using Electrum'],
-          ["/electrum/electrum-remote-access", 'Remote Electrum Access'],
         ]
       },
       {

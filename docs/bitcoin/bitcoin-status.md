@@ -1,10 +1,12 @@
-# Viewing myNode Bitcoin Status
+# Viewing Bitcoin Status
 
-Bitcoin runs automatically when your myNode device starts. It's often be helpful to view the status of `bitcoind`, the Bitcoin daemon. Click on the "Status" button under Bitcoin on the home page to view the state on the Bitcoin daemon.
+Bitcoin runs automatically when your myNode device starts. It's often be helpful to view the status of `bitcoind`, the Bitcoin daemon. Several key pieces of information are displayed on the home page.
+
+Click on the "Manage" button under Bitcoin on the home page to view the even more bitcoin information.
 
 <center>
   <figure>
-    <img src="/images/bitcoin/bitcoin-status-1.png" alt="" style="width: 400px">
+    <img src="/images/bitcoin/bitcoin-status-1.png" alt="" style="width: 200px">
   </figure>
 </center>
 

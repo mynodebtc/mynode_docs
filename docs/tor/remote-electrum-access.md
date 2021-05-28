@@ -8,7 +8,7 @@ First, from the myNode home page click "Enable" to start running Electrum Server
 
 <center>
   <figure>
-    <img src="/images/remote-access-tor/remote-electrum-access-1.png" alt="myNode logo" style="width: 300px">
+    <img src="/images/bitcoin/electrum-1.png" alt="password" style="width: 200px">
   </figure>
 </center>
 
@@ -16,7 +16,7 @@ Once the server has synced, you should see an Electrum Server status page simila
 
 <center>
   <figure>
-    <img src="/images/remote-access-tor/remote-electrum-access-2.png" alt="myNode logo" style="width: 300px">
+    <img src="/images/bitcoin/electrum-2.png" alt="myNode logo" style="width: 300px">
   </figure>
 </center>
 
@@ -42,7 +42,7 @@ Next, open the Electrum Server information page on your myNode device and find t
 
 <center>
   <figure>
-    <img src="/images/remote-access-tor/remote-electrum-access-4.png" alt="myNode logo" style="width: 300px">
+    <img src="/images/bitcoin/electrum-2.png" alt="myNode logo" style="width: 300px">
   </figure>
 </center>
 

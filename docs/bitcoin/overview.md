@@ -21,14 +21,14 @@ A full node verifies every block mined by miners and relayed by its peers before
 <!-- - Private: The Tor network doesn't expose your IP address to the public -->
 <!-- - The CLI is accessible through the browser which enables non-linux users in learning the basic commands of bitcoin-cli and bitcoind. -->
 
-## Limitations
-- Mempool size is capped at 50MB to limit RAM usage
+## Hardware Limitations
 - The number of CPU cores used by MyNode is fixed at the number of available cores minus 1 to limit CPU usage.
+- On devices with little RAM, Bitcoin will limit RAM usage to prevent low memory issues
 
 ## Specs
-- **Version:** 0.20.1
+- **Version:** 0.21.1
 - **Memory required:** 335 GB (as of Aug 23, 2020)
-- **Install location:** `/mnt/mynode/bitcoin` which is also linked at `/home/bitcoin/.bitcoin`
+- **Data location:** `/mnt/mynode/bitcoin` which is also linked at `/home/bitcoin/.bitcoin`
 
 <!-- While setting up myNode, the user have three options: -->
 <!-- - IBD: (initial blockchain download) download the blockchain from scratch. -->

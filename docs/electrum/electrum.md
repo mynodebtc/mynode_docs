@@ -8,7 +8,7 @@ First, from the myNode home page click "Enable" to start running Electrum Server
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-1.png" alt="password" style="width: 500px">
+    <img src="/images/bitcoin/electrum-1.png" alt="password" style="width: 200px">
   </figure>
 </center>
 
@@ -68,7 +68,7 @@ You can also run Electrum via the mobile app and connect it to you myNode. First
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-6.png" alt="password" style="width: 500px">
+    <img src="/images/bitcoin/electrum-6.png" alt="password" style="width: 200px">
   </figure>
 </center>
 
@@ -76,7 +76,7 @@ Also make sure Auto-connect is ON and One-server mode is ON.
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-7.png" alt="password" style="width: 500px">
+    <img src="/images/bitcoin/electrum-7.png" alt="password" style="width: 200px">
   </figure>
 </center>
 
@@ -84,7 +84,7 @@ If everything went correctly, you will get a screen like this and your myNode de
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-8.png" alt="password" style="width: 500px">
+    <img src="/images/bitcoin/electrum-8.png" alt="password" style="width: 200px">
   </figure>
 </center>
 
