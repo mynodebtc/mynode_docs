@@ -60,7 +60,7 @@ module.exports = {
           "/lightning/create",
           "/lightning/restore",
           "/lightning/lnd-alias",
-          "/lightning/lnd-connect",
+          "/lightning/pairing-wallets",
           '/lightning/lnd-hub',
           '/lightning/rtl',
           '/lightning/lnbits',
