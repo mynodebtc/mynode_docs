@@ -6,7 +6,8 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    ['link', { rel : 'icon', href: '/favicon.ico' }]
+    ['link', { rel : 'icon', href: '/favicon.ico' }],
+    ['link', { rel : 'stylesheet', href: '/css/mynode.css' }]
   ],
   themeConfig: {
     //repo: 'mynodebtc/mynode_docs',
@@ -48,10 +49,16 @@ module.exports = {
           "/bitcoin/bitcoin-status",
           "/bitcoin/manage",
           "/bitcoin/quicksync",
-          "/bitcoin/explorer",
-          "/bitcoin/mempool",
           "/bitcoin/data-from-other-node",
           "/bitcoin/troubleshoot"
+        ]
+      },
+      {
+        title: "Bitcoin Apps",
+        children: [
+          "/electrum/electrum",
+          "/bitcoin/explorer",
+          "/bitcoin/mempool",
         ]
       },
       {
@@ -61,16 +68,31 @@ module.exports = {
           "/lightning/restore",
           "/lightning/lnd-alias",
           "/lightning/pairing-wallets",
-          '/lightning/lnd-hub',
-          '/lightning/rtl',
-          '/lightning/lnbits',
-          '/lightning/thunderhub'
         ]
       },
       {
-        title: "Electrum",
+        title: "Lightning Apps",
         children: [
-          ["/electrum/electrum", 'Using Electrum'],
+            '/lightning/bluewallet',
+            '/lightning/rtl',
+            '/lightning/lnbits',
+            '/lightning/thunderhub',
+            '/lightning/zap',
+            '/lightning/zeus',
+        ]
+      },
+      {
+        title: "Multisig Apps",
+        children: [
+          "/multisig/caravan",
+          "/multisig/specter",
+        ]
+      },
+      {
+        title: "CoinJoin / Mixing Apps",
+        children: [
+          "/coinjoin/joinmarket",
+          "/coinjoin/whirlpool",
         ]
       },
       {
@@ -86,20 +108,6 @@ module.exports = {
         title: "Remote Access (VPN)",
         children: [
           ["/vpn/remote-vpn", 'Remote Access Via VPN'],
-        ]
-      },
-      {
-        title: "Multisig",
-        children: [
-          "/multisig/caravan",
-          "/multisig/specter",
-        ]
-      },
-      {
-        title: "CoinJoin",
-        children: [
-          "/coinjoin/joinmarket",
-          "/coinjoin/whirlpool",
         ]
       },
       {

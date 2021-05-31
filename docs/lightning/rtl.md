@@ -2,8 +2,6 @@
 
 A GUI to manage Lightning channels
 
-## Usage
-
 ### Logging into RTL
 
 Ride the Lightning is a Lightning wallet and node management tool accessible via a web interface, and is built into myNode.
@@ -20,7 +18,7 @@ Once a Lightning wallet [has been created](/lightning/create) on your device, th
   </figure>
 </center>
 
-After clicking the button, you will be presented with a login page. Use your myNode password to login. If you have not set your own password, the default is "bolt" and should be changed. After logging in, the main RTL page will be displayed.
+After clicking the button, you will be presented with a login page. Use your myNode password to login. Once logged in, the main RTL page will be displayed.
 
 ![RTL Main Page](/images/lightning/RTL/RTL_main_page_comp.png "RTL Main Page")
 
@@ -71,8 +69,6 @@ To receive Bitcoin in any Lightning wallet, you must first establish what is cal
 There are many other ways to establish inbound capacity, but they are beyond the scope of this guide.
 A good overview of how to establish inbound capacity can be found [here](https://gist.github.com/bretton/53bc511b6fdafef31951199dd25bbf88).
 
-## Specs
+### References
 
 - Github: [github.com/ride-the-lighting/RTL](https://github.com/ride-the-lighting/RTL)
-- Installed location: As a Docker container with configuration files located at: `/opt/mynode/RTL`
-- How to access: [http://mynode.local:3010/](http://mynode.local:3010/) or [https://mynode.local:3011](http://mynode.local:3010/)
