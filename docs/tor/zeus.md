@@ -4,7 +4,7 @@
 
 #### Premium Feature
 
-First, enable Tor on your mobile device. Follow the Setup Tor Guide.
+First, enable Tor on your mobile device. Follow the [Setup Tor Guide](/tor/setup).
 
 ## Using Zeus Mobile with myNode via Tor
 
@@ -14,7 +14,7 @@ Next open the app, go to settings and tap "Add a new node".
 
 <center>
   <figure>
-    <img src="/images/remote-access-tor/zeus-wallet-1.png" alt="myNode logo" style="width: 300px">
+    <img src="/images/remote-access-tor/zeus-wallet-1.png" class="app_screenshot">
   </figure>
 </center>
 
@@ -22,7 +22,7 @@ Tap on "Scan lndconnect config".
 
 <center>
   <figure>
-    <img src="/images/remote-access-tor/zeus-wallet-2.png" alt="myNode logo" style="width: 300px">
+    <img src="/images/remote-access-tor/zeus-wallet-2.png" class="app_screenshot">
   </figure>
 </center>
 
@@ -30,7 +30,7 @@ Open the LND Connect page in the myNode GUI and scan the QR Code from the "REST 
 
 <center>
   <figure>
-    <img src="/images/remote-access-tor/zeus-wallet-3.png" alt="myNode logo" style="width: 300px">
+    <img src="/images/remote-access-tor/zeus-wallet-3.png" class="app_screenshot">
   </figure>
 </center>
 
@@ -38,6 +38,6 @@ Once the QR code is scanned, click "Save Node Config" and go back to the main ap
 
 <center>
   <figure>
-    <img src="/images/remote-access-tor/zeus-wallet-4.png" alt="myNode logo" style="width: 300px">
+    <img src="/images/remote-access-tor/zeus-wallet-4.png" class="app_screenshot">
   </figure>
 </center>

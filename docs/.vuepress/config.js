@@ -15,6 +15,7 @@ module.exports = {
     editLinks: true,
     docsDir: 'docs',
     lastUpdated: false,
+    sidebarDepth: 0,
     nav: [
       { text: "Back to myNode", link: "https://www.mynodebtc.com/"}
     ],
@@ -98,10 +99,10 @@ module.exports = {
       {
         title: "Remote Access (Tor)",
         children: [
-          ["/tor/setup-tor-access", 'Setup Your Device for Tor'],
-          ["/tor/web-gui", 'Web GUI Via Tor'],
-          ["/tor/remote-electrum-access", 'Remote Electrum Access'],
-          ["/tor/zeus-wallet", 'Zeus Wallet via Tor'],
+          "/tor/setup",
+          "/tor/web-gui",
+          "/tor/electrum",
+          ["/tor/zeus", 'Zeus Wallet via Tor'],
         ]
       },
       {
@@ -144,6 +145,5 @@ module.exports = {
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
     ['@vuepress/google-analytics', {'ga': 'UA-140888540-4'}],
-    //['minimal-analytics', {ga: 'UA-140888540-4'}],
   ]
 }

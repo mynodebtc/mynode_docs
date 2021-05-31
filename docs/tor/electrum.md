@@ -1,4 +1,4 @@
-# Electrum Server with Tor
+# Electrum Server via Tor
 
 ## Enabling Electrum Server
 
@@ -8,7 +8,7 @@ First, from the myNode home page click "Enable" to start running Electrum Server
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-1.png" alt="password" style="width: 200px">
+    <img src="/images/bitcoin/electrum-1.png" alt="password" style="width: 200px;">
   </figure>
 </center>
 
@@ -16,7 +16,7 @@ Once the server has synced, you should see an Electrum Server status page simila
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-2.png" alt="myNode logo" style="width: 300px">
+    <img src="/images/bitcoin/electrum-2.png" alt="myNode logo" style="width: 300px;">
   </figure>
 </center>
 
@@ -34,7 +34,7 @@ On your Android device, download Orbot and enable it by Clicking the Start butto
 
 <center>
   <figure>
-    <img src="/images/remote-access-tor/remote-electrum-access-3.png" alt="myNode logo" style="width: 300px">
+    <img src="/images/remote-access-tor/remote-electrum-access-3.png" class="app_screenshot">
   </figure>
 </center>
 
@@ -42,7 +42,7 @@ Next, open the Electrum Server information page on your myNode device and find t
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-2.png" alt="myNode logo" style="width: 300px">
+    <img src="/images/bitcoin/electrum-2.png" style="width: 300px;">
   </figure>
 </center>
 
@@ -57,7 +57,7 @@ Port `50002`
 
 <center>
   <figure>
-    <img src="/images/remote-access-tor/remote-electrum-access-5.png" alt="myNode logo" style="width: 300px">
+    <img src="/images/remote-access-tor/remote-electrum-access-5.png" class="app_screenshot">
   </figure>
 </center>
 
@@ -65,7 +65,7 @@ If everything went correctly, your wallet will sync and your myNode device will 
 
 <center>
   <figure>
-    <img src="/images/remote-access-tor/remote-electrum-access-6.png" alt="myNode logo" style="width: 300px">
+    <img src="/images/remote-access-tor/remote-electrum-access-6.png" class="app_screenshot">
   </figure>
 </center>
 
@@ -77,7 +77,7 @@ Once the software is installed, add the authenticated service to your /etc/tor/t
 
 <center>
   <figure>
-    <img src="/images/remote-access-tor/remote-electrum-access-7.png" alt="myNode logo" style="width: 300px">
+    <img src="/images/remote-access-tor/remote-electrum-access-7.png" style="width: 300px;">
   </figure>
 </center>
 
@@ -89,6 +89,6 @@ Your Electrum wallet should connect successfully and look like the following!
 
 <center>
   <figure>
-    <img src="/images/remote-access-tor/remote-electrum-access-8.png" alt="myNode logo" style="width: 300px">
+    <img src="/images/remote-access-tor/remote-electrum-access-8.png" style="width: 300px;">
   </figure>
 </center>
