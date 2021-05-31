@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.5.3",
+    "@vuepress/plugin-google-analytics": "^1.8.2",
     "@vuepress/plugin-medium-zoom": "^1.5.3",
     "vuepress": "^1.5.3"
   },
