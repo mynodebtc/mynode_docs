@@ -8,6 +8,14 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
     ['link', { rel : 'icon', href: '/favicon.ico' }]
   ],
+  plugins: [
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': 'G-38MMZKX0PW' // UA-00000000-0
+      }
+    ]
+  ],
   themeConfig: {
     //repo: 'mynodebtc/mynode_docs',
     //repoLabel: 'Contribute!',
