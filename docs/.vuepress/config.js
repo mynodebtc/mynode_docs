@@ -8,14 +8,6 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
     ['link', { rel : 'icon', href: '/favicon.ico' }]
   ],
-  plugins: [
-    [
-      '@vuepress/google-analytics',
-      {
-        'ga': 'UA-140888540-4' // UA-00000000-0
-      }
-    ]
-  ],
   themeConfig: {
     //repo: 'mynodebtc/mynode_docs',
     //repoLabel: 'Contribute!',
@@ -143,5 +135,7 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
+    ['@vuepress/google-analytics', {'ga': 'UA-140888540-4'}],
+    //['minimal-analytics', {ga: 'UA-140888540-4'}],
   ]
 }
