@@ -20,7 +20,7 @@ First, you will need the IP address of your myNode. Go to the settings page and 
 
 <center>
   <figure>
-    <img src="/images/remote-access-vpn/vpn1.png" alt="myNode logo" style="width: 300px">
+    <img src="/images/remote-access-vpn/vpn1.png" alt="myNode logo" style="width: 300px;">
   </figure>
 </center>
 
@@ -28,7 +28,7 @@ Then, go to your router and forward UDP port 51194 to port 51194 on the IP of yo
 
 <center>
   <figure>
-    <img src="/images/remote-access-vpn/vpn2.png" alt="myNode logo" style="width: 300px">
+    <img src="/images/remote-access-vpn/vpn2.png" alt="myNode logo" class="app_screenshot">
   </figure>
 </center>
 
@@ -44,7 +44,7 @@ Next, on your mobile device, visit the myNode web GUI while you are connected to
 
 <center>
   <figure>
-    <img src="/images/remote-access-vpn/vpn3.png" alt="myNode logo" style="width: 300px">
+    <img src="/images/remote-access-vpn/vpn3.png" alt="myNode logo" class="app_screenshot">
   </figure>
 </center>
 
@@ -52,7 +52,7 @@ Once on the VPN Info page, click on the button to download the OVPN File. Enter 
 
 <center>
   <figure>
-    <img src="/images/remote-access-vpn/vpn4.png" alt="myNode logo" style="width: 300px">
+    <img src="/images/remote-access-vpn/vpn4.png" alt="myNode logo" class="app_screenshot">
   </figure>
 </center>
 
@@ -67,7 +67,7 @@ Once the profile was imported successfully, you can tap the toggle icon and conn
 
 <center>
   <figure>
-    <img src="/images/remote-access-vpn/vpn5.png" alt="myNode logo" style="width: 300px">
+    <img src="/images/remote-access-vpn/vpn5.png" alt="myNode logo" class="app_screenshot">
   </figure>
 </center>
 

@@ -1,4 +1,4 @@
-# Mempool Space
+# Mempool
 
 ## Overview
 Bitcoin users broadcast their transactions via a node. Miners take these transactions, verify them and add them to the blockchain for the coinbase reward. Since the blocksize is limited, if there are more transactions waiting to be verified than can fit in a single block, they must wait in a buffer space. This buffer space is called the **mempool**. The size of the mempool indicates the demand for space on the bitcoin blockchain and directly affects the fees required to confirm transactions.

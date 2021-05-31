@@ -7,11 +7,11 @@ tagline: "The Easiest Way to Run a Bitcoin Node"
 actionText: Read The Docs →
 actionLink: /intro/introduction.md
 features:
-- title: User-Friendly
+- title: User Friendly
   details: myNode offers all of its features through the browser (including updates), so you don't have to touch the command line to run a full node!
-- title: Feature-Packed
+- title: Feature Packed
   details: Comes with a wealth of bitcoin related apps; Block explorer, Lightning node, Electrum Rust Server, Mempool explorer, and more!
-- title: Cheap
-  details: Install myNode for free if you have the hardware, or purchase the community edition for $100! You can also order a full-fledged hardware + software device, ready to go.
+- title: Low Cost
+  details: Starting with myNode is completely free! You can also order a full-fledged hardware + software device, ready to go.
 footer: MIT Licensed | Copyright © myNode Developers
 --- 
