@@ -114,22 +114,23 @@ module.exports = {
       {
         title: "Advanced",
         children: [
+          "/advanced/linux-terminal",
           "/advanced/find-device-ip",
           "/advanced/customize-config",
           "/advanced/memory-usage-cap",
           "/advanced/netdata",
           "/advanced/ssh",
-          {
-            title: "Setup Base Images",
-            children: [
-              ["/advanced/setup-base-images/setup_base_image_raspi4", 'Raspberry Pi 4'],
-              ["/advanced/setup-base-images/setup_base_image_raspi3", 'Raspberry Pi 3'],
-              ["/advanced/setup-base-images/setup_base_image_rockpro64", 'RockPro64'],
-              ["/advanced/setup-base-images/setup_base_image_rock64", 'Rock64'],
-              ["/advanced/setup-base-images/setup_base_image_debian", 'Debian'],
-              ["/advanced/setup-base-images/setup_base_image_other", 'Other'],
-            ]
-          },
+        //   {
+        //     title: "Setup Base Images",
+        //     children: [
+        //       ["/advanced/setup-base-images/setup_base_image_raspi4", 'Raspberry Pi 4'],
+        //       ["/advanced/setup-base-images/setup_base_image_raspi3", 'Raspberry Pi 3'],
+        //       ["/advanced/setup-base-images/setup_base_image_rockpro64", 'RockPro64'],
+        //       ["/advanced/setup-base-images/setup_base_image_rock64", 'Rock64'],
+        //       ["/advanced/setup-base-images/setup_base_image_debian", 'Debian'],
+        //       ["/advanced/setup-base-images/setup_base_image_other", 'Other'],
+        //     ]
+        //   },
         ]
       },
       {
