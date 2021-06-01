@@ -1,6 +1,6 @@
-# Connecting to myNode with SSH Key Authentication
+# Using SSH Key Authentication
 
-## Overview
+## Connecting to myNode with SSH Key Authentication
 
 You can increase security to your device by limiting SSH access to the myNode device to only the computer(s) holding a special key.
 Setup Key Based Authentication
