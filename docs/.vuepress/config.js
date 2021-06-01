@@ -108,18 +108,17 @@ module.exports = {
       {
         title: "Remote Access (VPN)",
         children: [
-          ["/vpn/remote-vpn", 'Remote Access Via VPN'],
+          "/vpn/setup",
         ]
       },
       {
         title: "Advanced",
         children: [
+          "/advanced/find-device-ip",
           "/advanced/customize-config",
-          "/advanced/glances",
           "/advanced/memory-usage-cap",
           "/advanced/netdata",
           "/advanced/ssh",
-          "/advanced/webssh",
           {
             title: "Setup Base Images",
             children: [
