@@ -1,10 +1,10 @@
-# My Device Gets Stuck Copying Files
+# My Device cannot Find the Drive
 
-Some user may encouter an issue where the copying files step of QuickSync stalls and gets stuck or will get to a point and then restart from 0%. This is likely due to power or driver issues related to the external disk drive.
+Some users may encouter an issue where the drive cannot be found even though it is attached. This is likely due to power or driver issues related to the external disk drive.
 
-### Hard Disk Drive
+## Hard Disk Drive
 
-If you are using a hard drive, you likely need to provide more power to the drive. Disk IO is very intense when extracting a 270+ GB file during the final stages of QuickSync and some drives draw more power than can be provided by a small device via USB. This can cause the device to hang or fail. It can also lead to data corruption, which can cause other issues down the line.
+If you are using a hard drive, you may need to provide more power to the drive. During disk startup it requires a large amount of power and this can cause the device to hang or fail. It can also lead to data corruption, which can cause other issues down the line.
 
 If you experience this issue and have a hard drive, try using a USB Y cable or powered USB hub to power the drive.
 
@@ -15,7 +15,9 @@ A powered USB hub will let the drive pull power from two USB ports and a powered
 
 Once updating your drive connection and power, it is recommended to reset the blockchain to restart QuickSync to avoid any issues with previously corrupted data.
 
-### Solid State Drive
+Alternatively, you can try using a USB 2 port or different port on your device.
+
+## Solid State Drive
 
 If you are using a solid state drive, power is probably NOT the issue. The issue is more likely to be poor driver support for the specific USB -> SATA adapter you are using.
 
@@ -26,3 +28,4 @@ To resolve this, you have two options. First, you can try plugging your drive in
 + [UGREEN External Hard Drive Enclosure](https://amzn.to/3b2gowf)
 
 Once updating your drive connection, it is recommended to reset the blockchain to restart IBD to avoid any issues with previously corrupted data.
+

@@ -136,7 +136,11 @@ module.exports = {
       {
         title: "Troubleshooting",
         children: [
-          ["/troubleshooting/stuck-copying-files", 'My Device Gets Stuck Copying Files'],
+          "/troubleshooting/device-not-booting",
+          "/troubleshooting/stuck-copying-files",
+          "/troubleshooting/drive-not-found",
+          "/troubleshooting/bitcoin-error",
+          "/troubleshooting/electrum-connection-error",
         ]
       },
     ]
