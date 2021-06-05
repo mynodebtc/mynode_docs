@@ -10,9 +10,10 @@ module.exports = {
     ['link', { rel : 'stylesheet', href: '/css/mynode.css' }]
   ],
   themeConfig: {
-    //repo: 'mynodebtc/mynode_docs',
-    //repoLabel: 'Contribute!',
+    repo: 'mynodebtc/mynode_docs',
+    repoLabel: 'Contribute!',
     editLinks: true,
+    editLinkText: 'Help us improve this page!',
     docsDir: 'docs',
     lastUpdated: false,
     sidebarDepth: 0,
