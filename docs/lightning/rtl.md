@@ -41,7 +41,7 @@ Click on the "Add Peer" button, then:
 - Fill in the required information for your selected peer and close that window.
 - Click on the "Channels" button that is right under the "Connections" heading.
 - Click on the "Open Channel" button.
-- Select your chosen peer, fill in the amount of Bitcoin that you wish to open the channel with, and then click on "Open Channel"
+- Select your chosen peer, fill in the amount of Bitcoin that you wish to open the channel with, and then click on "Open Channel" 
 in the lower right corner of that window.
 
 You can verify the status of the channel via the Channels page. The channel will be pending until the transaction used to open the channel is confirmed.
