@@ -41,5 +41,5 @@ Resetting the blockchain will delete the existing blockchain and will either dow
 ## Factory reset
 
 This option is available in the Advanced section of settings page. This should be the last resort when all the options listed available has been tried. One should backup their wallet seed and channels before doing so.
-
+ 
 ![advanced-settings](/images/bitcoin/advanced-settings.png)
