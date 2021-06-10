@@ -26,7 +26,7 @@ One can reinstall Bitcoin from the settings page with the dropdown tool under Ad
 This option is available on the settings page under Bitcoin (as shown below). It facilitates running `bitcoind` with the `-rescan` option. It scans the blockchain for missing transactions of the connected wallet.
 
 ![bitcoin-settings](/images/bitcoin/bitcoin-settings.png)
-
+ 
 ## Reindex blockchain
 
 This option is available on the settings page under Bitcoin (as shown above). It facilitates running `bitcoind` with the `-reindex-chainstate` option. To use the full `reindex` option, one has to use the command-line.
