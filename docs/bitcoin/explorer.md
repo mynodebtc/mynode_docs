@@ -15,4 +15,4 @@ The myNode explorer requires the [Electrum server](/electrum/electrum), so the u
 
 <!-- - Explain the error messages -->
 <!-- - how to use it with wallets? -->
-<!-- show a preview -->
+<!-- show a preview --> 
