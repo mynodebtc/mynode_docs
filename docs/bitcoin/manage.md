@@ -31,4 +31,4 @@ On the Bitcoin page, you can see the current state of Bitcoin. There are several
 
 To make more advanced changes, like resetting the blockchain, there are few more options available on the settings page. Since these options are generally required after encountering an issue, they are explained in the [troubleshooting](/bitcoin/troubleshoot) page.
 
-![Bitcoin settings](/images/bitcoin/bitcoin-settings.png)
+![Bitcoin settings](/images/bitcoin/bitcoin-settings.png) 
