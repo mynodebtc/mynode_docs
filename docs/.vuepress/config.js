@@ -176,6 +176,8 @@ module.exports = {
             add('twitter:site', '@mynodebtc')
             add('twitter:creator', '@mynodebtc')
             add('twitter:image', 'http://mynodebtc.com/images/vertical_lightning_white_bg.png')
+
+            add('google-site-verification','5e94KreZz8Uzer4hwYMp3vodynZ5Yw7pLYXcXGtn8SA')
         },
     }],
   ]
