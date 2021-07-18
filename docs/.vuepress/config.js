@@ -153,7 +153,7 @@ module.exports = {
     ['seo', {
         siteTitle: (_, $site) => $site.title,
         title: ($page, $site) => $page.title + " | " + $site.title,
-        description: ($page, $site) => $page.frontmatter.description,
+        description: ($page, $site) => $page.frontmatter.description || ($page.title + " - " + $site.description),
         author: (_, $site) => $site.themeConfig.author,
         tags: $page => $page.frontmatter.tags,
         twitterCard: _ => 'summary',
