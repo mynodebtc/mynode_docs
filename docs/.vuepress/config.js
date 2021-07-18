@@ -152,8 +152,8 @@ module.exports = {
     ['@vuepress/google-analytics', {'ga': 'UA-140888540-4'}],
     ['seo', {
         siteTitle: (_, $site) => $site.title,
-        title: $page => $page.title,
-        description: $page => $page.frontmatter.description,
+        title: ($page, $site) => $page.title + " | " + $site.title,
+        description: ($page, $site) => $site.title || $page.frontmatter.description,
         author: (_, $site) => $site.themeConfig.author,
         tags: $page => $page.frontmatter.tags,
         twitterCard: _ => 'summary',
@@ -175,8 +175,6 @@ module.exports = {
      
             add('twitter:site', '@mynodebtc')
             add('twitter:creator', '@mynodebtc')
-            add('twitter:title', $page.title + " | " + $site.title)
-            add('twitter:description', $page.frontmatter.description)
             add('twitter:image', 'http://mynodebtc.com/images/vertical_lightning_white_bg.png')
         },
     }],
