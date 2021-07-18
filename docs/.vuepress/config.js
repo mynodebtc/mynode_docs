@@ -98,6 +98,12 @@ module.exports = {
         ]
       },
       {
+        title: "Networking",
+        children: [
+          "/networking/tor",
+        ]
+      },
+      {
         title: "Remote Access (Tor)",
         children: [
           "/tor/setup",
