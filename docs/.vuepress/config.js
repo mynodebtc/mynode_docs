@@ -6,6 +6,11 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['meta', { name: 'twitter:card', content: 'summary' }],
+    ['meta', { name: 'twitter:site', content: '@mynodebtc' }],
+    ['meta', { name: 'twitter:creator', content: '@mynodebtc' }],
+    ['meta', { name: 'twitter:title', content: 'myNode Docs' }],
+    ['meta', { name: 'twitter:image', content: 'http://mynodebtc.com/images/vertical_lightning_white_bg.png' }],
     ['link', { rel : 'icon', href: '/favicon.ico' }],
     ['link', { rel : 'stylesheet', href: '/css/mynode.css' }]
   ],
