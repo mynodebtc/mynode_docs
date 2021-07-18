@@ -9,7 +9,8 @@ module.exports = {
     ['meta', { name: 'twitter:card', content: 'summary' }],
     ['meta', { name: 'twitter:site', content: '@mynodebtc' }],
     ['meta', { name: 'twitter:creator', content: '@mynodebtc' }],
-    ['meta', { name: 'twitter:title', content: 'myNode Docs' }],
+    ['meta', { name: 'twitter:title', content: 'myNode Guides and Documentation' }],
+    ['meta', { name: 'twitter:ddescription', content: 'Helpful guides and documentation for using myNode and getting the most out of all it has to offer!' }],
     ['meta', { name: 'twitter:image', content: 'http://mynodebtc.com/images/vertical_lightning_white_bg.png' }],
     ['link', { rel : 'icon', href: '/favicon.ico' }],
     ['link', { rel : 'stylesheet', href: '/css/mynode.css' }]
