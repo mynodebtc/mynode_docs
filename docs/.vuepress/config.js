@@ -6,12 +6,6 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    ['meta', { name: 'twitter:card', content: 'summary' }],
-    ['meta', { name: 'twitter:site', content: '@mynodebtc' }],
-    ['meta', { name: 'twitter:creator', content: '@mynodebtc' }],
-    ['meta', { name: 'twitter:title', content: 'myNode Guides and Documentation' }],
-    ['meta', { name: 'twitter:description', content: 'Helpful guides and documentation for using myNode and getting the most out of all it has to offer!' }],
-    ['meta', { name: 'twitter:image', content: 'http://mynodebtc.com/images/vertical_lightning_white_bg.png' }],
     ['link', { rel : 'icon', href: '/favicon.ico' }],
     ['link', { rel : 'stylesheet', href: '/css/mynode.css' }]
   ],
@@ -179,7 +173,11 @@ module.exports = {
                 twitterCard, type, url, image, publishedAt, modifiedAt,
             } = context
      
+            add('twitter:site', '@mynodebtc')
+            add('twitter:creator', '@mynodebtc')
+            add('twitter:title', $page.title + " | " + $site.title)
             add('twitter:description', $page.frontmatter.description)
+            add('twitter:image', 'http://mynodebtc.com/images/vertical_lightning_white_bg.png')
         },
     }],
   ]
