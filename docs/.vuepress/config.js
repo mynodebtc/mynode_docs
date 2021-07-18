@@ -1,6 +1,6 @@
 module.exports = {
-  title: "MyNode Docs",
-  description: "Documentation for myNode project",
+  title: "myNode Guides and Documentation",
+  description: "Helpful guides and documentation for using myNode and getting the most out of all it has to offer!",
   base: "/",
   head: [
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
@@ -156,5 +156,31 @@ module.exports = {
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
     ['@vuepress/google-analytics', {'ga': 'UA-140888540-4'}],
+    ['seo', {
+        siteTitle: (_, $site) => $site.title,
+        title: $page => $page.title,
+        description: $page => $page.frontmatter.description,
+        author: (_, $site) => $site.themeConfig.author,
+        tags: $page => $page.frontmatter.tags,
+        twitterCard: _ => 'summary',
+        type: $page => ['articles', 'posts', 'blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? 'article' : 'website',
+        url: (_, $site, path) => ($site.themeConfig.domain || '') + path,
+        image: ($page, $site) => $page.frontmatter.image && (($site.themeConfig.domain && !$page.frontmatter.image.startsWith('http') || '') + $page.frontmatter.image),
+        publishedAt: $page => $page.frontmatter.date && new Date($page.frontmatter.date),
+        modifiedAt: $page => $page.lastUpdated && new Date($page.lastUpdated),
+
+        customMeta: (add, context) => {
+            const {
+                $site, // Site configs provided by Vuepress 
+                $page, // Page configs provided by Vuepress
+     
+                // All the computed options from above:
+                siteTitle, title, description, author, tags,
+                twitterCard, type, url, image, publishedAt, modifiedAt,
+            } = context
+     
+            add('twitter:description', $page.frontmatter.description)
+        },
+    }],
   ]
 }
