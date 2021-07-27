@@ -148,6 +148,7 @@ module.exports = {
           "/troubleshooting/drive-not-found",
           "/troubleshooting/bitcoin-error",
           "/troubleshooting/electrum-connection-error",
+          "/troubleshooting/voltage-error",
         ]
       },
     ]
