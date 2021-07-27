@@ -149,6 +149,8 @@ module.exports = {
           "/troubleshooting/bitcoin-error",
           "/troubleshooting/electrum-connection-error",
           "/troubleshooting/voltage-error",
+          "/troubleshooting/sd-card-readonly-error",
+          "/troubleshooting/drive-readonly-error",
         ]
       },
     ]
