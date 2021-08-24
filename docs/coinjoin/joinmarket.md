@@ -12,31 +12,49 @@ The most important differences are:
 JoinMarket was created by Chris Belcher in 2015, and is currently maintained by Adam Gibson [here.](https://github.com/Joinmarket-Org/joinmarket-clientserver)
 For a quick introduction to Joinmarket you can watch [this demonstration](https://youtu.be/hwmvZVQ4C4M) of installation and usage given by Adam Gibson during the [Understanding Bitcoin conference](https://understandingbtc.com/) on April 6 2019.
 
-## Usage
+## General Usage
 
 Joinmarket is installed in myNode and must be run via the command line. There are several Joinmarket scripts and configurations that can be utilized for various purposes, and it is important to fully understand the proper usage of each of them. Users are strongly urged to first read this [usage guide](https://github.com/JoinMarket-Org/joinmarket-clientserver/blob/master/docs/USAGE.md).
 
 To get a myNode command line window you will need to open an SSH session from another computer.
 
-Instructions for doing that while on the same network as your myNode can be found [here](https://mynodebtc.com/guide/debug_access_linux_terminal). Once you have opened a terminal window in your myNode, you can find the main configuration file, `joinmarket.cfg`
-at:
+Instructions for doing that while on the same network as your myNode can be found [here](https://mynodebtc.com/guide/debug_access_linux_terminal).
 
-`/home/admin/.joinmarket`
+There are two ways to run JoinMarket - by using JoinMarket scripts directly or by using a minimal terminal interface provided by JoinInBox.
 
-Before running any of the joinmarket scripts, you must first activate the **jmvenv** virtual environment.
-You do this by:
+## Usage - JoinInBox
 
-`cd /opt/mynode/joinmarket`
+Once you have opened a terminal window in your myNode, there is a convenient script for setting up and running JoinMarket.
 
-`source jmvenv/bin/activate`
+`sudo mynode-joininbox`
 
-You should now see this in your terminal window:
+You will be prompted for your password and should now see this in your terminal window:
 
-![joinmarket_cli](/images/coinjoin/joinmarket_cli_comp.png)
+![joinmarket_cli](/images/coinjoin/joinmarket2.png)
+
+You should now have access to JoinMarket through the interface provided by JoinInBox.
+
+* Github: [openoms/joininbox](https://github.com/openoms/joininbox)
+
+## Usage - JoinMarket
+
+Once you have opened a terminal window in your myNode, there is a convenient script for setting up and running JoinMarket.
+
+`sudo mynode-joinmarket`
+
+You will be prompted for your password and should now see this in your terminal window:
+
+![joinmarket_cli](/images/coinjoin/joinmarket1.png)
 
 You are now ready to run any of the Joinmarket scripts, located at:
 
-`/opt/mynode/joinmarket/scripts`
+`/home/joinmarket/joinmarket-clientserver/scripts`
+
+You can find the main configuration file, `joinmarket.cfg` at:
+
+`/home/joinmarket/.joinmarket`
+
+To exit, simply type and enter `exit`.
 
 **TIP**: If you are planning to use JoinMarket as a "maker", you will need to leave your maker script running for an extended period of time.  This would normally require you to leave an open SSH session to your myNode to keep your JoinMarket session running. This is impractical at best, and potentially unsecure if others might have access to your computer.
 
@@ -49,8 +67,9 @@ Next, you start the JoinMarket virtual environment as described earlier, and the
 This will allow you to end your SSH session with your myNode while leaving your JoinMarket maker/offer actively running.
 Without using TMUX, if you exit your SSH connection to your myNode, any JoinMarket script that you have running will stop.
 
+* Github: [joinmarket/joinmarketclientserver](https://github.com/joinmarket/joinmarket-clientserver)
+
 ## Specs
 
-* Github: [joinmarket/joinmarketclientserver](https://github.com/joinmarket/joinmarket-clientserver)
-* Installed location: `/opt/mynode/joinmarket`
+* Installed location: `/home/joinmarket/joinmarket-clientserver/`
 * IRC: [webchat.freenode.net](https://webchat.freenode.net) #joinmarket
