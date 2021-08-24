@@ -152,6 +152,7 @@ module.exports = {
           "/troubleshooting/voltage-error",
           "/troubleshooting/sd-card-readonly-error",
           "/troubleshooting/drive-readonly-error",
+          "/troubleshooting/fsck-error",
         ]
       },
     ]
