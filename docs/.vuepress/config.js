@@ -144,6 +144,7 @@ module.exports = {
         title: "Troubleshooting",
         children: [
           "/troubleshooting/device-not-booting",
+          "/troubleshooting/stuck-formatting",
           "/troubleshooting/stuck-copying-files",
           "/troubleshooting/drive-not-found",
           "/troubleshooting/bitcoin-error",
