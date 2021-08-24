@@ -1,6 +1,6 @@
-# My Device Gets Stuck Copying Files
+# My Device is stuck at Copying Files
 
-Some user may encouter an issue where the copying files step of QuickSync stalls and gets stuck or will get to a point and then restart from 0%. This is likely due to power or driver issues related to the external disk drive.
+Some users may encouter an issue where the "copying files" step of QuickSync stalls and gets stuck or will get to a point and then restart from 0%. This is likely due to power or driver issues related to the external disk drive.
 
 ### Hard Disk Drive
 
@@ -25,4 +25,4 @@ To resolve this, you have two options. First, you can try plugging your drive in
 
 + [UGREEN External Hard Drive Enclosure](https://amzn.to/3b2gowf)
 
-Once updating your drive connection, it is recommended to reset the blockchain to restart IBD to avoid any issues with previously corrupted data.
+After updating your drive connection, it is recommended to reset the blockchain to restart IBD to avoid any issues with previously corrupted data.
