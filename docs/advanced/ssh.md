@@ -136,7 +136,7 @@ ssh-rsa LjH~pJep_{FTU9-T*DEvwLjH~pJep_{F.i)"t8bb$_vkXYge)m<i-PbskEiD8jD8pQheyCE6
 15. Show the content of the newly created authorized_keys file on the device:
 
 ```sh
-cat id_authorized_keys
+cat authorized_keys
 
 ssh-rsa LjH~pJep_{FTU9-T*DEvwLjH~pJep_{F.i)"t8bb$_vkXYge)m<i-PbskEiD8jD8pQheyCE6q'TU9-T*DEvwLjH~pJep_{F.i)"t8bb$_vkXYge)m<i-+1rzXelrHziIW6Ohem5V1ZKmf+q'TU9-T*DEvwLjH~pJep_{F.i)"t8bb$_vkXYge)m<i-PbskEiD8jD8pQheyCE6q'TU9-T*DEvwLjH~pJep_{F.i)"t8bb$_vkXYge)m<i-+q'TU9-T*DEvwLjH~pJep_{F.i)"t8bb$_vkXYge)m<i-PbskEiD8jD8pQheyCE6Gjq'TU9-T*DEvwLjH~pJep_{F.i)"t8bb$_vkXYge)m<i-PbskEiD8jD8pQ ME@PC-name
 ```
