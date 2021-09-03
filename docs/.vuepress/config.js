@@ -125,6 +125,7 @@ module.exports = {
           "/advanced/find-device-ip",
           "/advanced/customize-config",
           "/advanced/memory-usage-cap",
+          "/advanced/clone-tool",
           "/advanced/netdata",
           "/advanced/ssh",
         //   {
