@@ -1,6 +1,6 @@
 # Customize App Versions
 
-In some situations, like in the case of contentious forks, you may want to stick with a specific application version and not upgrade to the one used by myNode or upgrade to a new release prior to its inclusion in a myNode release. If that were to happen, myNode includes a tool to override the application version that is installed.
+In some situations, like in the case of contentious forks, you may want to use a specific application version and not upgrade to the one used by myNode or upgrade to a new release prior to its inclusion in a myNode release. If that were to happen, myNode includes a tool to override the application version that is installed.
 
 ## Customizing an Application Version
 
@@ -52,7 +52,7 @@ If the verison appears correct, click the "Upgrade" button next to the app and t
   </figure>
 </center>
 
-The device will install the specified application version and reboot. After it reboots, the application verion you specified will be the one that is running! You can verify on the application page once the reboot is complete.
+The device will install the specified application version and reboot. After it reboots, the application version you specified will be the one that is running! You can verify on the application page once the reboot is complete.
 
 <center>
   <figure>
