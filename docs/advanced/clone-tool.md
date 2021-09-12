@@ -4,7 +4,7 @@ The Clone Tool is a utility built into myNode that can help migrate data from on
 
 ## Using the Clone Tool
 
-To start using the clone tool, first go to the setting page and click on the 'Open Clone Tool' button.
+To start using the clone tool, first go to the settings page and click on the 'Open Clone Tool' button.
 
 <center>
   <figure>

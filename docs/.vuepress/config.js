@@ -126,6 +126,7 @@ module.exports = {
           "/advanced/customize-config",
           "/advanced/memory-usage-cap",
           "/advanced/clone-tool",
+          "/advanced/custom-app-versions",
           "/advanced/netdata",
           "/advanced/ssh",
         //   {
