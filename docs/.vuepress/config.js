@@ -28,6 +28,7 @@ module.exports = {
         children: [
           ["/intro/introduction", 'Introduction'],
           ["/intro/getting-started", 'Getting Started'],
+          ["/intro/install-virtual-box", 'Install on Virtual Box'],
         ]
       },
       {
