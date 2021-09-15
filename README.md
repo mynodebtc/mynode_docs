@@ -15,6 +15,8 @@ This repo uses [VuePress](https://vuepress.vuejs.org/) to compile markdown files
 ```sh
 # Clone this repo
 git clone https://github.com/mynodebtc/mynode_docs.git
+# Navigate to MyNode Docs directory
+cd mynode_docs
 # Install required node modules
 yarn install
 # serve locally (by default on port 8080)
