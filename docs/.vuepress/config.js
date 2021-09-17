@@ -28,7 +28,6 @@ module.exports = {
         children: [
           ["/intro/introduction", 'Introduction'],
           ["/intro/getting-started", 'Getting Started'],
-          ["/intro/install-virtual-box", 'Install on Virtual Box'],
         ]
       },
       {
@@ -130,6 +129,7 @@ module.exports = {
           "/advanced/custom-app-versions",
           "/advanced/netdata",
           "/advanced/ssh",
+          "/advanced/install-virtual-box",
         //   {
         //     title: "Setup Base Images",
         //     children: [
