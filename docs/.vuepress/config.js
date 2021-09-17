@@ -42,6 +42,7 @@ module.exports = {
           ["/device/changing-password", 'Changing your Password'],
           ["/device/forgot-password", 'Forgot your Password'],
           ["/device/upgrading-device", 'Upgrading your Device'],
+          "/device/connect-wifi",
         ]
       },
       {
