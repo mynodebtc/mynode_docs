@@ -102,6 +102,7 @@ module.exports = {
         title: "Networking",
         children: [
           "/networking/tor",
+          "/device/connect-wifi"
         ]
       },
       {
