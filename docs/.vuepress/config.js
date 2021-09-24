@@ -157,6 +157,7 @@ module.exports = {
           "/troubleshooting/sd-card-readonly-error",
           "/troubleshooting/drive-readonly-error",
           "/troubleshooting/fsck-error",
+          "/troubleshooting/bluewallet.md"
         ]
       },
     ]
