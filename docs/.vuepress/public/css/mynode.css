@@ -10,3 +10,12 @@
     margin-top: 15px;
     margin-bottom: 25px;
 }
+.danger {
+    background: #ff0e0e64;
+    border-radius: 10px;
+    padding:  0.5em 1em;
+}
+
+.danger h2 {
+    border-bottom: None;
+}

@@ -1,5 +1,13 @@
 # Restore on-chain funds using BlueWallet
 
+<div class="danger">
+
+## Cautionary note
+
+Use this method to monitor the on-chain wallet, verify the seed or recover the on-chain funds in case of emergency. **DO NOT** use the wallet to make transactions while your lightning node is running. It may disrupt your node.
+
+</div>
+
 ## Step 1: Install Bluewallet
 
 You can install Blue wallet on any of the following operating systems:
