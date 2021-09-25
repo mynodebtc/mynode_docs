@@ -42,6 +42,7 @@ module.exports = {
           ["/device/changing-password", 'Changing your Password'],
           ["/device/forgot-password", 'Forgot your Password'],
           ["/device/upgrading-device", 'Upgrading your Device'],
+          "/device/connect-wifi",
         ]
       },
       {
@@ -101,6 +102,7 @@ module.exports = {
         title: "Networking",
         children: [
           "/networking/tor",
+          "/device/connect-wifi"
         ]
       },
       {
@@ -129,6 +131,7 @@ module.exports = {
           "/advanced/custom-app-versions",
           "/advanced/netdata",
           "/advanced/ssh",
+          "/advanced/install-virtual-box",
         //   {
         //     title: "Setup Base Images",
         //     children: [
@@ -155,6 +158,7 @@ module.exports = {
           "/troubleshooting/sd-card-readonly-error",
           "/troubleshooting/drive-readonly-error",
           "/troubleshooting/fsck-error",
+          "/troubleshooting/bluewallet.md"
         ]
       },
     ]
