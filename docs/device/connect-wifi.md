@@ -1,5 +1,9 @@
 # Connect WiFi
 
+## Purpose
+
+To disconnect from wired ethernet connection and use WiFi instead, which makes it easier to relocate the node.
+
 ## Remote login to myNode
 
 Follow instructions to access the [linux terminal](/advanced/linux-terminal.html)
@@ -51,3 +55,29 @@ lo      loopback  unmanaged  --
 ## Disconnect Ethernet cable
 
 You can safely remove the ethernet cable.
+
+## Find new IP
+
+1. Type `ifconfig wlan0 | grep inet` to find the IP address on wireless network. Example
+
+```bash
+$ ifconfig wlan0 | grep inet
+inet <LOCAL-IP>  netmask 255.255.255.0  broadcast 10.0.0.255
+inet6 <LOCAL-IPv6>  prefixlen 64  scopeid 0x20<link>
+```
+
+2. Use the `LOCAL-IP` listed beside `inet` to access your node once it is disconnected from wired network
+
+## Reconfigure LND for new IP
+
+If you are using apps like Zap to remotely access your lightning node, you might have to regenerate the TLS certificates. To do so, go to the LND page of your myNode and click on "regenerate" button in the row of "TLS Certification".
+
+<center>
+
+![LND regenerate certificates](/images/wifi/wifi-3.png)
+
+</center>
+
+## Reconfigure VPN port forwarding
+
+If you are using the VPN to remotely access your node, you need to change the IP address corresponding to the forwarded port in your router settings. Please refer your router manufacturer's website to find out how to forward ports.
