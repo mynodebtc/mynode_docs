@@ -26,6 +26,6 @@ First, find your Electrum config file for your application and change some setti
 
 To find your Electrum files, try [these instructions](https://electrum.readthedocs.io/en/latest/faq.html#where-is-my-wallet-file-located).
 
-Open the config file and make change the connection URL to: [myNode IP]:50001:t
+Open the config file and make change the connection URL to: `[myNode IP]:50001:t`
 
 Restart Electrum and you will be using myNode for trusted Electrum access!
