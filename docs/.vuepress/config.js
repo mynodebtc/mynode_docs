@@ -149,6 +149,7 @@ module.exports = {
         title: "Troubleshooting",
         children: [
           "/troubleshooting/device-not-booting",
+          "/troubleshooting/https-error",
           "/troubleshooting/stuck-formatting",
           "/troubleshooting/stuck-copying-files",
           "/troubleshooting/drive-not-found",
