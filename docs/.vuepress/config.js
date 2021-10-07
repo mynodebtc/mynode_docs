@@ -151,6 +151,7 @@ module.exports = {
         title: "Troubleshooting",
         children: [
           "/troubleshooting/device-not-booting",
+          "/troubleshooting/device-did-not-upgrade",
           "/troubleshooting/https-error",
           "/troubleshooting/stuck-formatting",
           "/troubleshooting/stuck-copying-files",
