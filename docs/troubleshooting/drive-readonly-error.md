@@ -30,7 +30,7 @@ If that still does not work, your drive may be suffering from a USB -> SATA adap
 
 **Recommeded Adapters**
 
-+ [UGREEN External Hard Drive Enclosure](https://amzn.to/3b2gowf)
++ [UGREEN External Drive Enclosure](https://amzn.to/3b2gowf)
 
 ## Step 4 - Format the Drive
 

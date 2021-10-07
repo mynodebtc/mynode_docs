@@ -25,7 +25,7 @@ To resolve this, you have two options. First, you can try plugging your drive in
 
 **Recommeded Adapters**
 
-+ [UGREEN External Hard Drive Enclosure](https://amzn.to/3b2gowf)
++ [UGREEN External Drive Enclosure](https://amzn.to/3b2gowf)
 
 Once updating your drive connection, it is recommended to reset the blockchain to restart IBD to avoid any issues with previously corrupted data.
 
