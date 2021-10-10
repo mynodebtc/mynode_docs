@@ -129,6 +129,7 @@ module.exports = {
           "/advanced/memory-usage-cap",
           "/advanced/clone-tool",
           "/advanced/custom-app-versions",
+          "/advanced/verify-restore-bluewallet.md",
           "/advanced/netdata",
           "/advanced/ssh",
           "/advanced/install-virtual-box",
@@ -149,6 +150,8 @@ module.exports = {
         title: "Troubleshooting",
         children: [
           "/troubleshooting/device-not-booting",
+          "/troubleshooting/device-did-not-upgrade",
+          "/troubleshooting/https-error",
           "/troubleshooting/stuck-formatting",
           "/troubleshooting/stuck-copying-files",
           "/troubleshooting/drive-not-found",
@@ -157,8 +160,7 @@ module.exports = {
           "/troubleshooting/voltage-error",
           "/troubleshooting/sd-card-readonly-error",
           "/troubleshooting/drive-readonly-error",
-          "/troubleshooting/fsck-error",
-          "/troubleshooting/bluewallet.md"
+          "/troubleshooting/fsck-error"
         ]
       },
       {

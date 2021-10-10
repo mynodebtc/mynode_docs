@@ -1,4 +1,4 @@
-# Restore on-chain funds using BlueWallet
+# Verify or Restore on-chain Lightning funds using BlueWallet
 
 <div class="danger">
 
