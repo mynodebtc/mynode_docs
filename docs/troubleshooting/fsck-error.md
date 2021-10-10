@@ -28,7 +28,7 @@ Your drive may be suffering from a USB -> SATA adapter that is not well supporte
 
 **Recommeded Adapters**
 
-+ [UGREEN External Hard Drive Enclosure](https://amzn.to/3b2gowf)
++ [UGREEN External Drive Enclosure](https://amzn.to/3b2gowf)
 
 ### Failing Drive
 

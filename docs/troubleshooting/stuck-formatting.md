@@ -10,6 +10,6 @@ To resolve this, you have two options. First, you can try plugging your drive in
 
 **Recommeded Adapters**
 
-+ [UGREEN External Hard Drive Enclosure](https://amzn.to/3b2gowf)
++ [UGREEN External Drive Enclosure](https://amzn.to/3b2gowf)
 
 After updating your drive connection, you may need to use the Format Drive option on the settings page to trigger it to re-format the external drive.
