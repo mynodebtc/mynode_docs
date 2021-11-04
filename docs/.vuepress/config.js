@@ -134,7 +134,6 @@ module.exports = {
           "/advanced/netdata",
           "/advanced/ssh",
           "/advanced/install-virtual-box",
-          "/advanced/install-app"
         //   {
         //     title: "Setup Base Images",
         //     children: [
@@ -165,6 +164,12 @@ module.exports = {
           "/troubleshooting/fsck-error"
         ]
       },
+      {
+        title: "Developer",
+        children: [
+          "/developer/add-app.md"
+        ]
+      }
     ]
   },
   plugins: [
