@@ -71,6 +71,7 @@ module.exports = {
           "/lightning/restore",
           "/lightning/lnd-alias",
           "/lightning/pairing-wallets",
+          "/lightning/lightning-terminal",
         ]
       },
       {
