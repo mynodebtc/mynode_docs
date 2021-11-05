@@ -2,7 +2,7 @@
 
 When you first connect to your node, it may use HTTP which is less secure than HTTPS. Most users will want to start using HTTPS by clicking the lock icon in the top right of the home page, once it loads.
 
-## You see a "Your connection is not Pricate" Error
+## You see a "Your connection is not Private" Error
 
 Some users browsers will show an error and it may appear like myNode interface cannot load. In most cases, the browser is warning you that the certificate is unknown to the browser because the certifcate being used is self-signed by the device. Since the myNode interface is not a public website, the browser can't verify the validity of the certificate, like it does for public websites.
 
