@@ -31,9 +31,10 @@ module.exports = {
         ]
       },
       {
-        title: "Video Guides",
+        title: "Community Guides",
         children: [
           ["/videos/guides", 'Video Guides'],
+          ["/community/guides", 'Community Guides'],
         ]
       },
       {
