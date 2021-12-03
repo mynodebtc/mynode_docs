@@ -168,7 +168,8 @@ module.exports = {
       {
         title: "Developer",
         children: [
-          "/developer/add-app.md"
+          "/developer/add-app.md",
+          "/developer/custom-scripts.md"
         ]
       }
     ]
