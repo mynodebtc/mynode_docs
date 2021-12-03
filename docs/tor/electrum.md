@@ -28,6 +28,8 @@ Electrum is an easy-to-use light wallet, but requires that you delegate some tru
 
 However, for your mobile wallets to work properly wherever you are, you need to have public connection to your myNode. The most secure way to do this is via Tor. It allows remote, encrypted connections back to your myNode device.
 
+More information and tips are available in this community guide as well - <a href="https://armantheparman.com/tor/" target="_blank">All The Reasons You’ve Failed To Connect Electrum to Your Node Via Tor</a> by <a href="https://twitter.com/parman_the" target="_blank">Arman the Parman</a>.
+
 ## Android Electrum Wallet Use via Tor
 
 On your Android device, download Orbot and enable it by Clicking the Start button. This will create a Tor connection from your phone.
