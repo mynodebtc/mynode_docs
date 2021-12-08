@@ -48,14 +48,14 @@ Next, open the Electrum Server information page on your myNode device and find t
   </figure>
 </center>
 
-Next, download the Electrum app for Android and create or import a wallet. Once your wallet has been added, click on the settings icon and choose Network. On the Network page, set Auto-connect to OFF and One-server mode to ON. Set the proxy settings to:
-Proxy mode: `socks5`
-Host: `localhost`
-Port: `9050`
+Next, download the Electrum app for Android and create or import a wallet. Once your wallet has been added, click on the settings icon and choose Network. On the Network page, set Auto-connect to OFF and One-server mode to ON. Set the proxy settings to:<br/>
+<br/>Proxy mode: `socks5`
+<br/>Host: `localhost`
+<br/>Port: `9050`
 
-And set the Server settings to:
-Host: `[your Onion Electrum URL]`
-Port `50002`
+And set the Server settings to:<br/>
+<br/>Host: `[your Onion Electrum URL]`
+<br/>Port `50002`
 
 <center>
   <figure>
@@ -73,19 +73,17 @@ If everything went correctly, your wallet will sync and your myNode device will 
 
 ## Linux Electrum Wallet Use via Tor
 
-On your Linux PC, make sure you have Tor and Electrum installed.
+On your Linux PC, make sure you have Tor and Electrum installed. Tor can be installed as a proxy or Tor Browser, which includes the proxy functionality.
 
-Once the software is installed, add the authenticated service to your /etc/tor/torrc file. This allows programs, like Electrum, on your PC to connect to secure services using the password you provide in the torrc file.
+Open Electrum and update your settings
+<br/>
+<br/>Proxy mode: `socks5`
+<br/>Host: `localhost`
+<br/>Port: `9050` or `9150` (if using Tor Browser's proxy)
 
-<center>
-  <figure>
-    <img src="/images/remote-access-tor/remote-electrum-access-7.png" style="width: 300px;">
-  </figure>
-</center>
-
-After the settings file is updated, restart Tor by rebooting or running "sudo systemctl restart tor" or a similar command.
-
-Once Tor has been restarted, run the following command to launch Electrum and connect to your secure Electrum service.
+And set the Server settings to:<br/>
+<br/>Host: `[your Onion Electrum URL]`
+<br/>Port `50002` or `50001`
 
 Your Electrum wallet should connect successfully and look like the following!
 
