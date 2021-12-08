@@ -18,7 +18,8 @@ module.exports = {
     lastUpdated: false,
     sidebarDepth: 0,
     nav: [
-      { text: "Back to myNode", link: "https://www.mynodebtc.com/"}
+      { text: "Back to myNode", link: "https://www.mynodebtc.com/"},
+      { text: "Order Now!", link: "https://www.mynodebtc.com/order_now"}
     ],
     logo: "/images/logo.png",
     sidebar: [
