@@ -38,7 +38,7 @@ Some apps require "VPN Mode" to access Tor. Tap the settings button next to "Ful
 
 On your PC or laptop, install <a href="https://www.torproject.org/download/" target="_blank">Tor Browser</a>.
 
-Once installed, you can use it to browse to the onion URLs found via the Tor page on your myNode device. Many services are available via a web interface, like RTL, THunderhub, BTC Pay Server, etc...
+Once installed, you can use it to browse to the onion URLs found via the Tor page on your myNode device. Many services are available via a web interface, like RTL, Thunderhub, BTC Pay Server, etc...
 
 However, other services require the Tor network, but not the Tor browser. For example, wallets connecting to Electrum Server use the network, but cannot be interacted with via the browser. In these cases, you can use the proxy being run behind the tor browser by setting the app's proxy to port 9150.
 
