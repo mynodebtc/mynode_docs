@@ -88,6 +88,12 @@ module.exports = {
         ]
       },
       {
+        title: "BTCPay Server",
+        children : [
+            '/btcpay-server/setup.md'
+        ]
+      },
+      {
         title: "Multisig Apps",
         children: [
           "/multisig/caravan",
