@@ -165,6 +165,7 @@ module.exports = {
           "/troubleshooting/stuck-copying-files",
           "/troubleshooting/drive-not-found",
           "/troubleshooting/bitcoin-error",
+          "/troubleshooting/bitcoin-sync-slow",
           "/troubleshooting/electrum-connection-error",
           "/troubleshooting/voltage-error",
           "/troubleshooting/sd-card-readonly-error",
