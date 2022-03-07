@@ -38,7 +38,7 @@ If everything went correctly, you will get a green status icon and your myNode d
   </figure>
 </center>
 
-At this point, your node may still use other servers for various things. To limit use to ONLY your node, you will need to find the Electrum config file for your application and change some settings.
+At this point, your Electrum light wallet client may still use other servers for various things. To limit use to ONLY your node, you will need to find the Electrum config file for your application and change some settings.
 
 To find your Electrum files, try these instructions.
 
