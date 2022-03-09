@@ -8,7 +8,7 @@ First, from the myNode home page click "Enable" to start running Electrum Server
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-1.png" alt="password" style="width: 200px">
+    <img src="/images/bitcoin/electrum-1.png" alt="app icon" style="width: 200px">
   </figure>
 </center>
 
@@ -16,7 +16,7 @@ Once the server has synced, you should see an Electrum Server status page simila
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-2.png" alt="password" style="width: 500px">
+    <img src="/images/bitcoin/electrum-2.png" alt="" style="width: 500px">
   </figure>
 </center>
 
@@ -26,7 +26,7 @@ At this point you can connect your Electrum light wallets to your myNode. On the
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-3.png" alt="password" style="width: 500px">
+    <img src="/images/bitcoin/electrum-3.png" alt="" style="width: 500px">
   </figure>
 </center>
 
@@ -34,19 +34,19 @@ If everything went correctly, you will get a green status icon and your myNode d
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-4.png" alt="password" style="width: 500px">
+    <img src="/images/bitcoin/electrum-4.png" alt="" style="width: 500px">
   </figure>
 </center>
 
-At this point, your Electrum light wallet client may still use other servers for various things. To limit use to ONLY your node, you will need to find the Electrum config file for your application and change some settings.
+*Notice!* At this point, your Electrum light wallet client may still use other servers for various things. To limit use to ONLY your node, you will need to make one more change.
 
-To find your Electrum files, try these instructions.
+Re-open the Electrum network settings by clicking on the colored icon in the bottom right. The server you entered should now appear in the list. Right click on it and select "Use as Server" and click Close.
 
-Open the config file and make sure the these settings are set as follows:
-
-            "auto_connect": false,
-            "oneserver": true,
-
+<center>
+  <figure>
+    <img src="/images/bitcoin/electrum-10.png" alt="" style="width: 500px">
+  </figure>
+</center>
 
 Restart Electrum and you will be using myNode for trusted Electrum access!
 
@@ -58,7 +58,7 @@ If everything went correctly, you will get a green status icon and your myNode d
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-5.png" alt="password" style="width: 500px">
+    <img src="/images/bitcoin/electrum-5.png" alt="" style="width: 500px">
   </figure>
 </center>
 
@@ -68,7 +68,7 @@ You can also run Electrum via the mobile app and connect it to you myNode. First
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-6.png" alt="password" style="width: 200px">
+    <img src="/images/bitcoin/electrum-6.png" alt="" style="width: 200px">
   </figure>
 </center>
 
@@ -76,7 +76,7 @@ Also make sure Auto-connect is ON and One-server mode is ON.
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-7.png" alt="password" style="width: 200px">
+    <img src="/images/bitcoin/electrum-7.png" alt="" style="width: 200px">
   </figure>
 </center>
 
@@ -84,7 +84,7 @@ If everything went correctly, you will get a screen like this and your myNode de
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-8.png" alt="password" style="width: 200px">
+    <img src="/images/bitcoin/electrum-8.png" alt="" style="width: 200px">
   </figure>
 </center>
 
@@ -94,6 +94,6 @@ The easiest way to use Electrum in Windows and connect to your myNode consistent
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-9.png" alt="password" style="width: 500px">
+    <img src="/images/bitcoin/electrum-9.png" alt="" style="width: 500px">
   </figure>
 </center>

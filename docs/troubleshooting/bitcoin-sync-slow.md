@@ -2,7 +2,7 @@
 
 There are numerous reasons your device may appear to be syncing the Bitcoin blockchain slowly. If your device is syncing slowly, here are several suggestions to try and speed things up.
 
-Even with slow internet speed, slow external drives, or slow Internet, the early blocks in a device's IBD (Initial Blockchain Download) may still appear to sync quickly. However, once the device has progressed to block ~450k, sync times may appear to decrease.
+Even with slow internet speed, slow external drives, or slow Internet, the early blocks in a device's IBD (Initial Blockchain Download) may still appear to sync quickly. However, once the device has progressed to block ~450k, sync times will slow down significantly.
 
 ## Using a Hard Drive
 
