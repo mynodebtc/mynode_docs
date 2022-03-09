@@ -87,13 +87,3 @@ If everything went correctly, you will get a screen like this and your myNode de
     <img src="/images/bitcoin/electrum-8.png" alt="" style="width: 200px">
   </figure>
 </center>
-
-## Connecting an Electrum Wallet to myNode via Windows
-
-The easiest way to use Electrum in Windows and connect to your myNode consistently is to add the settings by editting the Electrum Wallet icon. This screenshot shows the changes you should make as well as the result. To open Electrum Properties, right click on the Electrum icon and choose Properties.
-
-<center>
-  <figure>
-    <img src="/images/bitcoin/electrum-9.png" alt="" style="width: 500px">
-  </figure>
-</center>
