@@ -74,3 +74,18 @@ Logs from applications experiencing issues can be found on the status page by cl
     <img src="/images/troubleshooting/show_app_log.png" alt="Show App Log Button">
   </figure>
 </center>
+
+## Re-flash the SD card
+
+The final thing to try is re-flashing the SD card, especially if more than one version has failed to update properly. This will clear any corrupt data and write a fresh myNode operating system to the SD card. All critical data is saved on the external drive, so you will not lose your Bitcoin or Lightning data. Some applications may need to be re-installed.
+
+Detailed instructions available on the <a href="https://mynodebtc.com/download">download</a> page.
+
+- Shutdown device using the button on the settings page
+- Remove SD Card from Device
+- Re-flash the SD Card
+- Insert SD card back into the device
+- Power device back on (may need to remove and re-connect power cable)
+- Your password will also be reset to "bolt"!
+
+Note: This process may cause your device to get a new IP address.
