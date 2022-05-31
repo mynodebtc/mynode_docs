@@ -168,6 +168,7 @@ module.exports = {
           "/troubleshooting/bitcoin-sync-slow",
           "/troubleshooting/electrum-connection-error",
           "/troubleshooting/voltage-error",
+          "/troubleshooting/sd-card-full-error",
           "/troubleshooting/sd-card-readonly-error",
           "/troubleshooting/drive-readonly-error",
           "/troubleshooting/fsck-error"
