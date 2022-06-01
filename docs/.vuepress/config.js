@@ -1,5 +1,5 @@
 module.exports = {
-  title: "myNode Guides and Documentation",
+  title: "Guides and Documentation",
   description: "Helpful guides and documentation for using myNode and getting the most out of all it has to offer!",
   base: "/",
   head: [
