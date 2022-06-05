@@ -56,7 +56,7 @@ Open Etcher and click "Flash from file" and choose the recently downloaded image
   </figure>
 </center>
 
-After selecting the image, click "Select target" and select the SD card to open a window with a list of detected drives. 
+After selecting the image, click "Select target".
 
 <center>
   <figure>
@@ -91,7 +91,7 @@ Once the image has been flashed to the SD card, you can remove it from the PC.
 
 ## Insert SD Card into Device
 
-Finally, the last steps is to take the SD card and insert it into the unpowered device.
+Finally, the last step is to take the SD card and insert it into the unpowered device.
 
 <center>
   <figure>
@@ -101,3 +101,4 @@ Finally, the last steps is to take the SD card and insert it into the unpowered 
 
 Once, it has been inserted, reconnect the power cable and enjoy myNode!
 
+For futher steps, try the [Getting Started](/intro/getting-started) guide.
