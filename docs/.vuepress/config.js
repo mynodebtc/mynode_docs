@@ -132,6 +132,7 @@ module.exports = {
       {
         title: "Advanced",
         children: [
+          "/advanced/flash-sd-card",
           "/advanced/linux-terminal",
           "/advanced/find-device-ip",
           "/advanced/customize-config",

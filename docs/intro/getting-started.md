@@ -6,29 +6,41 @@ sidebarDepth: 0
 
 ## Download and Install
 
-You can skip this step if you purchased a pre-loaded myNode device!
+You can skip this step if you purchased a myNode device!
 
-Setting up a new myNode device can be done in a few simple steps. First, you need to download the myNode image for your device type and flash it on an SD card according to the instructions on the download page.
+Setting up a new myNode device can be done in a few simple steps. First, you need to download the myNode image for your device type and [flash it to an SD card](/advanced/flash-sd-card) according to the instructions on the download page.
 
-## Power On and Attach External Storage
+## Power On and Attach Storage
 
-Next, power on the device and attach an external HDD or SSD.
-
-**Note**: The drive will be re-formatted for use by myNode and existing data will be lost!
+Next, power on the device and attach an external SSD.
 
 ## Connecting to myNode
 
-Your myNode device runs its own local web server that you can access with any browser on the same network. Visit [http://mynode.local/](http://mynode.local/) or [http://(mynode.IP.address)/](http://mynode_ip_address/) in a web browser on a network-connected device. Here replace ’(mynode.IP.address)’ with the IP address of the myNode device.
+Your myNode device runs its own local web server that you can access with any browser on the same network. Visit [http://mynode.local/](http://mynode.local/) or [the IP address](/advanced/find-device-ip) in a web browser on a device that is on the same network.
 
 You will be prompted to enter your product key. If you are using the Community Edition, you can choose that option. Otherwise, enter the product key that has either been emailed to you, or is found on the bottom of your device.
 
-Next the device may run *QuickSync*. If you are using a hard drive, QuickSync may run, which downloads a pre-validated copy of the blockchain so you can get started more quickly. If you have a solid state drive (SSD) QuickSync should not run and recent versions of software default to having QuickSync disabled. It must be manually enabled via the settings page. This process could take several days depending on your device and your network bandwidth. The myNode device’s web interface will show you the current status of synchronization. Once *QuickSync* is completed, the device will automatically stay synchronized with the Bitcoin network.
+<center>
+  <figure>
+    <img src="/images/getting-started/gs1.png" width="400">
+  </figure>
+</center>
 
-![main page](/images/getting-started/gs1.png)
+Next, the device will begin syncing the Bitcoin Blockchain! This process will take several days, depending on your device and your network bandwidth. The myNode device’s web interface will show you the current status of synchronization. Once the initial sync is completed, the device will automatically stay synchronized with the Bitcoin network and display the main application page.
+
+<center>
+  <figure>
+    <img src="/images/getting-started/gs2.png" width="400">
+  </figure>
+</center>
 
 Your myNode device is now ready and you will see the main myNode home page.
 
-![main page](/images/getting-started/gs2.png)
+<center>
+  <figure>
+    <img src="/images/getting-started/gs3.png">
+  </figure>
+</center>
 
 You can optionally connect to your myNode device via SSH if you are familiar with Linux. You can connect using the device IP or hostname.
 
