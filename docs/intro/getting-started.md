@@ -18,6 +18,8 @@ Next, power on the device and attach an external SSD.
 
 Your myNode device runs its own local web server that you can access with any browser on the same network. Visit [http://mynode.local/](http://mynode.local/) or [the IP address](/advanced/find-device-ip) in a web browser on a device that is on the same network.
 
+*Note:* The device may reboot during initial setup. The web interface may not be available for 5-10 minutes.
+
 You will be prompted to enter your product key. If you are using the Community Edition, you can choose that option. Otherwise, enter the product key that has either been emailed to you, or is found on the bottom of your device.
 
 <center>
@@ -26,7 +28,7 @@ You will be prompted to enter your product key. If you are using the Community E
   </figure>
 </center>
 
-Next, the device will begin syncing the Bitcoin Blockchain! This process will take several days, depending on your device and your network bandwidth. The myNode device’s web interface will show you the current status of synchronization. Once the initial sync is completed, the device will automatically stay synchronized with the Bitcoin network and display the main application page.
+Next, the device will begin syncing the Bitcoin Blockchain! This process can take 6+ days, depending on your device and your network bandwidth. The myNode web interface will show you the current status of synchronization. Once the initial sync is completed, the device will automatically stay synchronized with the Bitcoin network and display the main application page.
 
 <center>
   <figure>
