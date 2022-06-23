@@ -18,7 +18,7 @@ Next, power on the device and attach an external SSD.
 
 Your myNode device runs its own web server that you can access with any browser on the same WiFi or local network. Visit [http://mynode.local/](http://mynode.local/) or [the IP address](/advanced/find-device-ip) in a web browser on your PC, laptop, tablet, or phone.
 
-*Note:* The device may reboot during initial setup. The web interface may not be available for 5-10 minutes.
+**Note:** The device may reboot during initial setup. The web interface may not be available for 5-10 minutes.
 
 You will be prompted to enter your product key. If you are using the Community Edition, you can choose that option. Otherwise, enter the product key that has either been emailed to you, or is found on the bottom of your device.
 
