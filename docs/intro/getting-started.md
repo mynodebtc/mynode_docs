@@ -16,7 +16,7 @@ Next, power on the device and attach an external SSD.
 
 ## Connecting to myNode
 
-Your myNode device runs its own local web server that you can access with any browser on the same network. Visit [http://mynode.local/](http://mynode.local/) or [the IP address](/advanced/find-device-ip) in a web browser on a device that is on the same network.
+Your myNode device runs its own web server that you can access with any browser on the same WiFi or local network. Visit [http://mynode.local/](http://mynode.local/) or [the IP address](/advanced/find-device-ip) in a web browser on your PC, laptop, tablet, or phone.
 
 *Note:* The device may reboot during initial setup. The web interface may not be available for 5-10 minutes.
 
