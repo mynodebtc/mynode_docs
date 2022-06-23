@@ -10,9 +10,18 @@ You can skip this step if you purchased a myNode device!
 
 Setting up a new myNode device can be done in a few simple steps. First, you need to download the myNode image for your device type and [flash it to an SD card](/advanced/flash-sd-card) according to the instructions on the download page.
 
-## Power On and Attach Storage
+## Power On Device
 
-Next, power on the device and attach an external SSD.
+Next, power on the device and attach a storage drive, if necessary.
+
+**Prepare Storage Device**
+Many devices, like the myNode One and Raspberry Pi 4, rely on external storage attached via USB.
+- Insert SSD into USB to SATA Enclosure
+- Verify connections are secure
+- Attach SSD enclosure to device in USB 3 port (blue)
+
+**Power On**
+- Plug power cable in outlet and connect to device
 
 ## Connecting to myNode
 
