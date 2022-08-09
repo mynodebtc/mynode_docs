@@ -37,6 +37,18 @@ Click the "Install Latest Version" button and the device will reboot and attempt
 
 It may help to wait a period of time before re-trying if the issue was caused by a network or server issue.
 
+## Re-attempt the Upgrade via Linux Terminal
+
+If the error is preventing access to the web interface, try using the Linux Terminal to re-attempt the upgrade.
+
+First, connect to the Linux Terminal using [this guide](/advanced/linux-terminal.html).
+
+Second, type in the following command and press enter. It will prompt you for your password. Enter it and press enter again.
+
+`sudo /usr/bin/mynode_upgrade.sh`
+
+The upgrade should re-run and fix any issues caused by the first failed upgrade.
+
 ## Upgrade a Specific App
 
 If a specific application is not working or did not appear to upgrade, another option it to attempt to re-install a specific app.
