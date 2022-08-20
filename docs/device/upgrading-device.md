@@ -32,7 +32,7 @@ Follow these steps to manually upgrade to the latest version:
 3. Run `make rootfs`
 4. Run `make start_file_server`
     * This will run a local HTTP server so your device can download files
-5. On the other terminal which you used to ssh into your device, run `sudo mynode-local-upgrade [dev pc ip address]`
+5. On the other terminal which you used to ssh into your device, run `sudo mynode-local-upgrade [pc ip address]`
     * This will download your locally generated artifact and install it on your device
     * Your device will automatically reboot to ensure updates take effect
 6. Optional: Run `make stop_file_server`
