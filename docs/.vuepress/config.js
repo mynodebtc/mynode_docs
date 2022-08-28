@@ -142,6 +142,7 @@ module.exports = {
           "/advanced/verify-restore-bluewallet.md",
           "/advanced/netdata",
           "/advanced/ssh",
+          "/advanced/install-pc-server",
           "/advanced/install-virtual-box",
         //   {
         //     title: "Setup Base Images",
