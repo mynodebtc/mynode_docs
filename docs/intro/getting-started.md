@@ -6,9 +6,9 @@ sidebarDepth: 0
 
 ## Download and Install
 
-You can skip this step if you purchased a myNode device!
-
 Setting up a new myNode device can be done in a few simple steps. First, you need to download the myNode image for your device type and [flash it to an SD card](/advanced/flash-sd-card) according to the instructions on the download page.
+
+**Note:** You can skip this step if you purchased a myNode device!
 
 ## Power On Device
 
