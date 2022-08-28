@@ -18,7 +18,7 @@ Next, power on the device and attach a storage drive, if necessary.
 
 **Prepare Storage Device**
 
-Many devices, like the myNode One and Raspberry Pi 4, rely on external storage attached via USB.
+Many devices, like the myNode One and Raspberry Pi 4, use an external storage drive attached via USB.
 - Insert SSD into USB to SATA Enclosure
 - Verify connections are secure
 - Attach SSD enclosure to device in USB 3 port (blue)
