@@ -62,8 +62,33 @@ module.exports = {
         title: "Bitcoin Apps",
         children: [
           "/electrum/electrum",
-          "/bitcoin/explorer",
-          "/bitcoin/mempool",
+          {
+            title: "Bitcoin Explorers",
+            children: [
+                "/bitcoin/explorer",
+                "/bitcoin/mempool",
+            ]
+          },
+          {
+            title: "Stores and Crowdfunding",
+            children: [
+                "/btcpay-server/setup.md",
+            ]
+          },
+          {
+            title: "Mixing",
+            children: [
+              "/coinjoin/joinmarket",
+              "/coinjoin/whirlpool",
+            ]
+          },
+          {
+            title: "Multisig",
+            children: [
+                "/multisig/caravan",
+                "/multisig/specter",
+            ]
+          }
         ]
       },
       {
@@ -88,45 +113,31 @@ module.exports = {
         ]
       },
       {
-        title: "BTCPay Server",
-        children : [
-            '/btcpay-server/setup.md'
-        ]
-      },
-      {
-        title: "Multisig Apps",
-        children: [
-          "/multisig/caravan",
-          "/multisig/specter",
-        ]
-      },
-      {
-        title: "CoinJoin / Mixing Apps",
-        children: [
-          "/coinjoin/joinmarket",
-          "/coinjoin/whirlpool",
-        ]
-      },
-      {
         title: "Networking",
         children: [
           "/networking/tor",
-          "/device/connect-wifi"
+          "/device/connect-wifi",
+          "/advanced/find-device-ip",
         ]
       },
       {
-        title: "Remote Access (Tor)",
+        title: "Remote Access",
         children: [
-          "/tor/setup",
-          "/tor/web-gui",
-          "/tor/electrum",
-          ["/tor/zeus", 'Zeus Wallet via Tor'],
-        ]
-      },
-      {
-        title: "Remote Access (VPN)",
-        children: [
-          "/vpn/setup",
+            {
+                title: "Remote Access via Tor",
+                children: [
+                  "/tor/setup",
+                  "/tor/web-gui",
+                  "/tor/electrum",
+                  ["/tor/zeus", 'Zeus Wallet via Tor'],
+                ]
+              },
+              {
+                title: "Remote Access via VPN",
+                children: [
+                  "/vpn/setup",
+                ]
+              },
         ]
       },
       {
@@ -134,9 +145,7 @@ module.exports = {
         children: [
           "/advanced/flash-sd-card",
           "/advanced/linux-terminal",
-          "/advanced/find-device-ip",
           "/advanced/customize-config",
-          "/advanced/memory-usage-cap",
           "/advanced/clone-tool",
           "/advanced/custom-app-versions",
           "/advanced/verify-restore-bluewallet.md",
