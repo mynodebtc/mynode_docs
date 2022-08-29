@@ -2,9 +2,13 @@
 
 ## Background
 
-myNode has been designed to protect your data by requiring two storage drives. One drive contains the operating system and applications and the other stores the data. This allows for easier data backup and enables simpler recovery.
+myNode has been designed to protect your data by requiring two storage drives. One drive contains the operating system and applications and the other stores data, like the Bitcoin blockchain. This allows for easier data backup and enables simpler recovery.
 
-This guide suggests using a USB thumbdrive to boot the operating system and using an internal drive for data. In more advanced use cases, the myNode image can be written to an internal drive as well using similar tools. It is assumed a dedicated PC or server will be running myNode.
+This guide suggests using a USB thumbdrive to boot the operating system and using an internal drive for data. In more advanced use cases, the myNode image can be written to an internal drive as well using similar tools. Any existing data on the thumbdrive and data drive will be lost.
+
+**Required Hardware**
+- USB Thumbdrive (32GB+)
+- PC, Laptop or Server 
 
 ## Download
 
@@ -14,7 +18,7 @@ First, download the myNode image for a PC or server (amd64) from [mynodebtc.com]
 
 ## Install myNode
 
-Once the image has been downloaded, the image needs to be written to a drive that will be used to boot the PC or server intended to run myNode. This can easily be done with a [USB drive](https://amzn.to/3AlIxco) and [Balena Etcher](https://www.balena.io/etcher/). If using a USB thumbdrive, make sure it is at least 32GB.
+Once the image has been downloaded, the image needs to be written to a drive that will be used to boot the PC or server intended to run myNode. This can easily be done with a [USB thumbdrive](https://amzn.to/3AlIxco) and [Balena Etcher](https://www.balena.io/etcher/). If using a USB thumbdrive, make sure it is at least 32GB.
 
 Insert the USB drive into your PC. Open Etcher, click Select image and choose the downloaded image. Note, the downloaded image may need to be extracted first.
 
