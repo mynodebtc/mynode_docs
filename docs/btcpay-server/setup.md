@@ -1,4 +1,4 @@
-# Setup BTCPay Server
+# BTCPay Server
 
 ## Enable and open the app
 

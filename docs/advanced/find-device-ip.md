@@ -1,4 +1,4 @@
-# Finding Device's IP Address
+# Find your Device's IP Address
 
 In some scenarios, it can be useful to know your device's IP address. Here are several ways to find it.
 
