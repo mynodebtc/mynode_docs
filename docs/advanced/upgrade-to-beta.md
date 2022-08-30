@@ -6,6 +6,8 @@ myNode releases frequent updates, but from time to time, beta updates are availa
 
 Updating to a beta release is simple and can be done with a couple button clicks.
 
+<i>Premium Feature</i>
+
 ## Steps to Upgrade
 
 First, navtigate to the settings page and scroll down towards the bottom to the Developer section. Within that section, find the subsection titled "Install Beta" and click on "Check for Updates" - this will check to see if any new beta upgrades are available. Checking for new versions may take a minute.
