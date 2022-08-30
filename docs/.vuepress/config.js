@@ -153,6 +153,7 @@ module.exports = {
           "/advanced/ssh",
           "/advanced/install-pc-server",
           "/advanced/install-virtual-box",
+          "/advanced/upgrade-to-beta",
         //   {
         //     title: "Setup Base Images",
         //     children: [
