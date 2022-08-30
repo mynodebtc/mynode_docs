@@ -79,13 +79,13 @@ module.exports = {
             title: "Mixing",
             children: [
               "/coinjoin/joinmarket",
-              "/coinjoin/whirlpool",
+              //"/coinjoin/whirlpool", // Not ready
             ]
           },
           {
             title: "Multisig",
             children: [
-                "/multisig/caravan",
+                //"/multisig/caravan", // Not ready
                 "/multisig/specter",
             ]
           }
