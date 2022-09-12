@@ -7,7 +7,9 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
     ['link', { rel : 'icon', href: '/favicon.ico' }],
-    ['link', { rel : 'stylesheet', href: '/css/mynode.css' }]
+    ['link', { rel : 'stylesheet', href: '/css/mynode.css' }],
+    ['script',{async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-871EBBS9WR'},],
+    ['script',{},["window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-871EBBS9WR');",],],
   ],
   themeConfig: {
     repo: 'mynodebtc/mynode_docs',
@@ -198,7 +200,7 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
-    ['@vuepress/google-analytics', {'ga': 'G-871EBBS9WR'}],
+    //['@vuepress/google-analytics', {'ga': 'G-871EBBS9WR'}],
     ['seo', {
         siteTitle: (_, $site) => $site.title,
         title: ($page, $site) => $page.title + " | " + $site.title,
