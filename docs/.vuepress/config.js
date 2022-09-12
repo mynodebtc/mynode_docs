@@ -198,7 +198,7 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
-    ['@vuepress/google-analytics', {'ga': 'UA-140888540-4'}],
+    ['@vuepress/google-analytics', {'ga': 'G-871EBBS9WR'}],
     ['seo', {
         siteTitle: (_, $site) => $site.title,
         title: ($page, $site) => $page.title + " | " + $site.title,
