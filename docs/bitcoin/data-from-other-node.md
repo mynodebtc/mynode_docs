@@ -41,6 +41,10 @@ sudo scp -r admin@othernode.local:/mnt/hdd/mynode/bitcoin/blocks /mnt/hdd/mynode
 sudo scp -r admin@othernode.local:/mnt/hdd/mynode/bitcoin/chainstate /mnt/hdd/mynode/bitcoin/
 sudo scp -r admin@othernode.local:/mnt/hdd/mynode/bitcoin/indexes /mnt/hdd/mynode/bitcoin/
 sudo chown -R bitcoin:bitcoin /mnt/hdd/mynode/bitcoin/
+
+# Optionally, if the blockchain data you are copying was previously indexed by Electrs and Electrs will be used on the destination node, copy the existing index to save time and avoid reindexing errors
+sudo scp -r admin@othernode.local:/mnt/hdd/mynode/electrs/bitcoin /mnt/hdd/mynode/electrs/
+
 sudo reboot
 ```
 
