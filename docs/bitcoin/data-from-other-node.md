@@ -25,7 +25,7 @@ sudo chmod -R 755 /mnt/hdd/mynode/bitcoin/chainstate
 sudo chmod -R 755 /mnt/hdd/mynode/bitcoin/indexes
 ```
 
-**On destination ndoe:**
+**On destination node:**
 ```sh
 # Stop Bitcoin and other services
 sudo /usr/bin/mynode_stop_critical_services.sh
