@@ -25,7 +25,7 @@ sudo chmod -R 755 /mnt/hdd/mynode/bitcoin/chainstate
 sudo chmod -R 755 /mnt/hdd/mynode/bitcoin/indexes
 ```
 
-**On destination ndoe:**
+**On destination node:**
 ```sh
 # Stop Bitcoin and other services
 sudo /usr/bin/mynode_stop_critical_services.sh
@@ -37,9 +37,9 @@ sudo rm -rf /mnt/hdd/mynode/bitcoin/indexes
 
 # Copy the blocks and chainstate folders from your existing node to /mnt/hdd/mynode/bitcoin/
 # For example (fill in with your own IP and path):
-sudo scp -r admin@othernode.local:/mnt/hdd/mynode/bitcoin/blocks /mnt/hdd/mynode/bitcoin/
-sudo scp -r admin@othernode.local:/mnt/hdd/mynode/bitcoin/chainstate /mnt/hdd/mynode/bitcoin/
-sudo scp -r admin@othernode.local:/mnt/hdd/mynode/bitcoin/indexes /mnt/hdd/mynode/bitcoin/
+sudo rsync -aP admin@othernode.local:/mnt/hdd/mynode/bitcoin/blocks /mnt/hdd/mynode/bitcoin/
+sudo rsync -aP admin@othernode.local:/mnt/hdd/mynode/bitcoin/chainstate /mnt/hdd/mynode/bitcoin/
+sudo rsync -aP admin@othernode.local:/mnt/hdd/mynode/bitcoin/indexes /mnt/hdd/mynode/bitcoin/
 sudo chown -R bitcoin:bitcoin /mnt/hdd/mynode/bitcoin/
 sudo reboot
 ```
