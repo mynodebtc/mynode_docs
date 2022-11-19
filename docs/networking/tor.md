@@ -10,7 +10,7 @@ For more information on Tor, visit their [website](https://www.torproject.org/).
 
 ## Enabling or Disabling Tor for Bitcoin and LND
 
-To view or modify your current Tor setting for use by Bitcoin and LND, look for the Tor section on the settings page. Move the slider to the enable or disable position and click save. Your device will reboot and Bitcoin and LND will be using the new Tor setting.
+To view or modify your current Tor setting for use by Bitcoin and LND, look for the Networking section on the settings page. Move the slider to the enable or disable Tor for LND and/or Lightning and click Save. Your device will reboot and Bitcoin and LND will be using the new Tor setting.
 
 <center>
   <figure>
