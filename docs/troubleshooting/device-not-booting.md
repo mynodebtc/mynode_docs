@@ -26,7 +26,7 @@ If a login prompt appears, try logging in with the username admin and your myNod
 
 If the device has lights, proving it has power, the next thing to try is to re-flash the SD card. Some failed operating system updates, power outages, or SD card corruption can prevent the device from booting and be resolved by loading a fresh copy of the software. The myNode software was designed to limit the impact of this as much as possible. Nearly all ciritical data is stored on the external drive, so re-flashing the SD card will have limited side effects.
 
-Detailed instructions on re-flashing are available on the myNode [download page](https://mynodebtc.com/download).
+Download link and basic instructions for re-flashing are available on the myNode [download page](https://mynodebtc.com/download). A full guide on how to re-flash an SD card is also available [here](/advanced/flash-sd-card).
 
 ## Step 5 - Replace hardware
 

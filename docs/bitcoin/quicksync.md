@@ -1,6 +1,7 @@
 # QuickSync
 
-> **_NOTE:_**  QuickSync is now disabled by default and no longer recommended. The blockchain has gotten too large for QuickSync to be feasible on most devices.
+> **Warning**
+> QuickSync is now disabled by default and no longer recommended. The blockchain has gotten too large for QuickSync to be feasible on most devices.
 
 ## Overview
 QuickSync downloads a torrent for a major chunk of the blockchain from MyNode peers without verifying every block.
