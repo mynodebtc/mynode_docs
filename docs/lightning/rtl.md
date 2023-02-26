@@ -71,4 +71,4 @@ A good overview of how to establish inbound capacity can be found [here](https:/
 
 ### References
 
-- Github: [github.com/ride-the-lighting/RTL](https://github.com/ride-the-lighting/RTL)
+- Github: [github.com/ride-the-lighting/RTL](https://github.com/Ride-The-Lightning/RTL)
