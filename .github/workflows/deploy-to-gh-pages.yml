@@ -14,6 +14,7 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
+          export NODE_OPTIONS='--openssl-legacy-provider'
           npm install
           npm run docs:build
 
