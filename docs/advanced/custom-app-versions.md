@@ -4,7 +4,7 @@ In some situations, like in the case of contentious forks, you may want to use a
 
 ## Customizing an Application Version
 
-To start customizing an app version, first go to the settings page and click on the 'Customize Application Versions' button.
+To start customizing an app version, first go to the settings page and click on the 'Customize Application Versions' button. A link it also available on the bottom of the Manage Apps page.
 
 <center>
   <figure>
@@ -12,15 +12,7 @@ To start customizing an app version, first go to the settings page and click on 
   </figure>
 </center>
 
-This will open the application customization page and you will see an empty text field (if the first time customizing app verions) as well as a button to show the default app data. If you click "Show Default Version Config" it will display the data that is used to control which applications are installed by default on myNode. You can use this as a sample for what to enter as custom app version information.
-
-You can override the version each application myNode installs. If you override it, future myNode updates will not affect the version you have specified.
-
-Saving will update the "Latest Version" of an app shown on the application page. To perform the upgrade, you will need to update it there.
-
-**Caution:** Errors in this file may prevent myNode from booting properly. To see the available variables, use the format from the included default myNode version configuration.
-
-For example, if you are running Bitcoin Core version v0.21.1 and you wanted to use Bitcoin Core version v0.20.0, you could first verify your current version via the application page.
+This will open the application customization page which has a table of all applications.
 
 <center>
   <figure>
@@ -28,7 +20,7 @@ For example, if you are running Bitcoin Core version v0.21.1 and you wanted to u
   </figure>
 </center>
 
-Then, you could update the version in the text field.
+Each app row shows the current version (if installed) and the latest version. To customize the latest version, click the Customize button and text field will appear. You can then enter the custom version and click Save.
 
 <center>
   <figure>
@@ -36,7 +28,7 @@ Then, you could update the version in the text field.
   </figure>
 </center>
 
-Once you have updated the config information, click "Save" and the page will reload. Then, click on the "apps" button in the top left and verify the application version has been updated. In this example, Bitcoin should show version "0.20.0" as shown below.
+Once saved, the application's Latest Version will be updated to the one you entered.
 
 <center>
   <figure>
@@ -44,7 +36,7 @@ Once you have updated the config information, click "Save" and the page will rel
   </figure>
 </center>
 
-If the verison appears correct, click the "Upgrade" button next to the app and the version you specified will be installed.
+After the custom app has been saved, the app still needs to be upgraded. To perform the upgrade, navigate to the Manage Apps page via the icon in the top left. Once on the Manage Apps page, you will see a pin icon next to the app you customized indicating it has a customized version.
 
 <center>
   <figure>
@@ -52,7 +44,7 @@ If the verison appears correct, click the "Upgrade" button next to the app and t
   </figure>
 </center>
 
-The device will install the specified application version and reboot. After it reboots, the application version you specified will be the one that is running! You can verify on the application page once the reboot is complete.
+To upgrade the app, click the Upgrade button in the application row. Your device will begin upgrading the application before rebooting.
 
 <center>
   <figure>
@@ -60,6 +52,12 @@ The device will install the specified application version and reboot. After it r
   </figure>
 </center>
 
-Congratulations on running a custom application version!
+After rebooting, you can go back to the Manage Apps page and verify the Current Version and Latest Version of the app match and both indicate the custom version you chose.
 
-**Caution:** Once again, be cautious with the version data you are configuring. Mistakes can cause myNode to not boot properly or the application to not install or run as expected. Custom application version are not officially supported by myNode.
+<center>
+  <figure>
+    <img src="/images/advanced/custom_app_7.png">
+  </figure>
+</center>
+
+Congratulations on running a custom application version!
