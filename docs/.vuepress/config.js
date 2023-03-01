@@ -143,6 +143,13 @@ module.exports = {
         ]
       },
       {
+        title: "Premium+",
+        children: [
+            "/premium_plus/premium_plus",
+            "/premium_plus/connect",
+        ]
+      },
+      {
         title: "Advanced",
         children: [
           "/advanced/flash-sd-card",

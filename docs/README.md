@@ -2,7 +2,7 @@
 home: true
 heroImage: /images/logo.png
 heroText: 
-tagline: "The Easiest Way to Run a Bitcoin Node"
+tagline: "Run Bitcoin, Lightning and more!"
 # heroText: The Documentation Website
 actionText: Read The Docs →
 actionLink: /intro/introduction.md

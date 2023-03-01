@@ -12,15 +12,11 @@ For more information on Tor, visit their [website](https://www.torproject.org/).
 
 ## Tor Browser Setup
 
-#### Premium Feature
-
 On any operating system, if you want to access the myNode Web User Interface via Tor, go to [torproject.org](https://www.torproject.org/) and download and install the Tor Browser application.
 
 Once installed, you can access the myNode UI via the link shown on the Tor page.
 
 ## Tor Setup on Android
-
-#### Premium Feature
 
 On your Android device, download Orbot and enable it by Clicking the Start button. This will create a Tor connection from your phone.
 
@@ -34,8 +30,6 @@ Some apps require "VPN Mode" to access Tor. Tap the settings button next to "Ful
 
 ## Tor Setup using Tor Browser (Windows, Linux, Mac)
 
-#### Premium Feature
-
 On your PC or laptop, install <a href="https://www.torproject.org/download/" target="_blank">Tor Browser</a>.
 
 Once installed, you can use it to browse to the onion URLs found via the Tor page on your myNode device. Many services are available via a web interface, like RTL, Thunderhub, BTC Pay Server, etc...
@@ -44,20 +38,16 @@ However, other services require the Tor network, but not the Tor browser. For ex
 
 ## Tor Setup on Linux
 
-#### Premium Feature
-
 On your Linux PC, install Tor so you have a proxy running.
 
 ```
 sudo apt-get install tor
 ```
 
-Your Linux PC is now running a Tor proxy and ready to connect to Tor services provided by myNode! You may also want to install
+Your Linux PC is now running a Tor proxy and ready to connect to Tor services provided by myNode!
 
 
 ## Find Onion URL for Service
-
-#### Premium Feature
 
 To find the proper Onion URL for a service, open the Tor information page on your myNode device.
 
