@@ -24,7 +24,7 @@ First, click on the Advanced button to open more options.
 
 Then, click the proceed link. Even though it may say unsafe, the HTTPS certificate is still providing security between your browser and the device.
 
-## You see an "Not Connection" Warning
+## You see an "Not Secure" Warning
 
 Even after accepting the certificate in the section above, you may still see a warning in your browser about the site not being secure, like below.
 
