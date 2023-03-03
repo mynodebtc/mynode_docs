@@ -14,7 +14,8 @@ To view or modify your current Tor setting for use by Bitcoin and LND, look for 
 
 If your router does not have UPnP and/or NAT-PMP enabled, disabling Tor will break your lightning node.
 
-If you want to allow inbound connections from other nodes on Clearnet, you would need to open port 8333 on your router first.
+If you want to allow inbound connections from other nodes on Clearnet, you would need to open port 8333 on your router first.  Reference:
+https://bitcoin.org/en/full-node#network-configuration
 
 <center>
   <figure>
