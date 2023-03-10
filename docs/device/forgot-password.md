@@ -1,7 +1,7 @@
 # Forgot your Password
 After setting up your myNode, it is important to change the password. However, if you forget this password you will not be able to log back in to access the services. Luckily, myNode was designed to make this recovery process relatively simple and not lose critical data, like the Bitcoin blockchain or Lightning data.
 
-All you need to do is reflash the SD card - detailed instructions available on the <a href="https://mynodebtc.com/download">download</a> page.
+All you need to do is reflash the SD card - detailed instructions available <a href="/advanced/flash-sd-card">here</a>.
 
 - Shutdown device using the button on the settings page
 - Remove SD Card from Device
