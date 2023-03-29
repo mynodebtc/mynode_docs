@@ -2,15 +2,15 @@
 
 If you already have a Lighting Wallet and want to restore it, you can do so via the myNode interface.
 
+**Note:** You will only see the options to create or restore a wallet if no wallet exists. If a wallet has been created, you will first need to delete the Lightning wallet via the settings page before it can be restored.
+
 ## Restoring a Lightning Wallet
 
-First, click on Manage under the Lightning app on the myNode home page.
+First, click on Create Wallet under the Lightning app on the myNode home page.
 
 Then, click on "Restore Wallet from Seed" on the Lightning page. 
 
 **You will need your seed phrase and Static Channel Backup file!**
-
-**Note:** You will only see the Restore button if no wallet exists. If a wallet had been created, you will first need to delete the Lightning wallet via the settings page.
 
 <center>
   <figure>
