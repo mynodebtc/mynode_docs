@@ -7,7 +7,7 @@ A GUI to manage Lightning channels
 
 Created by Anthony Potdevin, ThunderHub is an open-source LND node manager to monitor your node and manage channels via a web-interface. It allows you to take control of the Lightning network with a simple and intuitive UX.
 
-ThunderHub is part of the *Beta Apps* on myNode available only for *premium* users.
+ThunderHub is part of the *Beta Apps* on MyNode available only for *premium* users.
 
 ![ThunderHub GUI](/images/lightning/ThunderHub/ThunderHub_GUI_comp.png "ThunderHub GUI")
 
@@ -34,9 +34,9 @@ Find the full list of features on [GitHub](https://github.com/apotdevin/thunderh
 - Backup, verify and recover all your channels.
 - Sign and verify messages.
 
-## ThunderHub on myNode
+## ThunderHub on MyNode
 
-ThunderHub is already configured with default environment variables and connected to the Lightning wallet, but it is disabled by default. To enable it, open the myNode homepage and find the tile with the ThunderHub logo under Beta Apps (like the left image below).
+ThunderHub is already configured with default environment variables and connected to the Lightning wallet, but it is disabled by default. To enable it, open the MyNode homepage and find the tile with the ThunderHub logo under Beta Apps (like the left image below).
 <center>
   <figure>
     <img src="/images/lightning/ThunderHub/disabled.png" alt="" style="width: 125px">
@@ -47,7 +47,7 @@ Click on the **Enable** button, and wait for the page to refresh.
 
 You should now see a **ThunderHub** button (like shown on the right image above) and a green dot. On clicking this button, a new tab should open on your browser, containing ThunderHub.
 
-On the ThunderHub tab, click the **Login** button, enter your myNode password and then click on **Connect**.
+On the ThunderHub tab, click the **Login** button, enter your MyNode password and then click on **Connect**.
 
 ![ThunderHub Connect Interface](/images/lightning/ThunderHub/login.png)
 

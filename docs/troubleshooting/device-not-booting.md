@@ -20,13 +20,13 @@ If those tools cannot find an IP address, then the device may not be booting pro
 
 Another option to help diagnose some issues, is to connect a keyboard and monitor to the device. After connecting the additional hardware, reboot the device and watch the monitor. It may show error messages that indicate the operating system cannot start, which can mean SD card failure, corruption, or operating system upgrade failures. If error messages appear, go to step 4 and try re-flashing the SD card.
 
-If a login prompt appears, try logging in with the username admin and your myNode password. After logging in, you should see an IP address in the banner to use to connect to the user interface. If no IP address appears or the interface still cannot connect, you likely have a network issue preventing access. Going to step 4 may help resolve the issue, but it is more likely a different issue related to networking or failed hardware.
+If a login prompt appears, try logging in with the username admin and your MyNode password. After logging in, you should see an IP address in the banner to use to connect to the user interface. If no IP address appears or the interface still cannot connect, you likely have a network issue preventing access. Going to step 4 may help resolve the issue, but it is more likely a different issue related to networking or failed hardware.
 
 ## Step 4 - Reflash SD Card
 
-If the device has lights, proving it has power, the next thing to try is to re-flash the SD card. Some failed operating system updates, power outages, or SD card corruption can prevent the device from booting and be resolved by loading a fresh copy of the software. The myNode software was designed to limit the impact of this as much as possible. Nearly all ciritical data is stored on the external drive, so re-flashing the SD card will have limited side effects.
+If the device has lights, proving it has power, the next thing to try is to re-flash the SD card. Some failed operating system updates, power outages, or SD card corruption can prevent the device from booting and be resolved by loading a fresh copy of the software. The MyNode software was designed to limit the impact of this as much as possible. Nearly all ciritical data is stored on the external drive, so re-flashing the SD card will have limited side effects.
 
-Download link and basic instructions for re-flashing are available on the myNode [download page](https://mynodebtc.com/download). A full guide on how to re-flash an SD card is also available [here](/advanced/flash-sd-card).
+Download link and basic instructions for re-flashing are available on the MyNode [download page](https://mynodebtc.com/download). A full guide on how to re-flash an SD card is also available [here](/advanced/flash-sd-card).
 
 ## Step 5 - Replace hardware
 

@@ -1,6 +1,6 @@
 # Flash SD Card Image
 
-For many types of devices, including the Raspberry Pi 4, the first step in getting started is to download a myNode image and flash it onto an SD card. The SD card is then inserted into the device so it can run the myNode software.
+For many types of devices, including the Raspberry Pi 4, the first step in getting started is to download a MyNode image and flash it onto an SD card. The SD card is then inserted into the device so it can run the MyNode software.
 
 This same process can be done to load new versions of software, reset your password if it was forgotten, or to swap to a new SD card with larger storage capacity.
 
@@ -99,6 +99,6 @@ Finally, the last step is to take the SD card and insert it into the unpowered d
   </figure>
 </center>
 
-Once, it has been inserted, reconnect the power cable and enjoy myNode!
+Once, it has been inserted, reconnect the power cable and enjoy MyNode!
 
 For futher steps, try the [Getting Started](/intro/getting-started) guide.

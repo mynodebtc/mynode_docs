@@ -1,7 +1,7 @@
 
 # Zeus
 
-## Using Zeus with myNode
+## Using Zeus with MyNode
 
 First, install <a href="https://github.com/ZeusLN/zeus" target="_blank">Zeus</a> on your mobile device.
 
@@ -21,7 +21,7 @@ Tap on "Scan lndconnect config".
   </figure>
 </center>
 
-Open the QR Pairing page on myNode and scan the QR Code from the "REST Local IP" tab.
+Open the QR Pairing page on MyNode and scan the QR Code from the "REST Local IP" tab.
 
 <center>
   <figure>
@@ -29,7 +29,7 @@ Open the QR Pairing page on myNode and scan the QR Code from the "REST Local IP"
   </figure>
 </center>
 
-Once the QR code is scanned, click "Save Node Config" and go back to the main app screen. Zeus is now using your myNode device!
+Once the QR code is scanned, click "Save Node Config" and go back to the main app screen. Zeus is now using your MyNode device!
 
 <center>
   <figure>

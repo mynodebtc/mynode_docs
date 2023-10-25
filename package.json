@@ -1,5 +1,5 @@
 {
-  "name": "myNode-docs",
+  "name": "MyNode-docs",
   "version": "1.0.0",
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.5.3",

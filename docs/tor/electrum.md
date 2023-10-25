@@ -2,9 +2,9 @@
 
 ## Enabling Electrum Server
 
-Electrum is a very popular light wallet that lets you use Bitcoin on your PC or mobile device without needing a full copy of the blockchain. By running Electrum Server on your myNode, you can run light wallets on other devices in a trusted manner by offloading the heavy lifting to myNode.
+Electrum is a very popular light wallet that lets you use Bitcoin on your PC or mobile device without needing a full copy of the blockchain. By running Electrum Server on your MyNode, you can run light wallets on other devices in a trusted manner by offloading the heavy lifting to MyNode.
 
-First, from the myNode home page click "Enable" to start running Electrum Server. Depending on the speed of your device, it may take several days to fully sync Electrum. Your device may run slowly during this initial sync period.
+First, from the MyNode home page click "Enable" to start running Electrum Server. Depending on the speed of your device, it may take several days to fully sync Electrum. Your device may run slowly during this initial sync period.
 
 <center>
   <figure>
@@ -16,7 +16,7 @@ Once the server has synced, you should see an Electrum Server status page simila
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-2.png" alt="myNode logo" style="width: 300px;">
+    <img src="/images/bitcoin/electrum-2.png" alt="MyNode logo" style="width: 300px;">
   </figure>
 </center>
 
@@ -24,9 +24,9 @@ Once the server has synced, you should see an Electrum Server status page simila
 
 #### Premium Feature
 
-Electrum is an easy-to-use light wallet, but requires that you delegate some trust to other servers to give you correct information about your Bitcoin. myNode removes this risk by running a full Bitcoin node and Electrum Server on the device, removing the need to trust a random server to provide you accurate information about your Bitcoin funds.
+Electrum is an easy-to-use light wallet, but requires that you delegate some trust to other servers to give you correct information about your Bitcoin. MyNode removes this risk by running a full Bitcoin node and Electrum Server on the device, removing the need to trust a random server to provide you accurate information about your Bitcoin funds.
 
-However, for your mobile wallets to work properly wherever you are, you need to have public connection to your myNode. The most secure way to do this is via Tor. It allows remote, encrypted connections back to your myNode device.
+However, for your mobile wallets to work properly wherever you are, you need to have public connection to your MyNode. The most secure way to do this is via Tor. It allows remote, encrypted connections back to your MyNode device.
 
 More information and tips are available in this community guide as well - <a href="https://armantheparman.com/tor/" target="_blank">All The Reasons You’ve Failed To Connect Electrum to Your Node Via Tor</a> by <a href="https://twitter.com/parman_the" target="_blank">Arman the Parman</a>.
 
@@ -40,7 +40,7 @@ On your Android device, download Orbot and enable it by Clicking the Start butto
   </figure>
 </center>
 
-Next, open the Electrum Server information page on your myNode device and find the Onion URL. This link will need to be used later in the Electrum App.
+Next, open the Electrum Server information page on your MyNode device and find the Onion URL. This link will need to be used later in the Electrum App.
 
 <center>
   <figure>
@@ -63,7 +63,7 @@ And set the Server settings to:<br/>
   </figure>
 </center>
 
-If everything went correctly, your wallet will sync and your myNode device will be acting as your Electrum Server!
+If everything went correctly, your wallet will sync and your MyNode device will be acting as your Electrum Server!
 
 <center>
   <figure>

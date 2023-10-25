@@ -67,4 +67,4 @@ A violet color wallet should appear called "Imported HD Aezeed". Click on it to 
 
 ![Transactions: MacOS](/images/bluewallet/macos-4.png)
 
-**Note**: Bluewallet only scans the first 20 addresses whereas myNode generates a new address on every reboot, so total funds may appear to be different.
+**Note**: Bluewallet only scans the first 20 addresses whereas MyNode generates a new address on every reboot, so total funds may appear to be different.

@@ -10,7 +10,7 @@ ideas:
 
 ## Overview
 
-Syncronizing the full Bitcoin blockchain can take a long time on certain devices. By default, myNode will use *QuickSync* to download a pre-validated portion of the blockchain to greatly reduce the initial sync time. However myNode also allows you to fully validate the blockchain yourself.
+Syncronizing the full Bitcoin blockchain can take a long time on certain devices. By default, MyNode will use *QuickSync* to download a pre-validated portion of the blockchain to greatly reduce the initial sync time. However MyNode also allows you to fully validate the blockchain yourself.
 
 ## Disable QuickSync
 
@@ -24,7 +24,7 @@ To fully synchronize the blockchain, first disable QuickSync. Go to the settings
 
 ## Reset Bitcoin Blockchain
 
-After disabling QuickSync, you may need to reset the blockchain. If your myNode was already up and running, you will need to reset the blockchain as well. If your device was still performing QuickSync, you will not need to perform the following step.
+After disabling QuickSync, you may need to reset the blockchain. If your MyNode was already up and running, you will need to reset the blockchain as well. If your device was still performing QuickSync, you will not need to perform the following step.
 
 Next, reset the Blockchain via the settings page.
 

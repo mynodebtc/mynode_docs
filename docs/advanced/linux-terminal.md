@@ -12,7 +12,7 @@ On the settings page, there is a button labeled "Linux Terminal" under the Statu
   </figure>
 </center>
     
-The username is "admin" and the password is the password you have set for your myNode device (default is "bolt").
+The username is "admin" and the password is the password you have set for your MyNode device (default is "bolt").
 
 <center>
   <figure>

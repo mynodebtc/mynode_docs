@@ -19,7 +19,7 @@ The first step to setting up Premium+ is to make sure you have an account on <a 
 
 <center>
   <figure>
-    <img src="/images/premium_plus/connect_login.png" alt="myNode logo" style="width: 400px">
+    <img src="/images/premium_plus/connect_login.png" alt="MyNode logo" style="width: 400px">
   </figure>
 </center>
 
@@ -33,7 +33,7 @@ To add your product key type your key into the text field and click the "Add Key
 
 <center>
   <figure>
-    <img src="/images/premium_plus/connect_product_key.png" alt="myNode logo" style="width: 400px">
+    <img src="/images/premium_plus/connect_product_key.png" alt="MyNode logo" style="width: 400px">
   </figure>
 </center>
 
@@ -49,7 +49,7 @@ The page with one product key associated with your account will look similar to 
 
 <center>
   <figure>
-    <img src="/images/premium_plus/connect_my_devices.png" alt="myNode logo" style="width: 400px">
+    <img src="/images/premium_plus/connect_my_devices.png" alt="MyNode logo" style="width: 400px">
   </figure>
 </center>
 
@@ -61,7 +61,7 @@ Now, copy your Access Token and navigate to the main Premium+ page on your node.
 
 <center>
   <figure>
-    <img src="/images/premium_plus/connect_token_1.png" alt="myNode logo" style="width: 400px">
+    <img src="/images/premium_plus/connect_token_1.png" alt="MyNode logo" style="width: 400px">
   </figure>
 </center>
 
@@ -73,7 +73,7 @@ To better control what you want to be accessible via mynodebtc.com, you can indi
 
 <center>
   <figure>
-    <img src="/images/premium_plus/connect_token_2.png" alt="myNode logo" style="width: 400px">
+    <img src="/images/premium_plus/connect_token_2.png" alt="MyNode logo" style="width: 400px">
   </figure>
 </center>
 
@@ -83,7 +83,7 @@ Finally, now that you are connected and have enabled any features you are intere
 
 <center>
   <figure>
-    <img src="/images/premium_plus/connect_device_connected.png" alt="myNode logo" style="width: 400px">
+    <img src="/images/premium_plus/connect_device_connected.png" alt="MyNode logo" style="width: 400px">
   </figure>
 </center>
 

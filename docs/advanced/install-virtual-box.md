@@ -35,9 +35,9 @@
 
 ![VM Settings](/images/virtual-box/vm2.png)
 
-2. Double click on **myNode** from the sidebar and let it open a new window, as shown below.
+2. Double click on **MyNode** from the sidebar and let it open a new window, as shown below.
 
-![myNode Virtual machine: login screen](/images/virtual-box/vm4.png)
+![MyNode Virtual machine: login screen](/images/virtual-box/vm4.png)
 
 3. Enter username as **admin** and password as **bolt**
 4. Enter the password again in the Chromium window

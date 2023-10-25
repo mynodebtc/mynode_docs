@@ -14,17 +14,17 @@ For a quick introduction to Joinmarket you can watch [this demonstration](https:
 
 ## General Usage
 
-Joinmarket is installed in myNode and must be run via the command line. There are several Joinmarket scripts and configurations that can be utilized for various purposes, and it is important to fully understand the proper usage of each of them. Users are strongly urged to first read this [usage guide](https://github.com/JoinMarket-Org/joinmarket-clientserver/blob/master/docs/USAGE.md).
+Joinmarket is installed in MyNode and must be run via the command line. There are several Joinmarket scripts and configurations that can be utilized for various purposes, and it is important to fully understand the proper usage of each of them. Users are strongly urged to first read this [usage guide](https://github.com/JoinMarket-Org/joinmarket-clientserver/blob/master/docs/USAGE.md).
 
-To get a myNode command line window you will need to open an SSH session from another computer.
+To get a MyNode command line window you will need to open an SSH session from another computer.
 
-Instructions for doing that while on the same network as your myNode can be found [here](https://mynodebtc.com/guide/debug_access_linux_terminal).
+Instructions for doing that while on the same network as your MyNode can be found [here](https://mynodebtc.com/guide/debug_access_linux_terminal).
 
 There are two ways to run JoinMarket - by using JoinMarket scripts directly or by using a minimal terminal interface provided by JoinInBox.
 
 ## Usage - JoinInBox
 
-Once you have opened a terminal window in your myNode, there is a convenient script for setting up and running JoinMarket.
+Once you have opened a terminal window in your MyNode, there is a convenient script for setting up and running JoinMarket.
 
 `sudo mynode-joininbox`
 
@@ -38,7 +38,7 @@ You should now have access to JoinMarket through the interface provided by JoinI
 
 ## Usage - JoinMarket
 
-Once you have opened a terminal window in your myNode, there is a convenient script for setting up and running JoinMarket.
+Once you have opened a terminal window in your MyNode, there is a convenient script for setting up and running JoinMarket.
 
 `sudo mynode-joinmarket`
 
@@ -56,16 +56,16 @@ You can find the main configuration file, `joinmarket.cfg` at:
 
 To exit, simply type and enter `exit`.
 
-**TIP**: If you are planning to use JoinMarket as a "maker", you will need to leave your maker script running for an extended period of time.  This would normally require you to leave an open SSH session to your myNode to keep your JoinMarket session running. This is impractical at best, and potentially unsecure if others might have access to your computer.
+**TIP**: If you are planning to use JoinMarket as a "maker", you will need to leave your maker script running for an extended period of time.  This would normally require you to leave an open SSH session to your MyNode to keep your JoinMarket session running. This is impractical at best, and potentially unsecure if others might have access to your computer.
 
-A better way is to run your JoinMarket maker script inside of a [TMUX](https://github.com/tmux/tmux/wiki) window. You can start TMUX (after connecting to myNode via SSH) by entering:
+A better way is to run your JoinMarket maker script inside of a [TMUX](https://github.com/tmux/tmux/wiki) window. You can start TMUX (after connecting to MyNode via SSH) by entering:
 
 `tmux`
 
 Next, you start the JoinMarket virtual environment as described earlier, and then your desired maker script.
 
-This will allow you to end your SSH session with your myNode while leaving your JoinMarket maker/offer actively running.
-Without using TMUX, if you exit your SSH connection to your myNode, any JoinMarket script that you have running will stop.
+This will allow you to end your SSH session with your MyNode while leaving your JoinMarket maker/offer actively running.
+Without using TMUX, if you exit your SSH connection to your MyNode, any JoinMarket script that you have running will stop.
 
 * Github: [joinmarket/joinmarketclientserver](https://github.com/joinmarket/joinmarket-clientserver)
 

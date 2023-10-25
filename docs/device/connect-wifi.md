@@ -4,7 +4,7 @@
 
 To disconnect from wired ethernet connection and use WiFi instead, which makes it easier to relocate the node.
 
-## Remote login to myNode
+## Remote login to MyNode
 
 Follow instructions to access the [linux terminal](/advanced/linux-terminal.html)
 
@@ -70,7 +70,7 @@ inet6 <LOCAL-IPv6>  prefixlen 64  scopeid 0x20<link>
 
 ## Reconfigure LND for new IP
 
-If you are using apps like Zap to remotely access your lightning node, you might have to regenerate the TLS certificates. To do so, go to the LND page of your myNode and click on "regenerate" button in the row of "TLS Certification".
+If you are using apps like Zap to remotely access your lightning node, you might have to regenerate the TLS certificates. To do so, go to the LND page of your MyNode and click on "regenerate" button in the row of "TLS Certification".
 
 <center>
 

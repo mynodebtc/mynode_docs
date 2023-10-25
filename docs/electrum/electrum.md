@@ -2,9 +2,9 @@
 
 ## Enabling Electrum Server
 
-Electrum is a very popular light wallet that lets you use Bitcoin on your PC or mobile device without needing a full copy of the blockchain. By running Electrum Server on your myNode, you can run light wallets on other devices in a trusted manner by offloading the heavy lifting to myNode.
+Electrum is a very popular light wallet that lets you use Bitcoin on your PC or mobile device without needing a full copy of the blockchain. By running Electrum Server on your MyNode, you can run light wallets on other devices in a trusted manner by offloading the heavy lifting to MyNode.
 
-First, from the myNode home page click "Enable" to start running Electrum Server. Depending on the speed of your device, it may take several days to fully sync Electrum. Your device may run slowly during this initial sync period.
+First, from the MyNode home page click "Enable" to start running Electrum Server. Depending on the speed of your device, it may take several days to fully sync Electrum. Your device may run slowly during this initial sync period.
 
 <center>
   <figure>
@@ -20,9 +20,9 @@ Once the server has synced, you should see an Electrum Server status page simila
   </figure>
 </center>
 
-## Connecting an Electrum Wallet to myNode via the GUI
+## Connecting an Electrum Wallet to MyNode via the GUI
 
-At this point you can connect your Electrum light wallets to your myNode. On the PC version, click on the colored icon in the bottom right to open up server settings. Enter the IP address of your myNode with port 50002.
+At this point you can connect your Electrum light wallets to your MyNode. On the PC version, click on the colored icon in the bottom right to open up server settings. Enter the IP address of your MyNode with port 50002.
 
 <center>
   <figure>
@@ -30,7 +30,7 @@ At this point you can connect your Electrum light wallets to your myNode. On the
   </figure>
 </center>
 
-If everything went correctly, you will get a green status icon and your myNode device will be acting as your Electrum Server!
+If everything went correctly, you will get a green status icon and your MyNode device will be acting as your Electrum Server!
 
 <center>
   <figure>
@@ -48,13 +48,13 @@ Re-open the Electrum network settings by clicking on the colored icon in the bot
   </figure>
 </center>
 
-Restart Electrum and you will be using myNode for trusted Electrum access!
+Restart Electrum and you will be using MyNode for trusted Electrum access!
 
-## Connecting an Electrum Wallet to myNode via the CLI
+## Connecting an Electrum Wallet to MyNode via the CLI
 
-You can launch Electrum via a command line interface and connect it to you myNode. Enter the following command and replace the IP with your own.
+You can launch Electrum via a command line interface and connect it to you MyNode. Enter the following command and replace the IP with your own.
 
-If everything went correctly, you will get a green status icon and your myNode device will be acting as your Electrum Server!
+If everything went correctly, you will get a green status icon and your MyNode device will be acting as your Electrum Server!
 
 <center>
   <figure>
@@ -62,9 +62,9 @@ If everything went correctly, you will get a green status icon and your myNode d
   </figure>
 </center>
 
-## Connecting an Electrum Wallet to myNode via Mobile
+## Connecting an Electrum Wallet to MyNode via Mobile
 
-You can also run Electrum via the mobile app and connect it to you myNode. First, go into settings and set the server like the following. Replace the IP with your own IP.
+You can also run Electrum via the mobile app and connect it to you MyNode. First, go into settings and set the server like the following. Replace the IP with your own IP.
 
 <center>
   <figure>
@@ -80,7 +80,7 @@ Also make sure Auto-connect is ON and One-server mode is ON.
   </figure>
 </center>
 
-If everything went correctly, you will get a screen like this and your myNode device will be acting as your Electrum Server!
+If everything went correctly, you will get a screen like this and your MyNode device will be acting as your Electrum Server!
 
 <center>
   <figure>

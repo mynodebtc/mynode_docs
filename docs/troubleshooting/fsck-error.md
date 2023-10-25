@@ -2,7 +2,7 @@
 
 If your device displays a message indicating a filesystem or "fsck" error, it means the device has automatically detected an error on the external drive. In many cases, it will automatically resolve the issue and you will need to click "OK" to dismiss the message.
 
-The error will popup and appear like this on the main myNode page.
+The error will popup and appear like this on the main MyNode page.
 
 <center>
   <figure>
