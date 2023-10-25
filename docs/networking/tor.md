@@ -2,7 +2,7 @@
 
 ## Overview
 
-Tor is a technology that allows devices to communicate securely and privately via the Internet. This technology can be incredibly useful to Bitcoin and Lightning by securing connections between the devices you use everyday and your myNode.
+Tor is a technology that allows devices to communicate securely and privately via the Internet. This technology can be incredibly useful to Bitcoin and Lightning by securing connections between the devices you use everyday and your MyNode.
 
 By default, tor is enabled for Bitcoin and Lightning connections to the network for both Community and Premium users. This helps simplify network configuration and provide security. Some advaned users may want to disable this, and that option is available on the settings page.
 

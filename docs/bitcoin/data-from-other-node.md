@@ -1,9 +1,9 @@
 # Using Bitcoin Data from Other Node
-In some cases, you may want to use Bitcoin data from a different node to get myNode up and running faster or to save bandwidth. If you have another node that is already synced, you can copy that data to your myNode.
+In some cases, you may want to use Bitcoin data from a different node to get MyNode up and running faster or to save bandwidth. If you have another node that is already synced, you can copy that data to your MyNode.
 
-## Step 1 - Start myNode
+## Step 1 - Start MyNode
 
-The first thing you need to do is start your myNode and disable QuickSync. To disable QuickSync, go to the settings page and click the "Disable QuickSync" button.
+The first thing you need to do is start your MyNode and disable QuickSync. To disable QuickSync, go to the settings page and click the "Disable QuickSync" button.
 
 This will reboot your device and start syncing Bitcoin from scratch.
 
@@ -14,7 +14,7 @@ Next, you need to log into your device via SSH and copy files from your existing
 On the node with the source data, ensure the bitcoin block data is readable by the "admin" user or the user you are logging in with. Also, make sure that Bitcoin is not running. Run the following commands on each device.
 
 **On source node:**
-<br/><sub><sup>Steps may differ if source is not myNode device</sup></sub>
+<br/><sub><sup>Steps may differ if source is not MyNode device</sup></sub>
 ```sh
 # Stop Bitcoin and other services
 sudo /usr/bin/mynode_stop_critical_services.sh

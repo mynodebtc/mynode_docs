@@ -1,6 +1,6 @@
 # Customize App Versions
 
-In some situations, like in the case of contentious forks, you may want to use a specific application version and not upgrade to the one used by myNode or upgrade to a new release prior to its inclusion in a myNode release. If that were to happen, myNode includes a tool to override the application version that is installed.
+In some situations, like in the case of contentious forks, you may want to use a specific application version and not upgrade to the one used by MyNode or upgrade to a new release prior to its inclusion in a MyNode release. If that were to happen, MyNode includes a tool to override the application version that is installed.
 
 ## Customizing an Application Version
 

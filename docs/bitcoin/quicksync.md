@@ -21,7 +21,7 @@ If you have an SSD and QuickSync starts, it is highly recommended to disable it.
 
 ## Enable/Disable
 
-Once the blockchain is synced with the network, enabling QuickSync won't affect the Bitcoin blockchain. Instead, it will just download the torrent and start seeding it. This helps myNode peers in downloading the blockchain faster during setup. The upload and download speed can be adjusted to optimize bandwidth usage, as shown in the screenshot below.
+Once the blockchain is synced with the network, enabling QuickSync won't affect the Bitcoin blockchain. Instead, it will just download the torrent and start seeding it. This helps MyNode peers in downloading the blockchain faster during setup. The upload and download speed can be adjusted to optimize bandwidth usage, as shown in the screenshot below.
 
 **Note:** Toggling QuickSync triggers a reboot.
 

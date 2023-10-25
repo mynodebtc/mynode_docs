@@ -9,7 +9,7 @@ Mempool is a visualization software for the bitcoin mempool. It decomposes the m
 Mempool can be enabled from the homepage and runs on port number 4080/4081. Initially, it takes a few minutes to load first few blocks and the graph for the most recent 2 hours of activity.
 
 ## Memory Usage
-The Bitcoin mempool can grow quite large which can lead to a lot of RAM usage. To mitigate any issues, myNode does limit the total Bitcoin mempool size to be a few hundred MB.
+The Bitcoin mempool can grow quite large which can lead to a lot of RAM usage. To mitigate any issues, MyNode does limit the total Bitcoin mempool size to be a few hundred MB.
 
 ## Links
 - Website: [https://mempool.space](https://mempool.space)

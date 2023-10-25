@@ -1,10 +1,10 @@
 # Customizing Bitcoin and LND Config
 
 ## Customizing your Bitcoin Configuration
-myNode generates much of the Bitcoin config automatically so it can easily communciate with other services on the device. However, you may want to tweak certain settings to control bandwidth, add specific peers, etc...
+MyNode generates much of the Bitcoin config automatically so it can easily communciate with other services on the device. However, you may want to tweak certain settings to control bandwidth, add specific peers, etc...
 
 
-To do this, you can edit the config via the Bitcoin page in the myNode UI.
+To do this, you can edit the config via the Bitcoin page in the MyNode UI.
 
 <center>
   <figure>
@@ -34,9 +34,9 @@ file, even between reboots and upgrades!
 
 ## Customizing the your LND Configuration
 
-myNode generates much of the LND config automatically so it can easily communciate with other  services on the device. However, you may want to tweak certain settings to control bandwidth, peers, etc...
+MyNode generates much of the LND config automatically so it can easily communciate with other  services on the device. However, you may want to tweak certain settings to control bandwidth, peers, etc...
 
-To do this, you can edit the config via the Lightning page in the myNode UI.
+To do this, you can edit the config via the Lightning page in the MyNode UI.
 
 <center>
   <figure>

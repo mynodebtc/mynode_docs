@@ -1,13 +1,13 @@
 # Using SSH Key Authentication
 
-## Connecting to myNode with SSH Key Authentication
+## Connecting to MyNode with SSH Key Authentication
 
-You can increase security to your device by limiting SSH access to the myNode device to only the computer(s) holding a special key.
+You can increase security to your device by limiting SSH access to the MyNode device to only the computer(s) holding a special key.
 Setup Key Based Authentication
 
 On your PC, open a terminal window.
 
-1. SSH into your myNode with username 'admin' at(@) its network IP, example:
+1. SSH into your MyNode with username 'admin' at(@) its network IP, example:
 
 ```sh
 ssh admin@192.168.1.123
@@ -31,8 +31,8 @@ The authenticity of host '192.168.1.123 (192.168.1.123)' can't be established. E
 |_| |_| |_|\__, |_| \_|\___/ \__,_|\___|
            |___/
 
-Welcome to myNode!
-Linux myNode 4.19.75-v7l+ #1270 SMP Tue Sep 24 18:51:41 BST 2019 armv7l GNU/Linux
+Welcome to MyNode!
+Linux MyNode 4.19.75-v7l+ #1270 SMP Tue Sep 24 18:51:41 BST 2019 armv7l GNU/Linux
 
 System load:   1.46 1.56 1.21   Up time:       21 min
 Memory usage:  6 % of 3955MB    IP:            192.168.1.123
@@ -40,7 +40,7 @@ Usage of /:    17% of 29G       storage/:      13% of 1.8T
 
 
 =======================================================
-===            Visit the myNode Web GUI
+===            Visit the MyNode Web GUI
 ===               http://mynode.local/
 ===                        OR
 ===              http://192.168.1.123/
@@ -53,25 +53,25 @@ You're now logged on onto the device using SSH and by default you should be in Y
 Example:
 
 ```sh
-admin@myNode:~ $
+admin@MyNode:~ $
 ```
 
 4. Now type the following, creating a folder called '.ssh'
 
 ```sh
-admin@myNode:~ $ mkdir .ssh
+admin@MyNode:~ $ mkdir .ssh
 ```
 
 5. Go into the folder called '.ssh'
 
 ```sh
-admin@myNode:~ $ cd .ssh
+admin@MyNode:~ $ cd .ssh
 ```
 
 6. Open a new file called 'authorized_keys' using a text editor called 'nano'
 
 ```sh
-admin@myNode:~/.ssh $ sudo nano authorized_keys
+admin@MyNode:~/.ssh $ sudo nano authorized_keys
 ```
 
 7. Leave this terminal window as-is (text editor is open and the screen is empty).

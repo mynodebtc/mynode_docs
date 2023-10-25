@@ -4,7 +4,7 @@ Developed by [Crypto Advance GmbH](https://specter.solutions/about/), Specter is
 
 Along with supporting single signature wallets, Specter also supports multi-signature wallets.
 
-Specter is part of the *Beta Apps* on myNode available only for *premium* users.
+Specter is part of the *Beta Apps* on MyNode available only for *premium* users.
 
 ![Specter](/images/multisig/specter/wallets.png)
 
@@ -19,9 +19,9 @@ Find the full list of features on [GitHub](https://github.com/cryptoadvance/spec
 
 ## Using Specter
 
-### On myNode
+### On MyNode
 
-Specter is already configured with default environment variables and connected to Bitcoin Core, but it is disabled by default. To enable it, open the myNode homepage and find the tile with the Specter logo under Beta Apps (like the left image below).
+Specter is already configured with default environment variables and connected to Bitcoin Core, but it is disabled by default. To enable it, open the MyNode homepage and find the tile with the Specter logo under Beta Apps (like the left image below).
 <center>
   <figure>
     <img src="/images/multisig/specter/disabled.png" alt="" style="width: 125px">
@@ -37,8 +37,8 @@ Adding `blockfilterindex=1` to your [Bitcoin Config](/advanced/customize-config.
 
 ### Remote Use
 
-Your myNode installation of Specter includes the additional "HWI Bridge" code to allow you to access your Specter wallet remotely.
-If you are using the myNode VPN, make sure that the VPN is running and then you can start myNode in your browser by entering `https://mynode.local:25441`. If you are using Tor for remote access, find your [Tor Hidden Service Address](/tor/web-gui.md) for Specter.
+Your MyNode installation of Specter includes the additional "HWI Bridge" code to allow you to access your Specter wallet remotely.
+If you are using the MyNode VPN, make sure that the VPN is running and then you can start MyNode in your browser by entering `https://mynode.local:25441`. If you are using Tor for remote access, find your [Tor Hidden Service Address](/tor/web-gui.md) for Specter.
 Start a Tor browser and enter `your-tor-hidden-service-address:25441`.
 
 Specific instructions on how to use Specter can be found [here](https://github.com/cryptoadvance/specter-desktop/blob/master/docs/faq.md#how-do-i-run-the-app).

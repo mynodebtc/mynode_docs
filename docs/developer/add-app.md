@@ -1,6 +1,6 @@
-# Add applications to myNode
+# Add applications to MyNode
 
-<!-- There are two options to install app on myNode
+<!-- There are two options to install app on MyNode
 1. Source code
 2. Docker -->
 

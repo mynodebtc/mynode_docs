@@ -4,11 +4,11 @@ A GUI to manage Lightning channels
 
 ### Logging into RTL
 
-Ride the Lightning is a Lightning wallet and node management tool accessible via a web interface, and is built into myNode.
+Ride the Lightning is a Lightning wallet and node management tool accessible via a web interface, and is built into MyNode.
 RTL is a creation of Suheb/saubyk, and complete information can be found at [Github](https://github.com/ride-the-lightning/RTL).
 The developer can be contacted via Twitter at: [@Suheb__](https://twitter.com/Suheb__) [@RTL_App](https://twitter.com/RTL_app).
 
-You can use RTL from any browser that is able to access your myNode installation.
+You can use RTL from any browser that is able to access your MyNode installation.
 
 Once a Lightning wallet [has been created](/lightning/create) on your device, the RTL app will be available via a button on the home page.
 
@@ -18,7 +18,7 @@ Once a Lightning wallet [has been created](/lightning/create) on your device, th
   </figure>
 </center>
 
-After clicking the button, you will be presented with a login page. Use your myNode password to login. Once logged in, the main RTL page will be displayed.
+After clicking the button, you will be presented with a login page. Use your MyNode password to login. Once logged in, the main RTL page will be displayed.
 
 ![RTL Main Page](/images/lightning/RTL/RTL_main_page_comp.png "RTL Main Page")
 
@@ -30,7 +30,7 @@ This will generate a new address and corresponding QR code for you to use to fun
 
 ### Opening a Channel
 
-To spend bitcoins on the Lightning network, one must first find peers on the network and open a channel with them. Peers can be trusted friends or complete strangers. [1ML.com](https://1ml.com/node?order=channelcount&active=true) or the myNode Telegram channel are good places to find peers.
+To spend bitcoins on the Lightning network, one must first find peers on the network and open a channel with them. Peers can be trusted friends or complete strangers. [1ML.com](https://1ml.com/node?order=channelcount&active=true) or the MyNode Telegram channel are good places to find peers.
 
 When you have selected another Lightning node to connect to, click on "Lightning" in the RTL navigation panel, then click on "Peers/Channels". Under the "Connections" heading, find and click on "Peers" as shown:
 

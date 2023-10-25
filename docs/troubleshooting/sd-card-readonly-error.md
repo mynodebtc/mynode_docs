@@ -24,7 +24,7 @@ First, try rebooting the device and monitor to see if the error comes back. If s
 
 ## Step 2 - Re-flash the SD card
 
-The next thing to try is re-flashing the SD card. This will clear any corrupt data and write a fresh myNode operating system to the SD card. All critical data is saved on the external drive, so you will not lose your Bitcoin or Lightning data.
+The next thing to try is re-flashing the SD card. This will clear any corrupt data and write a fresh MyNode operating system to the SD card. All critical data is saved on the external drive, so you will not lose your Bitcoin or Lightning data.
 
 Detailed instructions available on the <a href="https://mynodebtc.com/download">download</a> page.
 

@@ -40,7 +40,7 @@
 
 ![Router](/images/btcpay-server/router.png)
 
-- Using the admin page of your router, forward the external port 443 to the internal port 49393 and the IP of your myNode (10.0.0.19 in this example)
+- Using the admin page of your router, forward the external port 443 to the internal port 49393 and the IP of your MyNode (10.0.0.19 in this example)
 - Verify the setting by opening the public IP your router in a browser. It should open the homepage of your BTCPay server.
 
 ## Buy a custom domain and connect it to your BTCPay server

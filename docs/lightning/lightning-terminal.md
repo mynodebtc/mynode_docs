@@ -12,7 +12,7 @@ After opening the app, you will be prompted for a password.
 
 ![](/images/lightning/lightning-terminal-2.png)
 
-This is NOT your myNode password. To increase security, myNode has generated a random password that can be found on the Lightning page. To see the password, click "show password" next to the Lightning Terminal label. You can easily copy it via the copy icon next to the password.
+This is NOT your MyNode password. To increase security, MyNode has generated a random password that can be found on the Lightning page. To see the password, click "show password" next to the Lightning Terminal label. You can easily copy it via the copy icon next to the password.
 
 ![](/images/lightning/lightning-terminal-3.png)
 

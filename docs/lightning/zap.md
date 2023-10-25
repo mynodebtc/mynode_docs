@@ -1,7 +1,7 @@
 
 # Zap
 
-## Using Zap with myNode (Desktop)
+## Using Zap with MyNode (Desktop)
 
 First, install <a href="https://zap.jackmallers.com/">Zap</a> on your PC.
 
@@ -13,7 +13,7 @@ Next, open the Zap desktop app, click on "Create New Wallet".
   </figure>
 </center>
 
-Select "Connect" and click Next. Now, open the myNode GUI and go to the LND Connect page. Copy the LND Connect URL from the "gRPC Local IP" tab. Paste the URL into the Connection String box in Zap.
+Select "Connect" and click Next. Now, open the MyNode GUI and go to the LND Connect page. Copy the LND Connect URL from the "gRPC Local IP" tab. Paste the URL into the Connection String box in Zap.
 
 <center>
   <figure>
@@ -21,7 +21,7 @@ Select "Connect" and click Next. Now, open the myNode GUI and go to the LND Conn
   </figure>
 </center>
 
-Click Next and click Next on the Confirm screen. Zap will connect and use your myNode device's wallet!
+Click Next and click Next on the Confirm screen. Zap will connect and use your MyNode device's wallet!
 
 <center>
   <figure>
@@ -29,7 +29,7 @@ Click Next and click Next on the Confirm screen. Zap will connect and use your m
   </figure>
 </center>
 
-## Using Zap with myNode (Android)
+## Using Zap with MyNode (Android)
 
 First, install <a href="https://zap.jackmallers.com/">Zap</a> on your mobile device.
 
@@ -41,7 +41,7 @@ Next, open the Zap mobile app and tap on "Connect to Remote Node".
   </figure>
 </center>
 
-In your the myNode GUI, open the LND Connect page and enter your myNode password. In the Zap app, scan the QR code in the "gRPC Local IP" tab.
+In your the MyNode GUI, open the LND Connect page and enter your MyNode password. In the Zap app, scan the QR code in the "gRPC Local IP" tab.
 
 <center>
   <figure>
@@ -49,7 +49,7 @@ In your the myNode GUI, open the LND Connect page and enter your myNode password
   </figure>
 </center>
 
-After Zap successfully scans the QR code, Zap will be using your myNode device's wallet!
+After Zap successfully scans the QR code, Zap will be using your MyNode device's wallet!
 
 <center>
   <figure>

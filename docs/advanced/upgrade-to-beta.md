@@ -2,7 +2,7 @@
 
 ## Beta Releases
 
-myNode releases frequent updates, but from time to time, beta updates are available to allow users to test out specific fixes, applications, or try early versions of large updates.
+MyNode releases frequent updates, but from time to time, beta updates are available to allow users to test out specific fixes, applications, or try early versions of large updates.
 
 Updating to a beta release is simple and can be done with a couple button clicks.
 

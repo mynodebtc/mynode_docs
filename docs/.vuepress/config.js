@@ -1,6 +1,6 @@
 module.exports = {
   title: "Guides and Documentation",
-  description: "Helpful guides and documentation for using myNode and getting the most out of all it has to offer!",
+  description: "Helpful guides and documentation for using MyNode and getting the most out of all it has to offer!",
   base: "/",
   head: [
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
@@ -20,7 +20,7 @@ module.exports = {
     lastUpdated: false,
     sidebarDepth: 0,
     nav: [
-      { text: "Back to myNode", link: "https://www.mynodebtc.com/"},
+      { text: "Back to MyNode", link: "https://www.mynodebtc.com/"},
       { text: "Order Now!", link: "https://www.mynodebtc.com/order_now"}
     ],
     logo: "/images/logo.png",

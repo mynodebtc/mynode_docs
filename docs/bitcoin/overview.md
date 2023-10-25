@@ -30,11 +30,11 @@ A full node verifies every block mined by miners and relayed by its peers before
 - **Memory required:** 335 GB (as of Aug 23, 2020)
 - **Data location:** `/mnt/mynode/bitcoin` which is also linked at `/home/bitcoin/.bitcoin`
 
-<!-- While setting up myNode, the user have three options: -->
+<!-- While setting up MyNode, the user have three options: -->
 <!-- - IBD: (initial blockchain download) download the blockchain from scratch. -->
 <!-- ProTip: IBD can be sped up by increasing number of threads in bitcoin CLI. -->
 <!-- - QuickSync: the default option to download a torrent from mynodebtc.com -->
-<!-- and other myNode users -->
+<!-- and other MyNode users -->
 <!-- - Copy the blockchain from an existing source -->
 <!-- ## Connected apps
 - All other apps are connected to Bitcoin via RPC
@@ -46,4 +46,4 @@ A full node verifies every block mined by miners and relayed by its peers before
   - Samourai apps
   - BTCPay server -->
 <!-- - By default, bitcoin uses Tor network to find peers, so the user doesn't have
-to open the 8333 port for myNode -->
+to open the 8333 port for MyNode -->
