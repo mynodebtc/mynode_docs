@@ -8,7 +8,7 @@ This same process can be done to load new versions of software, reset your passw
 
 ## What is an SD Card
 
-The Raspberry Pi and most other small computers use a micro SD card that is inserted into a slot in the device. If you need a micro SD card, they will look similar to the image below and can be purchased from [Amazon](https://amzn.to/3x8AI8r).
+The Raspberry Pi and many other devices use a micro SD card that is inserted into a slot in the device. If you need a micro SD card, they will look similar to the image below and can be purchased from [Amazon](https://amzn.to/3x8AI8r).
 
 <center>
   <figure>
