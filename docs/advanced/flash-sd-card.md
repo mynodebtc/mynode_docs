@@ -2,6 +2,8 @@
 
 For many types of devices, including the Raspberry Pi 4, the first step in getting started is to download a MyNode image and flash it onto an SD card. The SD card is then inserted into the device so it can run the MyNode software.
 
+For some devices, like PCs and laptops, a USB thumbdrive can be used in place of the SD card using the same instructions.
+
 This same process can be done to load new versions of software, reset your password if it was forgotten, or to swap to a new SD card with larger storage capacity.
 
 ## What is an SD Card
@@ -32,7 +34,7 @@ You will need to download the image for your device from [mynodebtc.com/download
   </figure>
 </center>
 
-Once downloaded, the software software needs to be written to the SD card.
+Once downloaded, the software needs to be written to the SD card.
 
 ## Flash SD Card
 

@@ -26,7 +26,7 @@ Follow the section the section that corresponds to your device.
 
 **Model Two**
 
-- Insert the micro SD card into the SD slot on the side of the device
+- Insert the provided micro SD card or USB flash drive into the device
 - Connect Ethernet cable to your device and your router or switch
 - Plug power cable in outlet and connect to device
 - Push power button to turn on device
