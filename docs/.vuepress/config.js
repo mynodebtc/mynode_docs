@@ -106,7 +106,7 @@ module.exports = {
       {
         title: "Lightning Apps",
         children: [
-            '/lightning/alby'
+            '/lightning/alby',
             '/lightning/bluewallet',
             '/lightning/rtl',
             '/lightning/lnbits',
