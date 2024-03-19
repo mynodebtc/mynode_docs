@@ -106,6 +106,7 @@ module.exports = {
       {
         title: "Lightning Apps",
         children: [
+            '/lightning/alby',
             '/lightning/bluewallet',
             '/lightning/rtl',
             '/lightning/lnbits',
@@ -223,14 +224,14 @@ module.exports = {
 
         customMeta: (add, context) => {
             const {
-                $site, // Site configs provided by Vuepress 
+                $site, // Site configs provided by Vuepress
                 $page, // Page configs provided by Vuepress
-     
+
                 // All the computed options from above:
                 siteTitle, title, description, author, tags,
                 twitterCard, type, url, image, publishedAt, modifiedAt,
             } = context
-     
+
             add('twitter:site', '@mynodebtc')
             add('twitter:creator', '@mynodebtc')
             add('twitter:image', 'http://mynodebtc.com/images/vertical_lightning_white_bg.png')
