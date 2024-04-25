@@ -81,7 +81,6 @@ module.exports = {
             title: "Mixing",
             children: [
               "/coinjoin/joinmarket",
-              //"/coinjoin/whirlpool", // Not ready
             ]
           },
           {

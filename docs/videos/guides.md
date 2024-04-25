@@ -18,8 +18,6 @@ Electrum Server - <a href="https://www.youtube.com/watch?v=reZYPas1Vg4&list=PLCR
 
 BTC RPC Explorer - <a href="https://www.youtube.com/watch?v=1U_KtkHxxRo&list=PLCRbH-IWlcW0KP8DxyWWrqahGafZyV2HR" target="_blank">Ministry of Nodes</a>
 
-Dojo and Whirlpool - <a href="https://www.youtube.com/watch?v=M3g5ApifWAY&list=PLCRbH-IWlcW0KP8DxyWWrqahGafZyV2HR" target="_blank">Ministry of Nodes</a>
-
 Lightning - Ministry of Nodes <a href="https://www.youtube.com/watch?v=39HRCfMQ_ZU&list=PLCRbH-IWlcW0KP8DxyWWrqahGafZyV2HR" target="_blank">Part 1</a> - <a href="https://www.youtube.com/watch?v=DfRYJcBsfkA&list=PLCRbH-IWlcW0KP8DxyWWrqahGafZyV2HR" target="_blank">Part 2</a>
 
 ## Using Hardware Wallets
