@@ -187,6 +187,7 @@ module.exports = {
           "/troubleshooting/drive-not-found",
           "/troubleshooting/bitcoin-error",
           "/troubleshooting/bitcoin-sync-slow",
+          "/troubleshooting/lightning-network-error",
           "/troubleshooting/electrum-connection-error",
           "/troubleshooting/voltage-error",
           "/troubleshooting/sd-card-full-error",
