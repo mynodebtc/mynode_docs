@@ -1,10 +1,10 @@
 # My Device has a Lightning Network Error
 
-If your device gets into a state indicating "Network Error" as a Lightning Status, it means there has been a problem with Lightning launching and being able to properly connect to a network it can use for communication. This can typically be resolved quickly by changing the Lightning network to Tor-only on the main settings page.
+If your device gets into a state indicating "Network Error" as a Lightning Status, it means there has been a problem with Lightning launching and it is unable to properly connect to a network it can use for communication. This can typically be resolved by changing the Lightning network to Tor-only on the main settings page.
 
 ## Check the Lightning Log
 
-The first step is to track down the Lightning log on the status page and check it for errors. The lightning status may be rotating between various states because the process will restart automatically, but if you see a log line similar to the one below, that will confirm you are having Lightning network issues.
+To confirm you are having this issue, find the Lightning log on the status page and check it for errors. If you see a log line similar to the one below, that will confirm you are having Lightning network issues.
 
 ```
 Jan 12 14:57:21 mynode lnd[15786]: unable to create server: unable to discover a NAT-PMP enabled device on the local network
