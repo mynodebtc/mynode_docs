@@ -10,7 +10,10 @@ To confirm you are having this issue, find the Lightning log on the status page 
 Jan 12 14:57:21 mynode lnd[15786]: unable to create server: unable to discover a NAT-PMP enabled device on the local network
 ```
 
-This is caused by your network config being set to use Clearnet for Lightning. The Lightning daemon is attempting to communicate with your router to open a port and is failing. Disabling this setting will resolve the issue.
+This is caused by your network config being set to use Clearnet for Lightning. The Lightning daemon is attempting to communicate with your router to open a port and is failing. Disabling Clearnet setting will resolve the issue.
+
+Another option is go to Settings, LND Custom Config - Additional LND Config and add 'nat=false'. In such case you need to open port forward from your router public internet address to your node. (Which may be impossible with some ISP's.  )
+
 
 ## Resolution
 
