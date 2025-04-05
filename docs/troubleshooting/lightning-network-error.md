@@ -12,11 +12,81 @@ Jan 12 14:57:21 mynode lnd[15786]: unable to create server: unable to discover a
 
 This is caused by your network config being set to use Clearnet for Lightning. The Lightning daemon is attempting to communicate with your router to open a port and is failing. Disabling Clearnet setting will resolve the issue.
 
-Another option is go to Settings, LND Custom Config - Additional LND Config and add 'nat=false'. In such case you need to open port forward from your router public internet address to your node. (Which may be impossible with some ISP's.  )
-
+If you router has public IP address and you are skilled and able to configure port forwarding there might be resolution for advanced users to able to continue using clearnet. 
 
 ## Resolution
 
 First, go to the main settings page on your node and scroll to the "Networking" section. In the row for Lightning, disable Clearnet and enable Tor. Save the config. Your device will reboot and Lightning should start as expected.
 
 If you are still having issues, that setting may not have taken effect because of a [custom Lightning config](/advanced/customize-config.md). Reset your custom Lightning config back to the default so the network settings can take effect.
+
+## Advanced User Resolution
+
+As UPnP is not working Advanced Resolution requires user to manually configure port forwarding to router / firewall device and add required parameters to Additional LND Config on MyNode. Even with this case, it may not work due some ISP's do not provide your router real public IP address.
+
+Configure onto modem/router/firewall portforwarding from any public IP address to routers public TCP port 9735 to you MyNode private network IP address port 9735.
+
+Go to MyNode main settings page. Find "Lightning" below it click "Edit Config" and "LND Custom Config" page opens. 
+Onto "Additional LND Config" text box enter configuration lines:
+```
+# Nonworking UPnP Router fix
+nat=false
+
+[Application Options]
+externalhosts=<YOUR-EXTERNAL-IP>:9735
+```
+
+As usually public IP addresses of home Internet connections are not static, and therefore change once a while. So this solution is acceptible _only if you have _real_ static IP_ from your ISP (or cloud) provider.
+
+Internet connections with Dynamic Public IP addresses require bit more configurations. 
+
+Dynamic DNS must be implemented and DNS hostname must be configured to Additional LND Config.
+
+Dynamic DNS (DDNS) hostname can be created free by opening account to eg. www.no-ip.com, but free DDNS hostnames must be re-verified every 30 days or so. Let's say you make account and create DDNS hostname "mymynodebtc.ddns.net".
+
+To keep DDNS hostname's IP address updated in case of IPS changes your address, you need to do one of following.
+
+a) Install and configure DDNS Client software to your MyNode (eg. https://www.noip.com/download?page=linux ) and verify it's proper functioning.
+
+b) Configure DDNS Service onto your Modem/Router/Firewall if it supports such function (eg. some Sagemcom cable modems do support).
+
+After these are done, you can add following lines in your Additional LND Config (do not include one line with IP Address shown above!)
+```
+# Nonworking UPnP Router fix
+nat=false
+
+[Application Options]
+tlsextradomain=mymynodebtc.ddns.net
+externalhosts=mymynodebtc.ddns.net:9735
+```
+
+Naturally use your own DDNS hostname instead of this sample one. Press Save and you MyNode will reboot with new settings.
+
+From MyNode Main page click Lightning - Wallet. Notice on "URI" you have your node long ID followed by your IP address:9735 shown! This means successful configuration. Now click TLS Certificates button _regenerate_. After regeneration is complete in a monent, click download and save certificate (on Windows machine) as tls.crt (not .cert!). Open .crt file and verify from Details tab field "Subject Alternative Name". Your DDNS hostname must included on the DNS Name= ... list.
+
+Now your LND is able to receive channels from clearnet.
+
+If you own the domain (say mydomain.com) you can add CNAME for DDNS address alias onto you domain DNS records like this:
+
+```myownnode IN CNAME mymynodebtc.ddns.net.```
+
+Add this new hostname with additional tlsextradomain to config. In such more Advanced case config would be now
+```
+# Nonworking UPnP Router fix
+nat=false
+
+[Application Options]
+tlsextradomain=myownnode.mydomain.com
+tlsextradomain=mymynodebtc.ddns.net
+externalhosts=mymynodebtc.ddns.net:9735
+```
+Recreate TLS certs, download and verify DNS Name= list from cert. 
+Now your node can be connected with short address:
+
+```https://myownnode.mydomain.com:9735```
+
+And address will work even you ISP causes address changes.
+
+If you now plan to provide BTCPay Server or LNbits onto clearnet - you are not quite done yet. BTCPay and LNbits require https traffic to public TCP port 443 and non-selfsigned TSL certificates. Such certs be created with Linux with certbot installed on MyNode. HTTPS traffic inside of MyNode can be forwared with nginx configs, but those configurations are out of scope for this guide.
+
+Advanced User Resolution ends here. (So normal Resolution is a bit more simple.)
