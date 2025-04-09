@@ -1,12 +1,11 @@
-# Flash SD Card Image
+# Flash MyNode OS Image
 
-For many types of devices, including the Raspberry Pi 4, the first step in getting started is to download a MyNode image and flash it onto an SD card. The SD card is then inserted into the device so it can run the MyNode software.
+For most types of devices, including the Raspberry Pi 4 and mini PCs, the first step in getting started is to download a MyNode image and flash it onto a USB flash drive or SD card. The the flash drive is then inserted into the device so it can run the MyNode software.
 
-For some devices, like PCs and laptops, a USB thumbdrive can be used in place of the SD card using the same instructions.
+This same process can be done to load new versions of software, reset your password if it was forgotten, or to swap to a new flash drive with larger storage capacity.
 
-This same process can be done to load new versions of software, reset your password if it was forgotten, or to swap to a new SD card with larger storage capacity.
-
-## What is an SD Card
+<!--
+## What is an SD Card 
 
 The Raspberry Pi and many other devices use a micro SD card that is inserted into a slot in the device. If you need a micro SD card, they will look similar to the image below and can be purchased from [Amazon](https://amzn.to/3x8AI8r).
 
@@ -23,6 +22,7 @@ On the Raspberry Pi, the SD card slot can be found on the bottom of the device.
     <img src="/images/advanced/flash_sd_card_3.png" width="300">
   </figure>
 </center>
+-->
 
 ## Download the Software Image
 
@@ -34,21 +34,15 @@ You will need to download the image for your device from [mynodebtc.com/download
   </figure>
 </center>
 
-Once downloaded, the software needs to be written to the SD card.
+Once downloaded, the software needs to be written to the flash drive.
 
-## Flash SD Card
+## Flash the OS Image
 
-To load software image on the SD card, you will need a way to connect the SD card to your computer. Some PCs and laptops have a slot to insert them, but most users will need a USB to micro SD adapter. They can be found on [Amazon](https://amzn.to/38OtQF4).
+To load software image on the USB drive or SD card, you will need to connect it to your computer. If you have an SD card, you will need a way to connect it to your computer. Some PCs and laptops have a slot to insert them, but most users will need a USB to micro SD adapter. They can be found on [Amazon](https://amzn.to/38OtQF4).
 
-<center>
-  <figure>
-    <img src="/images/advanced/flash_sd_card_4.png" width="200">
-  </figure>
-</center>
+Connect the flash drive to your computer.
 
-Put the SD card into the adapter and connect it to your PC.
-
-Then, download [Etcher](https://www.balena.io/etcher/), a program for writing software images to SD cards, and install it on your PC or Mac.
+Then, download [Etcher](https://www.balena.io/etcher/), a program for writing software images, and install it on your PC or Mac.
 
 Open Etcher and click "Flash from file" and choose the recently downloaded image.
 
@@ -82,7 +76,7 @@ Once selected, click "Flash!" and the image will be written to the drive. The fl
   </figure>
 </center>
 
-Once the image has been flashed to the SD card, you can remove it from the PC.
+Once the image has been written to the flash drive, you can remove it from the PC.
 
 <center>
   <figure>
@@ -91,9 +85,9 @@ Once the image has been flashed to the SD card, you can remove it from the PC.
 </center>
 
 
-## Insert SD Card into Device
+## Insert Flash Drive into Device
 
-Finally, the last step is to take the SD card and insert it into the unpowered device.
+Finally, the last step is to take the flash drive and insert it into the unpowered device.
 
 <center>
   <figure>
