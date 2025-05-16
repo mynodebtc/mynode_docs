@@ -56,6 +56,7 @@ module.exports = {
           "/bitcoin/bitcoin-status",
           "/bitcoin/manage",
           "/bitcoin/quicksync",
+          "/bitcoin/data-from-other-disk",
           "/bitcoin/data-from-other-node",
           "/bitcoin/troubleshoot"
         ]
