@@ -54,6 +54,8 @@ Restart Electrum and you will be using MyNode for trusted Electrum access!
 
 You can launch Electrum via a command line interface and connect it to you MyNode. Enter the following command and replace the IP with your own.
 
+`./electrum -1 -s 192.168.1.123:50002:s`
+
 If everything went correctly, you will get a green status icon and your MyNode device will be acting as your Electrum Server!
 
 <center>
