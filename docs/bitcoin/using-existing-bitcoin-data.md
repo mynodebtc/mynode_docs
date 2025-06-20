@@ -1,21 +1,27 @@
 # Using Existing Bitcoin Data 
 
+In some cases, you may want to use Bitcoin data from a different node to get MyNode up and running faster or to save bandwidth. If you have another node that is already synced, you can copy that data to your MyNode.
+
 There are 2 methods, either reuse existing Bitcoin blockchain data from another MyNode instance or copy it from an external hard drive.
 
+<ul>
+  <li><a href="#using-bitcoin-data-from-other-mynode">From Another Operational MyNode Device</a></li>
+  <li><a href="#using-bitcoin-data-from-other-hard-drive">From a Saved Blockchain Copy on Another Drive</a></li>
+</ul>
+
 ## Using Bitcoin Data from Other MyNode
-In some cases, you may want to use Bitcoin data from a different node to get MyNode up and running faster or to save bandwidth. If you have another node that is already synced, you can copy that data to your MyNode.
+
+This process assumes you have two nodes up and running. You will copy data from one node with the fully-synced blockchain to another.
 
 ### Step 1 - Start MyNode
 
-The first thing you need to do is start your MyNode and disable QuickSync. To disable QuickSync, go to the settings page and click the "Disable QuickSync" button.
+Start both devices. We will refer to them as the source node and the destination node. The source node currently has a copy of the chain data and the destination node is the one receiving the chain data.
 
-This will reboot your device and start syncing Bitcoin from scratch.
+### Step 2 - Copy Data
 
-### Step 2 - Upload your own Data
+Next, you need to log into both of your devices via SSH to copy data from the source node to the destination node.
 
-Next, you need to log into your device via SSH and copy files from your existing node.
-
-On the node with the source data, ensure the bitcoin block data is readable by the "admin" user or the user you are logging in with. Also, make sure that Bitcoin is not running. Run the following commands on each device.
+On the node with the source data, ensure the bitcoin block data is readable by the "admin" user. Also, make sure that Bitcoin is not running. Run the following commands on each device.
 
 **On source node:**
 <br/><sub><sup>Steps may differ if source is not MyNode device</sup></sub>
@@ -52,7 +58,8 @@ This will copy files from your remote node to your local node. After rebooting, 
 
 
 ## Using Bitcoin Data from Other Hard drive
-In some cases, you may want to use Bitcoin data from a different hard drive to get MyNode up and running faster or to save bandwidth. If you have another hard drive that is already synced, you can copy that data to your MyNode.
+
+This process assumes you have one node that is running and a copy of the chain data on an existing hard drive.
 
 
 ### Step 1 - Install & Start MyNode
@@ -68,7 +75,7 @@ ssh admin@mynode.local
 sudo /usr/bin/mynode_stop_critical_services.sh
 ```
 
-## Step 3 - Remove Old Data
+### Step 3 - Remove Old Data
 Remove any data that the syncing process has completed before you stopped the process.
 
 ```sh
@@ -79,7 +86,7 @@ sudo rm -rf /mnt/hdd/mynode/bitcoin/indexes
 ```
 
 ### Step 4 - Copy Existing Blockchain
-1. Connect a second hard drive (which has a copy of the blockchain) to your Raspberry Pi
+1. Connect a second hard drive (which has a copy of the blockchain) to your node
 2. SSH into your node
 
 ```sh
@@ -89,23 +96,24 @@ ssh admin@mynode.local
 3. Mount the second drive to some path 
 
 ```sh
-sudo mount -t auto /dev/sda<X> /mnt/sda<X>
+sudo mkdir -p /mnt/blockchain_hdd
+sudo mount -t auto /dev/sda<X> /mnt/blockchain_hdd
 ```
 
 4. Set access-levels...
 
 ```sh
-sudo chmod -R 755 /mnt/sda<X>/<some-path...>/bitcoin/blocks
-sudo chmod -R 755 /mnt/sda<X>/<some-path...>/bitcoin/chainstate
-sudo chmod -R 755 /mnt/sda<X>/<some-path...>/bitcoin/indexes
+sudo chmod -R 755 /mnt/blockchain_hdd/<some-path...>/bitcoin/blocks
+sudo chmod -R 755 /mnt/blockchain_hdd/<some-path...>/bitcoin/chainstate
+sudo chmod -R 755 /mnt/blockchain_hdd/<some-path...>/bitcoin/indexes
 ```
 
 5. Copy the existing blockchain from the other drive to MyNode's drive
 
 ```sh
-sudo cp -r /mnt/sda<X>/<some-path...>/bitcoin/blocks /mnt/hdd/mynode/bitcoin/
-sudo cp -r /mnt/sda<X>/<some-path...>/bitcoin/chainstate /mnt/hdd/mynode/bitcoin/
-sudo cp -r /mnt/sda<X>/<some-path...>/bitcoin/indexes /mnt/hdd/mynode/bitcoin/
+sudo cp -r /mnt/blockchain_hdd/<some-path...>/bitcoin/blocks /mnt/hdd/mynode/bitcoin/
+sudo cp -r /mnt/blockchain_hdd/<some-path...>/bitcoin/chainstate /mnt/hdd/mynode/bitcoin/
+sudo cp -r /mnt/blockchain_hdd/<some-path...>/bitcoin/indexes /mnt/hdd/mynode/bitcoin/
 ```
 
 6. Change group access...
