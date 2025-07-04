@@ -44,6 +44,9 @@ Connect the flash drive to your computer.
 
 Then, download [Etcher](https://www.balena.io/etcher/), a program for writing software images, and install it on your PC or Mac.
 
+<small><b>Note:</b> On Windows 11, some system settings may need to be changed to properly flash images. If
+you have issues, more information is available on the <a href="https://forums.balena.io/t/unable-to-use-etcher-with-win11/349919/5">Balena Forums</a>.</small>
+
 Open Etcher and click "Flash from file" and choose the recently downloaded image.
 
 <center>
