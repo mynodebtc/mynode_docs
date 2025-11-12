@@ -50,6 +50,8 @@ Your MyNode device runs its own web server that you can access with any browser 
 
 **Note:** The device may reboot during initial setup. The web interface may not be available for 5-10 minutes.
 
+Upon accessing the web interface, you will be prompted to login. The default password is `bolt`.
+
 You will be prompted to enter your product key. If you are using the Community Edition, you can choose that option. Otherwise, enter the product key that has either been emailed to you, or is found on the bottom of your device.
 
 <center>
