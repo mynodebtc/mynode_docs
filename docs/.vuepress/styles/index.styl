@@ -336,11 +336,12 @@ html[data-theme="light"] .search-box::before
   padding-top 0.5rem !important
 
 .sidebar-group > .sidebar-heading
-  color var(--mn-text-muted) !important
-  font-size 0.72rem !important
-  font-weight 600 !important
-  letter-spacing 0.18em !important
-  text-transform uppercase !important
+  font-family 'Inter', sans-serif !important
+  color var(--mn-text-hi) !important
+  font-size 0.82rem !important
+  font-weight 900 !important
+  letter-spacing -0.02em !important
+  text-transform none !important
   padding 1.1rem 1.5rem 0.3rem !important
   cursor default !important
 
@@ -362,8 +363,10 @@ html[data-theme="light"] .search-box::before
 
 .sidebar-link,
 .sidebar-links > li > a
+  font-family 'Inter', sans-serif !important
   font-size 0.875rem !important
   font-weight 400 !important
+  letter-spacing -0.01em !important
   color var(--mn-text) !important
   border-left none !important
   border-radius 8px !important
@@ -777,3 +780,159 @@ div[class*='language-'] button:hover
   .theme-default-content div[style*="display:flex"] img
     max-width 90% !important
     margin 0.75rem auto !important
+
+// ─── Home page ────────────────────────────────────────────────────────────
+
+.home
+  background var(--mn-bg) !important
+  padding-top 68px !important
+  max-width 100% !important
+  margin 0 auto !important
+
+.home .hero
+  max-width 1000px !important
+  margin 0 auto !important
+  padding 5rem 2rem 3.5rem !important
+  text-align center !important
+
+.home .hero img
+  max-height 180px !important
+  width auto !important
+  margin 0 auto 2.5rem !important
+
+.home .hero h1
+  font-family 'Inter', sans-serif !important
+  font-size 3rem !important
+  font-weight 900 !important
+  color var(--mn-text-hi) !important
+  letter-spacing -0.03em !important
+  line-height 1.1 !important
+
+.home .hero .description
+  font-family 'Inter', sans-serif !important
+  font-size 1.25rem !important
+  font-weight 300 !important
+  color var(--mn-text) !important
+  letter-spacing -0.01em !important
+  line-height 1.6 !important
+  max-width 32rem !important
+  margin 1.5rem auto !important
+
+.home .hero .action
+  margin 2.5rem auto 0 !important
+
+.home .hero .action-button
+  display inline-flex !important
+  align-items center !important
+  font-family 'Inter', sans-serif !important
+  font-size 1rem !important
+  font-weight 700 !important
+  color #000 !important
+  background #F08E20 !important
+  padding 0.85rem 2rem !important
+  border-radius 9999px !important
+  border-bottom none !important
+  box-shadow 0 0 32px rgba(240,142,32,0.30) !important
+  transition background 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease !important
+  text-decoration none !important
+
+.home .hero .action-button:hover
+  background #F4BB32 !important
+  box-shadow 0 0 44px rgba(240,142,32,0.45) !important
+  transform translateY(-1px) !important
+  text-decoration none !important
+  color #000 !important
+
+// Features grid
+.home .features
+  max-width 1000px !important
+  margin 0 auto !important
+  padding 3rem 2rem 4rem !important
+  border-top 1px solid var(--mn-border) !important
+  display grid !important
+  grid-template-columns repeat(3, 1fr) !important
+  gap 1.5rem !important
+
+.home .feature
+  max-width none !important
+  flex-basis auto !important
+  background var(--mn-card-bg) !important
+  border 1px solid var(--mn-border) !important
+  border-radius 20px !important
+  padding 2rem !important
+  transition border-color 0.2s ease !important
+
+.home .feature:hover
+  border-color var(--mn-border-hover) !important
+
+// Icon badge above each feature title
+.home .feature::before
+  content '' !important
+  display block !important
+  width 42px !important
+  height 42px !important
+  border-radius 12px !important
+  background rgba(240,142,32,0.12) !important
+  background-repeat no-repeat !important
+  background-position center !important
+  background-size 22px !important
+  margin-bottom 1.25rem !important
+
+.home .feature:nth-child(1)::before
+  background-image url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23F08E20' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='8' r='4'/%3E%3Cpath d='M20 21a8 8 0 0 0-16 0'/%3E%3C/svg%3E") !important
+  background-color rgba(240,142,32,0.12) !important
+  background-repeat no-repeat !important
+  background-position center !important
+  background-size 22px !important
+
+.home .feature:nth-child(2)::before
+  background-image url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23F08E20' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolygon points='13 2 3 14 12 14 11 22 21 10 12 10 13 2'/%3E%3C/svg%3E") !important
+  background-color rgba(240,142,32,0.12) !important
+  background-repeat no-repeat !important
+  background-position center !important
+  background-size 22px !important
+
+.home .feature:nth-child(3)::before
+  background-image url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23F08E20' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z'/%3E%3Cpath d='M12 6v6l4 2'/%3E%3C/svg%3E") !important
+  background-color rgba(240,142,32,0.12) !important
+  background-repeat no-repeat !important
+  background-position center !important
+  background-size 22px !important
+
+.home .feature h2
+  font-family 'Inter', sans-serif !important
+  font-size 1.05rem !important
+  font-weight 800 !important
+  color var(--mn-text-hi) !important
+  border-bottom none !important
+  padding-bottom 0 !important
+  letter-spacing -0.02em !important
+  margin-top 0 !important
+  margin-bottom 0.6rem !important
+
+.home .feature p
+  font-family 'Inter', sans-serif !important
+  color var(--mn-text) !important
+  font-size 0.875rem !important
+  font-weight 300 !important
+  line-height 1.75 !important
+  margin 0 !important
+
+// Footer
+.home .footer
+  font-family 'Inter', sans-serif !important
+  border-top 1px solid var(--mn-border) !important
+  color var(--mn-text-muted) !important
+  font-size 0.82rem !important
+  padding 2rem !important
+  text-align center !important
+  background var(--mn-bg) !important
+
+// Mobile home
+@media (max-width 719px)
+  .home .hero
+    padding 3rem 1.5rem 2.5rem !important
+
+  .home .features
+    grid-template-columns 1fr !important
+    padding 2rem 1.5rem !important
