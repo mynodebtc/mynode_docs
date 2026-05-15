@@ -123,7 +123,10 @@ body,
   white-space nowrap !important
 
 // .links — fills remaining width, right-aligned
+// VuePress default sets position:absolute + top:0.7rem — override to static so
+// it participates in the navbar flex layout and centres properly.
 .navbar .links
+  position static !important
   flex 1 !important
   display flex !important
   flex-direction row !important
@@ -149,13 +152,26 @@ body,
 .navbar .nav-links
   display inline-flex !important
   align-items center !important
+  align-self center !important
   gap 0.45rem !important
   height 36px !important
+  margin-top 0 !important
+  margin-bottom 0 !important
 
 .navbar .nav-item
   display inline-flex !important
   align-items center !important
+  align-self center !important
   height 36px !important
+  margin-top 0 !important
+  margin-bottom 0 !important
+
+// VuePress default sets display:inline-block on ALL a/span/img inside .navbar —
+// reset so our flex children aren't downgraded.
+.navbar a,
+.navbar span,
+.navbar img
+  display revert !important
 
 // Kill outbound link icons in the navbar only
 .navbar .nav-links .icon.outbound,
@@ -219,7 +235,10 @@ body,
 .repo-link
   display inline-flex !important
   align-items center !important
+  align-self center !important
   height 34px !important
+  margin-top 0 !important
+  margin-bottom 0 !important
   color var(--mn-text-hi) !important
   font-size 0.875rem !important
   font-weight 500 !important
@@ -241,9 +260,12 @@ body,
   display inline-flex !important
   align-items center !important
   justify-content center !important
+  align-self center !important
   flex-shrink 0 !important
   width 34px !important
   height 34px !important
+  margin-top 0 !important
+  margin-bottom 0 !important
   border-radius 9999px !important
   border 1px solid var(--mn-toggle-border) !important
   background transparent !important
@@ -267,7 +289,11 @@ body,
   position relative !important
   display inline-flex !important
   align-items center !important
+  align-self center !important
+  vertical-align middle !important
   height 34px !important
+  margin-top 0 !important
+  margin-bottom 0 !important
 
 .search-box::before
   content ''
@@ -338,11 +364,11 @@ html[data-theme="light"] .search-box::before
 .sidebar-group > .sidebar-heading
   font-family 'Inter', sans-serif !important
   color var(--mn-text-hi) !important
-  font-size 0.82rem !important
-  font-weight 900 !important
+  font-size 1.0rem !important
+  font-weight 700 !important
   letter-spacing -0.02em !important
   text-transform none !important
-  padding 1.1rem 1.5rem 0.3rem !important
+  padding 0.6rem 1.5rem 0.2rem !important
   cursor default !important
 
 .sidebar-group > .sidebar-heading.open,
@@ -374,6 +400,10 @@ html[data-theme="light"] .search-box::before
   margin 0.06rem 0.6rem !important
   display block !important
   transition background 0.15s ease, color 0.15s ease !important
+
+// Indent group child links to show hierarchy under section heading
+.sidebar-group .sidebar-links .sidebar-link
+  padding-left 1.5rem !important
 
 .sidebar-link:hover
   background var(--mn-toggle-hover) !important
@@ -689,13 +719,18 @@ div[class*='language-'] button:hover
 
 // ─── Images ───────────────────────────────────────────────────────────────
 
-// Base rule — block + constrained. !important required because VuePress
-// theme CSS and the medium-zoom plugin can override these at runtime.
-// NO margin here — each container pattern handles its own spacing.
+// Base rule — block + constrained.
 .theme-default-content img
   display block !important
   max-width 100% !important
   height auto !important
+
+// Dim bright screenshots in dark mode so they don't blast out of the dark bg
+.theme-default-content img
+  filter brightness(0.88) !important
+
+html[data-theme="light"] .theme-default-content img
+  filter none !important
 
 // <center><figure><img> — the dominant pattern in the docs.
 .theme-default-content center
