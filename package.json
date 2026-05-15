@@ -9,8 +9,8 @@
     "vuepress-plugin-minimal-analytics": "^0.1.4"
   },
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:dev": "node --openssl-legacy-provider node_modules/vuepress/cli.js dev docs",
+    "docs:build": "node --openssl-legacy-provider node_modules/vuepress/cli.js build docs"
   },
   "dependencies": {
     "vuepress-plugin-seo": "^0.1.4"
