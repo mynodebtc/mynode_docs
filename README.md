@@ -8,7 +8,7 @@ This repo uses [VuePress](https://vuepress.vuejs.org/) to compile markdown files
 
 ## Build the documentation locally
 
-1. Install dependencies: Node.js 10+, and Yarn
+1. Install dependencies: a current Node.js LTS release, and Yarn
   - [Install Node](https://nodejs.org/en/)
   - [Install Yarn](https://classic.yarnpkg.com/en/docs/install)
 2. Run the following commands:
@@ -19,9 +19,12 @@ git clone https://github.com/mynodebtc/mynode_docs.git
 cd mynode_docs
 # Install required node modules
 yarn install
-# serve locally (by default on port 8080)
+# serve locally (by default on port 8080, or the next available port)
 yarn docs:dev
 ```
+
+The bundled VuePress 1 site still uses webpack 4. The `yarn docs:dev` and `yarn docs:build` scripts include the OpenSSL legacy provider flag so they continue to work on newer Node.js releases.
+
 ## How to contribute?
 
 For the first version of documentation (due on September 30th), read the [plan](https://github.com/mynodebtc/mynode_docs/issues?q=is%3Aissue+is%3Aopen+label%3APlan) and comment on a suitable section-related issue from this list: [Milestone 1](https://github.com/mynodebtc/mynode_docs/milestone/1). Follow the file structure (mentioned below) and follow the usual protocol to submit pull requests (also mentioned below under "Major Changes"). You should create draft PRs as soon as possible to show your progress and avoid any overlaps with others.
