@@ -3,17 +3,22 @@ module.exports = {
   description: "Helpful guides and documentation for using MyNode and getting the most out of all it has to offer!",
   base: "/",
   head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    // Must be first — sets data-theme before any CSS renders to prevent flash.
+    ['script', {}, `(function(){var t=localStorage.getItem('mn-theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');})()`],
+    ['meta', { name: 'theme-color', content: '#F08E20' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    ['link', { rel : 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap' }],
     ['link', { rel : 'stylesheet', href: '/css/mynode.css' }],
     ['script',{async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-871EBBS9WR'},],
     ['script',{},["window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-871EBBS9WR');",],],
   ],
   themeConfig: {
     repo: 'mynodebtc/mynode_docs',
-    repoLabel: 'Contribute!',
+    repoLabel: 'Contribute',
     editLinks: true,
     editLinkText: 'Help us improve this page!',
     docsDir: 'docs',
@@ -21,7 +26,7 @@ module.exports = {
     sidebarDepth: 0,
     nav: [
       { text: "Back to MyNode", link: "https://www.mynodebtc.com/"},
-      { text: "Order Now!", link: "https://www.mynodebtc.com/order_now"}
+      { text: "Order Now", link: "https://www.mynodebtc.com/order_now"}
     ],
     logo: "/images/logo.png",
     sidebar: [

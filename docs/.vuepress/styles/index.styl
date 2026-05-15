@@ -1,0 +1,973 @@
+// index.styl — injected AFTER the default theme CSS by webpack.
+// Uses CSS custom properties so both dark (default) and light themes
+// are driven by a single variable swap on html[data-theme="light"].
+
+// ─── Design tokens ────────────────────────────────────────────────────────
+
+:root
+  --mn-bg            #15171a
+  --mn-bg-alt        #1c1e22
+  --mn-navbar-bg     rgba(21,23,26,0.85)
+  --mn-sidebar-bg    #15171a
+  --mn-text-hi       #e4e4e7
+  --mn-text          rgba(255,255,255,0.55)
+  --mn-text-mid      rgba(255,255,255,0.38)
+  --mn-text-muted    rgba(255,255,255,0.30)
+  --mn-border        rgba(255,255,255,0.08)
+  --mn-border-hover  rgba(255,255,255,0.20)
+  --mn-card-bg       rgba(255,255,255,0.03)
+  --mn-orange        #f08e20
+  --mn-orange-hover  #f4bb32
+  --mn-link          #F08E20
+  --mn-link-hover    #F4BB32
+  --mn-code-bg       rgba(255,255,255,0.07)
+  --mn-code-clr      #F08E20
+  --mn-pre-bg        rgba(255,255,255,0.04)
+  --mn-pre-border    rgba(255,255,255,0.08)
+  --mn-pre-text      rgba(255,255,255,0.82)
+  --mn-th-bg         rgba(255,255,255,0.05)
+  --mn-tr-alt        rgba(255,255,255,0.025)
+  --mn-search-bg     rgba(255,255,255,0.07)
+  --mn-search-border rgba(255,255,255,0.12)
+  --mn-search-text   #e4e4e7
+  --mn-search-drop   #1c1e22
+  --mn-scrim         #15171a
+  --mn-toggle-clr    rgba(255,255,255,0.60)
+  --mn-toggle-border rgba(255,255,255,0.14)
+  --mn-toggle-hover  rgba(255,255,255,0.07)
+
+html[data-theme="light"]
+  --mn-bg            #f5f5f7
+  --mn-bg-alt        #ffffff
+  --mn-navbar-bg     rgba(245,245,247,0.88)
+  --mn-sidebar-bg    #f5f5f7
+  --mn-text-hi       #1d1d1f
+  --mn-text          rgba(0,0,0,0.65)
+  --mn-text-mid      rgba(0,0,0,0.45)
+  --mn-text-muted    rgba(0,0,0,0.35)
+  --mn-border        rgba(0,0,0,0.08)
+  --mn-border-hover  rgba(0,0,0,0.20)
+  --mn-card-bg       rgba(0,0,0,0.03)
+  --mn-link          #d97706
+  --mn-link-hover    #b45309
+  --mn-code-bg       rgba(0,0,0,0.06)
+  --mn-code-clr      #c2410c
+  --mn-pre-bg        #f0f0f2
+  --mn-pre-border    rgba(0,0,0,0.09)
+  --mn-pre-text      rgba(0,0,0,0.80)
+  --mn-th-bg         rgba(0,0,0,0.04)
+  --mn-tr-alt        rgba(0,0,0,0.02)
+  --mn-search-bg     rgba(0,0,0,0.06)
+  --mn-search-border rgba(0,0,0,0.14)
+  --mn-search-text   #1d1d1f
+  --mn-search-drop   #ffffff
+  --mn-scrim         #f5f5f7
+  --mn-toggle-clr    rgba(0,0,0,0.55)
+  --mn-toggle-border rgba(0,0,0,0.14)
+  --mn-toggle-hover  rgba(0,0,0,0.06)
+
+// ─── Base ─────────────────────────────────────────────────────────────────
+
+html,
+body,
+#app,
+.theme-container
+  background var(--mn-bg) !important
+  font-family 'Inter', system-ui, -apple-system, sans-serif !important
+  color var(--mn-text) !important
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+
+// ─── Navbar ───────────────────────────────────────────────────────────────
+
+.navbar
+  position fixed !important
+  top 0
+  left 0
+  right 0
+  z-index 1030 !important
+  height 68px !important
+  line-height 1 !important
+  display flex !important
+  flex-direction row !important
+  align-items center !important
+  background var(--mn-navbar-bg) !important
+  backdrop-filter blur(20px) !important
+  -webkit-backdrop-filter blur(20px) !important
+  border-bottom 1px solid var(--mn-border) !important
+  box-shadow none !important
+  padding 0 2rem !important
+
+// Home link — left anchor
+.navbar .home-link
+  display inline-flex !important
+  align-items center !important
+  flex-shrink 0 !important
+  height 36px !important
+  line-height 1 !important
+  padding 0 !important
+  margin 0 !important
+
+.navbar .logo
+  height 28px !important
+  width auto !important
+  display block !important
+  margin-right 0.55rem !important
+
+.site-name
+  color var(--mn-text-hi) !important
+  font-weight 700 !important
+  font-size 1rem !important
+  letter-spacing -0.01em !important
+  line-height 1 !important
+  white-space nowrap !important
+
+// .links — fills remaining width, right-aligned
+// VuePress default sets position:absolute + top:0.7rem — override to static so
+// it participates in the navbar flex layout and centres properly.
+.navbar .links
+  position static !important
+  flex 1 !important
+  display flex !important
+  flex-direction row !important
+  align-items center !important
+  justify-content flex-end !important
+  gap 0.45rem !important
+  padding-left 1.5rem !important
+  height 36px !important
+  background transparent !important
+  background-color transparent !important
+
+// VuePress also renders a <NavLinks> inside <Sidebar> for the mobile menu.
+// Hide it on desktop so it doesn't duplicate the navbar.
+.sidebar .nav-links
+  display none !important
+
+@media (max-width 719px)
+  .sidebar .nav-links
+    display block !important
+
+// Scope everything below to .navbar so sidebar NavLinks is not affected.
+
+.navbar .nav-links
+  display inline-flex !important
+  align-items center !important
+  align-self center !important
+  gap 0.45rem !important
+  height 36px !important
+  margin-top 0 !important
+  margin-bottom 0 !important
+
+.navbar .nav-item
+  display inline-flex !important
+  align-items center !important
+  align-self center !important
+  height 36px !important
+  margin-top 0 !important
+  margin-bottom 0 !important
+
+// VuePress default sets display:inline-block on ALL a/span/img inside .navbar —
+// reset so our flex children aren't downgraded.
+.navbar a,
+.navbar span,
+.navbar img
+  display revert !important
+
+// Kill outbound link icons in the navbar only
+.navbar .nav-links .icon.outbound,
+.repo-link .icon.outbound
+  display none !important
+
+// Base nav link
+.navbar .nav-links a
+  display inline-flex !important
+  align-items center !important
+  height 34px !important
+  font-size 0.875rem !important
+  font-weight 500 !important
+  color var(--mn-text) !important
+  border-bottom none !important
+  padding 0 1rem !important
+  border-radius 9999px !important
+  transition color 0.2s ease, background 0.2s ease, border-color 0.2s ease !important
+  white-space nowrap !important
+  line-height 1 !important
+
+.navbar .nav-links a:hover,
+.navbar .nav-links a.router-link-active
+  color var(--mn-text-hi) !important
+  background var(--mn-toggle-hover) !important
+  text-decoration none !important
+
+// "Back to MyNode" — plain text nav link (no pill, no border)
+.navbar .nav-links .nav-item:first-of-type > a
+  background transparent !important
+  color var(--mn-text) !important
+  border none !important
+  font-weight 500 !important
+
+.navbar .nav-links .nav-item:first-of-type > a:hover
+  background var(--mn-toggle-hover) !important
+  color var(--mn-text-hi) !important
+  text-decoration none !important
+
+// "Order Now" — primary orange CTA pill
+.navbar .nav-links .nav-item:last-of-type > a
+  display inline-flex !important
+  align-items center !important
+  height 34px !important
+  background #F08E20 !important
+  color #000 !important
+  font-weight 700 !important
+  border 1px solid transparent !important
+  padding 0 1.1rem !important
+  box-shadow 0 0 20px rgba(240,142,32,0.25) !important
+  transition background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease !important
+
+.navbar .nav-links .nav-item:last-of-type > a:hover
+  background #F4BB32 !important
+  color #000 !important
+  box-shadow 0 0 28px rgba(240,142,32,0.40) !important
+  transform scale(1.04) !important
+  text-decoration none !important
+
+// "Contribute" repo link — plain text, visible but not prominent
+.repo-link
+  display inline-flex !important
+  align-items center !important
+  align-self center !important
+  height 34px !important
+  margin-top 0 !important
+  margin-bottom 0 !important
+  color var(--mn-text-hi) !important
+  font-size 0.875rem !important
+  font-weight 500 !important
+  padding 0 1rem !important
+  border-radius 9999px !important
+  border none !important
+  transition color 0.2s ease, background 0.2s ease !important
+  white-space nowrap !important
+  line-height 1 !important
+
+.repo-link:hover
+  color var(--mn-text-hi) !important
+  background var(--mn-toggle-hover) !important
+  text-decoration none !important
+
+// ─── Theme toggle button (injected by enhanceApp.js) ──────────────────────
+
+.mn-theme-toggle
+  display inline-flex !important
+  align-items center !important
+  justify-content center !important
+  align-self center !important
+  flex-shrink 0 !important
+  width 34px !important
+  height 34px !important
+  margin-top 0 !important
+  margin-bottom 0 !important
+  border-radius 9999px !important
+  border 1px solid var(--mn-toggle-border) !important
+  background transparent !important
+  color var(--mn-toggle-clr) !important
+  cursor pointer !important
+  padding 0 !important
+  transition color 0.2s ease, background 0.2s ease, border-color 0.2s ease !important
+
+.mn-theme-toggle:hover
+  background var(--mn-toggle-hover) !important
+  border-color var(--mn-border-hover) !important
+  color var(--mn-text-hi) !important
+
+.mn-theme-toggle svg
+  display block
+  flex-shrink 0
+
+// ─── Search box ───────────────────────────────────────────────────────────
+
+.search-box
+  position relative !important
+  display inline-flex !important
+  align-items center !important
+  align-self center !important
+  vertical-align middle !important
+  height 34px !important
+  margin-top 0 !important
+  margin-bottom 0 !important
+
+.search-box::before
+  content ''
+  position absolute
+  left 0.75rem
+  top 50%
+  transform translateY(-50%)
+  width 14px
+  height 14px
+  background-image url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Ccircle cx='8.5' cy='8.5' r='5.5' stroke='rgba(255%2C255%2C255%2C0.35)' stroke-width='1.6'/%3E%3Cpath d='M13.5 13.5L17 17' stroke='rgba(255%2C255%2C255%2C0.35)' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E")
+  background-repeat no-repeat
+  background-size contain
+  pointer-events none
+  z-index 1
+
+html[data-theme="light"] .search-box::before
+  background-image url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Ccircle cx='8.5' cy='8.5' r='5.5' stroke='rgba(0%2C0%2C0%2C0.40)' stroke-width='1.6'/%3E%3Cpath d='M13.5 13.5L17 17' stroke='rgba(0%2C0%2C0%2C0.40)' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E")
+
+.search-box input
+  height 34px !important
+  padding 0 1rem 0 2.2rem !important
+  background var(--mn-search-bg) !important
+  border 1px solid var(--mn-search-border) !important
+  border-radius 9999px !important
+  color var(--mn-search-text) !important
+  caret-color var(--mn-orange) !important
+  font-size 0.875rem !important
+  line-height 1 !important
+
+.search-box input:focus
+  border-color rgba(240,142,32,0.50) !important
+  background var(--mn-search-bg) !important
+  outline none !important
+
+.search-box input::placeholder
+  color var(--mn-text-muted) !important
+
+.search-box .suggestions
+  background var(--mn-search-drop) !important
+  border 1px solid var(--mn-border) !important
+  border-radius 12px !important
+  box-shadow 0 20px 60px rgba(0,0,0,0.50) !important
+
+.search-box .suggestion
+  color var(--mn-text) !important
+  border-radius 8px !important
+
+.search-box .suggestion a
+  color var(--mn-text) !important
+
+.search-box .suggestion.focused
+  background rgba(240,142,32,0.12) !important
+
+.search-box .suggestion.focused a
+  color var(--mn-orange) !important
+
+// Mobile hamburger
+.sidebar-button .icon
+  fill var(--mn-text) !important
+
+// ─── Sidebar ──────────────────────────────────────────────────────────────
+
+.sidebar
+  background var(--mn-sidebar-bg) !important
+  border-right 1px solid var(--mn-border) !important
+  padding-top 0.5rem !important
+
+.sidebar-group > .sidebar-heading
+  font-family 'Inter', sans-serif !important
+  color var(--mn-text-hi) !important
+  font-size 1.0rem !important
+  font-weight 700 !important
+  letter-spacing -0.02em !important
+  text-transform none !important
+  padding 0.6rem 1.5rem 0.2rem !important
+  cursor default !important
+
+.sidebar-group > .sidebar-heading.open,
+.sidebar-group > .sidebar-heading:hover
+  color var(--mn-orange) !important
+
+.sidebar-group > .sidebar-heading .arrow.right
+  border-left-color var(--mn-text-mid) !important
+
+.sidebar-group > .sidebar-heading .arrow.down
+  border-top-color var(--mn-text-mid) !important
+
+.sidebar-group > .sidebar-heading.open .arrow.right
+  border-left-color var(--mn-orange) !important
+
+.sidebar-group > .sidebar-heading.open .arrow.down
+  border-top-color var(--mn-orange) !important
+
+.sidebar-link,
+.sidebar-links > li > a
+  font-family 'Inter', sans-serif !important
+  font-size 0.875rem !important
+  font-weight 400 !important
+  letter-spacing -0.01em !important
+  color var(--mn-text) !important
+  border-left none !important
+  border-radius 8px !important
+  padding 0.32rem 1rem !important
+  margin 0.06rem 0.6rem !important
+  display block !important
+  transition background 0.15s ease, color 0.15s ease !important
+
+// Indent group child links to show hierarchy under section heading
+.sidebar-group .sidebar-links .sidebar-link
+  padding-left 1.5rem !important
+
+.sidebar-link:hover
+  background var(--mn-toggle-hover) !important
+  color var(--mn-text-hi) !important
+  text-decoration none !important
+
+.sidebar-link.active
+  background rgba(240,142,32,0.12) !important
+  color var(--mn-orange) !important
+  font-weight 500 !important
+
+.sidebar-sub-headers .sidebar-link
+  padding-left 1.6rem !important
+  font-size 0.82rem !important
+  color var(--mn-text-mid) !important
+
+.sidebar-sub-headers .sidebar-link:hover
+  color var(--mn-text) !important
+
+.sidebar-sub-headers .sidebar-link.active
+  color var(--mn-orange) !important
+  background rgba(240,142,32,0.08) !important
+
+// ─── Page layout ──────────────────────────────────────────────────────────
+
+.page
+  background var(--mn-bg) !important
+  padding-top 68px !important
+  min-height 100vh !important
+
+.theme-default-content
+  max-width 800px !important
+  padding 2.75rem 2.75rem 5rem !important
+
+// ─── Home page text colors ────────────────────────────────────────────────
+
+.home .hero .description
+  color var(--mn-text-hi) !important
+
+.home .features .feature h2
+  color var(--mn-text-hi) !important
+
+.home .features .feature p
+  color var(--mn-text) !important
+
+.home .footer
+  color var(--mn-text-mid) !important
+
+.home .features
+  border-top 1px solid var(--mn-border) !important
+  border-bottom 1px solid var(--mn-border) !important
+
+// ─── Typography ───────────────────────────────────────────────────────────
+
+.theme-default-content h1,
+.theme-default-content h2,
+.theme-default-content h3,
+.theme-default-content h4,
+.theme-default-content h5,
+.theme-default-content h6
+  font-family 'Inter', sans-serif !important
+  color var(--mn-text-hi) !important
+  letter-spacing -0.02em !important
+  line-height 1.25 !important
+
+.theme-default-content h1
+  font-size 2.1rem !important
+  font-weight 800 !important
+  margin-top 1rem !important
+  margin-bottom 1.25rem !important
+  padding-top 0 !important
+  border-bottom none !important
+
+.theme-default-content h2
+  font-size 1.4rem !important
+  font-weight 700 !important
+  margin-top 2.75rem !important
+  padding-top 0 !important
+  padding-bottom 0.65rem !important
+  border-bottom 1px solid var(--mn-border) !important
+
+.theme-default-content h3
+  font-size 1.1rem !important
+  font-weight 600 !important
+  margin-top 2rem !important
+  padding-top 0 !important
+
+.theme-default-content h4,
+.theme-default-content h5,
+.theme-default-content h6
+  font-size 0.95rem !important
+  font-weight 600 !important
+  margin-top 1.5rem !important
+  padding-top 0 !important
+
+.theme-default-content p
+  color var(--mn-text) !important
+  line-height 1.8 !important
+  font-weight 300 !important
+
+.theme-default-content li
+  color var(--mn-text) !important
+  line-height 1.75 !important
+  font-weight 300 !important
+
+.theme-default-content strong
+  color var(--mn-text-hi) !important
+  font-weight 600 !important
+
+.theme-default-content em
+  color var(--mn-text) !important
+
+.theme-default-content a
+  color var(--mn-link) !important
+  text-decoration none !important
+  transition color 0.2s ease !important
+
+.theme-default-content a:hover
+  color var(--mn-link-hover) !important
+  text-decoration underline !important
+
+.theme-default-content hr
+  border none !important
+  border-top 1px solid var(--mn-border) !important
+  margin 2.5rem 0 !important
+
+.theme-default-content blockquote
+  background var(--mn-card-bg) !important
+  border-left 4px solid var(--mn-orange) !important
+  border-radius 0 8px 8px 0 !important
+  padding 0.8rem 1.25rem !important
+  margin 1.5rem 0 !important
+  color var(--mn-text) !important
+
+.theme-default-content blockquote p
+  margin 0 !important
+
+// ─── Code ─────────────────────────────────────────────────────────────────
+
+.theme-default-content code
+  background var(--mn-code-bg) !important
+  color var(--mn-code-clr) !important
+  border 1px solid var(--mn-border) !important
+  border-radius 5px !important
+  padding 0.13em 0.42em !important
+  font-size 0.875em !important
+
+div[class*='language-'],
+.theme-default-content pre
+  background var(--mn-pre-bg) !important
+  border 1px solid var(--mn-pre-border) !important
+  border-radius 12px !important
+
+div[class*='language-'] code,
+.theme-default-content pre code
+  background transparent !important
+  border none !important
+  color var(--mn-pre-text) !important
+  padding 0 !important
+  font-size 0.88rem !important
+
+div[class*='language-'] button
+  background var(--mn-card-bg) !important
+  color var(--mn-text-mid) !important
+  border 1px solid var(--mn-border) !important
+  border-radius 6px !important
+
+div[class*='language-'] button:hover
+  color var(--mn-text-hi) !important
+
+// ─── Tables ───────────────────────────────────────────────────────────────
+
+.theme-default-content table
+  border-collapse collapse !important
+  width 100% !important
+  margin 1.5rem 0 !important
+
+.theme-default-content thead tr
+  background var(--mn-th-bg) !important
+
+.theme-default-content th
+  color var(--mn-text-hi) !important
+  font-weight 600 !important
+  font-size 0.82rem !important
+  letter-spacing 0.04em !important
+  border 1px solid var(--mn-border) !important
+  padding 0.7em 1em !important
+  background var(--mn-th-bg) !important
+
+.theme-default-content tr
+  border-top 1px solid var(--mn-border) !important
+  background transparent !important
+
+.theme-default-content tr:nth-child(2n)
+  background var(--mn-tr-alt) !important
+
+.theme-default-content td
+  border 1px solid var(--mn-border) !important
+  padding 0.65em 1em !important
+  color var(--mn-text) !important
+
+// ─── Custom containers ────────────────────────────────────────────────────
+
+.custom-block
+  border-radius 10px !important
+  padding 0.85rem 1.25rem !important
+  margin 1.5rem 0 !important
+
+.custom-block.tip
+  background rgba(240,142,32,0.07) !important
+  border-left 4px solid var(--mn-orange) !important
+  color var(--mn-text) !important
+
+.custom-block.tip .custom-block-title
+  color var(--mn-orange) !important
+  font-weight 600 !important
+
+.custom-block.warning
+  background rgba(255,160,0,0.07) !important
+  border-left 4px solid #ffa000 !important
+  color var(--mn-text) !important
+
+.custom-block.warning .custom-block-title
+  color #ffa000 !important
+  font-weight 600 !important
+
+.custom-block.danger
+  background rgba(248,113,113,0.09) !important
+  border-left 4px solid #f87171 !important
+  color var(--mn-text) !important
+
+.custom-block.danger .custom-block-title
+  color #f87171 !important
+  font-weight 600 !important
+
+// ─── Page edit / prev-next nav ────────────────────────────────────────────
+
+.page-edit
+  border-top 1px solid var(--mn-border) !important
+  padding 1.25rem 2.75rem !important
+  margin-top 2rem !important
+
+.page-edit .edit-link a
+  color var(--mn-text-muted) !important
+  font-size 0.82rem !important
+
+.page-edit .edit-link a:hover
+  color var(--mn-orange) !important
+  text-decoration none !important
+
+.page-edit .last-updated span
+  color var(--mn-text-muted) !important
+  font-size 0.82rem !important
+
+.page-nav
+  padding 0 2.75rem 2.5rem !important
+
+.page-nav .inner
+  border-top 1px solid var(--mn-border) !important
+  padding-top 1.5rem !important
+  min-height auto !important
+
+.page-nav .prev a,
+.page-nav .next a
+  color var(--mn-orange) !important
+  font-weight 500 !important
+  font-size 0.875rem !important
+
+.page-nav .prev a:hover,
+.page-nav .next a:hover
+  color var(--mn-orange-hover) !important
+  text-decoration none !important
+
+// ─── Back-to-top ──────────────────────────────────────────────────────────
+
+#back-to-top
+  background rgba(240,142,32,0.15) !important
+  border 1px solid rgba(240,142,32,0.30) !important
+  border-radius 9999px !important
+  color var(--mn-orange) !important
+
+#back-to-top:hover
+  background rgba(240,142,32,0.28) !important
+
+// ─── Medium-zoom ──────────────────────────────────────────────────────────
+
+.medium-zoom-overlay
+  background var(--mn-scrim) !important
+
+.medium-zoom-image--opened
+  border-radius 12px !important
+  box-shadow 0 24px 80px rgba(0,0,0,0.70) !important
+
+// ─── Selection & scrollbar ────────────────────────────────────────────────
+
+::selection
+  background rgba(240,142,32,0.28)
+  color #ffffff
+
+::-webkit-scrollbar
+  width 6px
+  height 6px
+
+::-webkit-scrollbar-track
+  background var(--mn-bg)
+
+::-webkit-scrollbar-thumb
+  background rgba(128,128,128,0.25)
+  border-radius 3px
+
+::-webkit-scrollbar-thumb:hover
+  background rgba(128,128,128,0.40)
+
+// ─── Images ───────────────────────────────────────────────────────────────
+
+// Base rule — block + constrained.
+.theme-default-content img
+  display block !important
+  max-width 100% !important
+  height auto !important
+
+// Dim bright screenshots in dark mode so they don't blast out of the dark bg
+.theme-default-content img
+  filter brightness(0.88) !important
+
+html[data-theme="light"] .theme-default-content img
+  filter none !important
+
+// <center><figure><img> — the dominant pattern in the docs.
+.theme-default-content center
+  display block !important
+
+.theme-default-content figure
+  display block !important
+  margin 2rem auto !important
+  text-align center !important
+
+.theme-default-content figure img
+  display block !important
+  margin 0 auto !important
+  max-width 100% !important
+  height auto !important
+
+// Images with an inline width attribute (style="width:200px") — honour it
+// but never let them exceed the container
+.theme-default-content figure img[style*="width"]
+  max-width 100% !important
+
+// Plain markdown images (![alt](src)) land inside <p> — make them block
+// and add breathing room. The :has rule removes the p's own margin to
+// avoid double-spacing.
+.theme-default-content p > img
+  display block !important
+  margin 2rem auto !important
+  max-width 100% !important
+  border-radius 8px
+
+.theme-default-content p:has(> img:only-child)
+  margin-top 0 !important
+  margin-bottom 0 !important
+
+// Figcaption
+.theme-default-content figcaption
+  font-size 0.82rem
+  color var(--mn-text-muted)
+  margin-top 0.5rem
+  text-align center
+
+// Side-by-side flex image pairs (used in btcpay-server and a few other pages)
+.theme-default-content div[style*="display: flex"],
+.theme-default-content div[style*="display:flex"]
+  margin 2rem 0 !important
+  gap 1rem
+
+.theme-default-content div[style*="display: flex"] img,
+.theme-default-content div[style*="display:flex"] img
+  max-width 48% !important
+  height auto !important
+  margin 0 !important
+  border-radius 8px !important
+
+// ─── Responsive ───────────────────────────────────────────────────────────
+
+@media (max-width 719px)
+  .theme-default-content
+    padding 1.75rem 1.25rem 4rem !important
+
+  .page-edit,
+  .page-nav
+    padding-left 1.25rem !important
+    padding-right 1.25rem !important
+
+  // Stack side-by-side image pairs on mobile
+  .theme-default-content div[style*="display: flex"],
+  .theme-default-content div[style*="display:flex"]
+    flex-direction column !important
+
+  .theme-default-content div[style*="display: flex"] img,
+  .theme-default-content div[style*="display:flex"] img
+    max-width 90% !important
+    margin 0.75rem auto !important
+
+  // Side-by-side images stack on mobile
+  .theme-default-content div[style*="display: flex"],
+  .theme-default-content div[style*="display:flex"]
+    flex-direction column !important
+
+  .theme-default-content div[style*="display: flex"] img,
+  .theme-default-content div[style*="display:flex"] img
+    max-width 90% !important
+    margin 0.75rem auto !important
+
+// ─── Home page ────────────────────────────────────────────────────────────
+
+.home
+  background var(--mn-bg) !important
+  padding-top 68px !important
+  max-width 100% !important
+  margin 0 auto !important
+
+.home .hero
+  max-width 1000px !important
+  margin 0 auto !important
+  padding 5rem 2rem 3.5rem !important
+  text-align center !important
+
+.home .hero img
+  max-height 180px !important
+  width auto !important
+  margin 0 auto 2.5rem !important
+
+.home .hero h1
+  font-family 'Inter', sans-serif !important
+  font-size 3rem !important
+  font-weight 900 !important
+  color var(--mn-text-hi) !important
+  letter-spacing -0.03em !important
+  line-height 1.1 !important
+
+.home .hero .description
+  font-family 'Inter', sans-serif !important
+  font-size 1.25rem !important
+  font-weight 300 !important
+  color var(--mn-text) !important
+  letter-spacing -0.01em !important
+  line-height 1.6 !important
+  max-width 32rem !important
+  margin 1.5rem auto !important
+
+.home .hero .action
+  margin 2.5rem auto 0 !important
+
+.home .hero .action-button
+  display inline-flex !important
+  align-items center !important
+  font-family 'Inter', sans-serif !important
+  font-size 1rem !important
+  font-weight 700 !important
+  color #000 !important
+  background #F08E20 !important
+  padding 0.85rem 2rem !important
+  border-radius 9999px !important
+  border-bottom none !important
+  box-shadow 0 0 32px rgba(240,142,32,0.30) !important
+  transition background 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease !important
+  text-decoration none !important
+
+.home .hero .action-button:hover
+  background #F4BB32 !important
+  box-shadow 0 0 44px rgba(240,142,32,0.45) !important
+  transform translateY(-1px) !important
+  text-decoration none !important
+  color #000 !important
+
+// Features grid
+.home .features
+  max-width 1000px !important
+  margin 0 auto !important
+  padding 3rem 2rem 4rem !important
+  border-top 1px solid var(--mn-border) !important
+  display grid !important
+  grid-template-columns repeat(3, 1fr) !important
+  gap 1.5rem !important
+
+.home .feature
+  max-width none !important
+  flex-basis auto !important
+  background var(--mn-card-bg) !important
+  border 1px solid var(--mn-border) !important
+  border-radius 20px !important
+  padding 2rem !important
+  transition border-color 0.2s ease !important
+
+.home .feature:hover
+  border-color var(--mn-border-hover) !important
+
+// Icon badge above each feature title
+.home .feature::before
+  content '' !important
+  display block !important
+  width 42px !important
+  height 42px !important
+  border-radius 12px !important
+  background rgba(240,142,32,0.12) !important
+  background-repeat no-repeat !important
+  background-position center !important
+  background-size 22px !important
+  margin-bottom 1.25rem !important
+
+.home .feature:nth-child(1)::before
+  background-image url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23F08E20' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='8' r='4'/%3E%3Cpath d='M20 21a8 8 0 0 0-16 0'/%3E%3C/svg%3E") !important
+  background-color rgba(240,142,32,0.12) !important
+  background-repeat no-repeat !important
+  background-position center !important
+  background-size 22px !important
+
+.home .feature:nth-child(2)::before
+  background-image url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23F08E20' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolygon points='13 2 3 14 12 14 11 22 21 10 12 10 13 2'/%3E%3C/svg%3E") !important
+  background-color rgba(240,142,32,0.12) !important
+  background-repeat no-repeat !important
+  background-position center !important
+  background-size 22px !important
+
+.home .feature:nth-child(3)::before
+  background-image url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23F08E20' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z'/%3E%3Cpath d='M12 6v6l4 2'/%3E%3C/svg%3E") !important
+  background-color rgba(240,142,32,0.12) !important
+  background-repeat no-repeat !important
+  background-position center !important
+  background-size 22px !important
+
+.home .feature h2
+  font-family 'Inter', sans-serif !important
+  font-size 1.05rem !important
+  font-weight 800 !important
+  color var(--mn-text-hi) !important
+  border-bottom none !important
+  padding-bottom 0 !important
+  letter-spacing -0.02em !important
+  margin-top 0 !important
+  margin-bottom 0.6rem !important
+
+.home .feature p
+  font-family 'Inter', sans-serif !important
+  color var(--mn-text) !important
+  font-size 0.875rem !important
+  font-weight 300 !important
+  line-height 1.75 !important
+  margin 0 !important
+
+// Footer
+.home .footer
+  font-family 'Inter', sans-serif !important
+  border-top 1px solid var(--mn-border) !important
+  color var(--mn-text-muted) !important
+  font-size 0.82rem !important
+  padding 2rem !important
+  text-align center !important
+  background var(--mn-bg) !important
+
+// Mobile home
+@media (max-width 719px)
+  .home .hero
+    padding 3rem 1.5rem 2.5rem !important
+
+  .home .features
+    grid-template-columns 1fr !important
+    padding 2rem 1.5rem !important
