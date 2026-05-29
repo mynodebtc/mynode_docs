@@ -283,6 +283,11 @@ body,
   display block
   flex-shrink 0
 
+// Floating theme toggle (FAB) — appended to <body>, desktop hidden.
+// Shown + positioned bottom-left only on mobile (see mobile block below).
+.mn-theme-fab
+  display none
+
 // ─── Search box ───────────────────────────────────────────────────────────
 
 .search-box
@@ -815,6 +820,183 @@ html[data-theme="light"] .theme-default-content img
   .theme-default-content div[style*="display:flex"] img
     max-width 90% !important
     margin 0.75rem auto !important
+
+// ─── Mobile navbar & drawer ─────────────────────────────────────────────────
+
+@media (max-width 719px)
+  // ── Top bar: hamburger + logo + search only ──
+  // Make room for the absolutely-positioned hamburger (left:1rem, ~2.45rem wide).
+  // VuePress's default padding-left:4rem is gone because our base .navbar rule
+  // sets padding unconditionally.
+  .navbar
+    padding-left 3.5rem !important
+    padding-right 1rem !important
+
+  // Vertically centre the hamburger within the 68px navbar
+  .sidebar-button
+    top 0.95rem !important
+    left 1rem !important
+
+  .sidebar-button:hover .icon
+    fill var(--mn-text-hi) !important
+
+  // Hide the long "Guides and Documentation" title so search has room.
+  // (Our desktop `display: revert` un-hides VuePress's .can-hide on it.)
+  .navbar .site-name
+    display none !important
+
+  // The desktop nav links belong in the drawer on mobile — our global
+  // `.navbar .nav-links { display: inline-flex !important }` otherwise wins
+  // over VuePress's `.can-hide { display:none }` and leaks them into the bar.
+  .navbar .nav-links
+    display none !important
+
+  // Search fills the remaining width and is actually usable. VuePress's
+  // SearchBox collapses the input to width:0 below 959px — force it open.
+  .navbar .links
+    gap 0.4rem !important
+    padding-left 0.75rem !important
+
+  .search-box
+    flex 1 1 auto !important
+    min-width 0 !important
+
+  // VuePress shifts the input right by `left:1rem` on mobile, leaving our
+  // magnifier (::before, pinned to the search-box) detached on the left.
+  // Reset the shift so icon and field line up.
+  .search-box input
+    width 100% !important
+    min-width 0 !important
+    left 0 !important
+
+  .search-box .suggestions
+    width calc(100vw - 4.5rem) !important
+    left auto !important
+    right 0 !important
+
+  // ── Theme toggle ──
+  // Hide the navbar toggle on mobile; the floating FAB replaces it.
+  .navbar .mn-theme-toggle
+    display none !important
+
+  // Floating FAB, bottom-right. Lives in <body> (no backdrop-filter ancestor),
+  // so `position: fixed` anchors to the viewport, not the navbar.
+  .mn-theme-fab
+    display inline-flex !important
+    align-items center !important
+    justify-content center !important
+    position fixed !important
+    right 1.25rem !important
+    bottom 1.25rem !important
+    left auto !important
+    top auto !important
+    z-index 1040 !important
+    width 46px !important
+    height 46px !important
+    padding 0 !important
+    border-radius 9999px !important
+    background var(--mn-bg-alt) !important
+    border 1px solid var(--mn-border) !important
+    color var(--mn-text-hi) !important
+    cursor pointer !important
+    box-shadow 0 6px 24px rgba(0,0,0,0.35) !important
+
+  .mn-theme-fab svg
+    display block !important
+    flex-shrink 0 !important
+
+  // Stack the back-to-top button above the FAB so they don't collide
+  #back-to-top
+    bottom 5.75rem !important
+    right 1.6rem !important
+
+  // ── Drawer: guides first, marketing/utility links in a footer ──
+  // Match our real 68px navbar height and lay the drawer out as a flex column
+  // so we can reorder (markup is nav-links first, then the guide links).
+  .sidebar
+    top 0 !important
+    padding-top 68px !important
+    display flex !important
+    flex-direction column !important
+
+  .sidebar > .sidebar-links
+    order 1 !important
+
+  // Tap-to-close scrim reads as a modal overlay
+  .sidebar-mask
+    background rgba(0,0,0,0.5) !important
+    backdrop-filter blur(2px) !important
+    -webkit-backdrop-filter blur(2px) !important
+
+  // nav-links footer: pinned to the bottom of the column, separated by a border.
+  // align-items flex-start keeps the pill + text links on a common left edge;
+  // the generous bottom padding reserves a corner for the floating FAB so it
+  // never overlaps the "Contribute" row.
+  .sidebar .nav-links
+    order 2 !important
+    margin-top auto !important
+    border-top 1px solid var(--mn-border) !important
+    border-bottom none !important
+    padding 1rem 0.75rem 1.5rem !important
+    display flex !important
+    flex-direction column !important
+    align-items flex-start !important
+    gap 0.15rem !important
+
+  // Kill the broken outbound (↗) icon boxes inside the drawer links
+  .sidebar .nav-links .icon.outbound
+    display none !important
+
+  // Footer order: Order Now CTA first, then text links
+  .sidebar .nav-links .nav-item:nth-of-type(2)
+    order 1 !important
+  .sidebar .nav-links .nav-item:nth-of-type(1)
+    order 2 !important
+  .sidebar .nav-links .repo-link
+    order 3 !important
+
+  .sidebar .nav-links .nav-item,
+  .sidebar .nav-links .repo-link
+    display block !important
+    padding 0 !important
+    // .repo-link inherits `align-self: center` from the global navbar rule,
+    // which centres "Contribute" in the flex column — force it left.
+    align-self flex-start !important
+
+  .sidebar .nav-links .nav-item > a,
+  .sidebar .nav-links .repo-link
+    font-family 'Inter', sans-serif !important
+    font-size 0.95rem !important
+    font-weight 500 !important
+    color var(--mn-text) !important
+    padding 0.6rem 0.75rem !important
+    border-radius 8px !important
+    border none !important
+    line-height 1.2 !important
+
+  .sidebar .nav-links .nav-item > a:hover,
+  .sidebar .nav-links .repo-link:hover
+    color var(--mn-text-hi) !important
+    background var(--mn-toggle-hover) !important
+    text-decoration none !important
+
+  // "Order Now" — orange CTA pill (2nd nav-item)
+  .sidebar .nav-links .nav-item:nth-of-type(2) > a
+    display inline-flex !important
+    align-items center !important
+    justify-content center !important
+    background #f08e20 !important
+    color #000 !important
+    font-weight 700 !important
+    border-radius 9999px !important
+    padding 0.6rem 1.25rem !important
+    margin 0 0 0.5rem !important
+    box-shadow 0 0 20px rgba(240,142,32,0.25) !important
+
+  .sidebar .nav-links .nav-item:nth-of-type(2) > a:hover
+    background #f4bb32 !important
+    color #000 !important
+    text-decoration none !important
 
 // ─── Home page ────────────────────────────────────────────────────────────
 
