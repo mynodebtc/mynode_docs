@@ -43,7 +43,6 @@ A full node verifies every block mined by miners and relayed by its peers before
 <!-- While setting up MyNode, the user have three options: -->
 <!-- - IBD: (initial blockchain download) download the blockchain from scratch. -->
 <!-- ProTip: IBD can be sped up by increasing number of threads in bitcoin CLI. -->
-<!-- - QuickSync: the default option to download a torrent from mynodebtc.com -->
 <!-- and other MyNode users -->
 <!-- - Copy the blockchain from an existing source -->
 <!-- ## Connected apps
