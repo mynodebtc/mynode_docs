@@ -22,7 +22,7 @@ Follow these steps to manually upgrade to the latest version:
 
 1. Open 2 Terminal windows:
     * Terminal 1: Local PC or laptop
-    * Terminal 2: Connect to your MyNode Device ([see options](https://mynodebtc.github.io/advanced/linux-terminal.html))
+    * Terminal 2: Connect to your MyNode Device ([see options](https://docs.mynodebtc.com/advanced/linux-terminal.html))
       * Command: `ssh admin@[MyNode ip address]`
       * Default credentials: admin/bolt
 2. Clone the latest release from the git repo on your PC or laptop

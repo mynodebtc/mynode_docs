@@ -1,0 +1,36 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+
+      - name: Install and Build 🔧
+        run: |
+          export NODE_OPTIONS=--openssl-legacy-provider
+          npm install
+          npm run docs:build
+
+      - name: Deploy 🚀
+        env:
+          SSH_HOST: ${{ secrets.DOCS_SSH_HOST }}
+          SSH_PORT: ${{ secrets.DOCS_SSH_PORT }}
+          SSH_USER: ${{ secrets.DOCS_SSH_USER }}
+          SSH_KEY: ${{ secrets.DOCS_SSH_KEY }}
+          REMOTE_PATH: ${{ secrets.DOCS_REMOTE_PATH }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -p "$SSH_PORT" "$SSH_HOST" > ~/.ssh/known_hosts 2>/dev/null
+
+          rsync -avz --delete \
+            -e "ssh -p $SSH_PORT -i ~/.ssh/deploy_key -o UserKnownHostsFile=~/.ssh/known_hosts" \
+            docs/.vuepress/dist/ "$SSH_USER@$SSH_HOST:$REMOTE_PATH/"

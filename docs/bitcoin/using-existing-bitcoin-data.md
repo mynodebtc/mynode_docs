@@ -63,7 +63,7 @@ This process assumes you have one node that is running and a copy of the chain d
 
 
 ### Step 1 - Install & Start MyNode
-Start with [MyNode standard installation](https://mynodebtc.com/download) and then [Getting started guide](https://mynodebtc.github.io/intro/getting-started.html)
+Start with [MyNode standard installation](https://mynodebtc.com/download) and then [Getting started guide](https://docs.mynodebtc.com/intro/getting-started.html)
 
 ### Step 2 - Stop The Bitcoin Syncing
 As soon as the Bitcoin Blockchain syncing process has started, the web interface will displays `"Bitcoin Blockchain Syncing..."`.
