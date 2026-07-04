@@ -2,7 +2,7 @@ const siteUrl = 'https://docs.mynodebtc.com'
 const defaultSocialImage = 'https://mynodebtc.com/images/og_image_2.jpg'
 
 module.exports = {
-  title: "Guides and Documentation | MyNode",
+  title: "Guides and Documentation",
   description: "Helpful guides and documentation for using MyNode and getting the most out of all it has to offer!",
   base: "/",
   head: [
