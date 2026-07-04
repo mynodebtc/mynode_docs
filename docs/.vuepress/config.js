@@ -64,7 +64,6 @@ module.exports = {
           "/bitcoin/overview",
           "/bitcoin/bitcoin-status",
           "/bitcoin/manage",
-          "/bitcoin/quicksync",
           "/bitcoin/using-existing-bitcoin-data",
           "/bitcoin/troubleshoot"
         ]
@@ -229,7 +228,7 @@ module.exports = {
         type: $page => ['articles', 'posts', 'blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? 'article' : 'website',
         url: (_, $site, path) => ($site.themeConfig.domain || '') + path,
         image: ($page, $site) => {
-          const pageImage = $page.frontmatter.image || defaultSocialImage
+          const pageImage = $page.frontmatter.og_image || defaultSocialImage
 
           return ($site.themeConfig.domain && !pageImage.startsWith('http') ? $site.themeConfig.domain : '') + pageImage
         },

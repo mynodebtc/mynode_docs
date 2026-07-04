@@ -1,6 +1,6 @@
 ---
 title: "Flash MyNode OS Image"
-description: "Write the MyNode image to an SD card and prepare the device for its first boot."
+description: "Write the MyNode image to an SD card to prepare the device for its first boot or perform a recovery."
 tags:
 - "MyNode"
 - "SD card"

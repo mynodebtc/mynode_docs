@@ -1,6 +1,6 @@
 ---
 title: "My Device has a Lightning Network Error"
-description: "Debug Lightning peer, routing, and connectivity issues when MyNode reports a Lightning error."
+description: "Debug Lightning not starting properly due to a networking error."
 tags:
 - "Lightning error"
 - "Lightning Network"
