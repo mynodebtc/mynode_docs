@@ -17,6 +17,7 @@ module.exports = {
     ['script',{},["window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-871EBBS9WR');",],],
   ],
   themeConfig: {
+    domain: 'https://docs.mynodebtc.com',
     repo: 'mynodebtc/mynode_docs',
     repoLabel: 'Contribute',
     editLinks: true,
