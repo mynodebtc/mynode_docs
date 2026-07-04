@@ -12,7 +12,7 @@
   },
   "scripts": {
     "docs:dev": "node --openssl-legacy-provider node_modules/vuepress/cli.js dev docs",
-    "docs:build": "node --openssl-legacy-provider node_modules/vuepress/cli.js build docs && node docs/.vuepress/plugins/canonical.js docs/.vuepress/dist https://docs.mynodebtc.com"
+    "docs:build": "node --openssl-legacy-provider node_modules/vuepress/cli.js build docs && node docs/.vuepress/plugins/canonical.js docs/.vuepress/dist https://docs.mynodebtc.com && node docs/.vuepress/plugins/structured-data.js docs/.vuepress/dist https://docs.mynodebtc.com"
   },
   "dependencies": {
     "vuepress-plugin-seo": "^0.1.4"
