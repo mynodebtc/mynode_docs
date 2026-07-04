@@ -6,6 +6,8 @@ tags:
 - "SSH"
 - "MyNode"
 - "advanced setup"
+- "bash shell"
+- "linux shell"
 ---
 
 # Accessing the Linux Terminal
