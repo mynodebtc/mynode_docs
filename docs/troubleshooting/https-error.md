@@ -1,3 +1,13 @@
+---
+title: "My Web Browser shows an Error"
+description: "Resolve browser certificate and HTTPS errors when the MyNode web interface will not load cleanly."
+tags:
+- "HTTPS"
+- "browser error"
+- "MyNode"
+- "troubleshooting"
+---
+
 # My Web Browser shows an Error
 
 When you first connect to your node, it may use HTTP which is less secure than HTTPS. Most users will want to start using HTTPS by clicking the lock icon in the top right of the home page, once it loads.

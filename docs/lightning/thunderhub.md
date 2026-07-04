@@ -1,3 +1,12 @@
+---
+title: "Thunderhub"
+description: "Manage Lightning channels, balances, payments, and routing from MyNode with Thunderhub."
+tags:
+- "Thunderhub"
+- "Lightning node"
+- "channel management"
+- "MyNode"
+---
 
 # Thunderhub
 

@@ -1,6 +1,6 @@
 ---
 title: Bitcoin Node Overview
-description: Understand how MyNode runs a full Bitcoin node, why verification matters, and what features are available by default.
+description: See how MyNode runs and manages a full Bitcoin node, and why local verification matters.
 tags:
 - Bitcoin node
 - blockchain sync

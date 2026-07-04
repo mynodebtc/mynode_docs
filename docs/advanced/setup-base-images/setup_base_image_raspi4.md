@@ -1,3 +1,13 @@
+---
+title: "Setup Base Image (Raspberry Pi 4)"
+description: "Prepare a Raspberry Pi 4 base image for MyNode when deploying the platform manually on supported hardware."
+tags:
+- "MyNode"
+- "Raspberry Pi 4"
+- "base image"
+- "advanced setup"
+---
+
 # Setup Base Image (Raspberry Pi 4)
 
 1. After Raspi Flash `touch` ssh file on rootfs

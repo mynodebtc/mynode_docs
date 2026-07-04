@@ -1,3 +1,13 @@
+---
+title: "Lightning Terminal"
+description: "Open Lightning Terminal on MyNode for advanced channel, pool, and service management tools."
+tags:
+- "Lightning Terminal"
+- "Lightning"
+- "MyNode"
+- "node management"
+---
+
 # Lightning Terminal
 
 Lightning Terminal is a tool made by Lightning Labs to control Loop and Pool via a convenient web interface.

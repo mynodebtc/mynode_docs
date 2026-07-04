@@ -1,3 +1,13 @@
+---
+title: "Customizing Bitcoin and LND Config"
+description: "Adjust bitcoin.conf and lnd.conf on MyNode for custom networking, performance, and policy settings."
+tags:
+- "Bitcoin config"
+- "LND config"
+- "MyNode"
+- "advanced setup"
+---
+
 # Customizing Bitcoin and LND Config
 
 ## Customizing your Bitcoin Configuration

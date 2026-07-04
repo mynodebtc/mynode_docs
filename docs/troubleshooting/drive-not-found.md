@@ -1,3 +1,13 @@
+---
+title: "My Device cannot Find the Drive"
+description: "Fix startup problems caused by MyNode failing to detect or mount the main data drive."
+tags:
+- "drive issue"
+- "storage"
+- "MyNode"
+- "troubleshooting"
+---
+
 # My Device cannot Find the Drive
 
 Some users may encouter an issue where the drive cannot be found even though it is attached. This is likely due to power or driver issues related to the external disk drive.

@@ -1,3 +1,13 @@
+---
+title: "Clone Tool"
+description: "Copy a MyNode installation to new storage or replacement hardware without rebuilding the node from scratch."
+tags:
+- "MyNode"
+- "data migration"
+- "clone tool"
+- "advanced setup"
+---
+
 # Clone Tool
 
 The Clone Tool is a utility built into MyNode that can help migrate data from one drive to another. This can help you move data to a larger drive or upgrade from a hard drive (HDD) to solid state drive (SSD) for better performance. 

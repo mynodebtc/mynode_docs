@@ -1,3 +1,13 @@
+---
+title: "Restore Lightning Wallet"
+description: "Restore a MyNode Lightning wallet from seed words and bring the node back online."
+tags:
+- "Lightning wallet"
+- "wallet restore"
+- "seed phrase"
+- "MyNode"
+---
+
 # Restore Lightning Wallet
 
 If you already have a Lighting Wallet and want to restore it, you can do so via the MyNode interface.

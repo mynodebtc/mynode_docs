@@ -1,3 +1,13 @@
+---
+title: "BTCPay Server"
+description: "Connect BTCPay Server to MyNode for self-hosted Bitcoin payments backed by your own node."
+tags:
+- "BTCPay Server"
+- "Bitcoin payments"
+- "MyNode"
+- "merchant tools"
+---
+
 # BTCPay Server
 
 ## Enable and open the app

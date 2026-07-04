@@ -1,3 +1,13 @@
+---
+title: "Customizing MyNode with Scripts"
+description: "Extend MyNode with custom scripts for automation, local tweaks, and repeatable admin tasks."
+tags:
+- "MyNode"
+- "scripts"
+- "automation"
+- "developer guide"
+---
+
 # Customizing MyNode with Scripts
 
 Developers or advanced users may want to run custom scripts at certain points in time to customize their expecience. This is facilitated through "hook" bash scripts. A user who puts a script in specific location will have it executed automatically by MyNode at the proper time.

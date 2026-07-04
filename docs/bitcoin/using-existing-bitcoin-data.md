@@ -1,3 +1,13 @@
+---
+title: "Using Existing Bitcoin Data"
+description: "Reuse blockchain data from another node to cut sync time when migrating to MyNode."
+tags:
+- "Bitcoin data"
+- "migration"
+- "MyNode"
+- "blockchain sync"
+---
+
 # Using Existing Bitcoin Data 
 
 In some cases, you may want to use Bitcoin data from a different node to get MyNode up and running faster or to save bandwidth. If you have another node that is already synced, you can copy that data to your MyNode.

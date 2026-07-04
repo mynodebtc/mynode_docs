@@ -1,3 +1,13 @@
+---
+title: "Setup Base Image (Debian)"
+description: "Prepare a Debian base image for MyNode so you can build or install the platform on supported Debian systems."
+tags:
+- "MyNode"
+- "Debian"
+- "base image"
+- "advanced setup"
+---
+
 # Setup Base Image (Debian)
 
 1. Setup Base OS

@@ -1,3 +1,12 @@
+---
+title: "Zap"
+description: "Connect the Zap desktop client to MyNode for Lightning payments and node access from your computer."
+tags:
+- "Zap"
+- "Lightning wallet"
+- "desktop wallet"
+- "MyNode"
+---
 
 # Zap
 

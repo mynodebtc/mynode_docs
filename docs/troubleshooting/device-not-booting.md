@@ -1,3 +1,13 @@
+---
+title: "My Device is not Booting"
+description: "Check power, storage, and imaging issues when a MyNode device refuses to boot."
+tags:
+- "boot failure"
+- "MyNode"
+- "troubleshooting"
+- "hardware"
+---
+
 # My Device is not Booting
 
 If your device does not appear to be booting, there can be several causes. Following these steps should help resolve the issue.

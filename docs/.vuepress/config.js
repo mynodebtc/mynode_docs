@@ -1,5 +1,5 @@
 const siteUrl = 'https://docs.mynodebtc.com'
-const defaultSocialImage = 'https://mynodebtc.com/images/og_image_2.png'
+const defaultSocialImage = 'https://mynodebtc.com/images/og_image_2.jpg'
 
 module.exports = {
   title: "Guides and Documentation | MyNode",
@@ -171,18 +171,7 @@ module.exports = {
           "/advanced/ssh",
           "/advanced/install-pc-server",
           "/advanced/install-virtual-box",
-          "/advanced/upgrade-to-beta",
-        //   {
-        //     title: "Setup Base Images",
-        //     children: [
-        //       ["/advanced/setup-base-images/setup_base_image_raspi4", 'Raspberry Pi 4'],
-        //       ["/advanced/setup-base-images/setup_base_image_raspi3", 'Raspberry Pi 3'],
-        //       ["/advanced/setup-base-images/setup_base_image_rockpro64", 'RockPro64'],
-        //       ["/advanced/setup-base-images/setup_base_image_rock64", 'Rock64'],
-        //       ["/advanced/setup-base-images/setup_base_image_debian", 'Debian'],
-        //       ["/advanced/setup-base-images/setup_base_image_other", 'Other'],
-        //     ]
-        //   },
+          "/advanced/upgrade-to-beta"
         ]
       },
       {
@@ -221,13 +210,7 @@ module.exports = {
       hostname: siteUrl,
       changefreq: 'weekly',
       exclude: [
-        '/404.html',
-        '/advanced/setup-base-images/setup_base_image_debian.html',
-        '/advanced/setup-base-images/setup_base_image_other.html',
-        '/advanced/setup-base-images/setup_base_image_raspi3.html',
-        '/advanced/setup-base-images/setup_base_image_raspi4.html',
-        '/advanced/setup-base-images/setup_base_image_rock64.html',
-        '/advanced/setup-base-images/setup_base_image_rockpro64.html',
+        '/404.html'
       ],
     }],
     [require('./plugins/robots'), {

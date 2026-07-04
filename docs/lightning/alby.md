@@ -1,3 +1,13 @@
+---
+title: "Alby"
+description: "Link Alby to MyNode for browser-based access to your Lightning balance, invoices, and payments."
+tags:
+- "Alby"
+- "Lightning wallet"
+- "MyNode"
+- "browser wallet"
+---
+
 # Alby
 
 Alby is your companion for bitcoin transactions on the web. Connect your MyNode wallet to the Alby Browser Extension and use Bitcoin & Nostr apps conveniently in a non-custodial way.

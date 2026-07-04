@@ -1,3 +1,13 @@
+---
+title: "My Device did not Upgrade Properly"
+description: "Recover from a MyNode update that failed partway through or left the device in a bad state."
+tags:
+- "upgrade failure"
+- "MyNode"
+- "troubleshooting"
+- "maintenance"
+---
+
 # My Device did not Upgrade Properly
 
 If your device does not appear to have upgraded properly, there are several ways to attempt to resolve the issue. An upgrade issue may appear like the following:

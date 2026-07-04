@@ -1,3 +1,13 @@
+---
+title: "Using MyNode with Zeus Wallet via Tor"
+description: "Pair Zeus with MyNode over Tor for mobile Lightning access without exposing the node directly."
+tags:
+- "Zeus"
+- "Tor"
+- "Lightning wallet"
+- "MyNode"
+---
+
 # Using MyNode with Zeus Wallet via Tor
 
 ## Enable Tor on your Mobile Device

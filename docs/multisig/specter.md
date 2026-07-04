@@ -1,3 +1,13 @@
+---
+title: "Specter"
+description: "Pair Specter with MyNode for self-hosted multisig wallet management and signing workflows."
+tags:
+- "Specter"
+- "multisig"
+- "Bitcoin wallet"
+- "MyNode"
+---
+
 # Specter
 
 Developed by [Crypto Advance GmbH](https://specter.solutions/about/), Specter is a desktop GUI for Bitcoin Core optimized to work with hardware wallets. Funds in hardware wallets are far more secure than using a hot wallet like Bitcoin Core or Electrum. Specter is built on top of Bitcoin Core as opposed to the conventional layer of an Electrum server between a wallet and Bitcoin Core. This removes a dependency and frees memory that would be used for storing the indexed database created by Electrum server.

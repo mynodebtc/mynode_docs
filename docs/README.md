@@ -1,7 +1,7 @@
 ---
 home: true
 title: MyNode Documentation
-description: Official MyNode documentation for setting up your Bitcoin and Lightning node, connecting apps, and troubleshooting common issues.
+description: Documentation for setting up, running, and troubleshooting a self-hosted MyNode Bitcoin and Lightning node.
 heroImage: /images/logo.png
 image: https://mynodebtc.com/images/og_image_2.png
 heroText: 

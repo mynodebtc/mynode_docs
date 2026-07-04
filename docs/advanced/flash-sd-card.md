@@ -1,3 +1,13 @@
+---
+title: "Flash MyNode OS Image"
+description: "Write the MyNode image to an SD card and prepare the device for its first boot."
+tags:
+- "MyNode"
+- "SD card"
+- "OS image"
+- "setup"
+---
+
 # Flash MyNode OS Image
 
 For most types of devices, including the Raspberry Pi 4 and mini PCs, the first step in getting started is to download a MyNode image and flash it onto a USB flash drive or SD card. The the flash drive is then inserted into the device so it can run the MyNode software.

@@ -1,3 +1,13 @@
+---
+title: "Setup Base Image (Raspberry Pi 3)"
+description: "Prepare a Raspberry Pi 3 base image for MyNode when building or restoring a supported device image manually."
+tags:
+- "MyNode"
+- "Raspberry Pi 3"
+- "base image"
+- "advanced setup"
+---
+
 # Setup Base Image (Raspberry Pi 3)
 
 1. After Raspi Flash `touch` ssh file on rootfs

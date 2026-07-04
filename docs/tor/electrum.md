@@ -1,3 +1,13 @@
+---
+title: "Electrum Server via Tor"
+description: "Reach your MyNode Electrum Server over Tor when you need private wallet access away from home."
+tags:
+- "Electrum"
+- "Tor"
+- "MyNode"
+- "remote access"
+---
+
 # Electrum Server via Tor
 
 ## Enabling Electrum Server

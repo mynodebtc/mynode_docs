@@ -1,3 +1,13 @@
+---
+title: "My Device has a Drive Error"
+description: "Work through disk failures and read-only mount issues that prevent MyNode from writing to storage."
+tags:
+- "drive error"
+- "storage"
+- "MyNode"
+- "troubleshooting"
+---
+
 # My Device has a Drive Error
 
 If your device gets into a state indicating "Drive Error" it means an error has been detected on the external drive and the device cannot properly read and write data.

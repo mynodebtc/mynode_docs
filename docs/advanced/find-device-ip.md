@@ -1,3 +1,13 @@
+---
+title: "Find your Device's IP Address"
+description: "Locate your MyNode on the local network so you can open the web UI, SSH in, or pair external apps."
+tags:
+- "MyNode"
+- "device IP"
+- "local network"
+- "setup"
+---
+
 # Find your Device's IP Address
 
 In some scenarios, it can be useful to know your device's IP address. Here are several ways to find it.

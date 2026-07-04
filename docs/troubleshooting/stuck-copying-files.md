@@ -1,3 +1,13 @@
+---
+title: "My Device is stuck at Copying Files"
+description: "Unblock setup or recovery when MyNode stalls on the file-copying stage."
+tags:
+- "setup issue"
+- "copying files"
+- "MyNode"
+- "troubleshooting"
+---
+
 # My Device is stuck at Copying Files
 
 Some users may encouter an issue where the "copying files" step of QuickSync stalls and gets stuck or will get to a point and then restart from 0%. This is likely due to power or driver issues related to the external disk drive.

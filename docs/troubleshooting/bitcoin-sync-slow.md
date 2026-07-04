@@ -1,3 +1,13 @@
+---
+title: "Bitcoin is Syncing Slowly"
+description: "Diagnose slow blockchain sync on MyNode by checking hardware limits, disk speed, and peer connectivity."
+tags:
+- "Bitcoin sync"
+- "performance"
+- "MyNode"
+- "troubleshooting"
+---
+
 # Bitcoin is Syncing Slowly
 
 There are numerous reasons your device may appear to be syncing the Bitcoin blockchain slowly. If your device is syncing slowly, here are several suggestions to try and speed things up.

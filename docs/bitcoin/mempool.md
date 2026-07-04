@@ -1,3 +1,13 @@
+---
+title: "Mempool"
+description: "Inspect fee rates, pending transactions, and recent blocks with the Mempool app on MyNode."
+tags:
+- "Mempool"
+- "Bitcoin fees"
+- "MyNode"
+- "blockchain explorer"
+---
+
 # Mempool
 
 ## Overview

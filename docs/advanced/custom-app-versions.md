@@ -1,3 +1,13 @@
+---
+title: "Customize App Versions"
+description: "Pin or override bundled app versions when you need tighter control over MyNode software updates."
+tags:
+- "MyNode"
+- "app versions"
+- "advanced setup"
+- "package management"
+---
+
 # Customize App Versions
 
 In some situations, like in the case of contentious forks, you may want to use a specific application version and not upgrade to the one used by MyNode or upgrade to a new release prior to its inclusion in a MyNode release. If that were to happen, MyNode includes a tool to override the application version that is installed.

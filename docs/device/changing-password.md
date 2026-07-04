@@ -1,3 +1,13 @@
+---
+title: "Changing your Password"
+description: "Update the MyNode password used for the web interface, system tools, and remote administration."
+tags:
+- "MyNode"
+- "password"
+- "device security"
+- "setup"
+---
+
 # Changing your Password
 
 After setting up your MyNode, it is important to change the password. When performing various actions on your device, you will be prompted to enter you password before accessing sensitive data. Setting your own password will secure your device.

@@ -1,3 +1,13 @@
+---
+title: "Remote Access via VPN"
+description: "Set up VPN access to MyNode for a private route back to your node and bundled apps."
+tags:
+- "VPN"
+- "remote access"
+- "MyNode"
+- "network security"
+---
+
 # Remote Access via VPN
 
 ## Enabling VPN on your MyNode

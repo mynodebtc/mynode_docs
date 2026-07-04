@@ -1,3 +1,13 @@
+---
+title: "Pairing Wallets"
+description: "Connect external Lightning wallets and apps to MyNode using the built-in pairing options."
+tags:
+- "Lightning wallets"
+- "wallet pairing"
+- "MyNode"
+- "LND Connect"
+---
+
 # Pairing Wallets
 
 Various Lightning mobile apps can be paired with your node's Lightning instance. This allows the app to use the same channels and funds available on your MyNode. Wallet apps can be paired with QR Codes and URLs that make connecting apps to a Lightning node very easy.
