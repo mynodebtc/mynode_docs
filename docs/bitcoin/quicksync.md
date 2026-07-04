@@ -1,3 +1,13 @@
+---
+title: "QuickSync"
+description: "Import a prepared blockchain snapshot with QuickSync to shorten first-time MyNode setup."
+tags:
+- "QuickSync"
+- "Bitcoin sync"
+- "MyNode"
+- "setup"
+---
+
 # QuickSync
 
 > **Warning**

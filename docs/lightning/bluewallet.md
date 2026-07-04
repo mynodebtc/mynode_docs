@@ -1,3 +1,13 @@
+---
+title: "Blue Wallet (LND Hub)"
+description: "Pair BlueWallet with MyNode over LNDHub for mobile Lightning access backed by your own node."
+tags:
+- "BlueWallet"
+- "LND Hub"
+- "Lightning wallet"
+- "MyNode"
+---
+
 # Blue Wallet (LND Hub)
 
 The first step to using Blue Wallet with your MyNode is enalbling LND Hub. The can be done by clicking the "Enable" button underneath the LND Hub icon on the main page.

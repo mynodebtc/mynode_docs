@@ -1,3 +1,13 @@
+---
+title: "Upgrade to a Beta Release"
+description: "Install a MyNode beta release to preview upcoming releases and test new features early."
+tags:
+- "MyNode"
+- "beta release"
+- "software updates"
+- "advanced setup"
+---
+
 # Upgrade to a Beta Release
 
 ## Beta Releases

@@ -1,3 +1,13 @@
+---
+title: "My Device has a Lightning Network Error"
+description: "Debug Lightning peer, routing, and connectivity issues when MyNode reports a Lightning error."
+tags:
+- "Lightning error"
+- "Lightning Network"
+- "MyNode"
+- "troubleshooting"
+---
+
 # My Device has a Lightning Network Error
 
 If your device gets into a state indicating "Network Error" as a Lightning Status, it means there has been a problem with Lightning launching and it is unable to properly connect to a network it can use for communication. This can typically be resolved by changing the Lightning network to Tor-only on the main settings page.

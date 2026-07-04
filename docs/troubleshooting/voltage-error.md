@@ -1,3 +1,13 @@
+---
+title: "My Device has a Voltage Error"
+description: "Fix low-voltage power issues that can destabilize or throttle a MyNode device."
+tags:
+- "power issue"
+- "voltage error"
+- "MyNode"
+- "troubleshooting"
+---
+
 # My Device has a Voltage Error
 
 If your device gets into a state indicating "Device Undervoltage" it means a power issue has been detected by the hardware.

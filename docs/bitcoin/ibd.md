@@ -1,3 +1,13 @@
+---
+title: "Initial blockchain download (IBD)"
+description: "Understand the first full blockchain sync on MyNode and what affects initial download time."
+tags:
+- "IBD"
+- "Bitcoin sync"
+- "MyNode"
+- "blockchain download"
+---
+
 # Initial blockchain download (IBD)
 
 ideas:

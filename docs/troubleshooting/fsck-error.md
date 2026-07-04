@@ -1,3 +1,13 @@
+---
+title: "My Device has a Filesystem Error"
+description: "Repair filesystem problems on MyNode after disk corruption or failed storage checks."
+tags:
+- "filesystem error"
+- "disk repair"
+- "MyNode"
+- "troubleshooting"
+---
+
 # My Device has a Filesystem Error
 
 If your device displays a message indicating a filesystem or "fsck" error, it means the device has automatically detected an error on the external drive. In many cases, it will automatically resolve the issue and you will need to click "OK" to dismiss the message.

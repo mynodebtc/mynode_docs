@@ -1,3 +1,12 @@
+---
+title: "Zeus"
+description: "Use Zeus with MyNode to control your Lightning node from a phone."
+tags:
+- "Zeus"
+- "Lightning wallet"
+- "mobile wallet"
+- "MyNode"
+---
 
 # Zeus
 

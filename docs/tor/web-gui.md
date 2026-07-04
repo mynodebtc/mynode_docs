@@ -1,3 +1,13 @@
+---
+title: "Web Interface via Tor"
+description: "Open the MyNode web interface over Tor for private remote administration."
+tags:
+- "Tor"
+- "web interface"
+- "remote access"
+- "MyNode"
+---
+
 # Web Interface via Tor
 
 ## Accessing the Web User Interface

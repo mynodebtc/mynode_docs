@@ -1,3 +1,13 @@
+---
+title: "Tor Setup"
+description: "Enable Tor access to MyNode apps, wallets, and services through private onion addresses."
+tags:
+- "Tor"
+- "remote access"
+- "MyNode"
+- "privacy"
+---
+
 # Tor Setup
 
 ## Using Tor with your MyNode

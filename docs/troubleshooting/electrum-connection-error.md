@@ -1,3 +1,13 @@
+---
+title: "My Electrum Wallet is not Connecting"
+description: "Troubleshoot Electrum wallet connection failures against a MyNode-backed server."
+tags:
+- "Electrum"
+- "connection issue"
+- "MyNode"
+- "troubleshooting"
+---
+
 # My Electrum Wallet is not Connecting
 
 If you run into issues connecting your Electrum wallet to the Electrum server running on MyNode, there are several steps you can perform to resolve common issues.

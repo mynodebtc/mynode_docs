@@ -1,3 +1,13 @@
+---
+title: "My Device has an SD Card Error"
+description: "Handle SD card media and read-only errors that interrupt normal MyNode operation."
+tags:
+- "SD card"
+- "read-only error"
+- "MyNode"
+- "troubleshooting"
+---
+
 # My Device has an SD Card Error
 
 If your device gets into a state indicating "SD Card Error" it means an error has been detected on the SD card and the device cannot properly read and write data.

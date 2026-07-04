@@ -1,3 +1,13 @@
+---
+title: "Verify or Restore on-chain Lightning funds using BlueWallet"
+description: "Use BlueWallet to verify or recover on-chain funds tied to a MyNode Lightning backup."
+tags:
+- "BlueWallet"
+- "wallet recovery"
+- "MyNode"
+- "Lightning backup"
+---
+
 # Verify or Restore on-chain Lightning funds using BlueWallet
 
 <div class="danger">

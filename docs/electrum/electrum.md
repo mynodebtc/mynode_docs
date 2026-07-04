@@ -1,3 +1,13 @@
+---
+title: "Electrum Server"
+description: "Connect Electrum wallets to your own MyNode-backed Electrum Server instead of a public server."
+tags:
+- "Electrum"
+- "Electrum Server"
+- "MyNode"
+- "Bitcoin wallet"
+---
+
 # Electrum Server
 
 ## Enabling Electrum Server

@@ -1,6 +1,6 @@
 ---
 title: Create a Lightning Wallet
-description: Create your Lightning wallet on MyNode, back up the seed phrase safely, and prepare the node for Lightning apps.
+description: Create a Lightning wallet on MyNode, record the seed phrase, and finish the initial wallet setup.
 tags:
 - Lightning wallet
 - MyNode

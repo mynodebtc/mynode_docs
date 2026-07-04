@@ -1,6 +1,6 @@
 ---
 title: Getting Started with MyNode
-description: Set up a new MyNode device, connect to the web interface, and begin syncing Bitcoin in a few guided steps.
+description: Bring a new MyNode online, open the web interface, and start the initial Bitcoin sync.
 tags:
 - MyNode setup
 - Bitcoin node

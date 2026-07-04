@@ -1,3 +1,13 @@
+---
+title: "Netdata"
+description: "Monitor CPU, memory, disk, and service health on MyNode with Netdata dashboards."
+tags:
+- "Netdata"
+- "system monitoring"
+- "MyNode"
+- "performance"
+---
+
 # Netdata
 
 ## Overview

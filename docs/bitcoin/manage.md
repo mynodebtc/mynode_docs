@@ -1,3 +1,13 @@
+---
+title: "Managing Bitcoin"
+description: "Handle everyday Bitcoin node tasks on MyNode, from configuration changes to maintenance checks."
+tags:
+- "Bitcoin node"
+- "node management"
+- "MyNode"
+- "Bitcoin"
+---
+
 # Managing Bitcoin
 
 Bitcoin runs automatically when MyNode starts. By clicking on the "Manage" button under Bitcoin on the home page, you can view the current state of the Bitcoin blockchain and your node, and interact with your node. You can also reach the page by pointing to **\<MYNODE-IP\>/bitcoind**

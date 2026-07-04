@@ -1,3 +1,13 @@
+---
+title: "Install on Virtual Box"
+description: "Run MyNode in VirtualBox for testing, evaluation, or a lightweight home-lab deployment."
+tags:
+- "MyNode"
+- "VirtualBox"
+- "virtual machine"
+- "advanced setup"
+---
+
 # Install on Virtual Box
 
 ## Download

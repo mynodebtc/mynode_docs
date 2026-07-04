@@ -1,3 +1,13 @@
+---
+title: "Premium+"
+description: "See what MyNode Premium+ includes and how its extra hardware and services fit into a node setup."
+tags:
+- "Premium+"
+- "MyNode"
+- "hardware"
+- "features"
+---
+
 # Premium+
 
 ## What is Premium+?

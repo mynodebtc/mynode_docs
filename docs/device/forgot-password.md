@@ -1,3 +1,13 @@
+---
+title: "Forgot your Password"
+description: "Recover access to a MyNode device after losing the login password."
+tags:
+- "MyNode"
+- "password reset"
+- "account recovery"
+- "troubleshooting"
+---
+
 # Forgot your Password
 After setting up your MyNode, it is important to change the password. However, if you forget this password you will not be able to log back in to access the services. Luckily, MyNode was designed to make this recovery process relatively simple and not lose critical data, like the Bitcoin blockchain or Lightning data.
 

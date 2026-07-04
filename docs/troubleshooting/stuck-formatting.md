@@ -1,3 +1,13 @@
+---
+title: "My Device is stuck at Formatting Drive"
+description: "Resolve storage initialization problems when MyNode gets stuck formatting the drive."
+tags:
+- "formatting drive"
+- "storage setup"
+- "MyNode"
+- "troubleshooting"
+---
+
 # My Device is stuck at Formatting Drive
 
 Some users may encouter an issue where the first step of setting up the external drive for use by MyNode stalls and becomes stuck. This is likely due to wither a loose cable connection or a USB to SATA adapter that is not well supported by the Raspberry Pi operating system.

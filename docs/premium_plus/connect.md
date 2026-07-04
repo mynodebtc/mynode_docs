@@ -1,3 +1,13 @@
+---
+title: "Connect Device"
+description: "Bring a MyNode Premium+ device online and complete the initial connection workflow."
+tags:
+- "Premium+"
+- "MyNode"
+- "device setup"
+- "hardware"
+---
+
 # Connect Device
 
 Several of the best Premium+ features, require pairing your node with your account at myndoebtc.com, including the following.

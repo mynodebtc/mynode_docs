@@ -1,6 +1,6 @@
 ---
 title: Introduction to MyNode
-description: Learn what MyNode is, how it simplifies running Bitcoin and Lightning software, and what you can do from the web interface.
+description: Get a quick overview of MyNode, the apps it bundles, and how it simplifies running Bitcoin and Lightning.
 tags:
 - MyNode
 - Bitcoin

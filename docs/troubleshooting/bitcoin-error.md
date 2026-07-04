@@ -1,3 +1,13 @@
+---
+title: "My Device has a Bitcoin Error"
+description: "Work through the common fixes when MyNode reports a Bitcoin service error and the node will not start cleanly."
+tags:
+- "Bitcoin error"
+- "MyNode"
+- "troubleshooting"
+- "node maintenance"
+---
+
 # My Device has a Bitcoin Error
 
 If your device gets into a state indicating "Bitcoin has experienced an error. Please check the logs." it means Bitcoin is not able to start and so the device limits other services from starting until the Bitcoin error is resolved.

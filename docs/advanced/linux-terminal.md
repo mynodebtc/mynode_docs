@@ -1,3 +1,13 @@
+---
+title: "Accessing the Linux Terminal"
+description: "Access the Linux shell on MyNode for diagnostics, maintenance, and advanced node administration."
+tags:
+- "Linux terminal"
+- "SSH"
+- "MyNode"
+- "advanced setup"
+---
+
 # Accessing the Linux Terminal
 
 For some issues, it can be necessary or helpful to run specific commands in Linux to diagnose or resolve issues. While this may seem complex, it is easier than you think!

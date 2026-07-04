@@ -1,3 +1,13 @@
+---
+title: "Setup Base Image (Other)"
+description: "Prepare a base image for MyNode on other supported platforms when your hardware does not match the standard device guides."
+tags:
+- "MyNode"
+- "base image"
+- "custom hardware"
+- "advanced setup"
+---
+
 # Setup Base Image (Other)
 
 1. Login as administrator

@@ -1,3 +1,13 @@
+---
+title: "Setup Base Image (ROCK64)"
+description: "Prepare a ROCK64 base image for MyNode when setting up the platform on compatible Pine64 hardware."
+tags:
+- "MyNode"
+- "ROCK64"
+- "base image"
+- "advanced setup"
+---
+
 # Setup Base Image (ROCK64)
 
 1. After Armbian Flash

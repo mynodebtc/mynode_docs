@@ -1,3 +1,13 @@
+---
+title: "Viewing Bitcoin Status"
+description: "View sync progress, chain state, and runtime details from the Bitcoin status page in MyNode."
+tags:
+- "Bitcoin node"
+- "status"
+- "MyNode"
+- "blockchain sync"
+---
+
 # Viewing Bitcoin Status
 
 Bitcoin runs automatically when your MyNode device starts. It's often be helpful to view the status of `bitcoind`, the Bitcoin daemon. Several key pieces of information are displayed on the home page.

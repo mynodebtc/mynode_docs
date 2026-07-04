@@ -1,3 +1,13 @@
+---
+title: "Install on a PC or Server"
+description: "Deploy MyNode on standard PC or server hardware."
+tags:
+- "MyNode"
+- "PC install"
+- "server install"
+- "advanced setup"
+---
+
 # Install on a PC or Server
 
 ## Background

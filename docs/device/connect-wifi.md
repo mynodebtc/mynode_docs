@@ -1,3 +1,13 @@
+---
+title: "Connect WiFi"
+description: "Move a MyNode device from Ethernet to Wi-Fi without losing local access to the node."
+tags:
+- "MyNode"
+- "Wi-Fi"
+- "network setup"
+- "device management"
+---
+
 # Connect WiFi
 
 ## Purpose

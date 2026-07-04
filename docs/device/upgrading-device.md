@@ -1,3 +1,13 @@
+---
+title: "Upgrading your MyNode"
+description: "Update MyNode safely to pick up the latest platform, Bitcoin, and Lightning releases."
+tags:
+- "MyNode"
+- "software updates"
+- "device upgrade"
+- "maintenance"
+---
+
 # Upgrading your MyNode
 There are two main options for upgrading your MyNode device.
 

@@ -1,3 +1,13 @@
+---
+title: "My Device has SD Card Full Warning"
+description: "Free up space and prevent failures when the MyNode SD card is nearly full."
+tags:
+- "SD card"
+- "storage warning"
+- "MyNode"
+- "troubleshooting"
+---
+
 # My Device has SD Card Full Warning
 If your device is displaying a warning indicating the SD card is getting full, there are some several options to save space or upgrade to a larger SD card.
 
