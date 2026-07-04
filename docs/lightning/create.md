@@ -1,3 +1,13 @@
+---
+title: Create a Lightning Wallet
+description: Create your Lightning wallet on MyNode, back up the seed phrase safely, and prepare the node for Lightning apps.
+tags:
+- Lightning wallet
+- MyNode
+- seed phrase backup
+- Lightning setup
+---
+
 # Create Lightning Wallet
 
 To create a Lightning wallet on your MyNode, first, click on the "Lightning Wallet" button on the main MyNode page. Next click "Create Wallet" and you will be given a seed phrase.

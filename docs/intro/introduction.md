@@ -1,3 +1,13 @@
+---
+title: Introduction to MyNode
+description: Learn what MyNode is, how it simplifies running Bitcoin and Lightning software, and what you can do from the web interface.
+tags:
+- MyNode
+- Bitcoin
+- Lightning
+- node management
+---
+
 <center>
   <figure>
     <img src="/images/logo.png" alt="MyNode logo" style="width: 300px">

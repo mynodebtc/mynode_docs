@@ -1,4 +1,11 @@
 ---
+title: Getting Started with MyNode
+description: Set up a new MyNode device, connect to the web interface, and begin syncing Bitcoin in a few guided steps.
+tags:
+- MyNode setup
+- Bitcoin node
+- Lightning node
+- getting started
 sidebarDepth: 0
 ---
 

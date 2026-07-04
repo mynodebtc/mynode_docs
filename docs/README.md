@@ -1,8 +1,16 @@
 ---
 home: true
+title: MyNode Documentation
+description: Official MyNode documentation for setting up your Bitcoin and Lightning node, connecting apps, and troubleshooting common issues.
 heroImage: /images/logo.png
+image: https://mynodebtc.com/images/og_image_2.png
 heroText: 
 tagline: "Run Bitcoin, Lightning and more!"
+tags:
+- MyNode
+- Bitcoin node
+- Lightning node
+- self-hosted Bitcoin
 # heroText: The Documentation Website
 actionText: Read The Docs →
 actionLink: /intro/introduction.md

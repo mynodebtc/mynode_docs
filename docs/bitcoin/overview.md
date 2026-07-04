@@ -1,3 +1,13 @@
+---
+title: Bitcoin Node Overview
+description: Understand how MyNode runs a full Bitcoin node, why verification matters, and what features are available by default.
+tags:
+- Bitcoin node
+- blockchain sync
+- privacy
+- self-custody
+---
+
 # Overview
 
 ## What is Bitcoin?

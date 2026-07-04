@@ -1,7 +1,8 @@
 const siteUrl = 'https://docs.mynodebtc.com'
+const defaultSocialImage = 'https://mynodebtc.com/images/og_image_2.png'
 
 module.exports = {
-  title: "Guides and Documentation",
+  title: "Guides and Documentation | MyNode",
   description: "Helpful guides and documentation for using MyNode and getting the most out of all it has to offer!",
   base: "/",
   head: [
@@ -241,10 +242,14 @@ module.exports = {
         description: ($page, $site) => $page.frontmatter.description || ($page.title + " - " + $site.description),
         author: (_, $site) => $site.themeConfig.author,
         tags: $page => $page.frontmatter.tags,
-        twitterCard: _ => 'summary',
+        twitterCard: _ => 'summary_large_image',
         type: $page => ['articles', 'posts', 'blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? 'article' : 'website',
         url: (_, $site, path) => ($site.themeConfig.domain || '') + path,
-        image: ($page, $site) => $page.frontmatter.image && (($site.themeConfig.domain && !$page.frontmatter.image.startsWith('http') || '') + $page.frontmatter.image),
+        image: ($page, $site) => {
+          const pageImage = $page.frontmatter.image || defaultSocialImage
+
+          return ($site.themeConfig.domain && !pageImage.startsWith('http') ? $site.themeConfig.domain : '') + pageImage
+        },
         publishedAt: $page => $page.frontmatter.date && new Date($page.frontmatter.date),
         modifiedAt: $page => $page.lastUpdated && new Date($page.lastUpdated),
 
@@ -260,7 +265,9 @@ module.exports = {
 
             add('twitter:site', '@mynodebtc')
             add('twitter:creator', '@mynodebtc')
-            add('twitter:image', 'http://mynodebtc.com/images/vertical_lightning_white_bg.png')
+            add('og:image:secure_url', image, 'property')
+            add('og:image:alt', title, 'property')
+            add('twitter:image:alt', title)
 
             add('google-site-verification','5e94KreZz8Uzer4hwYMp3vodynZ5Yw7pLYXcXGtn8SA')
         },
