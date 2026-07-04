@@ -1,3 +1,5 @@
+const siteUrl = 'https://docs.mynodebtc.com'
+
 module.exports = {
   title: "Guides and Documentation",
   description: "Helpful guides and documentation for using MyNode and getting the most out of all it has to offer!",
@@ -17,7 +19,7 @@ module.exports = {
     ['script',{},["window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-871EBBS9WR');",],],
   ],
   themeConfig: {
-    domain: 'https://docs.mynodebtc.com',
+    domain: siteUrl,
     repo: 'mynodebtc/mynode_docs',
     repoLabel: 'Contribute',
     editLinks: true,
@@ -214,6 +216,24 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
+    ['sitemap', {
+      hostname: siteUrl,
+      changefreq: 'weekly',
+      exclude: [
+        '/404.html',
+        '/advanced/setup-base-images/setup_base_image_debian.html',
+        '/advanced/setup-base-images/setup_base_image_other.html',
+        '/advanced/setup-base-images/setup_base_image_raspi3.html',
+        '/advanced/setup-base-images/setup_base_image_raspi4.html',
+        '/advanced/setup-base-images/setup_base_image_rock64.html',
+        '/advanced/setup-base-images/setup_base_image_rockpro64.html',
+      ],
+    }],
+    [require('./plugins/robots'), {
+      host: siteUrl,
+      allowAll: true,
+      sitemap: '/sitemap.xml',
+    }],
     //['@vuepress/google-analytics', {'ga': 'G-871EBBS9WR'}],
     ['seo', {
         siteTitle: (_, $site) => $site.title,
