@@ -1,6 +1,6 @@
 ---
 title: "Clone Tool"
-description: "Copy a MyNode installation to new storage or replacement hardware without rebuilding the node from scratch."
+description: "Copy MyNode data to new storage or replacement hardware without rebuilding the node from scratch."
 tags:
 - "MyNode"
 - "data migration"

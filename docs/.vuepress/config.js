@@ -220,7 +220,7 @@ module.exports = {
     //['@vuepress/google-analytics', {'ga': 'G-871EBBS9WR'}],
     ['seo', {
         siteTitle: (_, $site) => $site.title,
-        title: ($page, $site) => $page.title + " | " + $site.title,
+        title: ($page, $site) => $page.title + " | MyNode Docs",
         description: ($page, $site) => $page.frontmatter.description || ($page.title + " - " + $site.description),
         author: (_, $site) => $site.themeConfig.author,
         tags: $page => $page.frontmatter.tags,
