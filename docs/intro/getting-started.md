@@ -1,11 +1,11 @@
 ---
-title: Getting Started with MyNode
-description: Bring a new MyNode online, open the web interface, and start the initial Bitcoin sync.
+title: "Getting Started with MyNode"
+description: "Bring a new MyNode online: flash the image, boot the device, open the web interface, enter your product key, and start the initial Bitcoin blockchain sync."
 tags:
-- MyNode setup
-- Bitcoin node
-- Lightning node
-- getting started
+- "MyNode setup"
+- "Bitcoin node"
+- "Lightning node"
+- "getting started"
 sidebarDepth: 0
 ---
 
@@ -17,7 +17,7 @@ sidebarDepth: 0
 
 Setting up a new MyNode device can be done in a few simple steps!
 
-First, you need to download the MyNode image for your device type and [flash it to an SD card](/advanced/flash-sd-card) according to the instructions on the download page.
+First, you need to download the MyNode image for your device type and [flash it to a USB thumbdrive](/advanced/flash-sd-card) according to the instructions on the download page. The device will boot from the thumbdrive into the MyNode OS!
 
 ## Power On Device
 
@@ -63,7 +63,7 @@ You will be prompted to enter your product key. If you are using the Community E
 
 <center>
   <figure>
-    <img src="/images/getting-started/gs1.png" width="400">
+    <img src="/images/getting-started/gs1.png" width="400" alt="MyNode Product Key screen with a text field, a Save Product Key button, and a Choose Community Edition button">
   </figure>
 </center>
 
@@ -71,7 +71,7 @@ Next, the device will begin syncing the Bitcoin Blockchain! This process can tak
 
 <center>
   <figure>
-    <img src="/images/getting-started/gs2.png" width="400">
+    <img src="/images/getting-started/gs2.png" width="400" alt="MyNode sync screen reading Bitcoin Blockchain Syncing, with a count of blocks downloaded out of the chain total">
   </figure>
 </center>
 
@@ -79,7 +79,7 @@ Your MyNode device is now ready and you will see the main MyNode home page.
 
 <center>
   <figure>
-    <img src="/images/getting-started/gs3.png">
+    <img src="/images/getting-started/gs3.png" alt="MyNode home page with Bitcoin and Lightning core service tiles above a grid of app tiles including RTL, Electrum Server, BTCPay Server, Mempool, and Thunderhub">
   </figure>
 </center>
 

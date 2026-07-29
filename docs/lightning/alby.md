@@ -1,6 +1,6 @@
 ---
 title: "Alby"
-description: "Link Alby to MyNode for browser-based access to your Lightning balance, invoices, and payments."
+description: "Connect the Alby browser extension to your MyNode Lightning node for non-custodial payments on Bitcoin and Nostr web apps, using your own channels and balance."
 tags:
 - "Alby"
 - "Lightning wallet"
@@ -32,35 +32,35 @@ Alby is an app from the community for the community. You can always view and con
 1) Install Alby by visiting getalby.com
 <center>
   <figure>
-    <img src="/images/lightning/alby/alby-1.png" class="app_screenshot">
+    <img src="/images/lightning/alby/alby-1.png" class="app_screenshot" alt="The Alby home page with the Add Browser Extension button highlighted next to Create Account">
   </figure>
 </center>
 
 2) Set a passcode to protect accesss to the app
 <center>
   <figure>
-    <img src="/images/lightning/alby/alby-2.png" class="app_screenshot">
+    <img src="/images/lightning/alby/alby-2.png" class="app_screenshot" alt="Alby setup screen asking you to choose and confirm an unlock passcode, with a Next button">
   </figure>
 </center>
 
 3) Click on "Connect" other wallet
 <center>
   <figure>
-    <img src="/images/lightning/alby/alby-3.png" class="app_screenshot">
+    <img src="/images/lightning/alby/alby-3.png" class="app_screenshot" alt="Alby welcome screen offering an Alby Account or Other Wallets, with the Connect button under Other Wallets highlighted">
   </figure>
 </center>
 
 4) Choose MyNode connector
 <center>
   <figure>
-    <img src="/images/lightning/alby/alby-4.png" class="app_screenshot">
+    <img src="/images/lightning/alby/alby-4.png" class="app_screenshot" alt="Alby Connect Lightning Wallet grid of connector options with the myNode tile highlighted">
   </figure>
 </center>
 
 5) Select the node/option to connect
 <center>
   <figure>
-    <img src="/images/lightning/alby/alby-5.png" class="app_screenshot">
+    <img src="/images/lightning/alby/alby-5.png" class="app_screenshot" alt="Alby Connect to myNode screen offering LND, Lightning Terminal, Core Lightning, and LNbits as apps to connect with">
   </figure>
 </center>
 

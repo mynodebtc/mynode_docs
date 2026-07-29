@@ -1,6 +1,6 @@
 ---
 title: "Thunderhub"
-description: "Manage Lightning channels, balances, payments, and routing from MyNode with Thunderhub."
+description: "Enable Thunderhub on MyNode to manage Lightning channels, balances, payments, and routing fees, plus sign and verify messages from a modern web interface."
 tags:
 - "Thunderhub"
 - "Lightning node"
@@ -48,8 +48,8 @@ Find the full list of features on [GitHub](https://github.com/apotdevin/thunderh
 ThunderHub is already configured with default environment variables and connected to the Lightning wallet, but it is disabled by default. To enable it, open the MyNode homepage and find the tile with the ThunderHub logo under Beta Apps (like the left image below).
 <center>
   <figure>
-    <img src="/images/lightning/ThunderHub/disabled.png" alt="" style="width: 125px">
-    <img src="/images/lightning/ThunderHub/enabled.png" alt="" style="width: 125px">
+    <img src="/images/lightning/ThunderHub/disabled.png" alt="Thunderhub app tile on the MyNode home page in its disabled state, showing an Enable button" style="width: 125px">
+    <img src="/images/lightning/ThunderHub/enabled.png" alt="Thunderhub app tile once enabled, showing a green status dot with Thunderhub and Disable buttons" style="width: 125px">
   </figure>
 </center>
 Click on the **Enable** button, and wait for the page to refresh.

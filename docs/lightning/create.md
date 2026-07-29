@@ -1,11 +1,11 @@
 ---
-title: Create a Lightning Wallet
-description: Create a Lightning wallet on MyNode, record the seed phrase, and finish the initial wallet setup.
+title: "Create a Lightning Wallet"
+description: "Create a Lightning wallet on MyNode, write down and verify the 24 word seed phrase, and let the node finish setup before you open your first channel."
 tags:
-- Lightning wallet
-- MyNode
-- seed phrase backup
-- Lightning setup
+- "Lightning wallet"
+- "MyNode"
+- "seed phrase backup"
+- "Lightning setup"
 ---
 
 # Create Lightning Wallet
@@ -18,11 +18,11 @@ Click "Continue" after you have written down your seed phrase.
 
 On the next page, re-enter your seed phrase to verify your backup has been created properly. Click "Create" to create your wallet!
 
-![](/images/lightning/create-1.png)
+![Create Lightning Wallet page asking you to re-enter the 24 word wallet seed in a text box, with a Create button](/images/lightning/create-1.png)
 
 If your phrase was correct, you will be sent back to the main Lightning page and your Lightning wallet will begin syncing and setting itself up. After a few minutes, the Lightning wallet should be ready and you should see a page like this.
 
-![](/images/lightning/create-2.png)
+![MyNode Lightning Status page showing an Active wallet with its status, Lightning options, versions, node URI, and a Balances section with a deposit address QR code](/images/lightning/create-2.png)
 
 Your Lightning wallet is now setup and ready to use!
 

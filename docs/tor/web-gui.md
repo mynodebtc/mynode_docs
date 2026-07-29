@@ -1,6 +1,6 @@
 ---
 title: "Web Interface via Tor"
-description: "Open the MyNode web interface over Tor for private remote administration from anywhere."
+description: "Open the MyNode web interface from anywhere using its Tor onion address and Tor Browser, giving you remote administration without opening ports on your router."
 tags:
 - "Tor"
 - "web interface"
@@ -22,7 +22,7 @@ Next, click on the Tor Services link under the Tor app on the main user interfac
 
 <center>
   <figure>
-    <img src="/images/remote-access-tor/web-gui-1.png" alt="MyNode logo" style="width: 300px;">
+    <img src="/images/remote-access-tor/web-gui-1.png" alt="MyNode Tor page with the Show Onion URLs button above a table listing myNode Web, LND Hub, and other services with their ports" style="width: 300px;">
   </figure>
 </center>
 
@@ -32,7 +32,7 @@ Finally, open your Tor Browser app, copy the MyNode Web URL, and paste it into t
 
 <center>
   <figure>
-    <img src="/images/remote-access-tor/web-gui-2.png" alt="MyNode logo" style="width: 300px;">
+    <img src="/images/remote-access-tor/web-gui-2.png" alt="Tor Browser loading the MyNode login page from an .onion address, with a password field and Login button" style="width: 300px;">
   </figure>
 </center>
 

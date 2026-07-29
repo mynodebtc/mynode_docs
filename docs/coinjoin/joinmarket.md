@@ -1,6 +1,6 @@
 ---
 title: "JoinMarket"
-description: "Run JoinMarket with MyNode to coordinate coinjoins while keeping Bitcoin data on your own node."
+description: "Run JoinMarket on MyNode to coordinate CoinJoin transactions and earn fees as a maker, with all Bitcoin data staying on your own node for better privacy."
 tags:
 - "JoinMarket"
 - "coinjoin"

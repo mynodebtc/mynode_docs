@@ -1,6 +1,6 @@
 ---
 title: "My Device has a Filesystem Error"
-description: "Repair filesystem problems on MyNode after disk corruption or failed storage checks."
+description: "Repair the filesystem or fsck error MyNode reports when it detects corruption on the external drive, and decide when the disk needs replacing instead."
 tags:
 - "filesystem error"
 - "disk repair"

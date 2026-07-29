@@ -1,6 +1,6 @@
 ---
 title: "Electrum Server"
-description: "Connect Electrum wallets to your own MyNode-backed Electrum Server instead of a public server."
+description: "Connect Electrum wallets on desktop and mobile to your own MyNode Electrum Server instead of a public one, so no third party sees your addresses or balances."
 tags:
 - "Electrum"
 - "Electrum Server"
@@ -18,7 +18,7 @@ First, from the MyNode home page click "Enable" to start running Electrum Server
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-1.png" alt="app icon" style="width: 200px">
+    <img src="/images/bitcoin/electrum-1.png" alt="Electrum Server app tile on the MyNode home page with the Enable button highlighted" style="width: 200px">
   </figure>
 </center>
 
@@ -26,7 +26,7 @@ Once the server has synced, you should see an Electrum Server status page simila
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-2.png" alt="" style="width: 500px">
+    <img src="/images/bitcoin/electrum-2.png" alt="MyNode Electrum Server status page showing a Running status, the current block height, and the standard and secure ports" style="width: 500px">
   </figure>
 </center>
 
@@ -36,7 +36,7 @@ At this point you can connect your Electrum light wallets to your MyNode. On the
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-3.png" alt="" style="width: 500px">
+    <img src="/images/bitcoin/electrum-3.png" alt="Electrum desktop Network dialog on the Server tab, with Select server automatically unchecked and the MyNode IP address entered with port 50002" style="width: 500px">
   </figure>
 </center>
 
@@ -44,7 +44,7 @@ If everything went correctly, you will get a green status icon and your MyNode d
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-4.png" alt="" style="width: 500px">
+    <img src="/images/bitcoin/electrum-4.png" alt="Electrum desktop wallet connected, with a green status icon in the bottom right corner of the window" style="width: 500px">
   </figure>
 </center>
 
@@ -54,7 +54,7 @@ Re-open the Electrum network settings by clicking on the colored icon in the bot
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-10.png" alt="" style="width: 500px">
+    <img src="/images/bitcoin/electrum-10.png" alt="Electrum Network dialog on the Overview tab with the MyNode server selected under Connected nodes and the Use as server context menu option showing" style="width: 500px">
   </figure>
 </center>
 
@@ -70,7 +70,7 @@ If everything went correctly, you will get a green status icon and your MyNode d
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-5.png" alt="" style="width: 500px">
+    <img src="/images/bitcoin/electrum-5.png" alt="Electrum desktop wallet launched from the command line and connected, with a green status icon in the bottom right corner" style="width: 500px">
   </figure>
 </center>
 
@@ -80,7 +80,7 @@ You can also run Electrum via the mobile app and connect it to you MyNode. First
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-6.png" alt="" style="width: 200px">
+    <img src="/images/bitcoin/electrum-6.png" alt="Server settings in Electrum for Android with the MyNode IP address entered as the host and 50002 as the port" style="width: 200px">
   </figure>
 </center>
 
@@ -88,7 +88,7 @@ Also make sure Auto-connect is ON and One-server mode is ON.
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-7.png" alt="" style="width: 200px">
+    <img src="/images/bitcoin/electrum-7.png" alt="Network settings in Electrum for Android showing one connection to the MyNode server with Auto-connect and One-server mode both on" style="width: 200px">
   </figure>
 </center>
 
@@ -96,6 +96,6 @@ If everything went correctly, you will get a screen like this and your MyNode de
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-8.png" alt="" style="width: 200px">
+    <img src="/images/bitcoin/electrum-8.png" alt="Synced Electrum wallet on Android showing the balance screen for default_wallet with Send, Balance, and Receive tabs" style="width: 200px">
   </figure>
 </center>

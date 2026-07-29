@@ -1,6 +1,6 @@
 ---
 title: "Using Existing Bitcoin Data"
-description: "Reuse blockchain data from another node to cut sync time when migrating to MyNode."
+description: "Reuse an already-synced Bitcoin blockchain from another MyNode or an external drive to skip days of initial sync and hundreds of gigabytes of downloads."
 tags:
 - "Bitcoin data"
 - "migration"

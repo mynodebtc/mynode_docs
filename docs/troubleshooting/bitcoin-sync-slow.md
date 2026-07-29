@@ -1,6 +1,6 @@
 ---
 title: "Bitcoin is Syncing Slowly"
-description: "Diagnose slow blockchain sync on MyNode by checking hardware limits, disk speed, and peer connectivity."
+description: "Speed up a slow Bitcoin initial block download on MyNode by ruling out disk bottlenecks, weak power supplies, limited bandwidth, and poor peer connections."
 tags:
 - "Bitcoin sync"
 - "performance"

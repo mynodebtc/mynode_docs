@@ -1,6 +1,6 @@
 ---
 title: "Changing your Password"
-description: "Update the MyNode password used for the web interface, system tools, and remote administration."
+description: "Change the MyNode password from the settings page, replacing the default bolt password that protects the web interface, SSH, and every sensitive action."
 tags:
 - "MyNode"
 - "password"

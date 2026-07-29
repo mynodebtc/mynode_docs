@@ -1,6 +1,6 @@
 ---
 title: "Forgot your Password"
-description: "Recover access to a MyNode device after losing the login password."
+description: "Regain access to a MyNode device after forgetting the password by reflashing the SD card, which resets the login without touching your Bitcoin data drive."
 tags:
 - "MyNode"
 - "password reset"

@@ -1,6 +1,6 @@
 ---
 title: "Add applications to MyNode"
-description: "Add custom services and web apps to MyNode by wiring them into the platform's package and systemd flow."
+description: "Add your own service or web app to MyNode by wiring it into the platform's install scripts, systemd units, and home page tiles alongside the bundled apps."
 tags:
 - "MyNode"
 - "developer guide"

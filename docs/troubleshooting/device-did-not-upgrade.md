@@ -1,6 +1,6 @@
 ---
 title: "My Device did not Upgrade Properly"
-description: "Recover from a MyNode update that failed partway through or left the device in a bad state."
+description: "Recover a MyNode update that failed partway through, showing the wrong version or an upgrade failure message, by rerunning the update or reflashing the device."
 tags:
 - "upgrade failure"
 - "MyNode"

@@ -1,6 +1,6 @@
 ---
 title: "My Device has a Voltage Error"
-description: "Fix low-voltage power issues that can destabilize or throttle a MyNode device."
+description: "Clear the Device Undervoltage warning on MyNode, caused by an underpowered supply or cable, which throttles the device and can corrupt drives over time."
 tags:
 - "power issue"
 - "voltage error"

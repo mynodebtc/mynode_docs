@@ -1,6 +1,6 @@
 ---
 title: "Using Tor for Bitcoin and LND"
-description: "Send Bitcoin and LND traffic through Tor on MyNode to reduce network-level privacy leaks."
+description: "Route Bitcoin and LND peer traffic through Tor on MyNode, hiding your home IP address from the nodes you connect to and reaching onion-only peers."
 tags:
 - "Tor"
 - "Bitcoin"

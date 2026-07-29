@@ -1,6 +1,6 @@
 ---
 title: "Managing Bitcoin"
-description: "Handle everyday Bitcoin node tasks on MyNode, from configuration changes to maintenance checks."
+description: "Manage your MyNode Bitcoin node from the browser: check chain state and peers, review recent blocks, edit bitcoin.conf, open the CLI, and find RPC credentials."
 tags:
 - "Bitcoin node"
 - "node management"
@@ -13,12 +13,12 @@ tags:
 Bitcoin runs automatically when MyNode starts. By clicking on the "Manage" button under Bitcoin on the home page, you can view the current state of the Bitcoin blockchain and your node, and interact with your node. You can also reach the page by pointing to **\<MYNODE-IP\>/bitcoind**
 
 <center>
-  <img src="/images/bitcoin/bitcoin-status-1.png" alt="Bitcoin tile">
+  <img src="/images/bitcoin/bitcoin-status-1.png" alt="Bitcoin tile on the MyNode home page showing a Running status with block height, peers, difficulty, mempool size, version, and a Manage button">
 </center>
 
 On the Bitcoin page, you can see the current state of Bitcoin. There are several information tiles on this page which are explained below.
 
-![](/images/bitcoin/bitcoin-status-2.png)
+![MyNode Bitcoin page with status, info, and Bitcoin tiles above the local Bitcoin address and tables of wallets, recent blocks, and connected peers](/images/bitcoin/bitcoin-status-2.png)
 
 | Tile | Description |
 | :-- | -- |

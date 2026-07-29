@@ -1,6 +1,6 @@
 ---
 title: "Pairing Wallets"
-description: "Connect external Lightning wallets and apps to MyNode using the built-in pairing options."
+description: "Pair external Lightning wallets and apps with MyNode using the built-in QR codes and lndconnect URLs for gRPC, REST, and LNDHub over local IP or Tor."
 tags:
 - "Lightning wallets"
 - "wallet pairing"
@@ -16,7 +16,7 @@ First, make sure you have created a Lightning wallet and from the main MyNode ho
 
 <center>
   <figure>
-    <img src="/images/lightning/pair-wallet-1.png">
+    <img src="/images/lightning/pair-wallet-1.png" alt="Core Services section of the MyNode home page with the QR code icon on the Lightning tile highlighted">
   </figure>
 </center>
 
@@ -24,7 +24,7 @@ You will be prompted to enter your password. This prompt ensures you are securel
 
 <center>
   <figure>
-    <img src="/images/lightning/pair-wallet-2.png">
+    <img src="/images/lightning/pair-wallet-2.png" alt="Pair Wallet dialog warning that pairing gives another device access to your Lightning wallet, with a password field and View and Cancel buttons">
   </figure>
 </center>
 
@@ -32,7 +32,7 @@ Once on the Pair Wallet page, you will see a drop down menu to choose a pairing 
 
 <center>
   <figure>
-    <img src="/images/lightning/pair-wallet-3.png" style="width: 300px">
+    <img src="/images/lightning/pair-wallet-3.png" style="width: 300px" alt="Pair Wallet page with the pairing option dropdown open, listing Lightning gRPC and REST options and Blue Wallet LNDHub and Electrum options over local IP or Tor">
   </figure>
 </center>
 

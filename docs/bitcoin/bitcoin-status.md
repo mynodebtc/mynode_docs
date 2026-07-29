@@ -1,6 +1,6 @@
 ---
 title: "Viewing Bitcoin Status"
-description: "View sync progress, chain state, and runtime details from the Bitcoin status page in MyNode."
+description: "Check Bitcoin sync progress on MyNode, including block height, peers, difficulty, mempool size, and daemon version, from the home tile and the Bitcoin page."
 tags:
 - "Bitcoin node"
 - "status"
@@ -16,7 +16,7 @@ Click on the "Manage" button under Bitcoin on the home page to view the even mor
 
 <center>
   <figure>
-    <img src="/images/bitcoin/bitcoin-status-1.png" alt="" style="width: 200px">
+    <img src="/images/bitcoin/bitcoin-status-1.png" alt="Bitcoin tile on the MyNode home page showing a Running status with block height, peers, difficulty, mempool size, version, and a Manage button" style="width: 200px">
   </figure>
 </center>
 
@@ -24,6 +24,6 @@ On the Bitcoin page, you can see the current state of the Bitcoin daemon which i
 
 <center>
   <figure>
-    <img src="/images/bitcoin/bitcoin-status-2.png" alt="" style="width: 400px">
+    <img src="/images/bitcoin/bitcoin-status-2.png" alt="MyNode Bitcoin page with status, info, and Bitcoin tiles above the local Bitcoin address and tables of wallets, recent blocks, and connected peers" style="width: 400px">
   </figure>
 </center>

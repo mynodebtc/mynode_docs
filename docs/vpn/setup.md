@@ -1,6 +1,6 @@
 ---
 title: "Remote Access via VPN"
-description: "Set up VPN access to MyNode for a private route back to your node and bundled apps."
+description: "Set up OpenVPN access to MyNode by forwarding port 51194 and importing the generated profile, so remote devices reach every app as if on your home network."
 tags:
 - "VPN"
 - "remote access"
@@ -30,7 +30,7 @@ First, you will need the IP address of your MyNode. Go to the settings page and 
 
 <center>
   <figure>
-    <img src="/images/remote-access-vpn/vpn1.png" alt="MyNode logo" style="width: 300px;">
+    <img src="/images/remote-access-vpn/vpn1.png" alt="MyNode settings page with the Local IP row in the Info section highlighted" style="width: 300px;">
   </figure>
 </center>
 
@@ -38,7 +38,7 @@ Then, go to your router and forward UDP port 51194 to port 51194 on the IP of yo
 
 <center>
   <figure>
-    <img src="/images/remote-access-vpn/vpn2.png" alt="MyNode logo" class="app_screenshot">
+    <img src="/images/remote-access-vpn/vpn2.png" alt="Router port management screen with a forwarding rule sending UDP port 51194 to port 51194 on the MyNode local IP" class="app_screenshot">
   </figure>
 </center>
 
@@ -54,7 +54,7 @@ Next, on your mobile device, visit the MyNode web GUI while you are connected to
 
 <center>
   <figure>
-    <img src="/images/remote-access-vpn/vpn3.png" alt="MyNode logo" class="app_screenshot">
+    <img src="/images/remote-access-vpn/vpn3.png" alt="MyNode web interface on a phone with the Info button under the VPN tile highlighted" class="app_screenshot">
   </figure>
 </center>
 
@@ -62,7 +62,7 @@ Once on the VPN Info page, click on the button to download the OVPN File. Enter 
 
 <center>
   <figure>
-    <img src="/images/remote-access-vpn/vpn4.png" alt="MyNode logo" class="app_screenshot">
+    <img src="/images/remote-access-vpn/vpn4.png" alt="VPN Status page showing a Running status, the VPN port, a green port forwarded indicator, and the download button for the OVPN file highlighted" class="app_screenshot">
   </figure>
 </center>
 
@@ -77,7 +77,7 @@ Once the profile was imported successfully, you can tap the toggle icon and conn
 
 <center>
   <figure>
-    <img src="/images/remote-access-vpn/vpn5.png" alt="MyNode logo" class="app_screenshot">
+    <img src="/images/remote-access-vpn/vpn5.png" alt="OpenVPN app showing the myNode profile connected, with connection stats for bytes in and out and the session duration" class="app_screenshot">
   </figure>
 </center>
 

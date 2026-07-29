@@ -1,11 +1,11 @@
 ---
-title: Bitcoin Node Overview
-description: See how MyNode runs and manages a full Bitcoin node, and why local verification matters.
+title: "Bitcoin Node Overview"
+description: "Learn how MyNode runs a full Bitcoin node, what validation actually verifies, and why checking the blockchain locally protects your privacy and self-custody."
 tags:
-- Bitcoin node
-- blockchain sync
-- privacy
-- self-custody
+- "Bitcoin node"
+- "blockchain sync"
+- "privacy"
+- "self-custody"
 ---
 
 # Overview

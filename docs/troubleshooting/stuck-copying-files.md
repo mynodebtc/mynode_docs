@@ -1,6 +1,6 @@
 ---
 title: "My Device is stuck at Copying Files"
-description: "Unblock setup or recovery when MyNode stalls on the file-copying stage."
+description: "Unstick QuickSync on MyNode when the copying files step stalls or restarts at zero percent, usually a power or disk speed problem during the large extraction."
 tags:
 - "setup issue"
 - "copying files"

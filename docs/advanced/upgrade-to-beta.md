@@ -1,6 +1,6 @@
 ---
 title: "Upgrade to a Beta Release"
-description: "Install a MyNode beta release to preview upcoming releases and test new features early."
+description: "Switch a MyNode device to a beta release to test upcoming fixes, new apps, and early Bitcoin or Lightning versions before they reach the stable channel."
 tags:
 - "MyNode"
 - "beta release"

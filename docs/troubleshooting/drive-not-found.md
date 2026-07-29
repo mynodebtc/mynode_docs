@@ -1,6 +1,6 @@
 ---
 title: "My Device cannot Find the Drive"
-description: "Fix startup problems caused by MyNode failing to detect or mount the main data drive."
+description: "Fix MyNode failing to detect an attached data drive, usually caused by insufficient USB power or enclosure driver issues. A powered hub often solves it."
 tags:
 - "drive issue"
 - "storage"

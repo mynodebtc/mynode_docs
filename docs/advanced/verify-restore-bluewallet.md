@@ -1,6 +1,6 @@
 ---
 title: "Verify or Restore on-chain Lightning funds using BlueWallet"
-description: "Use BlueWallet to verify or recover on-chain funds tied to a MyNode Lightning backup."
+description: "Import your MyNode Lightning aezeed into BlueWallet to check the on-chain balance, confirm the seed was recorded correctly, or recover funds in an emergency."
 tags:
 - "BlueWallet"
 - "wallet recovery"
@@ -33,7 +33,7 @@ Once the Bluewallet is installed, launch it and find the "Add a wallet" page, li
 
 <center>
   <figure>
-    <img src="/images/bluewallet/android-1.png" class="app_screenshot">
+    <img src="/images/bluewallet/android-1.png" class="app_screenshot" alt="BlueWallet on Android showing the empty Wallets screen with the Add now button highlighted">
   </figure>
 </center>
 
@@ -45,7 +45,7 @@ Click on import wallet at the bottom.
 
 <center>
   <figure>
-    <img src="/images/bluewallet/android-2.png" class="app_screenshot">
+    <img src="/images/bluewallet/android-2.png" class="app_screenshot" alt="BlueWallet Add Wallet screen with Bitcoin, Lightning, and Vault types listed and the Import wallet link highlighted at the bottom">
   </figure>
 </center>
 
@@ -71,7 +71,7 @@ A violet color wallet should appear called "Imported HD Aezeed". Click on it to 
 
 <center>
   <figure>
-    <img src="/images/bluewallet/android-3.png" class="app_screenshot">
+    <img src="/images/bluewallet/android-3.png" class="app_screenshot" alt="The imported violet Imported HD Aezeed wallet in BlueWallet, showing its balance and an empty transaction list">
   </figure>
 </center>
 

@@ -1,6 +1,6 @@
 ---
 title: "Install on Virtual Box"
-description: "Run MyNode in VirtualBox for testing, evaluation, or a lightweight home-lab deployment."
+description: "Run MyNode inside VirtualBox using the OVA image, a low-commitment way to evaluate the platform or test Bitcoin and Lightning changes before touching hardware."
 tags:
 - "MyNode"
 - "VirtualBox"

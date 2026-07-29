@@ -1,6 +1,6 @@
 ---
 title: "My Device has a Drive Error"
-description: "Work through disk failures and read-only mount issues that prevent MyNode from writing to storage."
+description: "Resolve the Drive Error state on MyNode, where the external disk has gone read-only or is failing, so the node can write blockchain and wallet data again."
 tags:
 - "drive error"
 - "storage"

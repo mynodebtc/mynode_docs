@@ -1,6 +1,6 @@
 ---
 title: "Upgrading your MyNode"
-description: "Update MyNode safely to pick up the latest platform, Bitcoin, and Lightning releases."
+description: "Update MyNode to the latest platform, Bitcoin, and Lightning releases using either the Premium one click update or a manual reflash of the OS image."
 tags:
 - "MyNode"
 - "software updates"
