@@ -1,6 +1,6 @@
 ---
 title: "Customizing MyNode with Scripts"
-description: "Extend MyNode with custom scripts for automation, local tweaks, and repeatable admin tasks."
+description: "Run custom bash hook scripts at set points in the MyNode lifecycle, such as after boot or after an upgrade, to automate tweaks that survive platform updates."
 tags:
 - "MyNode"
 - "scripts"

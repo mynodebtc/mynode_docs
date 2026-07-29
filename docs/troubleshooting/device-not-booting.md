@@ -1,6 +1,6 @@
 ---
 title: "My Device is not Booting"
-description: "Check power, storage, and imaging issues when a MyNode device cannot to boot properly."
+description: "Work through power, cabling, storage, and reflashing checks when a MyNode device will not boot or the web interface never comes up after you power it on."
 tags:
 - "boot failure"
 - "MyNode"

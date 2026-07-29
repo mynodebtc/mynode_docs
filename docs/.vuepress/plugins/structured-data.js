@@ -45,7 +45,7 @@ function getStructuredData(host) {
           {
             '@type': 'HowToStep',
             name: 'Download and flash the image',
-            text: 'Download the correct MyNode image for your device and flash it to an SD card or USB drive.',
+            text: 'Download the correct MyNode image for your device and flash it to an SD card or USB thumbdrive.',
           },
           {
             '@type': 'HowToStep',

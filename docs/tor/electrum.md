@@ -1,6 +1,6 @@
 ---
 title: "Electrum Server via Tor"
-description: "Reach your MyNode Electrum Server over Tor when you need private wallet access away from home."
+description: "Connect Electrum on Android or Linux to your MyNode Electrum Server through a Tor onion address, for private wallet access anywhere without port forwarding."
 tags:
 - "Electrum"
 - "Tor"
@@ -18,7 +18,7 @@ First, from the MyNode home page click "Enable" to start running Electrum Server
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-1.png" alt="password" style="width: 200px;">
+    <img src="/images/bitcoin/electrum-1.png" alt="Electrum Server app tile on the MyNode home page with the Enable button highlighted" style="width: 200px;">
   </figure>
 </center>
 
@@ -26,7 +26,7 @@ Once the server has synced, you should see an Electrum Server status page simila
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-2.png" alt="MyNode logo" style="width: 300px;">
+    <img src="/images/bitcoin/electrum-2.png" alt="MyNode Electrum Server status page showing a Running status, the current block height, and the standard and secure ports" style="width: 300px;">
   </figure>
 </center>
 
@@ -46,7 +46,7 @@ On your Android device, download Orbot and enable it by Clicking the Start butto
 
 <center>
   <figure>
-    <img src="/images/remote-access-tor/remote-electrum-access-3.png" class="app_screenshot">
+    <img src="/images/remote-access-tor/remote-electrum-access-3.png" class="app_screenshot" alt="Orbot on Android reporting Tor bootstrapped 100 percent, with the onion button showing STOP to indicate the connection is running">
   </figure>
 </center>
 
@@ -54,7 +54,7 @@ Next, open the Electrum Server information page on your MyNode device and find t
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-2.png" style="width: 300px;">
+    <img src="/images/bitcoin/electrum-2.png" alt="Electrum Tor Service section of the MyNode Electrum Server page, listing the Onion hostname and CLI command" style="width: 300px;">
   </figure>
 </center>
 
@@ -69,7 +69,7 @@ And set the Server settings to:<br/>
 
 <center>
   <figure>
-    <img src="/images/remote-access-tor/remote-electrum-access-5.png" class="app_screenshot">
+    <img src="/images/remote-access-tor/remote-electrum-access-5.png" class="app_screenshot" alt="Network settings in Electrum for Android showing one connection to an .onion server through the localhost:9050 proxy with one-server mode on">
   </figure>
 </center>
 
@@ -77,7 +77,7 @@ If everything went correctly, your wallet will sync and your MyNode device will 
 
 <center>
   <figure>
-    <img src="/images/remote-access-tor/remote-electrum-access-6.png" class="app_screenshot">
+    <img src="/images/remote-access-tor/remote-electrum-access-6.png" class="app_screenshot" alt="Synced Electrum wallet on Android showing the balance screen for default_wallet with Send, Balance, and Receive tabs">
   </figure>
 </center>
 
@@ -99,6 +99,6 @@ Your Electrum wallet should connect successfully and look like the following!
 
 <center>
   <figure>
-    <img src="/images/remote-access-tor/remote-electrum-access-8.png" style="width: 300px;">
+    <img src="/images/remote-access-tor/remote-electrum-access-8.png" alt="Electrum desktop wallet on Linux connected through Tor, showing the History tab for default_wallet" style="width: 300px;">
   </figure>
 </center>

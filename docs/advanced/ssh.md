@@ -1,6 +1,6 @@
 ---
 title: "Using SSH Key Authentication"
-description: "Secure remote shell access to MyNode with SSH keys instead of password-based logins."
+description: "Set up SSH key authentication on MyNode so only computers holding your private key can log in, a stronger alternative to password-based remote shell access."
 tags:
 - "SSH"
 - "key authentication"

@@ -1,6 +1,6 @@
 ---
 title: "Premium+"
-description: "See what MyNode Premium+ includes and how its extra hardware and services fit into a node setup."
+description: "See what MyNode Premium+ includes, from remote Lightning channel backup and a watchtower to device monitoring, and how to unlock each feature on your node."
 tags:
 - "Premium+"
 - "MyNode"

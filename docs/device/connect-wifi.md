@@ -1,6 +1,6 @@
 ---
 title: "Connect WiFi"
-description: "Move a MyNode device from Ethernet to Wi-Fi without losing local access to the node."
+description: "Switch a MyNode device from wired Ethernet to Wi-Fi using nmtui over SSH, so you can relocate the node without losing access to the web interface."
 tags:
 - "MyNode"
 - "Wi-Fi"
@@ -48,7 +48,7 @@ lo      loopback  unmanaged     --
 
 <center>
         <figure>
-                <img src="/images/wifi/wifi-2.png" class="app-screenshot"/> 
+                <img src="/images/wifi/wifi-2.png" class="app-screenshot" alt="NMTUI connection list showing the wired connection and the selected Wi-Fi network, with Deactivate and Back options"/> 
         </figure>
 </center>
 

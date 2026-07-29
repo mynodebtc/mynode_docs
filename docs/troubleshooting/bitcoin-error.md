@@ -1,6 +1,6 @@
 ---
 title: "My Device has a Bitcoin Error"
-description: "Work through the common fixes when MyNode reports a Bitcoin service error and the node will not start cleanly."
+description: "Fix the Bitcoin has experienced an error message on MyNode by reading the Bitcoin log, then clearing corrupted chain data or reinstalling the Bitcoin service."
 tags:
 - "Bitcoin error"
 - "MyNode"

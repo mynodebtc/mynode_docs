@@ -1,6 +1,6 @@
 ---
 title: "My Web Browser shows an Error"
-description: "Resolve browser certificate and HTTPS errors when the MyNode web interface will not load cleanly."
+description: "Understand the Your connection is not private warning shown when loading the MyNode web interface over HTTPS, and safely accept its self-signed certificate."
 tags:
 - "HTTPS"
 - "browser error"

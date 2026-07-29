@@ -1,6 +1,6 @@
 ---
 title: "My Device has a Lightning Network Error"
-description: "Debug Lightning not starting properly due to a networking error."
+description: "Fix the Network Error Lightning status on MyNode by checking the Lightning log for the failing startup line, then correcting Tor or LND configuration problems."
 tags:
 - "Lightning error"
 - "Lightning Network"

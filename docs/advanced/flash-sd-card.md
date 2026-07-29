@@ -1,6 +1,6 @@
 ---
 title: "Flash MyNode OS Image"
-description: "Write the MyNode image to an SD card to prepare the device for its first boot or perform a recovery."
+description: "Download the MyNode OS image and write it to an SD card or USB thumbdrive with balenaEtcher, for a first install, a version change, or a password reset."
 tags:
 - "MyNode"
 - "SD card"
@@ -21,7 +21,7 @@ The Raspberry Pi and many other devices use a micro SD card that is inserted int
 
 <center>
   <figure>
-    <img src="/images/advanced/flash_sd_card_1.png" width="200">
+    <img src="/images/advanced/flash_sd_card_1.png" width="200" alt="A 32 GB SanDisk Ultra micro SD card">
   </figure>
 </center>
 
@@ -29,7 +29,7 @@ On the Raspberry Pi, the SD card slot can be found on the bottom of the device.
 
 <center>
   <figure>
-    <img src="/images/advanced/flash_sd_card_3.png" width="300">
+    <img src="/images/advanced/flash_sd_card_3.png" width="300" alt="Underside of a Raspberry Pi in a black case, showing the micro SD card slot on the edge">
   </figure>
 </center>
 -->
@@ -40,7 +40,7 @@ You will need to download the image for your device from [mynodebtc.com/download
 
 <center>
   <figure>
-    <img src="/images/advanced/flash_sd_card_5.png" width="400">
+    <img src="/images/advanced/flash_sd_card_5.png" width="400" alt="Step 1 Download Image section of the MyNode download page, listing image links for Raspberry Pi 4, Raspberry Pi 5, PC, and virtual machine">
   </figure>
 </center>
 
@@ -61,7 +61,7 @@ Open Etcher and click "Flash from file" and choose the recently downloaded image
 
 <center>
   <figure>
-    <img src="/images/advanced/flash_sd_card_6.png" width="400">
+    <img src="/images/advanced/flash_sd_card_6.png" width="400" alt="balenaEtcher start screen with the Flash from file button highlighted, alongside Select target and Flash">
   </figure>
 </center>
 
@@ -69,7 +69,7 @@ After selecting the image, click "Select target".
 
 <center>
   <figure>
-    <img src="/images/advanced/flash_sd_card_7.png" width="400">
+    <img src="/images/advanced/flash_sd_card_7.png" width="400" alt="balenaEtcher with the MyNode .img file loaded and the Select target button now active">
   </figure>
 </center>
 
@@ -77,7 +77,7 @@ Choose the SD card or USB drive from the list and click "Select". Verify the siz
 
 <center>
   <figure>
-    <img src="/images/advanced/flash_sd_card_8.png" width="400">
+    <img src="/images/advanced/flash_sd_card_8.png" width="400" alt="balenaEtcher Select target dialog listing an SDHC card with its size and drive letter, with Cancel and Select buttons">
   </figure>
 </center>
 
@@ -85,7 +85,7 @@ Once selected, click "Flash!" and the image will be written to the drive. The fl
 
 <center>
   <figure>
-    <img src="/images/advanced/flash_sd_card_9.png" width="400">
+    <img src="/images/advanced/flash_sd_card_9.png" width="400" alt="balenaEtcher writing the MyNode image to the SD card, showing a progress bar, write speed, and estimated time remaining">
   </figure>
 </center>
 
@@ -93,7 +93,7 @@ Once the image has been written to the flash drive, you can remove it from the P
 
 <center>
   <figure>
-    <img src="/images/advanced/flash_sd_card_10.png" width="400">
+    <img src="/images/advanced/flash_sd_card_10.png" width="400" alt="balenaEtcher showing Flash Complete with one successful target">
   </figure>
 </center>
 
@@ -104,7 +104,7 @@ Finally, the last step is to take the flash drive and insert it into the unpower
 
 <center>
   <figure>
-    <img src="/images/advanced/flash_sd_card_2.png" width="400">
+    <img src="/images/advanced/flash_sd_card_2.png" width="400" alt="A hand inserting a micro SD card into the slot on a Raspberry Pi in a black case">
   </figure>
 </center>
 

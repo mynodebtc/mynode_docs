@@ -1,6 +1,6 @@
 ---
 title: "My Device has SD Card Full Warning"
-description: "Free up space and prevent failures when the MyNode SD card is nearly full."
+description: "Clear space when MyNode warns that the SD card is nearly full, by removing logs and unused app data or moving the system to a larger card or thumbdrive."
 tags:
 - "SD card"
 - "storage warning"

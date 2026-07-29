@@ -1,6 +1,6 @@
 ---
 title: "Install on a PC or Server"
-description: "Deploy MyNode on standard PC or server hardware."
+description: "Install MyNode on PC or server hardware using the amd64 image, including the two-drive layout that keeps the operating system and Bitcoin data separate."
 tags:
 - "MyNode"
 - "PC install"

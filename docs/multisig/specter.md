@@ -1,6 +1,6 @@
 ---
 title: "Specter"
-description: "Pair Specter with MyNode for self-hosted multisig wallet management and signing workflows."
+description: "Pair Specter with MyNode to manage single-sig and multisig Bitcoin wallets, connect hardware wallets, and sign transactions against your own full node."
 tags:
 - "Specter"
 - "multisig"
@@ -34,8 +34,8 @@ Find the full list of features on [GitHub](https://github.com/cryptoadvance/spec
 Specter is already configured with default environment variables and connected to Bitcoin Core, but it is disabled by default. To enable it, open the MyNode homepage and find the tile with the Specter logo under Beta Apps (like the left image below).
 <center>
   <figure>
-    <img src="/images/multisig/specter/disabled.png" alt="" style="width: 125px">
-    <img src="/images/multisig/specter/enabled.png" alt="" style="width: 125px">
+    <img src="/images/multisig/specter/disabled.png" alt="Specter app tile on the MyNode home page in its disabled state, showing an Enable button" style="width: 125px">
+    <img src="/images/multisig/specter/enabled.png" alt="Specter app tile once enabled, showing a green status dot with a Running label and Specter and Disable buttons" style="width: 125px">
   </figure>
 </center>
 

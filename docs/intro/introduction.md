@@ -1,11 +1,11 @@
 ---
-title: Introduction to MyNode
-description: Get a quick overview of MyNode, the apps it bundles, and how it simplifies running Bitcoin and Lightning.
+title: "Introduction to MyNode"
+description: "Get an overview of MyNode, the self-hosted platform bundling Bitcoin Core, LND, and 40+ apps so you can run a Bitcoin and Lightning node without the terminal."
 tags:
-- MyNode
-- Bitcoin
-- Lightning
-- node management
+- "MyNode"
+- "Bitcoin"
+- "Lightning"
+- "node management"
 ---
 
 <center>

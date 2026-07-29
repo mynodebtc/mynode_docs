@@ -1,6 +1,6 @@
 ---
 title: "My Device has an SD Card Error"
-description: "Handle SD card media and read-only errors that interrupt normal MyNode operation."
+description: "Handle the SD Card Error state on MyNode, where the card has become read-only or unreadable, by remounting it or reflashing a replacement card to recover."
 tags:
 - "SD card"
 - "read-only error"

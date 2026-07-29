@@ -1,6 +1,6 @@
 ---
 title: "BTC RPC Explorer"
-description: "Browse local block, transaction, address, and node data with BTC RPC Explorer on MyNode."
+description: "Browse blocks, transactions, addresses, and node details with BTC RPC Explorer on MyNode, a self-hosted Bitcoin explorer driven by your own node's RPC calls."
 tags:
 - "BTC RPC Explorer"
 - "Bitcoin explorer"

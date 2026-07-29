@@ -1,6 +1,6 @@
 ---
 title: "Find your Device's IP Address"
-description: "Locate your MyNode on the local network so you can open the web UI, SSH in, or pair external apps."
+description: "Find the local IP address of your MyNode from the status page, your router, or a network scan, so you can open the web interface, SSH in, or pair wallets."
 tags:
 - "MyNode"
 - "device IP"

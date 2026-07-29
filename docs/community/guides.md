@@ -1,6 +1,6 @@
 ---
 title: "Community Guides"
-description: "Find community-written MyNode walkthroughs for wallets, apps, privacy tools, and hardware setups."
+description: "Browse written guides from the MyNode community, covering setup, Bitcoin and Lightning apps, privacy tools, and hardware configurations beyond these docs."
 tags:
 - "MyNode"
 - "community guides"

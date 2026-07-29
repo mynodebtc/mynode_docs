@@ -1,6 +1,6 @@
 ---
 title: "Troubleshooting Bitcoin"
-description: "Track down Bitcoin-specific problems on MyNode, including stalled syncs and service failures."
+description: "Fix Bitcoin problems on MyNode, from stalled syncs and service failures to corrupted chain data, using reboots, reinstalls, and blockchain reset options."
 tags:
 - "Bitcoin troubleshooting"
 - "MyNode"

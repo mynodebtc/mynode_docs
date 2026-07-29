@@ -1,6 +1,6 @@
 ---
 title: "My Electrum Wallet is not Connecting"
-description: "Troubleshoot Electrum wallet connection failures against a MyNode-backed server."
+description: "Fix an Electrum wallet that will not connect to MyNode by checking the server IP and port 50002, sync progress, and one-server mode in your wallet settings."
 tags:
 - "Electrum"
 - "connection issue"

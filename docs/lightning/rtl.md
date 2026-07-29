@@ -1,6 +1,6 @@
 ---
 title: "Ride the Lightning (RTL)"
-description: "Use Ride the Lightning for day-to-day MyNode channel, invoice, and balance management."
+description: "Use Ride the Lightning on MyNode to open and close channels, create and pay invoices, check balances, and handle day-to-day Lightning node management."
 tags:
 - "RTL"
 - "Ride the Lightning"

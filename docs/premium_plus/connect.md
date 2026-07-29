@@ -1,6 +1,6 @@
 ---
 title: "Connect Device"
-description: "Bring a MyNode Premium+ device online and complete the initial connection workflow."
+description: "Link a MyNode device to your mynodebtc.com account with an access token, unlocking Premium+ features like remote channel backup and device status syncing."
 tags:
 - "Premium+"
 - "MyNode"
@@ -29,7 +29,7 @@ The first step to setting up Premium+ is to make sure you have an account on <a 
 
 <center>
   <figure>
-    <img src="/images/premium_plus/connect_login.png" alt="MyNode logo" style="width: 400px">
+    <img src="/images/premium_plus/connect_login.png" alt="Login page on mynodebtc.com with username and password fields, a Login button, and a Register now link" style="width: 400px">
   </figure>
 </center>
 
@@ -43,7 +43,7 @@ To add your product key type your key into the text field and click the "Add Key
 
 <center>
   <figure>
-    <img src="/images/premium_plus/connect_product_key.png" alt="MyNode logo" style="width: 400px">
+    <img src="/images/premium_plus/connect_product_key.png" alt="Product Keys page on mynodebtc.com listing an existing key with a delete button, plus an Add Key field and button" style="width: 400px">
   </figure>
 </center>
 
@@ -59,7 +59,7 @@ The page with one product key associated with your account will look similar to 
 
 <center>
   <figure>
-    <img src="/images/premium_plus/connect_my_devices.png" alt="MyNode logo" style="width: 400px">
+    <img src="/images/premium_plus/connect_my_devices.png" alt="My Devices page listing one device row with its product key, access token, subscription end date, a Last Update of N/A, and a Manage button" style="width: 400px">
   </figure>
 </center>
 
@@ -71,7 +71,7 @@ Now, copy your Access Token and navigate to the main Premium+ page on your node.
 
 <center>
   <figure>
-    <img src="/images/premium_plus/connect_token_1.png" alt="MyNode logo" style="width: 400px">
+    <img src="/images/premium_plus/connect_token_1.png" alt="Premium+ page on the node before setup, with an empty Access Token row and a Set Token button, and all Premium+ service toggles greyed out" style="width: 400px">
   </figure>
 </center>
 
@@ -83,7 +83,7 @@ To better control what you want to be accessible via mynodebtc.com, you can indi
 
 <center>
   <figure>
-    <img src="/images/premium_plus/connect_token_2.png" alt="MyNode logo" style="width: 400px">
+    <img src="/images/premium_plus/connect_token_2.png" alt="Premium+ page after saving the access token, showing a Connected status with an active subscription and the service toggles now enabled" style="width: 400px">
   </figure>
 </center>
 
@@ -93,7 +93,7 @@ Finally, now that you are connected and have enabled any features you are intere
 
 <center>
   <figure>
-    <img src="/images/premium_plus/connect_device_connected.png" alt="MyNode logo" style="width: 400px">
+    <img src="/images/premium_plus/connect_device_connected.png" alt="Your Device page on mynodebtc.com showing device info with a recent Last Update, feature toggles, device status readings, and Bitcoin chain details" style="width: 400px">
   </figure>
 </center>
 

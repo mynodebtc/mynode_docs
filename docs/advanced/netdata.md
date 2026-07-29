@@ -1,6 +1,6 @@
 ---
 title: "Netdata"
-description: "Monitor CPU, memory, disk, and service health on MyNode with Netdata dashboards."
+description: "Enable Netdata on MyNode for real-time dashboards covering CPU, memory, disk, temperature, and service health, useful when diagnosing slow syncs or crashes."
 tags:
 - "Netdata"
 - "system monitoring"

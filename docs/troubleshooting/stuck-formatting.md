@@ -1,6 +1,6 @@
 ---
 title: "My Device is stuck at Formatting Drive"
-description: "Resolve storage initialization problems when MyNode gets stuck formatting the drive."
+description: "Resolve MyNode getting stuck while formatting the external drive during setup, by checking loose USB and SATA connections and ruling out a failing disk."
 tags:
 - "formatting drive"
 - "storage setup"

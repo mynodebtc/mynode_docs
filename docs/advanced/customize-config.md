@@ -1,6 +1,6 @@
 ---
 title: "Customizing Bitcoin and LND Config"
-description: "Adjust bitcoin.conf and lnd.conf on MyNode for custom networking, performance, and policy settings."
+description: "Edit bitcoin.conf and lnd.conf from the MyNode web interface to tune bandwidth, peers, and node policy. Custom settings survive reboots and platform upgrades."
 tags:
 - "Bitcoin config"
 - "LND config"
@@ -18,7 +18,7 @@ To do this, you can edit the config via the Bitcoin page in the MyNode UI.
 
 <center>
   <figure>
-    <img src="/images/advanced/custom_bitcoin_config1.png">
+    <img src="/images/advanced/custom_bitcoin_config1.png" alt="MyNode Bitcoin Status page with the view / edit button next to Config highlighted">
   </figure>
 </center>
 
@@ -26,7 +26,7 @@ Make any changes you like and click save once you are complete. Saving will rebo
 
 <center>
   <figure>
-    <img src="/images/advanced/custom_bitcoin_config2.png">
+    <img src="/images/advanced/custom_bitcoin_config2.png" alt="Bitcoin Config editor showing the contents of bitcoin.conf in a text area, with the Save button highlighted">
   </figure>
 </center>
 
@@ -35,7 +35,7 @@ and use the default config, you will need to reset the config via "Reset Config"
 
 <center>
   <figure>
-    <img src="/images/advanced/custom_bitcoin_config3.png">
+    <img src="/images/advanced/custom_bitcoin_config3.png" alt="Bitcoin Config editor with the Reset Config button highlighted, used to restore the default bitcoin.conf">
   </figure>
 </center>
 
@@ -50,7 +50,7 @@ To do this, you can edit the config via the Lightning page in the MyNode UI.
 
 <center>
   <figure>
-    <img src="/images/advanced/custom_lightning_config1.png">
+    <img src="/images/advanced/custom_lightning_config1.png" alt="MyNode Lightning Status page with the view / edit button next to Config highlighted">
   </figure>
 </center>
 
@@ -58,7 +58,7 @@ Make any changes you like and click save once you are complete. Saving will rebo
 
 <center>
   <figure>
-    <img src="/images/advanced/custom_lightning_config2.png">
+    <img src="/images/advanced/custom_lightning_config2.png" alt="LND Custom Config editor showing the contents of lnd.conf in a text area, with the Save button highlighted">
   </figure>
 </center>
 
@@ -66,7 +66,7 @@ Once a custom config is used, any future updates to the default config will not 
 
 <center>
   <figure>
-    <img src="/images/advanced/custom_lightning_config3.png">
+    <img src="/images/advanced/custom_lightning_config3.png" alt="LND Custom Config editor with the Reset Config button highlighted, used to restore the default lnd.conf">
   </figure>
 </center>
 

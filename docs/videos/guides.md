@@ -1,6 +1,6 @@
 ---
 title: "Video Guides"
-description: "Watch community videos that cover MyNode setup, Lightning apps, and common hardware-wallet workflows."
+description: "Watch video guides made by the MyNode community, covering first-time setup, Bitcoin and Lightning apps, wallet pairing, and hardware wallet walkthroughs."
 tags:
 - "MyNode"
 - "video guides"

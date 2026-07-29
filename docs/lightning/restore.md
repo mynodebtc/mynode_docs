@@ -1,6 +1,6 @@
 ---
 title: "Restore Lightning Wallet"
-description: "Restore a MyNode Lightning wallet from seed words and bring the node back online."
+description: "Restore a MyNode Lightning wallet from your 24 word seed and Static Channel Backup file, recovering on-chain funds and closing out previously open channels."
 tags:
 - "Lightning wallet"
 - "wallet restore"
@@ -24,13 +24,13 @@ Then, click on "Restore Wallet from Seed" on the Lightning page.
 
 <center>
   <figure>
-    <img src="/images/lightning/restore-1.png" style="width: 300px">
+    <img src="/images/lightning/restore-1.png" style="width: 300px" alt="Manage Wallet box on the MyNode Lightning page with the Restore Wallet from Seed button highlighted below Create Wallet">
   </figure>
 </center>
 
 On the next page, enter your seed phrase and upload your Static Channel Backup (SCB) file. Click Create.
 
-![](/images/lightning/restore-2.png)
+![Create Lightning Wallet page with the 24 word seed entered in the wallet seed box, the Choose File button for the channel backup highlighted, and the Create button highlighted](/images/lightning/restore-2.png)
 
 This will restore you on-chain balance, close all channels that had been opened, and restore those funds in you on chain wallet. Seeing the channel funds appear may take a while.
 

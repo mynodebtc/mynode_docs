@@ -1,6 +1,6 @@
 ---
 title: "Tor Setup"
-description: "Enable Tor access to MyNode apps, wallets, and services through private onion addresses."
+description: "Set up Tor access to MyNode with Orbot on Android, Tor Browser on desktop, or a Linux proxy, then find the onion address for each app and service on your node."
 tags:
 - "Tor"
 - "remote access"
@@ -32,7 +32,7 @@ On your Android device, download Orbot and enable it by Clicking the Start butto
 
 <center>
   <figure>
-    <img src="/images/remote-access-tor/setup-tor-access-1.png" alt="MyNode logo" class="app_screenshot">
+    <img src="/images/remote-access-tor/setup-tor-access-1.png" alt="Orbot on Android reporting Tor bootstrapped 100 percent with VPN Mode on and a Full Device VPN entry under Tor-Enabled Apps" class="app_screenshot">
   </figure>
 </center>
 
@@ -63,7 +63,7 @@ To find the proper Onion URL for a service, open the Tor information page on you
 
 <center>
   <figure>
-    <img src="/images/remote-access-tor/setup-tor-access-2.png" alt="MyNode logo" style="width: 300px">
+    <img src="/images/remote-access-tor/setup-tor-access-2.png" alt="MyNode Tor page showing Bitcoin and Lightning as Tor Enabled, with a Show Onion URLs button above a table of services and their ports" style="width: 300px">
   </figure>
 </center>
 

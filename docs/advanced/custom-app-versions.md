@@ -1,6 +1,6 @@
 ---
 title: "Customize App Versions"
-description: "Pin or override bundled app versions when you need tighter control over MyNode software updates."
+description: "Pin a specific version of Bitcoin, LND, or any bundled MyNode app, so platform updates cannot change it. Useful during contentious forks or early releases."
 tags:
 - "MyNode"
 - "app versions"
@@ -18,7 +18,7 @@ To start customizing an app version, first go to the settings page and click on 
 
 <center>
   <figure>
-    <img src="/images/advanced/custom_app_1.png">
+    <img src="/images/advanced/custom_app_1.png" alt="Applications section of the MyNode settings page with the Customize Application Versions button highlighted">
   </figure>
 </center>
 
@@ -26,7 +26,7 @@ This will open the application customization page which has a table of all appli
 
 <center>
   <figure>
-    <img src="/images/advanced/custom_app_2.png">
+    <img src="/images/advanced/custom_app_2.png" alt="Customize Application Versions page listing each app with its current version, latest version, and a Customize button">
   </figure>
 </center>
 
@@ -34,7 +34,7 @@ Each app row shows the current version (if installed) and the latest version. To
 
 <center>
   <figure>
-    <img src="/images/advanced/custom_app_3.png">
+    <img src="/images/advanced/custom_app_3.png" alt="Bitcoin row of the version table with a text field open for entering a custom version, next to Save and Cancel buttons">
   </figure>
 </center>
 
@@ -42,7 +42,7 @@ Once saved, the application's Latest Version will be updated to the one you ente
 
 <center>
   <figure>
-    <img src="/images/advanced/custom_app_4.png">
+    <img src="/images/advanced/custom_app_4.png" alt="Bitcoin row after saving, showing the latest version replaced by the custom version with a pin icon and a Clear button">
   </figure>
 </center>
 
@@ -50,7 +50,7 @@ After the custom app has been saved, the app still needs to be upgraded. To perf
 
 <center>
   <figure>
-    <img src="/images/advanced/custom_app_5.png">
+    <img src="/images/advanced/custom_app_5.png" alt="Bitcoin row on the Manage Apps page showing a pin icon beside the custom version, with Disable, Restart, Upgrade, and Reinstall buttons">
   </figure>
 </center>
 
@@ -58,7 +58,7 @@ To upgrade the app, click the Upgrade button in the application row. Your device
 
 <center>
   <figure>
-    <img src="/images/advanced/custom_app_6.png">
+    <img src="/images/advanced/custom_app_6.png" alt="MyNode Installing screen reading This may take a while, with a spinner and a Show Upgrade Log button">
   </figure>
 </center>
 
@@ -66,7 +66,7 @@ After rebooting, you can go back to the Manage Apps page and verify the Current 
 
 <center>
   <figure>
-    <img src="/images/advanced/custom_app_7.png">
+    <img src="/images/advanced/custom_app_7.png" alt="Bitcoin row after the upgrade, with the current and latest versions both highlighted showing the same custom version">
   </figure>
 </center>
 

@@ -1,6 +1,6 @@
 ---
 title: "Clone Tool"
-description: "Copy MyNode data to new storage or replacement hardware without rebuilding the node from scratch."
+description: "Use the built-in Clone Tool to migrate MyNode data to a larger drive or from a hard drive to an SSD, without resyncing the Bitcoin blockchain from scratch."
 tags:
 - "MyNode"
 - "data migration"
@@ -18,7 +18,7 @@ To start using the clone tool, first go to the settings page and click on the 'O
 
 <center>
   <figure>
-    <img src="/images/advanced/clone_tool_1.png">
+    <img src="/images/advanced/clone_tool_1.png" alt="Clone Tool section of the MyNode settings page with the Open Clone Tool button">
   </figure>
 </center>
 
@@ -26,7 +26,7 @@ This will restart MyNode and open the Clone Tool after rebooting. In this state,
 
 <center>
   <figure>
-    <img src="/images/advanced/clone_tool_2.png">
+    <img src="/images/advanced/clone_tool_2.png" alt="MyNode restarting screen reading Restarting to Open Clone Tool, with a warning not to power off the device">
   </figure>
 </center>
 
@@ -34,7 +34,7 @@ Once open, the Clone Tool will wait for two drives to be attached. Two drives ca
 
 <center>
   <figure>
-    <img src="/images/advanced/clone_tool_3.png">
+    <img src="/images/advanced/clone_tool_3.png" alt="Cloning Tool error screen reading Clone tool needs 2 drives, found 1, with Try Again and Exit Clone Tool buttons">
   </figure>
 </center>
 
@@ -44,7 +44,7 @@ After attaching both drives, you will be promoted to confirm the clone process. 
 
 <center>
   <figure>
-    <img src="/images/advanced/clone_tool_4.png">
+    <img src="/images/advanced/clone_tool_4.png" alt="Cloning Tool confirmation screen showing the source drive copying to the larger target drive, a warning that all target data will be lost, and Confirm Clone, Rescan Drives, and Reboot buttons">
   </figure>
 </center>
 
@@ -52,7 +52,7 @@ After confirming, the clone process will begin! There are a several stages and i
 
 <center>
   <figure>
-    <img src="/images/advanced/clone_tool_5.png">
+    <img src="/images/advanced/clone_tool_5.png" alt="Cloning Tool in progress showing bytes copied, percent complete, copy speed, and elapsed time">
   </figure>
 </center>
 
@@ -60,7 +60,7 @@ Once complete, you should see a success screen and can reboot the device back in
 
 <center>
   <figure>
-    <img src="/images/advanced/clone_tool_6.png">
+    <img src="/images/advanced/clone_tool_6.png" alt="Cloning Tool success screen reading Clone Complete with instructions to remove the original drive and a Reboot button">
   </figure>
 </center>
 

@@ -1,6 +1,6 @@
 ---
 title: "BTCPay Server"
-description: "Connect BTCPay Server to MyNode for self-hosted Bitcoin payments backed by your own node."
+description: "Enable BTCPay Server on MyNode to accept self-hosted Bitcoin and Lightning payments, create stores and invoices, and settle straight to your own node."
 tags:
 - "BTCPay Server"
 - "Bitcoin payments"
@@ -16,8 +16,8 @@ tags:
 - Open the app from the homepage or go to [mynode.local:49393](https://mynode.local:49393), accept the risks of self-signed certificate. (Wait for few minutes if the homepage doesn’t show up.)
 
 <div style="display: flex;">
-<img src="/images/btcpay-server/disabled.png" style="margin: auto;">
-<img src="/images/btcpay-server/enabled.png" style="margin: auto;">
+<img src="/images/btcpay-server/disabled.png" style="margin: auto;" alt="BTCPay Server app tile on the MyNode home page in its disabled state, showing an Enable button">
+<img src="/images/btcpay-server/enabled.png" style="margin: auto;" alt="BTCPay Server app tile once enabled, showing a green status dot with BTCPay Server and Disable buttons">
 </div>
 
 ## Create an admin account

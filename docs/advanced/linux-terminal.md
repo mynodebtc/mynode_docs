@@ -1,6 +1,6 @@
 ---
 title: "Accessing the Linux Terminal"
-description: "Access the Linux shell on MyNode for diagnostics, maintenance, and advanced node administration."
+description: "Reach the Linux shell on MyNode over SSH or the web terminal, so you can run diagnostic commands and maintenance tasks the web interface does not cover."
 tags:
 - "Linux terminal"
 - "SSH"
@@ -33,6 +33,6 @@ Once successfully connected, you should see a screen similar to this!
 
 <center>
   <figure>
-    <img src="/images/advanced/terminal4.png">
+    <img src="/images/advanced/terminal4.png" alt="Terminal after connecting over SSH, showing the myNode ASCII art banner, system load, memory usage, IP address, and web interface addresses">
   </figure>
 </center>
