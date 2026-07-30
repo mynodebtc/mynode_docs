@@ -1,3 +1,5 @@
+const path = require('path')
+
 const siteUrl = 'https://docs.mynodebtc.com'
 const defaultSocialImage = 'https://mynodebtc.com/images/og_image_2.jpg'
 
@@ -5,6 +7,41 @@ module.exports = {
   title: "Guides and Documentation",
   description: "Helpful guides and documentation for using MyNode and getting the most out of all it has to offer!",
   base: "/",
+  // `fsevents` (chokidar's native macOS watcher) isn't installed for this
+  // Node/arch combo — it's an old native module with no build for newer
+  // Node on Apple Silicon. Without it, webpack's file watcher (watchpack,
+  // which watches per-directory with `atomic: false`) can lose track of
+  // a file after a few edits, especially if the editor saves atomically
+  // (write-temp-then-rename), leaving `yarn docs:dev` showing stale/blank
+  // content until it's restarted. `poll` forces polling instead, which
+  // just re-stats files on an interval — slower to notice a change (up to
+  // ~1s) but immune to missed/misordered native fs events.
+  //
+  // This also excludes .vuepress/dist from the watcher, since running
+  // `yarn docs:build` while `yarn docs:dev` is running would otherwise
+  // flood it with the build's writes.
+  //
+  // Note: this key replaces (does not merge with) VuePress's default
+  // devServer.watchOptions, so the `ignored` fn below also reimplements
+  // the default node_modules exclusion — and its carve-out for VuePress's
+  // own temp dir, which lives under node_modules and must stay watched
+  // for HMR of generated routes/theme files to keep working.
+  devServer: {
+    watchOptions: {
+      poll: 1000,
+      ignored: [
+        (testPath) => {
+          if (testPath.includes(path.join('node_modules', '@vuepress', '.temp'))) {
+            return false
+          }
+          if (testPath.includes(path.join('.vuepress', 'dist'))) {
+            return true
+          }
+          return /node_modules/.test(testPath)
+        }
+      ]
+    }
+  },
   head: [
     // Must be first — sets data-theme before any CSS renders to prevent flash.
     ['script', {}, `(function(){var t=localStorage.getItem('mn-theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');})()`],
