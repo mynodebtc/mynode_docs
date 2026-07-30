@@ -31,11 +31,13 @@ First, go to the main settings page on your node and scroll to the "Networking" 
 If you are still having issues, that setting may not have taken effect because of a [custom Lightning config](/advanced/customize-config.md). Reset your custom Lightning config back to the default so the network settings can take effect.
 
 ## Advanced Resolutions
-<br/>
+
 <details>
 <summary><b>Show Advanced Resolutions</b></summary>
 
-## Custom Config with Static Public IP
+<div class="details-body">
+
+### Custom Config with Static Public IP
 
 As UPnP is not working, another option is to configure port forwarding on your router / firewall device and add required parameters to Additional LND Config on MyNode. This is not guaranteed to work and is not supported by some ISPs as they do not provide your router a real public IP address.
 
@@ -53,7 +55,7 @@ externalhosts=<YOUR-EXTERNAL-IP>:9735
 
 Usually, the public IP addresses of home Internet connections are not static, and therefore change once a while. So this solution is acceptible _only if you have _real_ static IP_ from your ISP (or cloud) provider.
 
-## Custom Config with Dynamic Public IP
+### Custom Config with Dynamic Public IP
 
 Internet connections with Dynamic Public IP addresses require bit more configuration. 
 
@@ -83,7 +85,7 @@ From the MyNode Main page, click Lightning - Wallet. Notice on "URI" you have yo
 
 Now your LND is able to receive channels from clearnet.
 
-## Custom Config with Dynamic Public IP and Domain
+### Custom Config with Dynamic Public IP and Domain
 
 If you own the domain (say mydomain.com), you can also use that domain name by continuing from the above example. Add a CNAME for your DDNS address alias in your domain DNS records like this:
 
@@ -109,4 +111,5 @@ Now, this address will work even if your ISP changes your public IP.
 
 If you now plan to provide BTCPay Server or LNbits via clearnet - you are not quite done yet. BTCPay and LNbits require https traffic to public TCP port 443 and non-selfsigned TLS certificates. Such certs be created with Linux with certbot installed on MyNode. HTTPS traffic inside of MyNode can be forwared with nginx configs, but those configurations are out of scope for this guide.
 
+</div>
 </details>

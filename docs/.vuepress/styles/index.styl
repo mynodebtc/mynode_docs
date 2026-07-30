@@ -649,6 +649,85 @@ div[class*='language-'] button:hover
   color #f87171 !important
   font-weight 600 !important
 
+// ─── Collapsible <details> ────────────────────────────────────────────────
+// Raw <details>/<summary> in Markdown. The summary is styled as a pill
+// button with a chevron that flips when the section opens; the revealed
+// content sits in a bordered panel beneath it.
+
+.theme-default-content details
+  margin 1.5rem 0 !important
+
+.theme-default-content details > summary
+  display inline-flex !important
+  align-items center !important
+  gap 0.6em !important
+  padding 0.62em 1.15em !important
+  border 1px solid var(--mn-border) !important
+  border-radius 8px !important
+  background var(--mn-card-bg) !important
+  color var(--mn-text-hi) !important
+  font-size 0.9rem !important
+  font-weight 600 !important
+  line-height 1.2 !important
+  cursor pointer !important
+  user-select none !important
+  list-style none !important
+  transition background 0.15s ease, border-color 0.15s ease, color 0.15s ease !important
+
+// Strip the native disclosure triangle (WebKit + Firefox)
+.theme-default-content details > summary::-webkit-details-marker
+  display none !important
+
+.theme-default-content details > summary::marker
+  content "" !important
+
+// <summary><b>…</b></summary> — weight comes from the button itself
+.theme-default-content details > summary b,
+.theme-default-content details > summary strong
+  font-weight 600 !important
+
+// Chevron
+.theme-default-content details > summary::after
+  content "" !important
+  flex-shrink 0 !important
+  width 0.42em !important
+  height 0.42em !important
+  margin-top -0.18em !important
+  border-right 2px solid currentColor !important
+  border-bottom 2px solid currentColor !important
+  transform rotate(45deg) !important
+  transition transform 0.2s ease !important
+  opacity 0.75 !important
+
+.theme-default-content details[open] > summary::after
+  margin-top 0.1em !important
+  transform rotate(-135deg) !important
+
+.theme-default-content details > summary:hover
+  background rgba(240,142,32,0.08) !important
+  border-color var(--mn-orange) !important
+  color var(--mn-orange) !important
+
+.theme-default-content details > summary:focus-visible
+  border-color var(--mn-orange) !important
+  box-shadow 0 0 0 3px rgba(240,142,32,0.22) !important
+
+.theme-default-content details[open] > summary
+  margin-bottom 1rem !important
+  border-color var(--mn-border-hover) !important
+
+// Panel holding the revealed content — a separate element (not the
+// <details> box itself) so the border runs beside the content only,
+// not up alongside the summary button. Markdown authors wrap the
+// body in <div class="details-body">…</div>.
+.theme-default-content .details-body
+  padding-left 1.1rem !important
+  margin-left: 1.1rem !important;
+  border-left 2px solid var(--mn-border) !important
+
+.theme-default-content .details-body > *:last-child
+  margin-bottom 0 !important
+
 // ─── Page edit / prev-next nav ────────────────────────────────────────────
 
 .page-edit
