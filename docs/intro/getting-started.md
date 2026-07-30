@@ -1,6 +1,6 @@
 ---
 title: "Getting Started with MyNode"
-description: "Bring a new MyNode online: flash the image, boot the device, open the web interface, enter your product key, and start the initial Bitcoin blockchain sync."
+description: "Bring a new MyNode online: flash the image, boot the device, open the web interface and start the initial Bitcoin blockchain sync!"
 tags:
 - "MyNode setup"
 - "Bitcoin node"
@@ -11,45 +11,86 @@ sidebarDepth: 0
 
 # Getting Started with MyNode
 
-## Download and Install
+Choose the section that corresponds to your situation and expand the details to get started.
 
-**Note:** You can skip flashing the SD card if you purchased a MyNode device!
+## Building your Own Device
+
+Expand this section if you are building a MyNode device.
+
+<details>
+<summary><b>Show Details</b></summary>
+
+<div class="details-body">
 
 Setting up a new MyNode device can be done in a few simple steps!
 
-First, you need to download the MyNode image for your device type and [flash it to a USB thumbdrive](/advanced/flash-sd-card) according to the instructions on the download page. The device will boot from the thumbdrive into the MyNode OS!
+**Acquire Parts**
 
-## Power On Device
+First, you need to acquire the parts you will need to assemble the device. A full parts list can be found on the <a href="https://mynodebtc.com/download" target="_blank">MyNode download page</a>.
 
-Follow the section the section that corresponds to your device.
+In general, you will need:
+- A Mini PC or Raspberry Pi 5
+- A USB thumbdrive as the boot drive
+- A 2TB SSD for the data drive
 
-**Model One**
+**Download MyNode OS Image**
 
-- Insert the SSD into the USB Enclosure
-- Verify connections are secure
-- Attach SSD enclosure to device in USB 3 port (blue)
-- Connect Ethernet cable to your device and your router or switch
-- Plug power cable in outlet and connect to device
+Next, you need to download the MyNode image for your device type and [flash it to a USB thumbdrive](/advanced/flash-sd-card) according to the instructions on the download page. The device will boot from the thumbdrive into the MyNode OS!
 
-**Model Two**
+**Connect Data Drive**
 
-- Insert the provided micro SD card or USB flash drive into the device
-- Connect Ethernet cable to your device and your router or switch
-- Plug power cable in outlet and connect to device
-- Push power button to turn on device
+Many devices, like the Raspberry Pi 4 and 5, use an external drive attached via USB for data storage. Some devices, like mini PCs, support internal storage drives. Those should be preferred and offer better performance.
 
-**Building your Own**
+For internal storage, follow these steps:
 
-Many devices, like the Model One and Raspberry Pi 4, use an external drive attached via USB for data storage. If your device uses external storage, follow these steps.
+- Open Mini PC
+- Insert an SSD or NVMe drive of at least 2TB
+
+For external storage, follow these steps:
 
 - Insert SSD into USB Enclosure
 - Verify connections are secure
 - Attach SSD enclosure to device in USB 3 port (blue)
 
-If your device supports internal storage drives, those should be preferred and offer better performance. Attach an SSD or NVMe drive of at least 1TB.
+**Setup Device**
 
-- Connect Ethernet cable to your device and your router or switch
+- Insert the flashed USB thumbdrive into the device
+- Connect the Ethernet cable between your device and your router
+
+**Power on Device**
+
 - Plug power cable in outlet and connect to device
+- Push power button if your device has one
+
+Your node is now booting and will be accessible shortly!
+
+</div>
+</details>
+
+
+## Model Two
+
+Expand this section if you purchased a MyNode Model Two.
+
+<details>
+<summary><b>Show Details</b></summary>
+
+<div class="details-body">
+
+**Setup Device**
+
+- Insert the provided USB thumbdrive into the device
+- Connect the Ethernet cable between your device and your router
+
+**Power on Device**
+
+- Plug power cable in outlet and connect to your device
+- Push power button on the front of your device to turn it on
+
+Your node is now booting and will be accessible shortly!
+
+</div>
+</details>
 
 ## Connecting to MyNode
 
