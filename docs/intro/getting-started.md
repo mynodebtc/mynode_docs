@@ -11,22 +11,24 @@ sidebarDepth: 0
 
 # Getting Started with MyNode
 
-Choose the section that corresponds to your situation and expand the details to get started.
+Welcome! Setting up a new MyNode device can be done in a few simple steps and you will soon be running a Bitcoin and Lightning node!
 
-## Building your Own Device
+## Assemble your Device
 
-Expand this section if you are building a MyNode device.
+Select your MyNode device or "Build Your Own" to get setup steps specific to your situation.
 
-<details>
-<summary><b>Show Details</b></summary>
+<div class="mn-tabs">
 
-<div class="details-body">
+<input type="radio" id="gs-tab-build" name="gs-device-tabs" class="mn-tabs-radio" checked>
+<label for="gs-tab-build" class="mn-tabs-button">Build Your Own Device</label>
+<input type="radio" id="gs-tab-model-two" name="gs-device-tabs" class="mn-tabs-radio">
+<label for="gs-tab-model-two" class="mn-tabs-button">Model Two</label>
 
-Setting up a new MyNode device can be done in a few simple steps!
+<div class="mn-tabs-panel" data-tab-panel="gs-tab-build">
 
 **Acquire Parts**
 
-First, you need to acquire the parts you will need to assemble the device. A full parts list can be found on the <a href="https://mynodebtc.com/download" target="_blank">MyNode download page</a>.
+First, you need to acquire parts to assemble the device. A full parts list can be found on the <a href="https://mynodebtc.com/download" target="_blank">MyNode download page</a>.
 
 In general, you will need:
 - A Mini PC or Raspberry Pi 5
@@ -65,17 +67,8 @@ For external storage, follow these steps:
 Your node is now booting and will be accessible shortly!
 
 </div>
-</details>
 
-
-## Model Two
-
-Expand this section if you purchased a MyNode Model Two.
-
-<details>
-<summary><b>Show Details</b></summary>
-
-<div class="details-body">
+<div class="mn-tabs-panel" data-tab-panel="gs-tab-model-two">
 
 **Setup Device**
 
@@ -90,7 +83,8 @@ Expand this section if you purchased a MyNode Model Two.
 Your node is now booting and will be accessible shortly!
 
 </div>
-</details>
+
+</div>
 
 ## Connecting to MyNode
 

@@ -728,6 +728,94 @@ div[class*='language-'] button:hover
 .theme-default-content .details-body > *:last-child
   margin-bottom 0 !important
 
+// ─── Segmented tabs (mn-tabs) ──────────────────────────────────────────────
+// Pure-CSS, JS-free tab switcher driven by a hidden radio group. Markup is
+// radio+label pairs (one per tab, in the order they should appear as
+// buttons) followed by one .mn-tabs-panel per tab:
+//
+//   <div class="mn-tabs">
+//   <input type="radio" id="my-tab-a" name="my-tabs" checked>
+//   <label for="my-tab-a" class="mn-tabs-button">Tab A</label>
+//   <input type="radio" id="my-tab-b" name="my-tabs">
+//   <label for="my-tab-b" class="mn-tabs-button">Tab B</label>
+//
+//   <div class="mn-tabs-panel" data-tab-panel="my-tab-a">…</div>
+//   <div class="mn-tabs-panel" data-tab-panel="my-tab-b">…</div>
+//   </div>
+//
+// Button styling below is fully generic. Showing/hiding the right panel
+// needs one #id:checked ~ [data-tab-panel="id"] rule per tab (pure CSS
+// can't match an attribute value against a sibling's id) — add a pair
+// whenever a new tab group is introduced. Give every group its own
+// name="…" and prefix ids per page (e.g. "gs-" below) so groups on
+// different pages never collide.
+
+.theme-default-content .mn-tabs
+  position relative !important
+  display flex !important
+  flex-wrap wrap !important
+  align-items flex-start !important
+  margin 1.5rem 0 !important
+
+// Visually hidden but still focusable/keyboard-operable (native radio
+// group behavior — Tab to focus, arrow keys to switch, Space to select).
+.theme-default-content .mn-tabs-radio
+  position absolute !important
+  width 1px !important
+  height 1px !important
+  padding 0 !important
+  margin -1px !important
+  overflow hidden !important
+  clip-path inset(50%) !important
+  white-space nowrap !important
+  border 0 !important
+
+.theme-default-content .mn-tabs-button
+  display inline-flex !important
+  align-items center !important
+  justify-content center !important
+  padding 0.6em 1.2em !important
+  margin 0 0.6rem 0.85rem 0 !important
+  border 1px solid var(--mn-border) !important
+  border-radius 8px !important
+  background var(--mn-card-bg) !important
+  color var(--mn-text) !important
+  font-size 0.9rem !important
+  font-weight 600 !important
+  line-height 1.2 !important
+  cursor pointer !important
+  user-select none !important
+  white-space nowrap !important
+  transition background 0.15s ease, border-color 0.15s ease, color 0.15s ease !important
+
+.theme-default-content .mn-tabs-button:hover
+  border-color var(--mn-orange) !important
+  color var(--mn-orange) !important
+
+// Active button — generic, driven by adjacency to its own radio.
+.theme-default-content .mn-tabs-radio:checked + .mn-tabs-button
+  background var(--mn-orange) !important
+  border-color var(--mn-orange) !important
+  color #000 !important
+
+.theme-default-content .mn-tabs-radio:focus-visible + .mn-tabs-button
+  box-shadow 0 0 0 3px rgba(240,142,32,0.35) !important
+
+.theme-default-content .mn-tabs-panel
+  display none !important
+  flex 1 1 100% !important
+  margin-top 0.25rem !important
+  padding-left 1.1rem !important
+  border-left 2px solid var(--mn-border) !important
+
+.theme-default-content .mn-tabs-panel > *:last-child
+  margin-bottom 0 !important
+
+// Getting Started — "Power On Device" (Build Your Own Device / Model Two)
+#gs-tab-build:checked ~ [data-tab-panel="gs-tab-build"],
+#gs-tab-model-two:checked ~ [data-tab-panel="gs-tab-model-two"]
+  display block !important
+
 // ─── Page edit / prev-next nav ────────────────────────────────────────────
 
 .page-edit
