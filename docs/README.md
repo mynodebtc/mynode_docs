@@ -3,7 +3,7 @@ home: true
 title: "MyNode Guides and Documentation"
 description: "Community documentation for MyNode: set up a self-hosted Bitcoin and Lightning node, run the bundled apps, pair wallets, and troubleshoot common problems."
 heroImage: /images/logo.png
-og_image: https://mynodebtc.com/images/og_image_2.jpg
+og_image: /images/og-image-docs.jpg
 heroText: 
 tagline: "Run Bitcoin, Lightning and more!"
 tags:
