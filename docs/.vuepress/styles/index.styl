@@ -777,7 +777,7 @@ div[class*='language-'] button:hover
   padding 0.6em 1.2em !important
   margin 0 0.6rem 0.85rem 0 !important
   border 1px solid var(--mn-border) !important
-  border-radius 8px !important
+  border-radius 9999px !important
   background var(--mn-card-bg) !important
   color var(--mn-text) !important
   font-size 0.9rem !important
@@ -997,18 +997,20 @@ html[data-theme="light"] .theme-default-content img
 // ─── Mobile navbar & drawer ─────────────────────────────────────────────────
 
 @media (max-width 719px)
-  // ── Top bar: hamburger + logo + search only ──
-  // Make room for the absolutely-positioned hamburger (left:1rem, ~2.45rem wide).
-  // VuePress's default padding-left:4rem is gone because our base .navbar rule
-  // sets padding unconditionally.
+  // ── Top bar: logo + search + hamburger ──
+  // Hamburger lives on the right (matches mynodebtc.com) — make room for the
+  // absolutely-positioned button there (right:1rem, ~2.45rem wide) instead of
+  // the left. VuePress's default padding-left:4rem is gone because our base
+  // .navbar rule sets padding unconditionally.
   .navbar
-    padding-left 3.5rem !important
-    padding-right 1rem !important
+    padding-left 1rem !important
+    padding-right 3.5rem !important
 
   // Vertically centre the hamburger within the 68px navbar
   .sidebar-button
     top 0.95rem !important
-    left 1rem !important
+    left auto !important
+    right 1rem !important
 
   .sidebar-button:hover .icon
     fill var(--mn-text-hi) !important
@@ -1086,11 +1088,21 @@ html[data-theme="light"] .theme-default-content img
   // ── Drawer: guides first, marketing/utility links in a footer ──
   // Match our real 68px navbar height and lay the drawer out as a flex column
   // so we can reorder (markup is nav-links first, then the guide links).
+  // Anchored to the right edge (matches mynodebtc.com) — flip VuePress's
+  // default left-anchored slide (mobile.styl: left:0, translateX(-100%)).
   .sidebar
     top 0 !important
+    left auto !important
+    right 0 !important
+    border-right none !important
+    border-left 1px solid var(--mn-border) !important
     padding-top 68px !important
     display flex !important
     flex-direction column !important
+    transform translateX(100%) !important
+
+  .theme-container.sidebar-open .sidebar
+    transform translateX(0) !important
 
   .sidebar > .sidebar-links
     order 1 !important
