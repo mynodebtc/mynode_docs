@@ -35,10 +35,20 @@ Follow these steps to manually upgrade to the latest version:
     * Terminal 2: Connect to your MyNode Device ([see options](https://docs.mynodebtc.com/advanced/linux-terminal.html))
       * Command: `ssh admin@[MyNode ip address]`
       * Default credentials: admin/bolt
-2. Clone the latest release from the git repo on your PC or laptop
-    * Run `git clone https://github.com/mynodebtc/mynode.git`
-    * Run `cd mynode`
-    * Run `git checkout tags/latest_release`
+2. Clone the latest release from the git repo on your PC or laptop, or update your existing clone
+    * First-time setup:
+      ```bash
+      git clone https://github.com/mynodebtc/mynode.git
+      cd mynode
+      git checkout tags/latest_release
+      ```
+    * Existing clone:
+      ```bash
+      cd mynode
+      git fetch --force https://github.com/mynodebtc/mynode.git 'refs/tags/*:refs/tags/*'
+      git checkout tags/latest_release
+      ```
+    * Note: `latest_release` is a moving tag, so an existing clone can have a stale local tag. The `git fetch --force ... 'refs/tags/*:refs/tags/*'` command refreshes tags before checkout.
 3. Run `make rootfs`
 4. Run `make start_file_server`
     * This will run a local HTTP server so your device can download files
@@ -48,4 +58,3 @@ Follow these steps to manually upgrade to the latest version:
 6. Optional: Run `make stop_file_server`
     * This will stop the local HTTP server
 7. You are now running the latest version of MyNode software!
-
