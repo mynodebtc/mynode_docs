@@ -4,7 +4,7 @@ const siteUrl = 'https://docs.mynodebtc.com'
 const defaultSocialImage = '/images/og-image-docs.jpg'
 
 module.exports = {
-  title: "Guides and Documentation",
+  title: "MyNode Knowledge Base",
   description: "Helpful guides and documentation for using MyNode and getting the most out of all it has to offer!",
   base: "/",
   // `fsevents` (chokidar's native macOS watcher) isn't installed for this
@@ -61,6 +61,10 @@ module.exports = {
     ['script',{},["window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-871EBBS9WR');",],],
   ],
   themeConfig: {
+    // Shown in the navbar next to the logo; kept shorter than `title` above
+    // (used for <title>/og:site_name) since the logo already conveys "MyNode".
+    // See .vuepress/theme/components/Navbar.vue.
+    navbarTitle: "Knowledge Base",
     domain: siteUrl,
     repo: 'mynodebtc/mynode_docs',
     repoLabel: 'Contribute',
@@ -261,7 +265,7 @@ module.exports = {
     //['@vuepress/google-analytics', {'ga': 'G-871EBBS9WR'}],
     ['seo', {
         siteTitle: (_, $site) => $site.title,
-        title: ($page, $site) => $page.title + " | MyNode Docs",
+        title: ($page, $site) => $page.title + " | MyNode Knowledge Base",
         description: ($page, $site) => $page.frontmatter.description || ($page.title + " - " + $site.description),
         author: (_, $site) => $site.themeConfig.author,
         tags: $page => $page.frontmatter.tags,

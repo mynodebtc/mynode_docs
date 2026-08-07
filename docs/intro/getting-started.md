@@ -1,11 +1,17 @@
 ---
 title: "Getting Started with MyNode"
-description: "Bring a new MyNode online: flash the image, boot the device, open the web interface and start the initial Bitcoin blockchain sync!"
+description: "Bring a new MyNode online - boot the device, open the web interface and start running Bitcoin and Lightning!"
 tags:
 - "MyNode setup"
 - "Bitcoin node"
 - "Lightning node"
 - "getting started"
+- "run a node"
+- "setup model two"
+- "build a mynode"
+- "build mynode device"
+- "run bitcoin apps"
+- "run lightning apps"
 sidebarDepth: 0
 ---
 
@@ -32,8 +38,8 @@ First, you need to acquire parts to assemble the device. A full parts list can b
 
 In general, you will need:
 - A Mini PC or Raspberry Pi 5
-- A USB thumbdrive as the boot drive
-- A 2TB SSD for the data drive
+- A 32 GB or larger USB thumbdrive as the boot drive
+- A 2 TB SSD for the data drive
 
 **Download MyNode OS Image**
 
@@ -46,7 +52,7 @@ Many devices, like the Raspberry Pi 4 and 5, use an external drive attached via 
 For internal storage, follow these steps:
 
 - Open Mini PC
-- Insert an SSD or NVMe drive of at least 2TB
+- Insert an SSD or NVMe drive of at least 2 TB
 
 For external storage, follow these steps:
 

@@ -21,7 +21,7 @@ function getStructuredData(host) {
       {
         '@context': 'https://schema.org',
         '@type': 'WebSite',
-        name: 'MyNode Docs',
+        name: 'MyNode Guides and Documentation',
         url: `${host}/`,
         description,
         publisher: publisher(host),
@@ -39,7 +39,7 @@ function getStructuredData(host) {
         '@context': 'https://schema.org',
         '@type': 'HowTo',
         name: 'Getting Started with MyNode',
-        description: 'Bring a new MyNode online, open the web interface, and start the initial Bitcoin sync.',
+        description: 'Bring a new MyNode online - boot the device, open the web interface and start running Bitcoin!',
         totalTime: 'P6D',
         step: [
           {
@@ -55,7 +55,7 @@ function getStructuredData(host) {
           {
             '@type': 'HowToStep',
             name: 'Open the MyNode web interface',
-            text: 'Visit mynode.local or the device IP address from another device on the same network.',
+            text: 'Visit mynode.local or the device IP address from a PC, tablet, or phone on the same network.',
           },
           {
             '@type': 'HowToStep',
