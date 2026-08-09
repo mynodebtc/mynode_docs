@@ -1,7 +1,7 @@
 const path = require('path')
 
 const siteUrl = 'https://docs.mynodebtc.com'
-const defaultSocialImage = '/images/og-image-docs.jpg'
+const defaultSocialImage = '/images/og-image-docs.png'
 
 module.exports = {
   title: "MyNode Knowledge Base",
