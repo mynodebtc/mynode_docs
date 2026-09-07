@@ -12,11 +12,27 @@ Community-built documentation site for [MyNode](https://mynodebtc.com/) (a Bitco
 yarn install       # install deps
 yarn docs:dev      # serve locally with hot reload (port 8080, or next available)
 yarn docs:build    # build static site to docs/.vuepress/dist
+yarn docs:lint     # reject Markdown that VuePress would compile into executable code
 ```
 
 Both scripts run through `node --openssl-legacy-provider` because the bundled VuePress 1 uses webpack 4, which is incompatible with OpenSSL 3 in newer Node releases. Don't remove that flag.
 
-There is no test suite or linter in this repo — verification is building the site and checking pages render.
+The only automated check is `yarn docs:lint` (`scripts/check-markdown.js`); otherwise
+verification is building the site and checking pages render.
+
+## Markdown is not inert
+
+VuePress compiles each `.md` file into a Vue single-file component, so Markdown content
+is executable. A `<script>` block in Markdown becomes the page's SFC script and runs both
+in visitors' browsers and on the build machine during SSR; `{{ }}` is evaluated as a Vue
+expression (including inside inline backticks — fenced code blocks are the only inert
+form); `onerror=` handlers and `javascript:` hrefs pass through verbatim.
+
+This matters because `docs.mynodebtc.com` is same-site with `www.mynodebtc.com`, so the
+main site's `SameSite=Lax` session cookie is sent on requests originating from the docs
+origin. `scripts/check-markdown.js` rejects these patterns and runs in CI on pull
+requests and before every deploy. Do not weaken it without reading
+`plans/markdown-safety-check.md`.
 
 ## Deployment
 

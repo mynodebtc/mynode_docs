@@ -1,0 +1,34 @@
+name: Content Check
+
+# Runs on pull requests as well as pushes, so unsafe Markdown is caught before
+# it is merged rather than after it is already deployed.
+#
+# This uses `pull_request`, NOT `pull_request_target`. `pull_request` runs with
+# a read-only token and no access to repository secrets, which is what makes it
+# safe to run against a fork's branch.
+#
+# It deliberately does NOT install dependencies and does NOT build the site.
+# Both of those execute code from the pull request being checked: npm/yarn run
+# package install hooks, and `vuepress build` executes any <script> block in a
+# Markdown file during server-side rendering. check-markdown.js has no
+# dependencies so it can run against untrusted content with neither step.
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: read
+
+jobs:
+  markdown-safety:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+
+      - name: Check Markdown for executable content 🔍
+        run: node scripts/check-markdown.js

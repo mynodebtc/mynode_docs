@@ -12,11 +12,24 @@ jobs:
         with:
           persist-credentials: false
 
+      # Runs before the build because `vuepress build` executes any <script>
+      # block found in a Markdown file during server-side rendering. Checking
+      # first means unsafe content stops the job instead of running in it.
+      - name: Check Markdown for executable content 🔍
+        run: node scripts/check-markdown.js
+
       - name: Install and Build 🔧
         run: |
           export NODE_OPTIONS=--openssl-legacy-provider
-          npm install
-          npm run docs:build
+          # --frozen-lockfile: install exactly the tree pinned in yarn.lock
+          #   (every entry carries an integrity hash) and fail if package.json
+          #   and the lockfile have drifted apart. The previous `npm install`
+          #   ignored yarn.lock entirely and re-resolved every ^ range on each
+          #   deploy, so any new release in the tree shipped straight to prod.
+          # --ignore-scripts: the only install hooks in this tree are core-js
+          #   and vuepress funding notices; neither is needed to build.
+          yarn install --frozen-lockfile --ignore-scripts
+          yarn docs:build
 
       - name: Deploy 🚀
         env:

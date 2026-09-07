@@ -11,6 +11,7 @@
     "vuepress-plugin-sitemap": "^2.3.1"
   },
   "scripts": {
+    "docs:lint": "node scripts/check-markdown.js",
     "docs:dev": "node --openssl-legacy-provider node_modules/vuepress/cli.js dev docs",
     "docs:build": "node --openssl-legacy-provider node_modules/vuepress/cli.js build docs && node docs/.vuepress/plugins/canonical.js docs/.vuepress/dist https://docs.mynodebtc.com && node docs/.vuepress/plugins/structured-data.js docs/.vuepress/dist https://docs.mynodebtc.com && mkdir -p docs/.vuepress/dist/error && cp docs/.vuepress/dist/404.html docs/.vuepress/dist/error/404.html"
   },
