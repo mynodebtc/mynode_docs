@@ -1,6 +1,6 @@
 ---
 title: "Upgrading your MyNode"
-description: "Update MyNode to the latest platform, Bitcoin, and Lightning releases using either the Premium one click update or a manual reflash of the OS image."
+description: "Update MyNode to the latest software release via the web UI or command line"
 tags:
 - "MyNode"
 - "software updates"
@@ -26,26 +26,17 @@ Once running MyNode Premium follow these steps:
 
 ## Manual Upgrade
 
-The second option is to upgrade manually via the Linux Terminal by running a few commands.
+The second option is to upgrade manually via the Linux Terminal by running a couple commands. This can be done on MyNode Premium or on MyNode Community Edition.
 
 Follow these steps to manually upgrade to the latest version:
 
-1. Open 2 Terminal windows:
-    * Terminal 1: Local PC or laptop
-    * Terminal 2: Connect to your MyNode Device ([see options](https://docs.mynodebtc.com/advanced/linux-terminal.html))
+1. Open Terminal to Device:
+    * Connect to your MyNode Device ([see options](https://docs.mynodebtc.com/advanced/linux-terminal.html))
       * Command: `ssh admin@[MyNode ip address]`
       * Default credentials: admin/bolt
-2. Clone the latest release from the git repo on your PC or laptop
-    * Run `git clone https://github.com/mynodebtc/mynode.git`
-    * Run `cd mynode`
-    * Run `git checkout tags/latest_release`
-3. Run `make rootfs`
-4. Run `make start_file_server`
-    * This will run a local HTTP server so your device can download files
-5. On the other terminal which you used to ssh into your device, run `sudo mynode-local-upgrade [pc ip address]`
-    * This will download your locally generated artifact and install it on your device
-    * Your device will automatically reboot to ensure updates take effect
-6. Optional: Run `make stop_file_server`
-    * This will stop the local HTTP server
-7. You are now running the latest version of MyNode software!
+2. Run the command to upgrade your device
+    * Run `sudo /usr/bin/mynode_upgrade.sh`
+    * Run `sudo mynode-reboot`
+3. Your device will run the upgrade script and reboot.
+4. You are now running the latest version of MyNode software!
 
