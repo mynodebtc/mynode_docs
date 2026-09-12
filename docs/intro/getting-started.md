@@ -137,7 +137,7 @@ Password: `bolt`
 From here, you can start using all the features MyNode has to offer!
 
 
-### Upgrade your Device
+## Upgrade your Device
 
 Once your device has started, you should [upgrade your device](/device/upgrading-device) to the latest version! Upgrading gives you the latest apps, features, and fixes.
 
