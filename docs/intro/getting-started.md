@@ -43,7 +43,7 @@ In general, you will need:
 
 **Download MyNode OS Image**
 
-Next, you need to download the MyNode image for your device type and [flash it to a USB thumbdrive](/advanced/flash-sd-card) according to the instructions on the download page. The device will boot from the thumbdrive into the MyNode OS!
+Next, you need to download the MyNode image for your device type and [flash it to a USB thumbdrive](/advanced/flash-sd-card) according to the instructions on the download page. The device will boot from the thumbdrive into MyNode OS!
 
 **Connect Data Drive**
 
