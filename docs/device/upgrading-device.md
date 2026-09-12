@@ -23,6 +23,12 @@ Once running MyNode Premium follow these steps:
 2. Click on the "Check for updates button" to make sure an update is available
 3. Click "Upgrade" and your device will automatically update to the latest version!
 
+<center>
+  <figure>
+    <img src="/images/upgrading-device/upgrade1.png" width="400" alt="MyNode Product Key screen with a text field, a Save Product Key button, and a Choose Community Edition button">
+  </figure>
+</center>
+
 
 ## Manual Upgrade
 
@@ -31,10 +37,10 @@ The second option is to upgrade manually via the Linux Terminal by running a cou
 Follow these steps to manually upgrade to the latest version:
 
 1. Open Terminal to Device:
-    * Connect to your MyNode Device ([see options](https://docs.mynodebtc.com/advanced/linux-terminal.html))
+    * Connect to your MyNode Device ([see options](/advanced/linux-terminal.html))
       * Command: `ssh admin@[MyNode ip address]`
-      * Default credentials: admin/bolt
-2. Run the command to upgrade your device
+      * Enter your password
+2. Run the commands to upgrade your device and reboot
     * Run `sudo /usr/bin/mynode_upgrade.sh`
     * Run `sudo mynode-reboot`
 3. Your device will run the upgrade script and reboot.
