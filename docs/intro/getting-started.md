@@ -108,7 +108,7 @@ You will be prompted to enter your product key. If you are using the Community E
   </figure>
 </center>
 
-Next, the device will begin syncing the Bitcoin Blockchain! This process can take 6+ days, depending on your device and your network bandwidth. The MyNode web interface will show you the current status of synchronization. Once the initial sync is completed, the device will automatically stay synchronized with the Bitcoin network and display the main application page.
+Next, the device will begin syncing the Bitcoin Blockchain! This process can take a while, depending on your device speed and your network bandwidth. The MyNode web interface will show you the current status of synchronization. Once the initial sync is completed, the device will automatically stay synchronized with the Bitcoin network and display the main application page.
 
 <center>
   <figure>
@@ -135,6 +135,13 @@ Password: `bolt`
 **Note:** It is recommended to [change your password](/device/changing-password).
 
 From here, you can start using all the features MyNode has to offer!
+
+
+### Upgrade your Device
+
+Once your device has started, you should [upgrade your device](/device/upgrading-device) to the latest version! Upgrading gives you the latest apps, features, and fixes.
+
+We have several simple ways to upgrade mynode described in the guide linked aboved.
 
 
 ## Next Steps
