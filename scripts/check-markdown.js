@@ -31,8 +31,9 @@ const fs = require('fs')
 const path = require('path')
 
 const ROOT = path.resolve(__dirname, '..')
-// Defaults to docs/; an explicit path argument is used by the test fixtures.
-const SCAN_DIR = process.argv[2] ? path.resolve(process.argv[2]) : path.join(ROOT, 'docs')
+// Always scans docs/ -- no CLI argument is accepted, so nothing external
+// can steer this at an arbitrary filesystem path (e.g. '../../../etc/passwd').
+const SCAN_DIR = path.join(ROOT, 'docs')
 
 // Directories that hold build output or dependencies, not authored content.
 const SKIP_DIRS = new Set(['node_modules', 'dist', '.vuepress-cache', '.temp', '.git'])
