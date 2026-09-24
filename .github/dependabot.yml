@@ -20,6 +20,11 @@ updates:
     schedule:
       interval: weekly
     open-pull-requests-limit: 5
+    ignore:
+      # 0.2.0+ is a rewrite for VuePress 2. On VuePress 1 it silently emits no
+      # Open Graph/Twitter/verification meta, and the build still passes.
+      - dependency-name: vuepress-plugin-seo
+        versions: ['>=0.2.0']
     groups:
       npm:
         patterns: ['*']
