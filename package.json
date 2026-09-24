@@ -2,11 +2,11 @@
   "name": "MyNode-docs",
   "version": "1.0.0",
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^1.5.3",
-    "@vuepress/plugin-google-analytics": "^1.8.2",
-    "@vuepress/plugin-medium-zoom": "^1.5.3",
+    "@vuepress/plugin-back-to-top": "^1.9.10",
+    "@vuepress/plugin-google-analytics": "^1.9.10",
+    "@vuepress/plugin-medium-zoom": "^1.9.10",
     "esm": "^3.2.25",
-    "vuepress": "^1.5.3",
+    "vuepress": "^1.9.10",
     "vuepress-plugin-minimal-analytics": "^0.1.4",
     "vuepress-plugin-sitemap": "^2.3.1"
   },
