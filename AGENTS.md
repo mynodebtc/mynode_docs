@@ -15,7 +15,7 @@ yarn docs:build    # build static site to docs/.vuepress/dist
 yarn docs:lint     # reject Markdown that VuePress would compile into executable code
 ```
 
-Both scripts run through `node --openssl-legacy-provider` because the bundled VuePress 1 uses webpack 4, which is incompatible with OpenSSL 3 in newer Node releases. Don't remove that flag.
+`docs:dev` and `docs:build` run through `node --openssl-legacy-provider` because the bundled VuePress 1 uses webpack 4, which is incompatible with OpenSSL 3 in newer Node releases. Don't remove that flag.
 
 The only automated check is `yarn docs:lint` (`scripts/check-markdown.js`); otherwise
 verification is building the site and checking pages render.
@@ -31,12 +31,48 @@ form); `onerror=` handlers and `javascript:` hrefs pass through verbatim.
 This matters because `docs.mynodebtc.com` is same-site with `www.mynodebtc.com`, so the
 main site's `SameSite=Lax` session cookie is sent on requests originating from the docs
 origin. `scripts/check-markdown.js` rejects these patterns and runs in CI on pull
-requests and before every deploy. Do not weaken it without reading
-`plans/markdown-safety-check.md`.
+requests and before every deploy. It also rejects:
+
+- **Frontmatter with a language tag** (`---js`, `---toml`, ...). Use a plain `---` YAML
+  fence. The frontmatter parser runs `---js` blocks as JavaScript on the build machine;
+  `config.js` also disables that engine so the build fails if the check is bypassed.
+  Don't remove that override.
+- **Any attribute whose name starts with `v-`, `:`, `@` or `#`**, including forms like
+  `v-on:click` and `@click.prevent`, because Vue compiles them into live bindings.
+- **`<component>` and any `is=` attribute**, which make Vue render a different element
+  by name.
+- **Disguised `javascript:` URLs**, including ones hidden with character codes, tabs,
+  newlines or control characters.
+
+To show any of these as an example, put it in a fenced code block. The check is a
+denylist, so review of Markdown PRs is still the main control. Treat any change to
+`scripts/check-markdown.js` or `.github/workflows/` as security-relevant; the reasons
+behind each rule are in the comments in `check-markdown.js`.
 
 ## Deployment
 
 Pushing to `master` triggers `.github/workflows/deploy.yml`, which builds the site and `rsync`s `docs/.vuepress/dist/` (with `--delete`) over SSH to the production server. Watch the Actions tab after merging — a failed build or rsync means the live site stops updating until it's fixed. Because of `--delete`, anything present on the server but missing from `dist/` gets removed on the next deploy, so any server-side file the site depends on (e.g. custom error pages) needs to be produced by the build itself, not added by hand.
+
+CI is pinned for reproducibility: Node 22 via `actions/setup-node`, and every action
+pinned to a commit SHA with a version comment. Keep new actions pinned the same way.
+Install is `yarn install --frozen-lockfile --ignore-scripts`, in CI and in `deploy.sh`.
+
+## Dependencies
+
+- Use yarn only. Don't run `npm install`; it creates a `package-lock.json` that competes
+  with `yarn.lock`. Commit `yarn.lock` together with any `package.json` change, or CI
+  fails at install.
+- Dependabot opens weekly grouped PRs for actions and npm (`.github/dependabot.yml`).
+  Those PRs only get the Markdown check, not a build, and merging deploys. Before merging
+  an npm update, build the branch, compare the pages' `<meta>` tags with the current
+  build, and look at a page in a browser.
+- `vuepress-plugin-seo` is held below 0.2.0. 0.2.0 targets VuePress 2 and on this site
+  silently drops all Open Graph, Twitter and verification tags while the build still
+  passes.
+
+## Security reports
+
+Don't open public issues for security problems. See `.github/SECURITY.md`.
 
 ## URL forms
 
