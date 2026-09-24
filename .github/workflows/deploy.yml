@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v5
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
         with:
           persist-credentials: false
 
@@ -17,6 +17,15 @@ jobs:
       # first means unsafe content stops the job instead of running in it.
       - name: Check Markdown for executable content 🔍
         run: node scripts/check-markdown.js
+
+      # Pinned so a runner-image Node bump can't silently break the
+      # webpack 4 / --openssl-legacy-provider build. 22 is what
+      # ubuntu-24.04 shipped when this was pinned and what deploys had
+      # been building on.
+      - name: Set up Node 🟢
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
+        with:
+          node-version: '22'
 
       - name: Install and Build 🔧
         run: |

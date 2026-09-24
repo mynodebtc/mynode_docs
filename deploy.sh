@@ -17,12 +17,16 @@ if [ -n "$DOCS_SSH_KEY_PATH" ]; then
   SSH_OPTS="$SSH_OPTS -i $DOCS_SSH_KEY_PATH"
 fi
 
-# Make sure deps are installed
-yarn install
+# Same install as CI (.github/workflows/deploy.yml): exactly the tree pinned
+# in yarn.lock, no package install hooks.
+yarn install --frozen-lockfile --ignore-scripts
+
+# Reject executable Markdown before the build runs it.
+yarn docs:lint
 
 # build
 rm -rf docs/.vuepress/dist
-npm run docs:build
+yarn docs:build
 
 rsync -avz --delete \
   -e "ssh $SSH_OPTS" \

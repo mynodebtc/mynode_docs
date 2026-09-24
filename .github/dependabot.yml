@@ -1,0 +1,25 @@
+# Workflow actions are pinned to commit SHAs; Dependabot bumps the SHA and
+# its version comment together. npm updates cover package.json's direct
+# dependencies and rewrite yarn.lock.
+#
+# Dependabot PRs only get the Markdown content check, which does not install
+# or build. Build locally (`yarn install --frozen-lockfile && yarn docs:build`)
+# before merging an npm bump: merging to master deploys.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns: ['*']
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      npm:
+        patterns: ['*']
