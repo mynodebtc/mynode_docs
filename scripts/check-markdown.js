@@ -39,10 +39,14 @@ const SKIP_DIRS = new Set(['node_modules', 'dist', '.vuepress-cache', '.temp', '
 
 // Tags that VuePress/Vue treat as something other than inert markup, or that
 // pull in outside content. <style> and <template> are here because VuePress
-// lifts them into the SFC the same way it lifts <script>.
+// lifts them into the SFC the same way it lifts <script>. <component> is
+// Vue's dynamic element: <component is="script"> renders a tag by name, which
+// would sidestep every entry in this list. The `is` attribute is rejected on
+// any tag for the same reason (see the attribute loop below).
 const FORBIDDEN_TAGS = [
   'script', 'style', 'template', 'iframe', 'object', 'embed',
   'base', 'form', 'meta', 'link', 'frame', 'frameset', 'portal',
+  'component',
 ]
 
 const URL_ATTRS = ['href', 'src', 'action', 'formaction', 'data', 'srcdoc', 'poster', 'xlink:href']
@@ -88,6 +92,12 @@ function stripForInterpolationChecks (text) {
   return blank(blank(text, FENCE), HTML_COMMENT)
 }
 
+// String.fromCodePoint throws past U+10FFFF; an out-of-range entity must not
+// crash the check.
+function codePoint (n) {
+  return n <= 0x10FFFF ? String.fromCodePoint(n) : '\uFFFD'
+}
+
 function lineOf (text, index) {
   let line = 1
   for (let i = 0; i < index; i++) if (text[i] === '\n') line++
@@ -100,6 +110,18 @@ function checkFile (file) {
   const findings = []
   const report = (index, rule, detail) => {
     findings.push({ file: rel, line: lineOf(raw, index), rule, detail })
+  }
+
+  // 0. Frontmatter language. gray-matter picks a parser from whatever follows
+  //    the opening `---` (`---js`, `--- javascript`, ...), and its built-in
+  //    JavaScript engine eval()s the block on the build machine. Every page
+  //    in this repo uses plain YAML, so any language tag at all is rejected.
+  //    config.js also disables that engine, so the build fails even if this
+  //    check is bypassed.
+  const fmOpen = raw.replace(/^\uFEFF/, '').match(/^---([^\n]*)/)
+  if (fmOpen && !fmOpen[1].startsWith('-') && fmOpen[1].trim() !== '') {
+    report(0, 'frontmatter-language',
+      `frontmatter fence "---${fmOpen[1].trim()}" selects a non-YAML parser. Use a plain --- fence.`)
   }
 
   const htmlText = stripForHtmlChecks(raw)
@@ -132,9 +154,20 @@ function checkFile (file) {
     }
 
     // Vue directives and bindings, which are live in the compiled template.
-    for (const a of attrs.matchAll(/[\s"'](v-[a-z][a-z-]*|@[a-z][a-z-]*|:[a-z][a-z-]*)\s*=/gi)) {
-      report(m.index + m[2].length + a.index, 'vue-directive',
-        `Vue binding "${a[1]}" on <${tag}> is compiled and evaluated.`)
+    // Tokenizes attributes so only names are tested (a value like
+    // href="#top" must not match), then rejects on the name prefix alone:
+    // argument and modifier forms (`v-on:x`, `v-bind:x`, `@x.y`, `:x.y`), the
+    // `#` slot shorthand, and valueless directives are all caught without
+    // enumerating forms.
+    for (const a of attrs.matchAll(/([^\s"'>\/=]+)(?:\s*=\s*(?:"[^"]*"|'[^']*'|[^\s"'>]+))?/g)) {
+      const at = m.index + m[2].length + 1 + a.index
+      if (/^(?:v-|[:@#])/i.test(a[1])) {
+        report(at, 'vue-directive',
+          `Vue binding "${a[1]}" on <${tag}> is compiled and evaluated.`)
+      } else if (a[1].toLowerCase() === 'is') {
+        report(at, 'vue-is',
+          `"is" on <${tag}> makes Vue render a different element by name.`)
+      }
     }
 
     // URL-bearing attributes pointing at an executable scheme.
@@ -142,7 +175,15 @@ function checkFile (file) {
       const name = a[1].toLowerCase()
       if (!URL_ATTRS.includes(name)) continue
       const value = a[3] !== undefined ? a[3] : a[4] !== undefined ? a[4] : a[5] || ''
-      const decoded = value.replace(/&#(\d+);?/g, (_, d) => String.fromCharCode(+d)).trim()
+      // Decode numeric entities, then drop every control character and
+      // space. Browsers strip tab/CR/LF anywhere in a URL and C0 controls
+      // at the ends before reading the scheme, so "java<TAB>script:" still
+      // runs. Removing all of \x00-\x20 is stricter than browsers, which is
+      // the safe direction; no legitimate scheme contains any of them.
+      const decoded = value
+        .replace(/&#x([0-9a-f]+);?/gi, (_, h) => codePoint(parseInt(h, 16)))
+        .replace(/&#(\d+);?/g, (_, d) => codePoint(+d))
+        .replace(/[\x00-\x20]+/g, '')
       if (DANGEROUS_URI.test(decoded) && !SAFE_DATA_URI.test(decoded)) {
         report(m.index + m[2].length + a.index, 'dangerous-uri',
           `${name}="${decoded.slice(0, 60)}" uses an executable URI scheme.`)

@@ -1,4 +1,14 @@
 const path = require('path')
+const matter = require('gray-matter')
+
+// gray-matter (VuePress's frontmatter parser) eval()s any frontmatter fenced
+// as `---js` / `---javascript` on the build machine. Pages here use YAML only;
+// replacing the shared engine makes such a page fail the build instead of
+// running. scripts/check-markdown.js rejects these fences before the build too.
+matter.engines.javascript = {
+  parse () { throw new Error('JavaScript frontmatter is disabled (see docs/.vuepress/config.js)') },
+  stringify () { throw new Error('JavaScript frontmatter is disabled') },
+}
 
 const siteUrl = 'https://docs.mynodebtc.com'
 const defaultSocialImage = '/images/og-image-docs.png'
