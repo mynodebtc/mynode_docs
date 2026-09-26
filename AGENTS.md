@@ -13,12 +13,17 @@ yarn install       # install deps
 yarn docs:dev      # serve locally with hot reload (port 8080, or next available)
 yarn docs:build    # build static site to docs/.vuepress/dist
 yarn docs:lint     # reject Markdown that VuePress would compile into executable code
+yarn docs:check    # render every page and check what Vue will compile against an allowlist
 ```
 
 `docs:dev` and `docs:build` run through `node --openssl-legacy-provider` because the bundled VuePress 1 uses webpack 4, which is incompatible with OpenSSL 3 in newer Node releases. Don't remove that flag.
 
-The only automated check is `yarn docs:lint` (`scripts/check-markdown.js`); otherwise
-verification is building the site and checking pages render.
+There are two automated checks. `yarn docs:lint` (`scripts/check-markdown.js`) reads the
+raw Markdown and needs no dependencies. `yarn docs:check` (`scripts/check-templates.js`)
+renders every page with the site's own markdown-it setup and parses the result with
+Vue's template compiler, then rejects any tag, attribute or URL scheme not on its
+allowlist. `docs:build` runs `docs:check` first. Otherwise verification is building the
+site and checking pages render.
 
 ## Markdown is not inert
 
@@ -58,7 +63,12 @@ value used to hide the rest of the tag from the check. If the check can't be sur
 markdown-it reads a fence (unclosed, inside an HTML block, a `:::` line inside, ...), it
 stops treating later fences in that file as inert.
 
-To show any of these as an example, put it in a fenced code block. The check is a
+`docs:check` sees what Vue will actually compile, so it catches what the Markdown
+linter has to guess at. If a page legitimately needs a new tag or attribute, add it to
+the allowlist in `scripts/check-templates.js` in the same PR. In pull requests it runs
+with the base branch's `.vuepress/` and dependencies, with only the PR's pages swapped in.
+
+To show any of these as an example, put it in a fenced code block. The linter is a
 denylist, so review of Markdown PRs is still the main control. Treat any change to
 `scripts/check-markdown.js` or `.github/workflows/` as security-relevant; the reasons
 behind each rule are in the comments in `check-markdown.js`.

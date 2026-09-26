@@ -32,3 +32,39 @@ jobs:
 
       - name: Check Markdown for executable content 🔍
         run: node scripts/check-markdown.js
+
+  # Renders every page with the site's markdown-it setup and checks what Vue
+  # will compile against an allowlist (scripts/check-templates.js). That needs
+  # dependencies and runs docs/.vuepress/config.js, so everything executed here
+  # comes from the BASE branch: its scripts, lockfile and .vuepress/. Only the
+  # pull request's Markdown pages are swapped in, and those are rendered and
+  # parsed, never run. Changes to .vuepress/ itself are code and get reviewed
+  # as code.
+  template-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout base branch tooling 🛎️
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.base.sha || github.sha }}
+          persist-credentials: false
+
+      - name: Checkout pages under review 🛎️
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          path: pr
+          persist-credentials: false
+
+      - name: Swap in the pages under review 📄
+        run: rsync -a --delete --exclude .vuepress pr/docs/ docs/
+
+      - name: Set up Node 🟢
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+
+      - name: Install base branch dependencies 🔧
+        run: yarn install --frozen-lockfile --ignore-scripts
+
+      - name: Check compiled page templates 🔍
+        run: node scripts/check-templates.js
