@@ -53,6 +53,10 @@ module.exports = {
     }
   },
   head: [
+    // The two inline <script>s below (theme snippet and gtag config) are
+    // allowed by sha256 hash in the site's Content-Security-Policy, which is
+    // set on the nginx proxy outside this repo. Changing a single character of
+    // either one gets it blocked in production until the hash is updated there.
     // Must be first — sets data-theme before any CSS renders to prevent flash.
     ['script', {}, `(function(){var t=localStorage.getItem('mn-theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');})()`],
     ['meta', { name: 'theme-color', content: '#F08E20' }],

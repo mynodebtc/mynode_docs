@@ -44,6 +44,20 @@ requests and before every deploy. It also rejects:
 - **Disguised `javascript:` URLs**, including ones hidden with character codes, tabs,
   newlines or control characters.
 
+- **Anything after an opening code fence except a language name** (and an optional
+  `{1,3}` line range). VuePress pastes that text into an HTML attribute unescaped.
+- **`<<<` snippet imports**, which embed a file from the build machine into the page.
+- **Files in `.vuepress/public/` that aren't on the extension allowlist** (`.html`,
+  `.php`, `.htaccess`, ...), and **SVGs anywhere under `docs/`** that contain script,
+  event handlers, `<foreignObject>` or links other than `#id`. An SVG opened directly
+  runs as a page on the docs origin, and GitHub shows it in a diff as a picture.
+
+Only the inside of a fenced code block counts as inert. HTML comments and inline code
+are checked like everything else, because a `<!--` or a backtick inside an attribute
+value used to hide the rest of the tag from the check. If the check can't be sure how
+markdown-it reads a fence (unclosed, inside an HTML block, a `:::` line inside, ...), it
+stops treating later fences in that file as inert.
+
 To show any of these as an example, put it in a fenced code block. The check is a
 denylist, so review of Markdown PRs is still the main control. Treat any change to
 `scripts/check-markdown.js` or `.github/workflows/` as security-relevant; the reasons
