@@ -14,6 +14,7 @@ yarn docs:dev      # serve locally with hot reload (port 8080, or next available
 yarn docs:build    # build static site to docs/.vuepress/dist
 yarn docs:lint     # reject Markdown that VuePress would compile into executable code
 yarn docs:check    # render every page and check what Vue will compile against an allowlist
+yarn deps:refresh  # update every locked dependency within its range, then build
 ```
 
 `docs:dev` and `docs:build` run through `node --openssl-legacy-provider` because the bundled VuePress 1 uses webpack 4, which is incompatible with OpenSSL 3 in newer Node releases. Don't remove that flag.
@@ -90,6 +91,19 @@ Install is `yarn install --frozen-lockfile --ignore-scripts`, in CI and in `depl
   Those PRs only get the Markdown check, not a build, and merging deploys. Before merging
   an npm update, build the branch, compare the pages' `<meta>` tags with the current
   build, and look at a page in a browser.
+- Dependabot's version updates only raise the packages listed in `package.json`. Yarn
+  keeps every other `yarn.lock` entry as long as it still satisfies its range, so the
+  ~1,200 transitive dependencies don't move on their own and pile up security alerts.
+  Every few months, and whenever the alert list grows, run `yarn deps:refresh`. It
+  runs `yarn upgrade` (every locked version moves to the newest its range allows;
+  `package.json` is not touched) and then builds. Before committing the new
+  `yarn.lock`, compare `docs/.vuepress/dist` with a build from the old lockfile: the
+  same files, the same `<meta>` tags, and in the HTML only expected changes such as
+  code highlighting. Merge it on its own PR, since merging deploys.
+- Alerts that remain after a refresh are capped by VuePress 1's own dependency ranges
+  (VuePress 1 is end-of-life). Pin a patched version with `resolutions` in
+  `package.json` only if it keeps the same API; `toml` is pinned this way. The rest
+  mostly sit in the dev server or in code the build never runs.
 - `vuepress-plugin-seo` is held below 0.2.0. 0.2.0 targets VuePress 2 and on this site
   silently drops all Open Graph, Twitter and verification tags while the build still
   passes.
