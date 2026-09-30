@@ -18,5 +18,8 @@
   },
   "dependencies": {
     "vuepress-plugin-seo": "^0.1.4"
+  },
+  "resolutions": {
+    "toml": "^4.1.2"
   }
 }
