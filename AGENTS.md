@@ -101,9 +101,24 @@ Install is `yarn install --frozen-lockfile --ignore-scripts`, in CI and in `depl
   same files, the same `<meta>` tags, and in the HTML only expected changes such as
   code highlighting. Merge it on its own PR, since merging deploys.
 - Alerts that remain after a refresh are capped by VuePress 1's own dependency ranges
-  (VuePress 1 is end-of-life). Pin a patched version with `resolutions` in
-  `package.json` only if it keeps the same API; `toml` is pinned this way. The rest
-  mostly sit in the dev server or in code the build never runs.
+  (VuePress 1 is end-of-life). `resolutions` in `package.json` forces patched versions
+  past those ranges where the newer version keeps the API its caller uses: `toml`,
+  `loader-utils` (under `vuepress-html-webpack-plugin`, which also drops `json5` 0.5),
+  `serialize-javascript`, `linkify-it`, `node-forge`, `esbuild` (declared by
+  `@vuepress/core` but never loaded), `highlight.js` (types only), and `form-data`,
+  `tough-cookie` and `qs` under `request` (Algolia search client, unused here). A
+  path such as `**/request/qs` needs the `**/` prefix or yarn ignores it. Before
+  adding one, check the new version still loads with `require()` (several are now
+  ES-module-only, e.g. `decode-uri-component` 0.5) and exports the same shape
+  (`nth-check` 2 doesn't), then build and compare. `serialize-javascript` 7 needs
+  Node 20+, so `deploy.sh` does too.
+- What is still flagged after that has no fix, or only one in a major version that
+  VuePress 1 can't use: the dev server (`webpack-dev-server`, `webpack-dev-middleware`,
+  `http-proxy-middleware`, `ip`, `uuid`), the CSS pipeline (`postcss` 7, `svgo` 1,
+  `nth-check`), `markdown-it` 8, globbing (`braces`, `micromatch`), Vue 2 itself,
+  `html-minifier`, `request`, `got`, `elliptic` and `decode-uri-component`. Dismiss
+  those in the Dependabot UI rather than forcing them. Removing them needs a move off
+  VuePress 1.
 - `vuepress-plugin-seo` is held below 0.2.0. 0.2.0 targets VuePress 2 and on this site
   silently drops all Open Graph, Twitter and verification tags while the build still
   passes.
