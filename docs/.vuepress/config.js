@@ -162,6 +162,12 @@ module.exports = {
           "/networking/tor",
           "/advanced/find-device-ip",
           {
+            title: "Firewall",
+            children: [
+              "/networking/reachable-from-internet",
+            ]
+          },
+          {
             title: "Remote Access via Tor",
             children: [
               "/tor/setup",
