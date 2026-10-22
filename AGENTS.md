@@ -95,11 +95,12 @@ Install is `yarn install --frozen-lockfile --ignore-scripts`, in CI and in `depl
   keeps every other `yarn.lock` entry as long as it still satisfies its range, so the
   ~1,200 transitive dependencies don't move on their own and pile up security alerts.
   Every few months, and whenever the alert list grows, run `yarn deps:refresh`. It
-  runs `yarn upgrade` (every locked version moves to the newest its range allows;
-  `package.json` is not touched) and then builds. Before committing the new
-  `yarn.lock`, compare `docs/.vuepress/dist` with a build from the old lockfile: the
-  same files, the same `<meta>` tags, and in the HTML only expected changes such as
-  code highlighting. Merge it on its own PR, since merging deploys.
+  runs `yarn upgrade` (every locked version moves to the newest its range allows),
+  puts `package.json` back, because yarn 1 copies nested `resolutions` entries into
+  `dependencies` (see `scripts/refresh-deps.js`), and then builds. Before committing
+  the new `yarn.lock`, compare `docs/.vuepress/dist` with a build from the old
+  lockfile: the same files, the same `<meta>` tags, and in the HTML only expected
+  changes such as code highlighting. Merge it on its own PR, since merging deploys.
 - Alerts that remain after a refresh are capped by VuePress 1's own dependency ranges
   (VuePress 1 is end-of-life). `resolutions` in `package.json` forces patched versions
   past those ranges where the newer version keeps the API its caller uses: `toml`,
@@ -114,11 +115,11 @@ Install is `yarn install --frozen-lockfile --ignore-scripts`, in CI and in `depl
   Node 20+, so `deploy.sh` does too.
 - What is still flagged after that has no fix, or only one in a major version that
   VuePress 1 can't use: the dev server (`webpack-dev-server`, `webpack-dev-middleware`,
-  `http-proxy-middleware`, `ip`, `uuid`), the CSS pipeline (`postcss` 7, `svgo` 1,
-  `nth-check`), `markdown-it` 8, globbing (`braces`, `micromatch`), Vue 2 itself,
-  `html-minifier`, `request`, `got`, `elliptic` and `decode-uri-component`. Dismiss
-  those in the Dependabot UI rather than forcing them. Removing them needs a move off
-  VuePress 1.
+  `http-proxy-middleware`, `ip`, `uuid`), the CSS pipeline (`postcss` 7,
+  `postcss-selector-parser` 3 and 6, `svgo` 1, `nth-check`), `markdown-it` 8, globbing
+  (`braces`, `micromatch`), Vue 2 itself, `html-minifier`, `request`, `got`, `elliptic`
+  and `decode-uri-component`. Dismiss those in the Dependabot UI rather than forcing
+  them. Removing them needs a move off VuePress 1.
 - `vuepress-plugin-seo` is held below 0.2.0. 0.2.0 targets VuePress 2 and on this site
   silently drops all Open Graph, Twitter and verification tags while the build still
   passes.
