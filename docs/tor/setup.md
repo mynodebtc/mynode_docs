@@ -63,7 +63,7 @@ To find the proper Onion URL for a service, open the Tor information page on you
 
 <center>
   <figure>
-    <img src="/images/remote-access-tor/setup-tor-access-2.png" alt="MyNode Tor page showing Bitcoin and Lightning as Tor Enabled, with a Show Onion URLs button above a table of services and their ports" style="width: 300px">
+    <img src="/images/remote-access-tor/setup-tor-access-2.png" alt="MyNode Tor page showing Bitcoin and Lightning as Tor Enabled, the Tor Remote Access switch, and a table of services with their onion addresses and ports" style="width: 300px">
   </figure>
 </center>
 

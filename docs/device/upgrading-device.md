@@ -25,7 +25,7 @@ Once running MyNode Premium follow these steps:
 
 <center>
   <figure>
-    <img src="/images/upgrading-device/upgrade1.png" width="400" alt="MyNode Product Key screen with a text field, a Save Product Key button, and a Choose Community Edition button">
+    <img src="/images/upgrading-device/upgrade1.png" width="400" alt="Version section of the MyNode settings page showing a newer Latest Version, with Upgrade and See Changes buttons">
   </figure>
 </center>
 

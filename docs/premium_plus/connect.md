@@ -67,7 +67,7 @@ This is showing "N/A" for the Last Update because the token has not been used on
 
 ## Paste Access Token in Device
 
-Now, copy your Access Token and navigate to the main Premium+ page on your node. The link is available in the Networking section on the home page.
+Now, copy your Access Token and navigate to the main Premium+ page on your node. The link is the Premium+ tile in the Remote Access section of the home page.
 
 <center>
   <figure>

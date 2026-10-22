@@ -64,7 +64,7 @@ The name of the icon should be **\<short_name\>.png**.
 
 <center>
 
-![RTL app tile](/images/add-app/app-tile.png)
+![RTL app tile with a green status dot and Open and Info buttons](/images/add-app/app-tile.png)
 
 </center>
 

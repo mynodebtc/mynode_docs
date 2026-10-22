@@ -16,7 +16,7 @@ First, make sure you have created a Lightning wallet and from the main MyNode ho
 
 <center>
   <figure>
-    <img src="/images/lightning/pair-wallet-1.png" alt="Core Services section of the MyNode home page with the QR code icon on the Lightning tile highlighted">
+    <img src="/images/lightning/pair-wallet-1.png" alt="Bitcoin and Lightning tiles on the MyNode home page with the QR code icon on the Lightning tile highlighted">
   </figure>
 </center>
 

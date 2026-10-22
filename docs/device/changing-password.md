@@ -16,7 +16,7 @@ First, go to the settings page. Next, fill out your current password. If it has 
 
 <center>
   <figure>
-    <img src="/images/device/password.png" alt="password" style="width: 500px">
+    <img src="/images/device/password.png" alt="Change Password section of the MyNode settings page with Current Password, Password and Repeat Password fields" style="width: 500px">
   </figure>
 </center>
 

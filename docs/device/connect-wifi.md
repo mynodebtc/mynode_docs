@@ -80,11 +80,11 @@ inet6 <LOCAL-IPv6>  prefixlen 64  scopeid 0x20<link>
 
 ## Reconfigure LND for new IP
 
-If you are using apps like Zap to remotely access your lightning node, you might have to regenerate the TLS certificates. To do so, go to the LND page of your MyNode and click on "regenerate" button in the row of "TLS Certification".
+If you are using apps like Zap to remotely access your lightning node, you might have to regenerate the TLS certificates. To do so, go to the LND page of your MyNode and click on the "regenerate" button in the "TLS Certificate" row.
 
 <center>
 
-![LND regenerate certificates](/images/wifi/wifi-3.png)
+![Lightning box on the LND page with the regenerate button in the TLS Certificate row highlighted](/images/wifi/wifi-3.png)
 
 </center>
 

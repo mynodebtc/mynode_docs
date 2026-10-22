@@ -13,7 +13,7 @@ If your device is displaying a warning indicating the SD card is getting full, t
 
 <center>
   <figure>
-    <img src="/images/troubleshooting/warning_sd_card_full_1.png" alt="SD Card Full Error">
+    <img src="/images/troubleshooting/warning_sd_card_full_1.png" alt="Warning on the MyNode home page that the OS drive is 96% full and free space is running low">
   </figure>
 </center>
 
@@ -24,7 +24,7 @@ First, check the app usage by visiting the Settings page. In the Status section,
 
 <center>
   <figure>
-    <img src="/images/troubleshooting/warning_sd_card_full_2.png" alt="View SD card usage">
+    <img src="/images/troubleshooting/warning_sd_card_full_2.png" alt="Status section with the Show Details button next to OS Disk Usage highlighted">
   </figure>
 </center>
 
@@ -32,7 +32,7 @@ You should see details about the usage of a variety of folders, like this. Note 
 
 <center>
   <figure>
-    <img src="/images/troubleshooting/warning_sd_card_full_3.png" alt="View SD card usage">
+    <img src="/images/troubleshooting/warning_sd_card_full_3.png" alt="OS Disk Usage details listing the size of each storage folder">
   </figure>
 </center>
 
@@ -40,11 +40,11 @@ You should see details about the usage of a variety of folders, like this. Note 
 
 If you have any apps that you are not using, you can uninstall them and save a lot of space. Some that require the most space are RTL, Thunderhub, Caravan, and JoinMarket.
 
-To uninstall an app, click on the Applications button on the Home page. Then, click on the Uninstall button next to the app you would like to remove.
+To uninstall an app, click **Manage** on the Applications tile on the Home page. Then, click on the Uninstall button next to the app you would like to remove.
 
 <center>
   <figure>
-    <img src="/images/troubleshooting/warning_sd_card_full_4.png" alt="Uninstall App">
+    <img src="/images/troubleshooting/warning_sd_card_full_4.png" alt="Manage Applications page with an Uninstall button highlighted">
   </figure>
 </center>
 

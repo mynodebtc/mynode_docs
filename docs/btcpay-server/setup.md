@@ -17,7 +17,7 @@ tags:
 
 <div style="display: flex;">
 <img src="/images/btcpay-server/disabled.png" style="margin: auto;" alt="BTCPay Server app tile on the MyNode home page in its disabled state, showing an Enable button">
-<img src="/images/btcpay-server/enabled.png" style="margin: auto;" alt="BTCPay Server app tile once enabled, showing a green status dot with BTCPay Server and Disable buttons">
+<img src="/images/btcpay-server/enabled.png" style="margin: auto;" alt="BTCPay Server app tile once enabled, showing a green status dot with Open and Info buttons">
 </div>
 
 ## Create an admin account

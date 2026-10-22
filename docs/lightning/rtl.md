@@ -24,7 +24,7 @@ Once a Lightning wallet [has been created](/lightning/create) on your device, th
 
 <center>
   <figure>
-    <img src="/images/lightning/RTL/RTL_enable_button_comp.png" alt="RTL enable button" style="width: 400px">
+    <img src="/images/lightning/RTL/RTL_enable_button_comp.png" alt="MyNode home page with the Open button on the RTL app tile highlighted" style="width: 400px">
   </figure>
 </center>
 

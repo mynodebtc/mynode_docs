@@ -54,7 +54,7 @@ Next, on your mobile device, visit the MyNode web GUI while you are connected to
 
 <center>
   <figure>
-    <img src="/images/remote-access-vpn/vpn3.png" alt="MyNode web interface on a phone with the Info button under the VPN tile highlighted" class="app_screenshot">
+    <img src="/images/remote-access-vpn/vpn3.png" alt="Remote Access section of the MyNode home page with the Info button on the VPN tile highlighted" class="app_screenshot">
   </figure>
 </center>
 

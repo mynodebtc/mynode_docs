@@ -22,7 +22,7 @@ Next, click on the Tor Services link under the Tor app on the main user interfac
 
 <center>
   <figure>
-    <img src="/images/remote-access-tor/web-gui-1.png" alt="MyNode Tor page with the Show Onion URLs button above a table listing myNode Web, LND Hub, and other services with their ports" style="width: 300px;">
+    <img src="/images/remote-access-tor/web-gui-1.png" alt="Tor Onion Addresses section of the MyNode Tor page with the Show Onion URLs button highlighted, above a table listing MyNode Web, LND Hub, and other services with their ports" style="width: 300px;">
   </figure>
 </center>
 
