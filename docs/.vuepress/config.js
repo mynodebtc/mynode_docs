@@ -99,11 +99,6 @@ module.exports = {
         children: [
           ["/intro/introduction", 'Introduction'],
           ["/intro/getting-started", 'Getting Started'],
-        ]
-      },
-      {
-        title: "Community Guides",
-        children: [
           ["/videos/guides", 'Video Guides'],
           ["/community/guides", 'Community Guides'],
         ]
@@ -124,37 +119,17 @@ module.exports = {
           "/bitcoin/bitcoin-status",
           "/bitcoin/manage",
           "/bitcoin/using-existing-bitcoin-data",
-          "/bitcoin/troubleshoot"
-        ]
-      },
-      {
-        title: "Bitcoin Apps",
-        children: [
-          "/electrum/electrum",
+          "/bitcoin/troubleshoot",
           {
-            title: "Bitcoin Explorers",
+            title: "Apps",
             children: [
-                "/bitcoin/explorer",
-                "/bitcoin/mempool",
-            ]
-          },
-          {
-            title: "Stores and Crowdfunding",
-            children: [
-                "/btcpay-server/setup.md",
-            ]
-          },
-          {
-            title: "Mixing",
-            children: [
+              "/electrum/electrum",
+              "/bitcoin/explorer",
+              "/bitcoin/mempool",
+              "/btcpay-server/setup.md",
               "/coinjoin/joinmarket",
-            ]
-          },
-          {
-            title: "Multisig",
-            children: [
-                //"/multisig/caravan", // Not ready
-                "/multisig/specter",
+              //"/multisig/caravan", // Not ready
+              "/multisig/specter",
             ]
           }
         ]
@@ -167,46 +142,40 @@ module.exports = {
           "/lightning/lnd-alias",
           "/lightning/pairing-wallets",
           "/lightning/lightning-terminal",
-        ]
-      },
-      {
-        title: "Lightning Apps",
-        children: [
-            '/lightning/alby',
-            '/lightning/bluewallet',
-            '/lightning/rtl',
-            '/lightning/lnbits',
-            '/lightning/thunderhub',
-            '/lightning/zap',
-            '/lightning/zeus',
+          {
+            title: "Apps",
+            children: [
+              '/lightning/alby',
+              '/lightning/bluewallet',
+              '/lightning/rtl',
+              '/lightning/lnbits',
+              '/lightning/thunderhub',
+              '/lightning/zap',
+              '/lightning/zeus',
+            ]
+          }
         ]
       },
       {
         title: "Networking",
         children: [
           "/networking/tor",
-          "/device/connect-wifi",
           "/advanced/find-device-ip",
-        ]
-      },
-      {
-        title: "Remote Access",
-        children: [
-            {
-                title: "Remote Access via Tor",
-                children: [
-                  "/tor/setup",
-                  "/tor/web-gui",
-                  "/tor/electrum",
-                  ["/tor/zeus", 'Zeus Wallet via Tor'],
-                ]
-              },
-              {
-                title: "Remote Access via VPN",
-                children: [
-                  "/vpn/setup",
-                ]
-              },
+          {
+            title: "Remote Access via Tor",
+            children: [
+              "/tor/setup",
+              "/tor/web-gui",
+              "/tor/electrum",
+              ["/tor/zeus", 'Zeus Wallet via Tor'],
+            ]
+          },
+          {
+            title: "Remote Access via VPN",
+            children: [
+              "/vpn/setup",
+            ]
+          },
         ]
       },
       {
