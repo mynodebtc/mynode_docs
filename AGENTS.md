@@ -113,13 +113,6 @@ Install is `yarn install --frozen-lockfile --ignore-scripts`, in CI and in `depl
   ES-module-only, e.g. `decode-uri-component` 0.5) and exports the same shape
   (`nth-check` 2 doesn't), then build and compare. `serialize-javascript` 7 needs
   Node 20+, so `deploy.sh` does too.
-- What is still flagged after that has no fix, or only one in a major version that
-  VuePress 1 can't use: the dev server (`webpack-dev-server`, `webpack-dev-middleware`,
-  `http-proxy-middleware`, `ip`, `uuid`), the CSS pipeline (`postcss` 7,
-  `postcss-selector-parser` 3 and 6, `svgo` 1, `nth-check`), `markdown-it` 8, globbing
-  (`braces`, `micromatch`), Vue 2 itself, `html-minifier`, `request`, `got`, `elliptic`
-  and `decode-uri-component`. Dismiss those in the Dependabot UI rather than forcing
-  them. Removing them needs a move off VuePress 1.
 - `vuepress-plugin-seo` is held below 0.2.0. 0.2.0 targets VuePress 2 and on this site
   silently drops all Open Graph, Twitter and verification tags while the build still
   passes.
