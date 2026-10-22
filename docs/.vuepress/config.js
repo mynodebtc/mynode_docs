@@ -94,7 +94,6 @@ module.exports = {
     logo: "/images/logo.png",
     sidebar: [
       {
-        collapsable: false,
         title: "Getting Started",
         children: [
           ["/intro/introduction", 'Introduction'],
@@ -121,7 +120,7 @@ module.exports = {
           "/bitcoin/using-existing-bitcoin-data",
           "/bitcoin/troubleshoot",
           {
-            title: "Apps",
+            title: "Bitcoin Apps",
             children: [
               "/electrum/electrum",
               "/bitcoin/explorer",
@@ -143,7 +142,7 @@ module.exports = {
           "/lightning/pairing-wallets",
           "/lightning/lightning-terminal",
           {
-            title: "Apps",
+            title: "Lightning Apps",
             children: [
               '/lightning/alby',
               '/lightning/bluewallet',
