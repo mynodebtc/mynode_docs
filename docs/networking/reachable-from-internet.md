@@ -80,3 +80,5 @@ A few details:
 Earlier versions of MyNode accepted connections from any address on every service port. After upgrading, only the services listed above do.
 
 If you forwarded a port on your router to reach a service that is not on that list, for example Mempool or RTL, it stops working from outside your home after the upgrade. Either select it under **Reachable From the Internet**, or switch to reaching it over [Tor](/tor/web-gui), MyNode's [VPN](/vpn/setup), or Tailscale.
+
+If you reach a web app by your own domain name, also add that name under [Allowed Host Names](/networking/allowed-host-names).

@@ -165,6 +165,7 @@ module.exports = {
             title: "Firewall",
             children: [
               "/networking/reachable-from-internet",
+              "/networking/allowed-host-names",
             ]
           },
           {
