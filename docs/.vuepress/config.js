@@ -193,7 +193,7 @@ module.exports = {
       {
         title: "Advanced",
         children: [
-          "/advanced/flash-sd-card",
+          "/advanced/flash-os-drive",
           "/advanced/linux-terminal",
           "/advanced/customize-config",
           "/advanced/clone-tool",
