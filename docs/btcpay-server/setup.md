@@ -63,6 +63,7 @@ tags:
 - Enter the name of the subdomain, eg. store
 - Enter your public IP address as the value
 - Wait for the default TTL value
+- On your MyNode, add the name (store.awesome.com) under Settings > Firewall > Allowed Host Names. Without it, the name shows a 421 error instead of your store. See [Allowed Host Names](/networking/allowed-host-names).
 - Browse to "https://store.awesome.com", it should open the homepage or login page of your BTCPay server
 - To open the Point of Sale app, go to Apps page and click on "View" button. You should see the default shop as seen below.
 
