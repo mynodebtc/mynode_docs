@@ -70,7 +70,7 @@ function getStructuredData(host) {
         ],
       },
     ],
-    'advanced/flash-sd-card.html': [
+    'advanced/flash-os-drive.html': [
       {
         '@context': 'https://schema.org',
         '@type': 'HowTo',
