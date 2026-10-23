@@ -1,6 +1,6 @@
 # MyNode documentation
 
-View live docs at https://mynodebtc.github.io/
+View live docs at https://docs.mynodebtc.com/
 
 Community-built documentation for [MyNode](https://mynodebtc.com/) - a neat way to run a Bitcoin and Lightning node, and many more related applications.
 
@@ -68,10 +68,7 @@ Follow the usual route of forking and submitting PRs to suggest changes. This is
 
 ## Deploy
 
-Once changes are merged into master, either directly or through a pull request, they will kick off a GitHub Action. This action will automatically build and deploy the latest changes to https://mynodebtc.github.io/
-
-The changes are automatically deployed by pushing a copy of the built files to the following repo:
-https://github.com/mynodebtc/mynodebtc.github.io
+Once changes are merged into master, either directly or through a pull request, they will kick off a GitHub Action. This action will automatically build and deploy the latest changes to https://docs.mynodebtc.com/
 
 Changes may take a minute or two before they are live.
 
