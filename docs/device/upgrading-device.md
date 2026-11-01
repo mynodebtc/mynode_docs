@@ -1,6 +1,6 @@
 ---
 title: "Upgrading your MyNode"
-description: "Update MyNode to the latest software release via the web UI or command line"
+description: "Update MyNode to the latest software release via the web interface, the command line, or by re-flashing"
 tags:
 - "MyNode"
 - "software updates"
@@ -9,19 +9,17 @@ tags:
 ---
 
 # Upgrading your MyNode
-There are two main options for upgrading your MyNode device.
+There are three ways to upgrade your MyNode device.
 
-## One Click Update
+## Upgrading via the Web Interface
 
-<i>Premium Feature</i>
+<i>Premium</i>
 
-The first and easiest option to upgrade your MyNode is to purchase MyNode Premium (included if you purchased a device). You can see all your options on the [Order Now](https://mynodebtc.com/order_now) page.
+MyNode Premium is included if you purchased a device. You can see all your options on the [Order Now](https://mynodebtc.com/order_now) page.
 
-Once running MyNode Premium follow these steps:
-
-1. Go to the settings page
-2. Click on the "Check for updates button" to make sure an update is available
-3. Click "Upgrade" and your device will automatically update to the latest version!
+1. Open your MyNode device's Settings page.
+2. Click **Check for updates** to make sure the new version is available.
+3. Click **Upgrade**. Your device will upgrade and reboot.
 
 <center>
   <figure>
@@ -29,20 +27,47 @@ Once running MyNode Premium follow these steps:
   </figure>
 </center>
 
+## Upgrading via Command Line
 
-## Manual Upgrade
+<i>Community Edition and Premium</i>
 
-The second option is to upgrade manually via the Linux Terminal by running a couple commands. This can be done on MyNode Premium or on MyNode Community Edition.
+1. Connect to your device over SSH from a [terminal](/advanced/linux-terminal.html), and enter your MyNode password when prompted. If `mynode.local` doesn't work, use your device's IP address instead.
 
-Follow these steps to manually upgrade to the latest version:
+   ```
+   ssh admin@mynode.local
+   ```
 
-1. Open Terminal to Device:
-    * Connect to your MyNode Device ([see options](/advanced/linux-terminal.html))
-      * Command: `ssh admin@[MyNode ip address]`
-      * Enter your password
-2. Run the commands to upgrade your device and reboot
-    * Run `sudo /usr/bin/mynode_upgrade.sh`
-    * Run `sudo mynode-reboot`
-3. Your device will run the upgrade script and reboot.
-4. You are now running the latest version of MyNode software!
+2. Run the upgrade. It can take a while, so stay connected until it finishes and you're back at the command prompt.
 
+   ```
+   sudo /usr/bin/mynode_upgrade.sh
+   ```
+
+3. Reboot your device.
+
+   ```
+   sudo mynode-reboot
+   ```
+
+4. After it restarts, reconnect and confirm the version is the one you upgraded to.
+
+   ```
+   cat /usr/share/mynode/version
+   ```
+
+## Upgrading by Re-flashing your SD Card or OS Drive
+
+<i>Community Edition and Premium</i>
+
+You can also write a fresh copy of the latest MyNode image to your SD card, or to your OS drive on a PC. Your Bitcoin and Lightning data is saved on the external drive and is not lost, but some apps may need to be re-installed.
+
+1. Shut down your device using the button on the Settings page.
+2. Remove the SD card or OS drive and flash it with the latest image from the [download page](https://mynodebtc.com/download). See the [flashing guide](/advanced/flash-os-drive.html) for details.
+3. Put the SD card or OS drive back in your device and power it on.
+4. Log in with the default password, `bolt`, and change it. Re-flashing resets your password, and your device may get a new IP address.
+
+## After Upgrading
+
+Check your device's home page and follow any warnings shown there.
+
+If something doesn't look right, see [My Device did not Upgrade Properly](/troubleshooting/device-did-not-upgrade.html). If you need help, please [contact support](https://mynodebtc.com/support).
