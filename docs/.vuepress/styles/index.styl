@@ -562,10 +562,18 @@ div[class*='language-'],
   border 1px solid var(--mn-pre-border) !important
   border-radius 12px !important
 
+// The theme's margin on <pre> sits inside the wrapper's background, so it reads
+// as padding. Move it to the wrapper.
+div[class*='language-']
+  margin 0.85rem 0 !important
+
 div[class*='language-'] pre
   background transparent !important
   border none !important
   border-radius 0 !important
+  margin 0 !important
+  padding-top 0.9rem !important
+  padding-bottom 0.9rem !important
 
 div[class*='language-'] code,
 .theme-default-content pre code
@@ -1344,3 +1352,11 @@ html[data-theme="light"] .theme-default-content img
   .home .features
     grid-template-columns 1fr !important
     padding 2rem 1.5rem !important
+
+// Edition label under a heading, e.g. "Premium". Matches
+// .mn-security__availability on the main site.
+.theme-default-content p.mn-availability
+  font-size 0.75rem !important
+  font-weight 600 !important
+  color var(--mn-orange) !important
+  margin-bottom 0.5rem !important

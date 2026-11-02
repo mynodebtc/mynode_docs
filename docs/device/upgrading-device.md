@@ -13,9 +13,7 @@ There are three ways to upgrade your MyNode device.
 
 ## Upgrading via the Web Interface
 
-<i>Premium</i>
-
-MyNode Premium is included if you purchased a device. You can see all your options on the [Order Now](https://mynodebtc.com/order_now) page.
+<p class="mn-availability">Premium</p>
 
 1. Open your MyNode device's Settings page.
 2. Click **Check for updates** to make sure the new version is available.
@@ -29,7 +27,7 @@ MyNode Premium is included if you purchased a device. You can see all your optio
 
 ## Upgrading via Command Line
 
-<i>Community Edition and Premium</i>
+<p class="mn-availability">Community Edition and Premium</p>
 
 1. Connect to your device over SSH from a [terminal](/advanced/linux-terminal.html), and enter your MyNode password when prompted. If `mynode.local` doesn't work, use your device's IP address instead.
 
@@ -57,7 +55,7 @@ MyNode Premium is included if you purchased a device. You can see all your optio
 
 ## Upgrading by Re-flashing your SD Card or OS Drive
 
-<i>Community Edition and Premium</i>
+<p class="mn-availability">Community Edition and Premium</p>
 
 You can also write a fresh copy of the latest MyNode image to your SD card, or to your OS drive on a PC. Your Bitcoin and Lightning data is saved on the external drive and is not lost, but some apps may need to be re-installed.
 
