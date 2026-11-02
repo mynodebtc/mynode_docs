@@ -30,6 +30,8 @@ You can use your wallet via numerous interfaces. Check out the guides on look in
 
 ### Next Steps
 
+[Learn the Lightning basics](/lightning/basics)
+
 [Open Ride the Lightning](/lightning/rtl)
 
 [Open Thunderhub](/lightning/thunderhub)

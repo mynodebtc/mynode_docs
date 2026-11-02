@@ -76,8 +76,7 @@ To receive Bitcoin in any Lightning wallet, you must first establish what is cal
 
 **Tip**: When creating Lightning channels with peers, it is generally a good practice for each party to open a separate channel from two ends to have some inbound and outbound capacity for each of them.
 
-There are many other ways to establish inbound capacity, but they are beyond the scope of this guide.
-A good overview of how to establish inbound capacity can be found [here](https://gist.github.com/bretton/53bc511b6fdafef31951199dd25bbf88).
+There are many other ways to establish inbound capacity. See [Inbound Liquidity](/lightning/inbound-liquidity) for an overview.
 
 ### References
 

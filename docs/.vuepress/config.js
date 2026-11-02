@@ -142,6 +142,20 @@ module.exports = {
           "/lightning/pairing-wallets",
           "/lightning/lightning-terminal",
           {
+            title: "Lightning Guides",
+            children: [
+              "/lightning/basics",
+              "/lightning/opening-channels",
+              "/lightning/inbound-liquidity",
+              "/lightning/payments",
+              "/lightning/closing-channels",
+              "/lightning/backups",
+              "/lightning/watchtowers",
+              "/lightning/routing",
+              "/lightning/glossary",
+            ]
+          },
+          {
             title: "Lightning Apps",
             children: [
               '/lightning/alby',

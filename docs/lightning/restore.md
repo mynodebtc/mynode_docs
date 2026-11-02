@@ -20,7 +20,7 @@ First, click on Create Wallet under the Lightning app on the MyNode home page.
 
 Then, click on "Restore Wallet from Seed" on the Lightning page. 
 
-**You will need your seed phrase and Static Channel Backup file!**
+**You will need your seed phrase and Static Channel Backup file!** See [Backing Up a Lightning Node](/lightning/backups) for what each one recovers.
 
 <center>
   <figure>
