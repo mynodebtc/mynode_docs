@@ -12,7 +12,11 @@ set -e
 : "${DOCS_SSH_USER:?Set DOCS_SSH_USER}"
 : "${DOCS_REMOTE_PATH:?Set DOCS_REMOTE_PATH}"
 
-SSH_OPTS="-p $DOCS_SSH_PORT"
+# The upload is SFTP (lftp), same as CI: the server gives the deploy account an
+# SFTP session and nothing else, so rsync over ssh no longer works.
+command -v lftp > /dev/null || { echo "deploy.sh needs lftp (brew install lftp)" >&2; exit 1; }
+
+SSH_OPTS="-a -x -o BatchMode=yes"
 if [ -n "$DOCS_SSH_KEY_PATH" ]; then
   SSH_OPTS="$SSH_OPTS -i $DOCS_SSH_KEY_PATH"
 fi
@@ -28,6 +32,14 @@ yarn docs:lint
 rm -rf docs/.vuepress/dist
 yarn docs:build
 
-rsync -avz --delete \
-  -e "ssh $SSH_OPTS" \
-  docs/.vuepress/dist/ "$DOCS_SSH_USER@$DOCS_SSH_HOST:$DOCS_REMOTE_PATH/"
+# mirror --reverse --delete is the rsync --delete equivalent: upload the build,
+# remove anything on the server that is not in it. --transfer-all and
+# use-temp-file are explained in .github/workflows/deploy.yml.
+lftp -c "
+  set cmd:fail-exit yes
+  set net:max-retries 2
+  set xfer:use-temp-file yes
+  set sftp:connect-program 'ssh $SSH_OPTS'
+  open -u '$DOCS_SSH_USER,' -p '$DOCS_SSH_PORT' 'sftp://$DOCS_SSH_HOST'
+  mirror --reverse --delete --transfer-all --parallel=4 --verbose docs/.vuepress/dist/ '$DOCS_REMOTE_PATH/'
+"

@@ -62,6 +62,22 @@ jobs:
           chmod 600 ~/.ssh/deploy_key
           ssh-keyscan -p "$SSH_PORT" "$SSH_HOST" > ~/.ssh/known_hosts 2>/dev/null
 
-          rsync -avz --delete \
-            -e "ssh -p $SSH_PORT -i ~/.ssh/deploy_key -o UserKnownHostsFile=~/.ssh/known_hosts" \
-            docs/.vuepress/dist/ "$SSH_USER@$SSH_HOST:$REMOTE_PATH/"
+          # SFTP, not rsync: the server gives this key an SFTP session and
+          # nothing else, so it cannot be used to run a program there (rsync
+          # over ssh starts one). lftp's mirror is the rsync --delete
+          # equivalent: it uploads the build and removes anything on the
+          # server that is not in it. --transfer-all uploads every file every
+          # time: without it lftp skips a file whose size did not change
+          # unless the local copy looks newer, and a one-character edit keeps
+          # the size. use-temp-file uploads under a temporary name and renames,
+          # so a visitor never gets half a file.
+          command -v lftp > /dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq lftp; }
+          lftp -c "
+            set cmd:fail-exit yes
+            set net:max-retries 2
+            set xfer:use-temp-file yes
+            set sftp:auto-confirm no
+            set sftp:connect-program 'ssh -a -x -i $HOME/.ssh/deploy_key -o UserKnownHostsFile=$HOME/.ssh/known_hosts -o BatchMode=yes'
+            open -u '$SSH_USER,' -p '$SSH_PORT' 'sftp://$SSH_HOST'
+            mirror --reverse --delete --transfer-all --parallel=4 --verbose docs/.vuepress/dist/ '$REMOTE_PATH/'
+          "

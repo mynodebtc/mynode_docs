@@ -76,7 +76,7 @@ behind each rule are in the comments in `check-markdown.js`.
 
 ## Deployment
 
-Pushing to `master` triggers `.github/workflows/deploy.yml`, which builds the site and `rsync`s `docs/.vuepress/dist/` (with `--delete`) over SSH to the production server. Watch the Actions tab after merging — a failed build or rsync means the live site stops updating until it's fixed. Because of `--delete`, anything present on the server but missing from `dist/` gets removed on the next deploy, so any server-side file the site depends on (e.g. custom error pages) needs to be produced by the build itself, not added by hand.
+Pushing to `master` triggers `.github/workflows/deploy.yml`, which builds the site and mirrors `docs/.vuepress/dist/` to the production server over SFTP (`lftp mirror --reverse --delete`). The server gives the deploy key an SFTP session and nothing else, so rsync and other commands over SSH do not work with it. Watch the Actions tab after merging — a failed build or upload means the live site stops updating until it's fixed. Because of `--delete`, anything present on the server but missing from `dist/` gets removed on the next deploy, so any server-side file the site depends on (e.g. custom error pages) needs to be produced by the build itself, not added by hand.
 
 CI is pinned for reproducibility: Node 22 via `actions/setup-node`, and every action
 pinned to a commit SHA with a version comment. Keep new actions pinned the same way.
