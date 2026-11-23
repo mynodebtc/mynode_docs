@@ -69,7 +69,12 @@ Check each participant's size requirements, and remember that the channels are o
 
 ### Buy a Channel
 
-Lightning Service Providers (LSPs) and marketplaces sell inbound channels. You pay a fee, and the seller opens a channel to your node. [Amboss Magma](https://amboss.space/magma) is one example of a marketplace. [Megalith LSP](https://megalithic.me/get_a_channel) is an example of an LSP: you pay a Lightning invoice and it opens a channel to your node.
+Lightning Service Providers (LSPs) and marketplaces sell inbound channels. You pay a fee, and the seller opens a channel to your node. Some options:
+
+- [Amboss Magma](https://amboss.space/magma): a marketplace where many sellers list channel offers.
+- [Megalith LSP](https://megalithic.me/get_a_channel): an LSP that opens a channel from its own node. Accepts Tor-only nodes.
+
+Listing a provider here isn't an endorsement.
 
 Before you buy:
 
