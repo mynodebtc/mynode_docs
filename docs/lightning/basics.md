@@ -74,7 +74,7 @@ That last job is why uptime matters. A peer could try to cheat while you're offl
 
 ## Lightning on MyNode
 
-- **Tor is on by default.** Your node's address is a `.onion` address, so peers don't see your home IP address. You can change this in [Using Tor for Bitcoin and LND](/networking/tor).
+- **Tor hides your IP address.** If you chose Tor during setup, your node's address is a `.onion` address, so peers don't see your home IP address. You can change this in [Bitcoin and Lightning Networks](/networking/tor).
 - **You can choose your interface.** The Lightning page shows your balances, channels and peers. Apps like [Ride the Lightning](/lightning/rtl) and [Thunderhub](/lightning/thunderhub) let you open channels and make payments, and you can [pair a mobile wallet](/lightning/pairing-wallets).
 - **Lightning needs its own backup.** Your seed phrase alone doesn't recover funds in channels. Read [Backing Up a Lightning Node](/lightning/backups) before adding funds.
 

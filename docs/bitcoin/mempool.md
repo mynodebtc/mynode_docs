@@ -1,6 +1,6 @@
 ---
 title: "Mempool"
-description: "Inspect Bitcoin fee rates, pending transactions, and recent blocks with the Mempool app on MyNode, so you can time transactions using your own node's data."
+description: "See Bitcoin fee rates, pending transactions and recent blocks with the Mempool app on MyNode, so you can pick fees and track transactions using your own node's data."
 tags:
 - "Mempool"
 - "Bitcoin fees"
@@ -10,17 +10,41 @@ tags:
 
 # Mempool
 
-## Overview
-Bitcoin users broadcast their transactions via a node. Miners take these transactions, verify them and add them to the blockchain for the coinbase reward. Since the blocksize is limited, if there are more transactions waiting to be verified than can fit in a single block, they must wait in a buffer space. This buffer space is called the **mempool**. The size of the mempool indicates the demand for space on the bitcoin blockchain and directly affects the fees required to confirm transactions.
+<p class="mn-availability">Community Edition and Premium</p>
 
-Mempool is a visualization software for the bitcoin mempool. It decomposes the mempool based on transaction fees which helps in deciding fees. It also acts as an explorer for transactions and public addresses.
+[Mempool](https://mempool.space) is a visual explorer for Bitcoin that focuses on fees. Running it on your MyNode lets you check fees and track your transactions without telling a public website what you're looking at.
 
-## Initialization
-Mempool can be enabled from the homepage and runs on port number 4080/4081. Initially, it takes a few minutes to load first few blocks and the graph for the most recent 2 hours of activity.
+![Mempool dashboard showing upcoming blocks with their fee rates, recent mined blocks, recommended transaction fees by priority, the difficulty adjustment, mempool size and incoming transaction charts, and tables of the latest blocks and transactions](/images/bitcoin/mempool-dashboard.png)
 
-## Memory Usage
-The Bitcoin mempool can grow quite large which can lead to a lot of RAM usage. To mitigate any issues, MyNode does limit the total Bitcoin mempool size to be a few hundred MB.
+## What the Mempool Is
 
-## Links
-- Website: [https://mempool.space](https://mempool.space)
-- Github: [https://github.com/mempool/mempool](https://github.com/mempool/mempool)
+When you send bitcoin, your transaction waits with others to be added to a block. That waiting area is the **mempool**. Each block has limited space, so miners pick the transactions that pay the highest fee rate first. When the mempool is busy, you need a higher fee to confirm quickly.
+
+## Before You Start
+
+Mempool uses the [Electrum Server](/electrum/electrum) to look up addresses and transactions. Enable the Electrum Server first, and let it finish indexing.
+
+## Open Mempool
+
+1. If Mempool isn't on your home page, install it from the Marketplace.
+2. On the MyNode home page, find the **Mempool** tile, and click **Enable**.
+3. When it's running, click **Open**.
+
+Mempool uses port 4080, or 4081 for HTTPS, such as `http://192.168.1.100:4080`. When it first starts, it takes a few minutes to load recent blocks and fee history.
+
+## Using Mempool
+
+- **Pick a fee.** The **Transaction Fees** section suggests fee rates for low, medium and high priority, in sats per virtual byte (sat/vB).
+- **See what's coming.** The blocks on the left are the next blocks miners are likely to mine, with the fee range in each. The blocks on the right were mined most recently.
+- **Track a transaction.** Paste a transaction ID into the search box to see whether it's confirmed, or where it sits in the queue.
+- **Look up an address or block.** Use the same search box.
+
+If your transaction is stuck because its fee is too low, many wallets let you raise the fee with Replace-By-Fee (RBF).
+
+## Memory Use
+
+A busy mempool can use a lot of memory. MyNode limits how much memory Bitcoin's mempool can use based on your device's RAM, so a device with less RAM keeps fewer pending transactions. Because of this, your Mempool may show a smaller mempool than public sites during busy periods.
+
+## Next Steps
+
+[Explore blocks and your node with BTC RPC Explorer](/bitcoin/explorer)

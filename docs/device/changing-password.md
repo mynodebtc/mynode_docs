@@ -1,6 +1,6 @@
 ---
 title: "Changing your Password"
-description: "Change the MyNode password from the settings page, replacing the default bolt password that protects the web interface, SSH, and every sensitive action."
+description: "Change your MyNode password from the settings page. The same password protects the web interface, SSH, and every sensitive action."
 tags:
 - "MyNode"
 - "password"
@@ -10,9 +10,9 @@ tags:
 
 # Changing your Password
 
-After setting up your MyNode, it is important to change the password. When performing various actions on your device, you will be prompted to enter you password before accessing sensitive data. Setting your own password will secure your device.
+MyNode asks you to set your own password the first time you log in. You can change it at any time from the settings page. The same password is used for the web interface, SSH, and sensitive actions on your device.
 
-First, go to the settings page. Next, fill out your current password. If it has never been set, the default password is "bolt".
+First, go to the settings page. Next, fill out your current password.
 
 <center>
   <figure>

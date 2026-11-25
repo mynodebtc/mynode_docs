@@ -105,6 +105,7 @@ module.exports = {
       {
         title: "Device",
         children: [
+          "/device/choosing-hardware",
           ["/device/changing-password", 'Changing your Password'],
           ["/device/forgot-password", 'Forgot your Password'],
           ["/device/upgrading-device", 'Upgrading your Device'],
@@ -117,8 +118,14 @@ module.exports = {
           "/bitcoin/overview",
           "/bitcoin/bitcoin-status",
           "/bitcoin/manage",
-          "/bitcoin/using-existing-bitcoin-data",
-          "/bitcoin/troubleshoot",
+          {
+            title: "Connecting Wallets",
+            children: [
+              "/wallets/why-use-your-own-node",
+              "/wallets/choosing-a-wallet",
+              "/wallets/sparrow",
+            ]
+          },
           {
             title: "Bitcoin Apps",
             children: [
@@ -129,6 +136,21 @@ module.exports = {
               "/coinjoin/joinmarket",
               //"/multisig/caravan", // Not ready
               "/multisig/specter",
+            ]
+          },
+          {
+            title: "Mining",
+            children: [
+              "/mining/solo-mining",
+              "/mining/public-pool",
+              "/mining/datum",
+            ]
+          },
+          {
+            title: "Advanced",
+            children: [
+              "/bitcoin/using-existing-bitcoin-data",
+              "/bitcoin/troubleshoot",
             ]
           }
         ]
@@ -196,6 +218,12 @@ module.exports = {
               "/vpn/setup",
             ]
           },
+          {
+            title: "Remote Access via Tailscale",
+            children: [
+              "/networking/tailscale",
+            ]
+          },
         ]
       },
       {
@@ -234,7 +262,9 @@ module.exports = {
           "/troubleshooting/bitcoin-sync-slow",
           "/troubleshooting/lightning-network-error",
           "/troubleshooting/electrum-connection-error",
+          "/troubleshooting/electrum-stuck-indexing",
           "/troubleshooting/voltage-error",
+          "/troubleshooting/drive-full",
           "/troubleshooting/sd-card-full-error",
           "/troubleshooting/sd-card-readonly-error",
           "/troubleshooting/drive-readonly-error",

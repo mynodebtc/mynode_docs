@@ -20,7 +20,7 @@ Be realistic about what to expect. Routing is a good way to learn and to help th
 - **Good peers.** Channels should connect places where payments actually want to go.
 - **Enough capacity.** Larger channels can forward larger payments.
 - **Balanced liquidity.** A channel with no balance in the direction a payment wants to go can't forward it.
-- **Reliable connections.** Tor is great for privacy but slower and less stable than clearnet. Many serious routing nodes run clearnet, or both. See [Using Tor for Bitcoin and LND](/networking/tor) and [the Lightning firewall section](/networking/reachable-from-internet) if you're considering this. Turning off Tor means peers can see your IP address.
+- **Reliable connections.** Tor is great for privacy but slower and less stable than clearnet. Many serious routing nodes run clearnet, or both. See [Bitcoin and Lightning Networks](/networking/tor) and [the Lightning firewall section](/networking/reachable-from-internet) if you're considering this. Turning off Tor means peers can see your IP address.
 
 ## Setting Fees
 

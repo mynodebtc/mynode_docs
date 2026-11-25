@@ -100,6 +100,8 @@ Your MyNode device runs its own web server that you can access with any browser 
 
 Upon accessing the web interface, you will be prompted to login. The default password is `bolt`.
 
+After you log in for the first time, MyNode asks you to set your own password before you can continue. This password is used for the web interface and SSH.
+
 You will be prompted to enter your product key. If you are using the Community Edition, you can choose that option. Otherwise, enter the product key that has either been emailed to you, or is found on the bottom of your device.
 
 <center>
@@ -126,13 +128,11 @@ Your MyNode device is now ready and you will see the main MyNode home page.
 
 You can optionally connect to your MyNode device via SSH if you are familiar with Linux. You can connect using the device IP or hostname.
 
-### Default Credentials
+### SSH Credentials
 
 Username: `admin`
 
-Password: `bolt`
-
-**Note:** It is recommended to [change your password](/device/changing-password).
+Password: the password you set when you first logged in
 
 From here, you can start using all the features MyNode has to offer!
 
@@ -145,7 +145,5 @@ We have several simple ways to upgrade mynode described in the guide linked abov
 
 
 ## Next Steps
-
-[Change your Password](/device/changing-password)
 
 [Setup Lightning Wallet](/lightning/create)

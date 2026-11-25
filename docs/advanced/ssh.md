@@ -31,7 +31,7 @@ The authenticity of host '192.168.1.123 (192.168.1.123)' can't be established. E
 
 2. Agree by typing yes
 
-3. Enter your password when required, default = `bolt`
+3. Enter your MyNode password when asked. This is the password you set when you first logged in to the web interface.
 
 ```sh
                  _   _           _
@@ -155,7 +155,7 @@ ssh-rsa LjH~pJep_{FTU9-T*DEvwLjH~pJep_{F.i)"t8bb$_vkXYge)m<i-PbskEiD8jD8pQheyCE6
 
 ```sh
 sudo nano /etc/ssh/sshd_config
-[sudo] password for admin: bolt
+[sudo] password for admin:
 ```
 
 17. Make sure that for the following text in the file there is no '#' in front of the text and they all finish with the word 'no':

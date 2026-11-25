@@ -1,6 +1,6 @@
 ---
 title: "Specter"
-description: "Pair Specter with MyNode to manage single-sig and multisig Bitcoin wallets, connect hardware wallets, and sign transactions against your own full node."
+description: "Use Specter on MyNode to manage single-sig and multisig Bitcoin wallets with hardware wallets, using your own node to check balances and broadcast transactions."
 tags:
 - "Specter"
 - "multisig"
@@ -10,54 +10,68 @@ tags:
 
 # Specter
 
-Developed by [Crypto Advance GmbH](https://specter.solutions/about/), Specter is a desktop GUI for Bitcoin Core optimized to work with hardware wallets. Funds in hardware wallets are far more secure than using a hot wallet like Bitcoin Core or Electrum. Specter is built on top of Bitcoin Core as opposed to the conventional layer of an Electrum server between a wallet and Bitcoin Core. This removes a dependency and frees memory that would be used for storing the indexed database created by Electrum server.
+<p class="mn-availability">Premium</p>
 
-Along with supporting single signature wallets, Specter also supports multi-signature wallets.
+[Specter](https://specter.solutions/) is a wallet coordinator for hardware wallets. It runs on your MyNode, talks directly to Bitcoin Core, and gives you a web interface to create wallets, receive bitcoin, and build transactions that your hardware wallets sign.
 
-Specter is part of the *Beta Apps* on MyNode available only for *premium* users.
+Specter is especially useful for **multisig** wallets, where spending needs signatures from several devices, such as 2 of 3. Losing one device doesn't lose your funds, and a thief needs more than one device to spend them.
 
-![Specter](/images/multisig/specter/wallets.png)
+![Specter's wallet creation screen with options for a single key wallet or a multisignature wallet, and a sidebar listing devices such as a Coldcard, a Keepkey and a Specter DIY](/images/multisig/specter/wallets.png)
 
-## Features
+## What You Can Do
 
-Find the full list of features on [GitHub](https://github.com/cryptoadvance/specter-desktop). Key features are:
+- Use hardware wallets like Coldcard, Trezor, Ledger, BitBox02, Keystone and Jade.
+- Create single-signature and multisig wallets.
+- Sign transactions with USB, SD card or QR code, depending on the device.
+- See your balances and history from your own node, with no Electrum Server needed.
 
-- hardware wallet support
-- [multisig](https://en.bitcoin.it/wiki/Multisignature)
-- [Partially Signed Bitcoin Transactions](https://bitcoinops.org/en/topics/psbt/)
-- Check total bitcoin supply (Run the numbers!)
+## Set Up Specter
 
-## Using Specter
+1. Open the Marketplace on your MyNode, and install **Specter**.
+2. Open Specter's app page. Find the password in the **App Default Credentials** section.
+3. Click **Open**, and log in with that password.
 
-### On MyNode
-
-Specter is already configured with default environment variables and connected to Bitcoin Core, but it is disabled by default. To enable it, open the MyNode homepage and find the Specter tile (like the left image below).
 <center>
   <figure>
-    <img src="/images/multisig/specter/disabled.png" alt="Specter app tile on the MyNode home page in its disabled state, showing an Enable button" style="width: 125px">
-    <img src="/images/multisig/specter/enabled.png" alt="Specter app tile once enabled, showing a green status dot with Open and Info buttons" style="width: 125px">
+    <img src="/images/multisig/specter/specter-app.png" style="width: 600px" alt="Specter app page on MyNode with Open, Restart and Disable buttons, the installed version, and instructions saying the Specter password is shown in the App Default Credentials section">
   </figure>
 </center>
 
-Click on the **Enable** button, and wait for the page to refresh.
+Specter uses port 25441, such as `https://192.168.1.100:25441`. You need to be logged in to MyNode to use it, and your browser will warn about the self-signed certificate the first time.
 
-You should now see a **Specter** button (like shown on the right image above) and a green dot. On clicking this button, a new tab should open on your browser, containing Specter GUI.
+If you've already set your own Specter password, MyNode keeps it and shows it as user configured. You can set a new Specter password on the MyNode Settings page.
 
-Adding `blockfilterindex=1` to your [Bitcoin Config](/advanced/customize-config.md) file  will occupy few more GB of storage but would improve the rescanning speed.
+Specter is already connected to your node's Bitcoin Core, so you don't need to enter any connection details.
 
-### Remote Use
+## Add Devices and Wallets
 
-Your MyNode installation of Specter includes the additional "HWI Bridge" code to allow you to access your Specter wallet remotely.
-If you are using the MyNode VPN, make sure that the VPN is running and then you can start MyNode in your browser by entering `https://mynode.local:25441`. If you are using Tor for remote access, find your [Tor Hidden Service Address](/tor/web-gui.md) for Specter.
-Start a Tor browser and enter `your-tor-hidden-service-address:25441`.
+1. In Specter, click **Add new device**, choose your hardware wallet type, and import its public keys. Follow the instructions for your device.
+2. Click **Add new wallet**, and choose a **Single key wallet** or a **Multisignature wallet**.
+3. For a multisig wallet, choose the devices to use and how many signatures are needed to spend, such as 2 of 3.
 
-Specific instructions on how to use Specter can be found [here](https://github.com/cryptoadvance/specter-desktop/blob/master/docs/faq.md#how-do-i-run-the-app).
+**Back up your multisig wallet's configuration**, also called the wallet descriptor or backup file. You need it, plus enough of your devices, to recover a multisig wallet. Each device's recovery phrase alone isn't enough.
 
-If you face any issues, read their [FAQ](https://github.com/cryptoadvance/specter-desktop/blob/master/docs/faq.md).
+## Using USB Hardware Wallets
 
-## Specs
+Specter runs on your MyNode, not on your computer, so it can't see a hardware wallet plugged into your computer's USB port on its own. You can:
 
-- Github: [cryptoadvance/specter-desktop](https://github.com/cryptoadvance/specter-desktop)
-- Community: [Specter Telegram](https://t.me/spectersupport)
-- Installed location: A Python3 module with environment settings at `/opt/mynode/specter`
-- Ports: [https://mynode.local:25441](https://mynode.local:25441/)
+- Use a device that signs with an **SD card or QR codes**, like a Coldcard, Keystone or Jade.
+- Run Specter's **HWI Bridge** on your computer so Specter can reach your USB devices. See [Specter's documentation](https://docs.specter.solutions/).
+
+## Faster Rescans
+
+If you import a wallet that already has history, Specter asks Bitcoin Core to rescan the blockchain, which can be slow. Adding `blockfilterindex=1` to your Bitcoin config makes rescans much faster, at the cost of a few more gigabytes of storage. See [Customizing your Config](/advanced/customize-config).
+
+## Remote Access
+
+To use Specter away from home, connect through the [VPN](/vpn/setup) or [Tailscale](/networking/tailscale) and open Specter with your node's address and port 25441.
+
+## Help
+
+- [Specter's documentation](https://docs.specter.solutions/)
+- [Specter on GitHub](https://github.com/cryptoadvance/specter-desktop)
+- [Specter Telegram group](https://t.me/spectersupport)
+
+## Next Steps
+
+[Choose a wallet for your node](/wallets/choosing-a-wallet)

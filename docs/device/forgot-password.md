@@ -9,7 +9,7 @@ tags:
 ---
 
 # Forgot your Password
-After setting up your MyNode, it is important to change the password. If you forget it, you will not be able to log back in to access your services. Luckily, MyNode is designed to make recovery simple without losing critical data, like the Bitcoin blockchain or Lightning data.
+If you forget your MyNode password, you will not be able to log back in to access your services. Luckily, MyNode is designed to make recovery simple without losing critical data, like the Bitcoin blockchain or Lightning data.
 
 All you need to do is re-flash the drive that holds the MyNode operating system. Depending on your device, this is either a USB thumbdrive or an SD card. Detailed instructions are available <a href="/advanced/flash-os-drive">here</a>.
 
@@ -18,7 +18,7 @@ All you need to do is re-flash the drive that holds the MyNode operating system.
 - Re-flash the USB thumbdrive
 - Insert the USB thumbdrive back into the device
 - Power the device back on (you may need to unplug and reconnect the power cable)
-- Your password has now been reset to "bolt"!
+- Your password has now been reset to "bolt"! Log in with it, and MyNode will ask you to set a new password.
 
 
 Note: This process may cause your device to get a new IP address.

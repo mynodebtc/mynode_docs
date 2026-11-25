@@ -1,6 +1,6 @@
 ---
 title: "BTCPay Server"
-description: "Enable BTCPay Server on MyNode to accept self-hosted Bitcoin and Lightning payments, create stores and invoices, and settle straight to your own node."
+description: "Set up BTCPay Server on MyNode to accept Bitcoin and Lightning payments without a middleman: log in, create a store, connect a wallet and Lightning, and make your store public."
 tags:
 - "BTCPay Server"
 - "Bitcoin payments"
@@ -10,64 +10,84 @@ tags:
 
 # BTCPay Server
 
-## Enable and open the app
+<p class="mn-availability">Community Edition and Premium</p>
 
-- Enable the app and wait for the page to reload
-- Open the app from the homepage or go to [mynode.local:49393](https://mynode.local:49393), accept the risks of self-signed certificate. (Wait for few minutes if the homepage doesn’t show up.)
+[BTCPay Server](https://btcpayserver.org/) is a free, open source payment processor. Running it on your MyNode lets you accept Bitcoin and Lightning payments straight to your own wallet, with no payment company in between and no fees beyond network fees.
 
-<div style="display: flex;">
-<img src="/images/btcpay-server/disabled.png" style="margin: auto;" alt="BTCPay Server app tile on the MyNode home page in its disabled state, showing an Enable button">
-<img src="/images/btcpay-server/enabled.png" style="margin: auto;" alt="BTCPay Server app tile once enabled, showing a green status dot with Open and Info buttons">
-</div>
+You can use it for an online store, a point-of-sale app for in-person sales, invoices, payment buttons, crowdfunding and more.
 
-## Create an admin account
+![BTCPay Server screens: a checkout page with a QR code, the store dashboard with wallet balance and recent transactions, and a point-of-sale store with products](/images/btcpay-server/btcpay-overview.png)
 
-- Create an account using your email and password. First account has admin privileges by default.
+## Before You Start
 
-![Register](/images/btcpay-server/register.png)
+- Bitcoin must be fully synced.
+- BTCPay Server needs [Lightning](/lightning/create) set up on your MyNode, even if you only plan to accept on-chain payments.
 
-## Create a Store
+## Step 1: Install and Log In
 
-![New store](/images/btcpay-server/new-store.png)
+1. Open the Marketplace on your MyNode, and install **BTCPay Server**.
+2. Open its app page. MyNode creates the administrator account for you, so nobody else on your network can claim it first. The email and password are in the **App Default Credentials** section.
+3. Click **Open**, and log in with those details.
 
-- Go to "Stores" page from the menu-bar on the top, and create a new store
-- Give your store a name, hit "Create"
-- Setup a BTC and/or lightning wallet
-	- For BTC wallet: either import an existing wallet or create a new wallet
-        - For this example, we’ll create a hot wallet with default settings
-        - Backup the seed phrase, check the box and complete the process
+<center>
+  <figure>
+    <img src="/images/btcpay-server/btcpay-app.png" style="width: 600px" alt="BTCPay Server app page on MyNode with Open, Restart and Disable buttons, the installed version, and instructions explaining that MyNode created the administrator account shown in the App Default Credentials section">
+  </figure>
+</center>
 
-## Create an App
+BTCPay Server uses port 49393, such as `https://192.168.1.100:49393`. Your browser will warn about the self-signed certificate the first time.
 
-![New store](/images/btcpay-server/new-app.png)
+**Change the password** once you're in, from your account settings in BTCPay. MyNode stops showing it once you've changed it. If you lose your password, go to the **BTCPay Server** section of the MyNode Settings page and use **Recover Administrator Access** to set a new one.
 
-- Go to the "Apps" page
-	- Create a new app
-	- Let the app type be "Point of Sale", give a name to your app
-	- The BTC Pay server populates it with a default set of items, edit/delete them if you like
+## Step 2: Create a Store
 
-## Configure the router to forward ports
+1. In BTCPay, create a store, and give it a name and default currency.
+2. Set up a Bitcoin wallet for the store. The safest option is to **connect an existing wallet**, such as a hardware wallet, by importing its public key (xpub). BTCPay can then create addresses for payments but can't spend your funds.
 
-![Router](/images/btcpay-server/router.png)
+Creating a new hot wallet in BTCPay stores the keys on your node. If you do this, back up the recovery phrase it shows you.
 
-- Using the admin page of your router, forward the external port 443 to the internal port 49393 and the IP of your MyNode (10.0.0.19 in this example)
-- Verify the setting by opening the public IP your router in a browser. It should open the homepage of your BTCPay server.
-- BTCPay Server accepts connections from any address by default. If it doesn't open, check that it is still selected under Settings > Firewall > Reachable From the Internet. See [Choosing Which Services Are Reachable From the Internet](/networking/reachable-from-internet).
+## Step 3: Set Up Lightning
 
-## Buy a custom domain and connect it to your BTCPay server
+In your store's Lightning settings, choose your MyNode's internal Lightning node. Payments then go to your MyNode's Lightning wallet.
 
-- [Godaddy](https://www.godaddy.com/) is a popular registrar
-- For example you bought "awesome.com"
-- Find the DNS Records page and add an entry
-- Choose "A" type
-- Enter the name of the subdomain, eg. store
-- Enter your public IP address as the value
-- Wait for the default TTL value
-- On your MyNode, add the name (store.awesome.com) under Settings > Firewall > Allowed Host Names. Without it, the name shows a 421 error instead of your store. See [Allowed Host Names](/networking/allowed-host-names).
-- Browse to "https://store.awesome.com", it should open the homepage or login page of your BTCPay server
-- To open the Point of Sale app, go to Apps page and click on "View" button. You should see the default shop as seen below.
+To receive Lightning payments, your node needs inbound liquidity. See [Inbound Liquidity](/lightning/inbound-liquidity).
 
-![Default Store](/images/btcpay-server/default-store.png)
+## Step 4: Start Accepting Payments
 
-## References
-- [Official guide](https://docs.btcpayserver.org/Deployment/ChangeDomain/#setting-up-your-dns-record)
+From BTCPay's menu, you can:
+
+- **Create an invoice** to request a specific amount.
+- **Add a Point of Sale app** for in-person sales or a simple online shop.
+- **Connect an e-commerce plugin**, such as WooCommerce or Shopify.
+
+See [BTCPay Server's documentation](https://docs.btcpayserver.org/) for each feature.
+
+## Making Your Store Public
+
+Customers who pay through your store need to reach your BTCPay Server from the internet.
+
+### Over Tor
+
+The simplest option is BTCPay's Tor address. You don't need to change your router, but customers need a Tor-capable browser. See [Web UI over Tor](/tor/web-gui) to find your onion addresses.
+
+### With a Domain Name
+
+1. **Forward a port.** On your router, forward external port 443 to port 49393 on your MyNode's IP address.
+
+<center>
+  <figure>
+    <img src="/images/btcpay-server/router.png" style="width: 600px" alt="Router port forwarding settings forwarding external port 443 to port 49393 on the MyNode's local IP address">
+  </figure>
+</center>
+
+2. **Check the firewall.** BTCPay Server must be selected under **Settings > Firewall > Reachable From the Internet**. It is by default. See [Choosing Which Services Are Reachable From the Internet](/networking/reachable-from-internet).
+3. **Point a domain at your home.** At your domain registrar, add an **A record** for a subdomain, such as `store.example.com`, with your home's public IP address as the value.
+4. **Allow the name on MyNode.** Add `store.example.com` under **Settings > Firewall > Allowed Host Names**. Without this, the domain shows a 421 error instead of your store. See [Allowed Host Names](/networking/allowed-host-names).
+
+MyNode's BTCPay Server uses a self-signed certificate, so visitors will see a security warning. For a store customers use, put it behind a reverse proxy that has a trusted certificate. Also check whether your home IP address changes, and use a dynamic DNS service if it does. See [BTCPay's guide to changing domains](https://docs.btcpayserver.org/Deployment/ChangeDomain/) for more.
+
+Making a service reachable from the internet exposes it to everyone. Keep BTCPay Server updated and use a strong password.
+
+## Next Steps
+
+[Set up inbound liquidity for Lightning payments](/lightning/inbound-liquidity)

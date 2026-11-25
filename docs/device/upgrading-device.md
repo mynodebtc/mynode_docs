@@ -62,7 +62,7 @@ You can also write a fresh copy of the latest MyNode image to your SD card, or t
 1. Shut down your device using the button on the Settings page.
 2. Remove the SD card or OS drive and flash it with the latest image from the [download page](https://mynodebtc.com/download). See the [flashing guide](/advanced/flash-os-drive.html) for details.
 3. Put the SD card or OS drive back in your device and power it on.
-4. Log in with the default password, `bolt`, and change it. Re-flashing resets your password, and your device may get a new IP address.
+4. Log in with the default password, `bolt`, and set a new password when asked. Re-flashing resets your password, and your device may get a new IP address.
 
 ## After Upgrading
 

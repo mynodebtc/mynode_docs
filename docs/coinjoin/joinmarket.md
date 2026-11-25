@@ -1,6 +1,6 @@
 ---
 title: "JoinMarket"
-description: "Run JoinMarket on MyNode to coordinate CoinJoin transactions and earn fees as a maker, with all Bitcoin data staying on your own node for better privacy."
+description: "Use JoinMarket on MyNode to make CoinJoin transactions for better Bitcoin privacy, with the Jam web interface or the command line, and earn fees as a maker."
 tags:
 - "JoinMarket"
 - "coinjoin"
@@ -10,76 +10,89 @@ tags:
 
 # JoinMarket
 
-## Overview
+<p class="mn-availability">Premium</p>
 
-JoinMarket is software to create a special kind of bitcoin transaction called a ["CoinJoin"](https://en.bitcoin.it/wiki/CoinJoin). Its aim is to improve the confidentiality and privacy of bitcoin transactions. JoinMarket differs from other popular CoinJoin implementations in a few ways.
+[JoinMarket](https://github.com/JoinMarket-Org/joinmarket-clientserver) makes CoinJoin transactions, which combine your coins with other people's in a single transaction. This makes it much harder for anyone watching the blockchain to follow your coins.
 
-The most important differences are:
+What makes JoinMarket different from other CoinJoin tools:
 
-1. **Open**: Users can choose to act as a market "taker" and initiate a CoinJoin transaction on demand, or they can act as a market "maker" (and potentially earn fees) by leaving a JoinMarket wallet connected to the network for others to CoinJoin with.
-2. **Decentralized**: JoinMarket has no central coordinator.
+- **No central coordinator.** Participants find each other through a decentralized market.
+- **Two roles.** A **taker** starts a CoinJoin when they want one, and pays a small fee. A **maker** leaves their wallet online for takers to use, and earns those fees.
 
-JoinMarket was created by Chris Belcher in 2015, and is currently maintained by Adam Gibson [here.](https://github.com/Joinmarket-Org/joinmarket-clientserver)
-For a quick introduction to Joinmarket you can watch [this demonstration](https://youtu.be/hwmvZVQ4C4M) of installation and usage given by Adam Gibson during the [Understanding Bitcoin conference](https://understandingbtc.com/) on April 6 2019.
+There are two ways to use JoinMarket on MyNode: **Jam**, a web interface, or the **command line**. Jam is the easiest way to start.
 
-## General Usage
+## Using Jam
 
-Joinmarket is installed in MyNode and must be run via the command line. There are several Joinmarket scripts and configurations that can be utilized for various purposes, and it is important to fully understand the proper usage of each of them. Users are strongly urged to first read this [usage guide](https://github.com/JoinMarket-Org/joinmarket-clientserver/blob/master/docs/USAGE.md).
+[Jam](https://jamapp.org/) is a web interface for JoinMarket, developed separately by volunteers. It lets you create a wallet, CoinJoin your coins and run as a maker from your browser.
 
-To get a MyNode command line window you will need to open an SSH session from another computer.
+![Jam wallet dashboard showing the wallet balance, Receive and Send buttons, and the wallet split into five accounts named Apricot, Blueberry, Cherry, Date and Elderberry](/images/coinjoin/jam-wallet.png)
 
-Instructions for doing that while on the same network as your MyNode can be found [here](https://mynodebtc.com/guide/debug_access_linux_terminal).
+### Set Up Jam
 
-There are two ways to run JoinMarket - by using JoinMarket scripts directly or by using a minimal terminal interface provided by JoinInBox.
+1. Open the Marketplace on your MyNode, and install both **JoinMarket** and **Jam**. Jam needs JoinMarket to run.
+2. Enable Jam, and open its app page.
+3. Click **Open**, and follow the instructions in Jam to create a wallet.
 
-## Usage - JoinInBox
+**Write down the recovery phrase** Jam shows you when you create a wallet, and keep it safe. It's the only way to restore your funds.
 
-Once you have opened a terminal window in your MyNode, there is a convenient script for setting up and running JoinMarket.
+### Using Jam
 
-`sudo mynode-joininbox`
+- **Receive:** send bitcoin to your Jam wallet.
+- **Send:** send bitcoin as a CoinJoin. Jam picks other participants for you.
+- **Earn:** run as a maker, so others CoinJoin with your coins and pay you fees.
+- **Sweep:** schedule a series of CoinJoins that move your funds through several rounds for more privacy.
 
-You will be prompted for your password and should now see this in your terminal window:
+Jam explains each feature as you go. See [Jam's guides](https://jamapp.org/) for more.
 
-![joinmarket_cli](/images/coinjoin/joinmarket2.png)
+## Using the Command Line
 
-You should now have access to JoinMarket through the interface provided by JoinInBox.
+The command line gives you every JoinMarket feature, but you need to understand JoinMarket's scripts first. Read JoinMarket's [usage guide](https://github.com/JoinMarket-Org/joinmarket-clientserver/blob/master/docs/USAGE.md) before you start.
 
-* Github: [openoms/joininbox](https://github.com/openoms/joininbox)
+Open a terminal on your MyNode. See [Accessing the Linux Terminal](/advanced/linux-terminal).
 
-## Usage - JoinMarket
+### JoinInBox
 
-Once you have opened a terminal window in your MyNode, there is a convenient script for setting up and running JoinMarket.
+JoinInBox is a menu-based interface for JoinMarket in the terminal. To start it, run:
 
-`sudo mynode-joinmarket`
+```bash
+sudo mynode-joininbox
+```
 
-You will be prompted for your password and should now see this in your terminal window:
+Enter your password when asked, and you'll see the JoinInBox menu:
 
-![joinmarket_cli](/images/coinjoin/joinmarket1.png)
+![JoinInBox menu in a terminal window with options including Quickstart with JoinMarket, Wallet management, Yield Generator options for makers, Send, Freeze, Payjoin, the order book, and config settings](/images/coinjoin/joinmarket2.png)
 
-You are now ready to run any of the Joinmarket scripts, located at:
+See [JoinInBox on GitHub](https://github.com/openoms/joininbox) for more.
 
-`/home/joinmarket/joinmarket-clientserver/scripts`
+### JoinMarket Scripts
 
-You can find the main configuration file, `joinmarket.cfg` at:
+To use JoinMarket's own scripts directly, run:
 
-`/home/joinmarket/.joinmarket`
+```bash
+sudo mynode-joinmarket
+```
 
-To exit, simply type and enter `exit`.
+Enter your password when asked:
 
-**TIP**: If you are planning to use JoinMarket as a "maker", you will need to leave your maker script running for an extended period of time.  This would normally require you to leave an open SSH session to your MyNode to keep your JoinMarket session running. This is impractical at best, and potentially unsecure if others might have access to your computer.
+![SSH session on MyNode running sudo mynode-joinmarket, which opens a JoinMarket virtual environment in the joinmarket-clientserver scripts folder](/images/coinjoin/joinmarket1.png)
 
-A better way is to run your JoinMarket maker script inside of a [TMUX](https://github.com/tmux/tmux/wiki) window. You can start TMUX (after connecting to MyNode via SSH) by entering:
+| What | Where |
+|---|---|
+| Scripts | `/home/joinmarket/joinmarket-clientserver/scripts` |
+| Config file (`joinmarket.cfg`) | `/home/joinmarket/.joinmarket` |
 
-`tmux`
+Type `exit` to leave.
 
-Next, you start the JoinMarket virtual environment as described earlier, and then your desired maker script.
+### Running a Maker in the Background
 
-This will allow you to end your SSH session with your MyNode while leaving your JoinMarket maker/offer actively running.
-Without using TMUX, if you exit your SSH connection to your MyNode, any JoinMarket script that you have running will stop.
+A maker needs to run for a long time, but anything you start in an SSH session stops when you disconnect. Run it inside [tmux](https://github.com/tmux/tmux/wiki) instead:
 
-* Github: [joinmarket/joinmarketclientserver](https://github.com/joinmarket/joinmarket-clientserver)
+1. Connect over SSH, and run `tmux`.
+2. Start JoinMarket as above, and then your maker script.
+3. Press `Ctrl+b`, then `d`, to detach. The maker keeps running.
 
-## Specs
+To come back to it later, connect over SSH and run `tmux attach`.
 
-* Installed location: `/home/joinmarket/joinmarket-clientserver/`
-* IRC: [webchat.freenode.net](https://webchat.freenode.net) #joinmarket
+## Next Steps
+
+[Manage Bitcoin on your node](/bitcoin/manage)

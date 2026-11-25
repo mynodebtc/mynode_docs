@@ -1,6 +1,6 @@
 ---
 title: "Electrum Server"
-description: "Connect Electrum wallets on desktop and mobile to your own MyNode Electrum Server instead of a public one, so no third party sees your addresses or balances."
+description: "Enable the Electrum Server on MyNode and connect Electrum, Sparrow and other wallets on desktop and mobile to it, so no third party sees your addresses or balances."
 tags:
 - "Electrum"
 - "Electrum Server"
@@ -10,29 +10,43 @@ tags:
 
 # Electrum Server
 
-## Enabling Electrum Server
+<p class="mn-availability">Community Edition and Premium</p>
 
-Electrum is a very popular light wallet that lets you use Bitcoin on your PC or mobile device without needing a full copy of the blockchain. By running Electrum Server on your MyNode, you can run light wallets on other devices in a trusted manner by offloading the heavy lifting to MyNode.
+The Electrum Server lets wallets on your computer or phone get their balances and history from your own node instead of from a public server. It builds an index of the whole blockchain, so wallets can look up any address quickly. MyNode uses [electrs](https://github.com/romanz/electrs) for this.
 
-First, from the MyNode home page click "Enable" to start running Electrum Server. Depending on the speed of your device, it may take several days to fully sync Electrum. Your device may run slowly during this initial sync period.
+Many popular wallets can connect to it, including Electrum, [Sparrow](/wallets/sparrow), BlueWallet and Nunchuk. Other MyNode apps rely on it too: [BTC RPC Explorer](/bitcoin/explorer) needs it, and [Mempool](/bitcoin/mempool) uses it to look up addresses. For why this matters, see [Why Use Your Own Node](/wallets/why-use-your-own-node).
+
+## Enable the Electrum Server
+
+1. On the MyNode home page, find the **Electrum Server** tile, and click **Enable**.
+2. Wait for it to build its index. This takes hours on a mini PC and can take a day or more on a Raspberry Pi. Your device may be slower during this time.
+
+Click **Info** on the tile to open the Electrum Server page. Its Status tile shows the progress, and says **Running** once it's ready. If it seems stuck, see [Electrum Server Stuck Indexing](/troubleshooting/electrum-stuck-indexing).
+
+## Connection Details
+
+The Info tile on the Electrum Server page shows what to enter in your wallet:
 
 <center>
   <figure>
-    <img src="/images/bitcoin/electrum-1.png" alt="Electrum Server app tile on the MyNode home page with the Enable button highlighted" style="width: 200px">
+    <img src="/images/wallets/electrum-server-info.png" style="width: 600px" alt="Electrum Server Status page on MyNode with Status Running in one tile, and the Electrum Server IP, Standard Port 50001 and Secure Port 50002 in the Info tile">
   </figure>
 </center>
 
-Once the server has synced, you should see an Electrum Server status page similar to this.
+| Port | Use |
+|---|---|
+| **50002** | Secure (SSL). Use this one when your wallet supports it |
+| **50001** | Standard, unencrypted. Only for wallets that can't use SSL |
 
-<center>
-  <figure>
-    <img src="/images/bitcoin/electrum-2.png" alt="MyNode Electrum Server status page showing a Running status, the current block height, and the standard and secure ports" style="width: 500px">
-  </figure>
-</center>
+The secure port uses a self-signed certificate, so your wallet may ask you to accept it the first time it connects.
 
-## Connecting an Electrum Wallet to MyNode via the GUI
+To connect from outside your home, use the Tor hostname shown on the same page (see [Electrum over Tor](/tor/electrum)), the [VPN](/vpn/setup) or [Tailscale](/networking/tailscale).
 
-At this point you can connect your Electrum light wallets to your MyNode. On the PC version, click on the colored icon in the bottom right to open up server settings. Enter the IP address of your MyNode with port 50002.
+## Connect Electrum on Desktop
+
+1. In Electrum, open **Tools > Network**, or click the colored circle in the bottom right corner.
+2. On the **Server** tab, uncheck **Select server automatically**.
+3. Enter your MyNode's IP address with port 50002, such as `192.168.1.100:50002`.
 
 <center>
   <figure>
@@ -40,7 +54,7 @@ At this point you can connect your Electrum light wallets to your MyNode. On the
   </figure>
 </center>
 
-If everything went correctly, you will get a green status icon and your MyNode device will be acting as your Electrum Server!
+When it connects, the circle in the bottom right turns green.
 
 <center>
   <figure>
@@ -48,9 +62,7 @@ If everything went correctly, you will get a green status icon and your MyNode d
   </figure>
 </center>
 
-*Notice!* At this point, your Electrum light wallet client may still use other servers for various things. To limit use to ONLY your node, you will need to make one more change.
-
-Re-open the Electrum network settings by clicking on the colored icon in the bottom right. The server you entered should now appear in the list. Right click on it and select "Use as Server" and click Close.
+Electrum can still connect to other servers for some information. To use only your node, reopen the Network dialog, right-click your node in the list, choose **Use as server**, and restart Electrum.
 
 <center>
   <figure>
@@ -58,44 +70,42 @@ Re-open the Electrum network settings by clicking on the colored icon in the bot
   </figure>
 </center>
 
-Restart Electrum and you will be using MyNode for trusted Electrum access!
+### From the Command Line
 
-## Connecting an Electrum Wallet to MyNode via the CLI
+You can also start Electrum connected only to your node. Replace the IP address with your own:
 
-You can launch Electrum via a command line interface and connect it to you MyNode. Enter the following command and replace the IP with your own.
+```bash
+./electrum --oneserver --server 192.168.1.100:50002:s
+```
 
-`./electrum -1 -s 192.168.1.123:50002:s`
+The `:s` at the end means SSL.
 
-If everything went correctly, you will get a green status icon and your MyNode device will be acting as your Electrum Server!
+## Connect Electrum on Mobile
 
-<center>
-  <figure>
-    <img src="/images/bitcoin/electrum-5.png" alt="Electrum desktop wallet launched from the command line and connected, with a green status icon in the bottom right corner" style="width: 500px">
-  </figure>
-</center>
+In Electrum for Android, open the network settings, turn off automatic server selection, and enter your MyNode's IP address and port 50002 as the server. Your phone must be on your home network, or connected through the VPN or Tailscale.
 
-## Connecting an Electrum Wallet to MyNode via Mobile
+## Other Wallets
 
-You can also run Electrum via the mobile app and connect it to you MyNode. First, go into settings and set the server like the following. Replace the IP with your own IP.
+- **[Sparrow](/wallets/sparrow):** choose Private Electrum in Sparrow's server settings.
+- **Other wallets:** look for a setting called Electrum server, custom server or personal node, and enter the same IP address and port.
 
-<center>
-  <figure>
-    <img src="/images/bitcoin/electrum-6.png" alt="Server settings in Electrum for Android with the MyNode IP address entered as the host and 50002 as the port" style="width: 200px">
-  </figure>
-</center>
+Not sure which wallet to use? See [Choosing a Wallet](/wallets/choosing-a-wallet).
 
-Also make sure Auto-connect is ON and One-server mode is ON.
+## Settings
 
-<center>
-  <figure>
-    <img src="/images/bitcoin/electrum-7.png" alt="Network settings in Electrum for Android showing one connection to the MyNode server with Auto-connect and One-server mode both on" style="width: 200px">
-  </figure>
-</center>
+On the Settings page, under App Settings, the **Electrum Server** section lets you:
 
-If everything went correctly, you will get a screen like this and your MyNode device will be acting as your Electrum Server!
+- Raise the **TX Lookup Limit** if a wallet with a long history won't load. See [Wallet Errors After Indexing](/troubleshooting/electrum-stuck-indexing#wallet-errors-after-indexing).
+- **Regenerate** the server's SSL certificate.
+- **Reset** the Electrum Server, which deletes its index and rebuilds it from scratch.
 
-<center>
-  <figure>
-    <img src="/images/bitcoin/electrum-8.png" alt="Synced Electrum wallet on Android showing the balance screen for default_wallet with Send, Balance, and Receive tabs" style="width: 200px">
-  </figure>
-</center>
+## Troubleshooting
+
+- [My Electrum Wallet is not Connecting](/troubleshooting/electrum-connection-error)
+- [Electrum Server Stuck Indexing](/troubleshooting/electrum-stuck-indexing)
+
+## Next Steps
+
+[Connect Sparrow Wallet to your node](/wallets/sparrow)
+
+[Use the Electrum Server over Tor](/tor/electrum)
