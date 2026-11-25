@@ -1,6 +1,6 @@
 ---
 title: "Zeus"
-description: "Set up Zeus on your phone to control your MyNode Lightning node, scanning the lndconnect QR code to send, receive, and manage channels while away from home."
+description: "Connect the Zeus mobile wallet to your MyNode Lightning node by scanning a pairing QR code, so you can send, receive and manage channels from your phone at home or away."
 tags:
 - "Zeus"
 - "Lightning wallet"
@@ -10,19 +10,18 @@ tags:
 
 # Zeus
 
-## Using Zeus with MyNode
+[Zeus](https://zeusln.com) is a mobile wallet for iPhone and Android that can control your MyNode's Lightning node. You get your node's balances, channels and payments in your pocket, using your own funds.
 
-First, install <a href="https://github.com/ZeusLN/zeus" target="_blank">Zeus</a> on your mobile device.
+## Before You Start
 
-Next open the app, go to settings and tap "Add a new node".
+- [Create a Lightning wallet](/lightning/create) on your MyNode.
+- Install Zeus from the App Store or Google Play.
 
-<center>
-  <figure>
-    <img src="/images/lightning/zeus-mobile-1.png" class="app_screenshot" alt="Zeus settings screen reading No Nodes with the Add a new node button highlighted">
-  </figure>
-</center>
+## Pair Zeus with Your Node
 
-Tap on "Scan lndconnect config".
+1. On the MyNode home page, click the QR code icon on the Lightning tile, and enter your password. See [Pairing Wallets](/lightning/pairing-wallets).
+2. Choose **Lightning (REST + Local IP)** to connect from home, or **Lightning (REST + Tor)** to connect from anywhere. The Tor option needs Premium.
+3. In Zeus, add a new wallet or node, and choose to scan an lndconnect QR code.
 
 <center>
   <figure>
@@ -30,18 +29,27 @@ Tap on "Scan lndconnect config".
   </figure>
 </center>
 
-Open the QR Pairing page on MyNode and scan the QR Code from the "REST Local IP" tab.
-
-<center>
-  <figure>
-    <img src="/images/lightning/zeus-mobile-3.png" class="app_screenshot" alt="Zeus lndconnect QR scanner pointed at the LND Connect page on MyNode">
-  </figure>
-</center>
-
-Once the QR code is scanned, click "Save Node Config" and go back to the main app screen. Zeus is now using your MyNode device!
+4. Scan the QR code shown on your MyNode, and save the node configuration.
 
 <center>
   <figure>
     <img src="/images/lightning/zeus-mobile-4.png" class="app_screenshot" alt="Zeus main screen connected to MyNode, showing Lightning and on-chain balances with Send and Receive buttons and counts of transactions, payments, invoices, and channels">
   </figure>
 </center>
+
+Zeus's screens change between versions, so yours may look different. The steps stay the same: add a node, and scan the QR code.
+
+**The pairing QR code gives full control of your Lightning wallet.** Don't share it or take a screenshot of it.
+
+## Using Zeus Away from Home
+
+The Local IP option only works on your home network. To use Zeus elsewhere:
+
+- **Tor:** pair with **Lightning (REST + Tor)**, and turn on Tor in Zeus's settings if it doesn't do it on its own. See [Zeus over Tor](/tor/zeus).
+- **VPN or Tailscale:** connect your phone with the [VPN](/vpn/setup) or [Tailscale](/networking/tailscale), and use the Local IP pairing. With Tailscale, change the host in Zeus to your node's Tailscale IP address.
+
+## Next Steps
+
+[Make Lightning payments](/lightning/payments)
+
+[Open a channel](/lightning/opening-channels)

@@ -1,6 +1,6 @@
 ---
 title: "Ride the Lightning (RTL)"
-description: "Use Ride the Lightning on MyNode to open and close channels, create and pay invoices, check balances, and handle day-to-day Lightning node management."
+description: "Use Ride the Lightning on MyNode to manage your Lightning node from a browser: open and close channels, send and receive payments, set routing fees and check balances."
 tags:
 - "RTL"
 - "Ride the Lightning"
@@ -10,74 +10,66 @@ tags:
 
 # Ride the Lightning (RTL)
 
-A GUI to manage Lightning channels
+<p class="mn-availability">Community Edition and Premium</p>
 
-### Logging into RTL
+[Ride the Lightning](https://github.com/Ride-The-Lightning/RTL) (RTL) is a web interface for managing your MyNode's Lightning node. It covers everything from everyday payments to channel management and routing fees, and works from any browser on your network.
 
-Ride the Lightning is a Lightning wallet and node management tool accessible via a web interface, and is built into MyNode.
-RTL is a creation of Suheb/saubyk, and complete information can be found at [Github](https://github.com/ride-the-lightning/RTL).
-The developer can be contacted via Twitter at: [@Suheb__](https://twitter.com/Suheb__) [@RTL_App](https://twitter.com/RTL_app).
+![RTL dashboard showing wallet balance, peers, channel balance, fee report, channel status, a local and remote capacity chart, and fee rate tables](/images/lightning/RTL/RTL_main_page_comp.png)
 
-You can use RTL from any browser that is able to access your MyNode installation.
+## Before You Start
 
-Once a Lightning wallet [has been created](/lightning/create) on your device, the RTL app will be available via a button on the home page.
+[Create a Lightning wallet](/lightning/create) on your MyNode first. RTL shows **Waiting on Lightning** until it exists.
+
+## Open RTL
+
+1. On the MyNode home page, click **Info** on the RTL tile.
+2. Find the password in the **App Default Credentials** section of the app page.
+3. Click **Open**, and log in with that password.
 
 <center>
   <figure>
-    <img src="/images/lightning/RTL/RTL_enable_button_comp.png" alt="MyNode home page with the Open button on the RTL app tile highlighted" style="width: 400px">
+    <img src="/images/lightning/RTL/rtl-app.png" style="width: 600px" alt="RTL app page on MyNode with Open, Restart and Disable buttons, and instructions saying RTL asks only for a password, shown in the App Default Credentials section">
   </figure>
 </center>
 
-After clicking the button, you will be presented with a login page. Use your MyNode password to login. Once logged in, the main RTL page will be displayed.
+RTL uses port 3010, or 3011 for HTTPS, such as `http://192.168.1.100:3010`.
 
-![RTL Main Page](/images/lightning/RTL/RTL_main_page_comp.png "RTL Main Page")
+If you lose the password, use **Set RTL Password** in the RTL section of the Settings page. **Reset RTL Configuration** in the same section deletes RTL's settings and restarts it.
 
-### Funding your BTC Wallet
+## Fund Your Lightning Wallet
 
-In order to participate in the Lightning Network, you first need to fund your on-chain Bitcoin wallet. To do this, click on "On-chain" on the Navigation Panel on the left. Then click on the "Generate Address" button.
+Before you can open channels, send bitcoin to your node's on-chain Lightning wallet. In RTL, go to **On-chain**, and click **Generate Address**. Send bitcoin to that address, and wait for it to confirm.
 
-This will generate a new address and corresponding QR code for you to use to fund your on-chain wallet.
+## Open a Channel
 
-### Opening a Channel
+1. Go to **Lightning > Peers/Channels**.
+2. Under **Peers**, click **Add Peer**, and enter the node's address.
+3. Under **Channels**, click **Open Channel**, choose the peer, and enter the amount.
 
-To spend bitcoins on the Lightning network, one must first find peers on the network and open a channel with them. Peers can be trusted friends or complete strangers. [1ML.com](https://1ml.com/node?order=channelcount&active=true) or the MyNode Telegram channel are good places to find peers.
+![RTL Peers/Channels page with the Peers tab under Connections selected](/images/lightning/RTL/RTL_create_peer_comp.png)
 
-When you have selected another Lightning node to connect to, click on "Lightning" in the RTL navigation panel, then click on "Peers/Channels". Under the "Connections" heading, find and click on "Peers" as shown:
+The channel shows as pending until its funding transaction confirms. For help choosing peers and amounts, see [Opening Channels](/lightning/opening-channels).
 
-![RTL Create Peer](/images/lightning/RTL/RTL_create_peer_comp.png "RTL Create Peer")
+## Send and Receive Payments
 
-Click on the "Add Peer" button, then:
+Go to **Lightning > Transactions**.
 
-- Fill in the required information for your selected peer and close that window.
-- Click on the "Channels" button that is right under the "Connections" heading.
-- Click on the "Open Channel" button.
-- Select your chosen peer, fill in the amount of Bitcoin that you wish to open the channel with, and then click on "Open Channel"
-in the lower right corner of that window.
+- **To pay**, click **Send Payment**, paste the invoice, check the details, and click **Send Payment**.
+- **To receive**, create an invoice with the amount, and share it with the payer.
 
-You can verify the status of the channel via the Channels page. The channel will be pending until the transaction used to open the channel is confirmed.
+![RTL Transactions page with the Send Payment button](/images/lightning/RTL/RTL_payments_comp.png)
 
+To receive payments, your channels need inbound liquidity. See [Inbound Liquidity](/lightning/inbound-liquidity).
 
-### Sending Bitcoin using RTL & Lightning
+## Other Things RTL Can Do
 
-When your funding transaction is confirmed on the blockchain you are now ready to send Bitcoin using Lightning.
-You will need a payment invoice from the person you want to pay. Typically, either the payee will send you an invoice or you will copy it from a webpage.
+- **Routing fees.** Set fees for each channel, and see your forwarding history and earnings. See [Routing](/lightning/routing).
+- **Rebalance channels** with circular payments.
+- **Close channels.** See [Closing Channels](/lightning/closing-channels).
+- **Sign and verify messages** with your node's key.
 
-Go to the RTL navigation pane and click on "Lightning" and then "Transactions".
+## Next Steps
 
-![RTL Send Payment](/images/lightning/RTL/RTL_payments_comp.png "RTL Send Payment")
+[Open your first channel](/lightning/opening-channels)
 
-Click on "Send Payment" and paste your copy of the invoice in the window that opens.
-All of the details of the payment should automatically be filled in.
-Now, just click the "Send Payment" button and the payment should be completed within seconds!
-
-### Receiving Bitcoin using RTL and Lightning
-
-To receive Bitcoin in any Lightning wallet, you must first establish what is called "inbound capacity".
-
-**Tip**: When creating Lightning channels with peers, it is generally a good practice for each party to open a separate channel from two ends to have some inbound and outbound capacity for each of them.
-
-There are many other ways to establish inbound capacity. See [Inbound Liquidity](/lightning/inbound-liquidity) for an overview.
-
-### References
-
-- Github: [github.com/ride-the-lighting/RTL](https://github.com/Ride-The-Lightning/RTL)
+[Compare with Thunderhub](/lightning/thunderhub)

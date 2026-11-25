@@ -44,7 +44,7 @@ Some extras, like the exchange rate, come from outside services. You can change 
 
 ## Troubleshooting
 
-- **Addresses won't load.** Check the Electrum Server is Running on its page. See [Electrum Server Stuck Indexing](/troubleshooting/electrum-stuck-indexing).
+- **Addresses won't load.** Check the Electrum Server is Running on its page. See [My Electrum Server is stuck Indexing](/troubleshooting/electrum-stuck-indexing).
 - **The explorer won't open.** Make sure Bitcoin is synced, and try restarting the explorer from its app page.
 
 ## Next Steps

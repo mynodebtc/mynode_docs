@@ -1,5 +1,5 @@
 ---
-title: "Electrum Server Stuck Indexing"
+title: "My Electrum Server is stuck Indexing"
 description: "Fix a MyNode Electrum Server that seems stuck syncing, starting or compressing: what each status means, how long indexing takes, and when to restart or reset it."
 tags:
 - "Electrum server"
@@ -8,7 +8,7 @@ tags:
 - "MyNode"
 ---
 
-# Electrum Server Stuck Indexing
+# My Electrum Server is stuck Indexing
 
 The first time you enable the Electrum Server, it builds an index of every transaction in the blockchain so wallets can look up their history quickly. This takes a long time, and it can look stuck when it isn't. This guide helps you tell the difference.
 
@@ -41,7 +41,7 @@ After the first index, the Electrum Server only has to add each new block, which
 ## Before You Do Anything
 
 1. **Is Bitcoin fully synced?** The Electrum Server can't finish until Bitcoin has. Check the Bitcoin page.
-2. **Is there enough space?** Check the Data Disk usage on the Status page. The index needs tens of gigabytes. See [Running Out of Drive Space](/troubleshooting/drive-full).
+2. **Is there enough space?** Check the Data Disk usage on the Status page. The index needs tens of gigabytes. See [My Drive is running out of Space](/troubleshooting/drive-full).
 3. **Has it really stopped?** Note the current block and the percentage, then check again in an hour or two. During **Compressing...** the block number doesn't move, which is normal.
 
 ## Check the Log

@@ -63,7 +63,7 @@ You can run MyNode in a virtual machine on a computer you already have. This is 
 - **A reliable brand.** The data drive is written to constantly. A failed drive means downloading the whole blockchain again.
 - **For a Pi, a good USB enclosure.** Cheap enclosures are a common source of drive errors.
 
-If you run out of space later, you can move to a bigger drive with the [Clone Tool](/advanced/clone-tool). See [Running Out of Drive Space](/troubleshooting/drive-full).
+If you run out of space later, you can move to a bigger drive with the [Clone Tool](/advanced/clone-tool). See [My Drive is running out of Space](/troubleshooting/drive-full).
 
 ## Test Your Drive
 

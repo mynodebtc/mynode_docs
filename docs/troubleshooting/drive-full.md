@@ -1,5 +1,5 @@
 ---
-title: "Running Out of Drive Space"
+title: "My Drive is running out of Space"
 description: "Fix a MyNode data drive that's almost full: check what's using space, why pruning isn't an option, and how to move to a larger drive with the Clone Tool."
 tags:
 - "drive full"
@@ -8,7 +8,7 @@ tags:
 - "MyNode"
 ---
 
-# Running Out of Drive Space
+# My Drive is running out of Space
 
 The Bitcoin blockchain grows every day, so eventually every node's data drive fills up. MyNode warns you before it does. This guide covers what to do.
 

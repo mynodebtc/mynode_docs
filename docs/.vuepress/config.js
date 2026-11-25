@@ -109,6 +109,7 @@ module.exports = {
           ["/device/changing-password", 'Changing your Password'],
           ["/device/forgot-password", 'Forgot your Password'],
           ["/device/upgrading-device", 'Upgrading your Device'],
+          "/device/backup-and-migrate",
           "/device/connect-wifi",
         ]
       },
@@ -160,9 +161,6 @@ module.exports = {
         children: [
           "/lightning/create",
           "/lightning/restore",
-          "/lightning/lnd-alias",
-          "/lightning/pairing-wallets",
-          "/lightning/lightning-terminal",
           {
             title: "Lightning Guides",
             children: [
@@ -178,15 +176,28 @@ module.exports = {
             ]
           },
           {
+            title: "Connecting Wallets",
+            children: [
+              "/lightning/pairing-wallets",
+              "/lightning/zeus",
+              "/lightning/zap",
+            ]
+          },
+          {
             title: "Lightning Apps",
             children: [
               '/lightning/alby',
               '/lightning/bluewallet',
               '/lightning/rtl',
+              '/lightning/lightning-terminal',
               '/lightning/lnbits',
               '/lightning/thunderhub',
-              '/lightning/zap',
-              '/lightning/zeus',
+            ]
+          },
+          {
+            title: "Advanced",
+            children: [
+              "/lightning/lnd-alias",
             ]
           }
         ]
@@ -258,6 +269,8 @@ module.exports = {
           "/troubleshooting/stuck-formatting",
           "/troubleshooting/stuck-copying-files",
           "/troubleshooting/drive-not-found",
+          "/troubleshooting/app-wont-start",
+          "/device/reset-reinstall-format",
           "/troubleshooting/bitcoin-error",
           "/troubleshooting/bitcoin-sync-slow",
           "/troubleshooting/lightning-network-error",

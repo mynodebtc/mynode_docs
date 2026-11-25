@@ -21,7 +21,7 @@ Many popular wallets can connect to it, including Electrum, [Sparrow](/wallets/s
 1. On the MyNode home page, find the **Electrum Server** tile, and click **Enable**.
 2. Wait for it to build its index. This takes hours on a mini PC and can take a day or more on a Raspberry Pi. Your device may be slower during this time.
 
-Click **Info** on the tile to open the Electrum Server page. Its Status tile shows the progress, and says **Running** once it's ready. If it seems stuck, see [Electrum Server Stuck Indexing](/troubleshooting/electrum-stuck-indexing).
+Click **Info** on the tile to open the Electrum Server page. Its Status tile shows the progress, and says **Running** once it's ready. If it seems stuck, see [My Electrum Server is stuck Indexing](/troubleshooting/electrum-stuck-indexing).
 
 ## Connection Details
 
@@ -102,7 +102,7 @@ On the Settings page, under App Settings, the **Electrum Server** section lets y
 ## Troubleshooting
 
 - [My Electrum Wallet is not Connecting](/troubleshooting/electrum-connection-error)
-- [Electrum Server Stuck Indexing](/troubleshooting/electrum-stuck-indexing)
+- [My Electrum Server is stuck Indexing](/troubleshooting/electrum-stuck-indexing)
 
 ## Next Steps
 

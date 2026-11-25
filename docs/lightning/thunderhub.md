@@ -1,6 +1,6 @@
 ---
 title: "Thunderhub"
-description: "Enable Thunderhub on MyNode to manage Lightning channels, balances, payments, and routing fees, plus sign and verify messages from a modern web interface."
+description: "Use Thunderhub on MyNode to monitor and manage your Lightning node from a modern web interface: channels, balances, payments, routing fees, rebalancing and backups."
 tags:
 - "Thunderhub"
 - "Lightning node"
@@ -10,61 +10,54 @@ tags:
 
 # Thunderhub
 
-A GUI to manage Lightning channels
+<p class="mn-availability">Premium</p>
 
-## Introduction
+[Thunderhub](https://thunderhub.io) is a web interface for monitoring and managing your MyNode's Lightning node. It's similar to [RTL](/lightning/rtl), with a clean layout that also works well on a phone.
 
-Created by Anthony Potdevin, ThunderHub is an open-source LND node manager to monitor your node and manage channels via a web-interface. It allows you to take control of the Lightning network with a simple and intuitive UX.
+![Thunderhub dashboard showing the node's balances, channels and recent activity](/images/lightning/ThunderHub/ThunderHub_GUI_comp.png)
 
-ThunderHub is part of the *Beta Apps* on MyNode available only for *premium* users.
+## Before You Start
 
-![ThunderHub GUI](/images/lightning/ThunderHub/ThunderHub_GUI_comp.png "ThunderHub GUI")
+[Create a Lightning wallet](/lightning/create) on your MyNode first.
 
-## Features
+## Open Thunderhub
 
-Find the full list of features on [GitHub](https://github.com/apotdevin/thunderhub) or [website](https://thunderhub.io). Key features are listed below.
+1. If Thunderhub isn't on your home page, install it from the Marketplace.
+2. On the MyNode home page, click **Info** on the Thunderhub tile. Click **Enable** if it's disabled.
+3. Find the master password in the **App Default Credentials** section of the app page.
+4. Click **Open**, click **Login**, and enter the master password.
 
-### Monitoring
-- Overview of current and pending balance for the Lightning and Bitcoin wallets.
-- Liquidity report with total remote and local Lightning balance.
-- Complete network info.
-- View open/pending/closed channels and how balanced they are.
-- View all transactions.
-- View all forwarded payments.
-- View all chain transactions.
-- View all unspent UTXOS.
-
-### Management
-
-- Send and Receive Lightning payments.
-- Send and Receive Bitcoin payments.
-- Open and close channels.
-- Balance your channels through circular payments. (Check out the Tutorial)
-- Backup, verify and recover all your channels.
-- Sign and verify messages.
-
-## ThunderHub on MyNode
-
-ThunderHub is already configured with default environment variables and connected to the Lightning wallet, but it is disabled by default. To enable it, open the MyNode homepage and find the Thunderhub tile (like the left image below).
 <center>
   <figure>
-    <img src="/images/lightning/ThunderHub/disabled.png" alt="Thunderhub app tile on the MyNode home page in its disabled state, showing an Enable button" style="width: 125px">
-    <img src="/images/lightning/ThunderHub/enabled.png" alt="Thunderhub app tile once enabled, showing a green status dot with Open and Info buttons" style="width: 125px">
+    <img src="/images/lightning/ThunderHub/thunderhub-app.png" style="width: 600px" alt="Thunderhub app page on MyNode with Open, Restart and Disable buttons, and instructions saying Thunderhub asks for a master password, shown in the App Default Credentials section">
   </figure>
 </center>
-Click on the **Enable** button, and wait for the page to refresh.
 
-You should now see a **ThunderHub** button (like shown on the right image above) and a green dot. On clicking this button, a new tab should open on your browser, containing ThunderHub.
+Thunderhub uses port 3030, or 3031 for HTTPS, such as `http://192.168.1.100:3030`.
 
-On the ThunderHub tab, click the **Login** button, enter your MyNode password and then click on **Connect**.
+If you lose the password, use **Set Thunderhub Password** in the Thunderhub section of the Settings page. **Reset Thunderhub Configuration** in the same section deletes its settings and restarts it.
 
-![ThunderHub Connect Interface](/images/lightning/ThunderHub/login.png)
+## What You Can Do
 
-You should end up at the ThunderHub dashboard (as shown in the first image at the top).
+**Monitor your node**
 
-## Specs
+- Lightning and on-chain balances, including pending amounts.
+- A liquidity report showing your total inbound and outbound capacity.
+- Open, pending and closed channels, and how balanced each one is.
+- Payments, invoices, forwards and on-chain transactions.
 
-- Website: [thunderhub.io](https://thunderhub.io)
-- Github: [apotdevin/thunderhub](https://github.com/apotdevin/thunderhub)
-- Installed location: `/opt/mynode/thunderhub` (NodeJS package)
-- Ports: [http://mynode.local:3030/](http://mynode.local:3030/) or [https://mynode.local:3031](https://mynode.local:3031/)
+**Manage your node**
+
+- Send and receive Lightning and on-chain payments.
+- Open and close channels.
+- Set routing fees for each channel.
+- Rebalance channels with circular payments.
+- Download your channel backup, and sign and verify messages.
+
+For background on these, see the [Lightning guides](/lightning/basics).
+
+## Next Steps
+
+[Set routing fees](/lightning/routing)
+
+[Back up your Lightning node](/lightning/backups)

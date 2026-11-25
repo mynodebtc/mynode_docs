@@ -100,7 +100,7 @@ If you set up [Tailscale](/networking/tailscale), use your MyNode's Tailscale IP
 |---|---|
 | Connection refused or timed out | Check the Electrum Server is Running, the IP address is correct, and your computer is on the same network |
 | Certificate error | If you reset the Electrum Server certificate or your node's IP address changed, remove the old certificate in Sparrow and connect again. See [Electrum connection errors](/troubleshooting/electrum-connection-error) |
-| Wallet shows an error about too many transactions | Raise the Electrum Server's TX Lookup Limit in Settings. See [Electrum Server Stuck Indexing](/troubleshooting/electrum-stuck-indexing#wallet-errors-after-indexing) |
+| Wallet shows an error about too many transactions | Raise the Electrum Server's TX Lookup Limit in Settings. See [My Electrum Server is stuck Indexing](/troubleshooting/electrum-stuck-indexing#wallet-errors-after-indexing) |
 | Bitcoin Core connection rejected | Check the RPC username and password, and that you're on your home network |
 | Balance missing with Bitcoin Core | Wait for the rescan to finish, and check the wallet's start date |
 

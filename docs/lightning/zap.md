@@ -1,6 +1,6 @@
 ---
 title: "Zap"
-description: "Connect the Zap desktop or Android client to your MyNode Lightning node with an lndconnect URL or QR code, and spend from your own channels on any device."
+description: "Connect the Zap desktop or Android wallet to your MyNode Lightning node with an lndconnect URL or QR code. Zap is no longer actively developed, so consider Zeus instead."
 tags:
 - "Zap"
 - "Lightning wallet"
@@ -10,11 +10,19 @@ tags:
 
 # Zap
 
-## Using Zap with MyNode (Desktop)
+::: warning
+Zap is no longer actively developed. It may not work with newer versions of LND. For a mobile wallet that controls your node, use [Zeus](/lightning/zeus). For a desktop interface, use [RTL](/lightning/rtl) or [Thunderhub](/lightning/thunderhub) in your browser.
+:::
 
-First, install <a href="https://zap.jackmallers.com/">Zap</a> on your PC.
+Zap is a Lightning wallet for desktop and Android that can connect to your MyNode's Lightning node. If you already use it, these steps still apply.
 
-Next, open the Zap desktop app, click on "Create New Wallet".
+## Before You Start
+
+[Create a Lightning wallet](/lightning/create) on your MyNode. Then, on the MyNode home page, click the QR code icon on the Lightning tile, and enter your password. See [Pairing Wallets](/lightning/pairing-wallets).
+
+## Zap Desktop
+
+1. In Zap, click **Create new wallet**, choose **Connect**, and click **Next**.
 
 <center>
   <figure>
@@ -22,7 +30,8 @@ Next, open the Zap desktop app, click on "Create New Wallet".
   </figure>
 </center>
 
-Select "Connect" and click Next. Now, open the MyNode GUI and go to the LND Connect page. Copy the LND Connect URL from the "gRPC Local IP" tab. Paste the URL into the Connection String box in Zap.
+2. On MyNode's Pair Wallet page, choose **Zap (Local IP)**, and copy the URL.
+3. Paste it into the **Connection String** box in Zap, and click **Next** twice.
 
 <center>
   <figure>
@@ -30,27 +39,13 @@ Select "Connect" and click Next. Now, open the MyNode GUI and go to the LND Conn
   </figure>
 </center>
 
-Click Next and click Next on the Confirm screen. Zap will connect and use your MyNode device's wallet!
+Zap connects and shows your node's balance.
 
-<center>
-  <figure>
-    <img src="/images/lightning/zap-desktop-3.png" style="width: 500px" alt="Zap desktop connected to the MyNode wallet, showing the satoshi balance, Pay and Receive buttons, and recent activity">
-  </figure>
-</center>
+## Zap for Android
 
-## Using Zap with MyNode (Android)
-
-First, install <a href="https://zap.jackmallers.com/">Zap</a> on your mobile device.
-
-Next, open the Zap mobile app and tap on "Connect to Remote Node".
-
-<center>
-  <figure>
-    <img src="/images/lightning/zap-mobile-1.png" class="app_screenshot" alt="Zap mobile setup screen asking how you want to use Zap, with the Connect to Remote Node button highlighted">
-  </figure>
-</center>
-
-In your the MyNode GUI, open the LND Connect page and enter your MyNode password. In the Zap app, scan the QR code in the "gRPC Local IP" tab.
+1. In Zap, tap **Connect to Remote Node**.
+2. On MyNode's Pair Wallet page, choose **Zap (Local IP)**, or **Zap (Tor)** with Premium.
+3. Scan the QR code with Zap.
 
 <center>
   <figure>
@@ -58,10 +53,8 @@ In your the MyNode GUI, open the LND Connect page and enter your MyNode password
   </figure>
 </center>
 
-After Zap successfully scans the QR code, Zap will be using your MyNode device's wallet!
+**The pairing QR code and URL give full control of your Lightning wallet.** Don't share them.
 
-<center>
-  <figure>
-    <img src="/images/lightning/zap-mobile-3.png" class="app_screenshot" alt="Zap mobile connected to the MyNode wallet, showing the satoshi balance with Pay and Receive buttons">
-  </figure>
-</center>
+## Next Steps
+
+[Set up Zeus instead](/lightning/zeus)
